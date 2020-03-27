@@ -1,6 +1,0 @@
-framework module Pods_TTToolSample {
-  umbrella header "Pods-TTToolSample-umbrella.h"
-
-  export *
-  module * { export * }
-}
