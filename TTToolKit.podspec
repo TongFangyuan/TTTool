@@ -5,7 +5,15 @@
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
-version = "0.01";
+
+# 验证语法
+# pod lib lint
+
+# 将当前本地的podspec文件传到CocoaPods官方的索引库中
+# pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
+# pod trunk push TTToolKit.podspec 
+
+version = "0.0.3";
 
 Pod::Spec.new do |spec|
 
@@ -26,7 +34,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "tongfy" => "573682532@qq.com" }
 
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "9.0"
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
@@ -48,6 +56,25 @@ Pod::Spec.new do |spec|
   spec.subspec 'Macro' do |macro|
     macro.source_files = 'TTTool/Macro/MacroHeader.h'
     macro.public_header_files = 'TTTool/Macro/MacroHeader.h'
+  end
+
+  # Categories
+  spec.subspec 'Categories' do |categories|
+    categories.source_files = 'TTTool/Categories/TTCategoriesHeader.h'
+    categories.public_header_files = 'TTTool/Categories/TTCategoriesHeader.h'
+    #三级
+    categories.subspec 'Foundation' do |foundation|
+      foundation.source_files = 'TTTool/Categories/Foundation/TTFoundation.h'
+      foundation.public_header_files = 'TTTool/Categories/Foundation/TTFoundation.h'
+      #四级
+      foundation.subspec 'NSDate' do |date|
+        date.source_files = 'TTTool/Categories/Foundation/NSDate/*.h'
+      end
+      foundation.subspec 'NSArray' do |array|
+        array.source_files = 'TTTool/Categories/Foundation/NSArray/*.h'
+        # array.source_files = 'TTTool/Categories/Foundation/NSArray/*.m'
+      end
     end
+  end
 
 end
