@@ -1,7 +1,15 @@
 PODS:
-  - TTToolKit (0.0.2):
-    - TTToolKit/Macro (= 0.0.2)
-  - TTToolKit/Macro (0.0.2)
+  - TTToolKit (0.0.3):
+    - TTToolKit/Categories (= 0.0.3)
+    - TTToolKit/Macro (= 0.0.3)
+  - TTToolKit/Categories (0.0.3):
+    - TTToolKit/Categories/Foundation (= 0.0.3)
+  - TTToolKit/Categories/Foundation (0.0.3):
+    - TTToolKit/Categories/Foundation/NSArray (= 0.0.3)
+    - TTToolKit/Categories/Foundation/NSDate (= 0.0.3)
+  - TTToolKit/Categories/Foundation/NSArray (0.0.3)
+  - TTToolKit/Categories/Foundation/NSDate (0.0.3)
+  - TTToolKit/Macro (0.0.3)
 
 DEPENDENCIES:
   - TTToolKit
@@ -11,7 +19,7 @@ SPEC REPOS:
     - TTToolKit
 
 SPEC CHECKSUMS:
-  TTToolKit: 43f5f409efb61fd5b22d8d29b494d4e49e237640
+  TTToolKit: 0cdf7d497143f3cd3249a811381289842ef1842d
 
 PODFILE CHECKSUM: 898833b4708dbea1c8a30f998f316f2a996e1dbb
 
