@@ -9,6 +9,7 @@
 #ifndef TTToolKit_h
 #define TTToolKit_h
 
+/******************************   UIKit   ******************************/
 #import <UIKit/UIKit.h>
 #import "UIColor+TTHex.h"
 #import "UIApplication+TTKeyWindow.h"
@@ -25,5 +26,16 @@
 #import "UIView+TTFrame.h"
 #import "UIView+TTGesture.h"
 #import "UIView+TTKeyboard.h"
+
+/******************************   Foundation   ******************************/
+#import "NSArray+TTPlist.h"
+#import "NSBundle+TTBundle.h"
+#import "NSData+TTAES128.h"
+#import "NSData+TTHexString.h"
+#import "NSDate+TTInternetDateTime.h"
+#import "NSDictionary+String.h"
+#import "NSFileManager+TTFile.h"
+#import "NSObject+TTKVO.h"
+#import "NSString+TTRegularExpression.h"
 
 #endif /* TTToolKit_h */

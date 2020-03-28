@@ -7,6 +7,6 @@ target 'TTToolSample' do
   use_frameworks!
 
   # Pods for TTToolSample
-  pod 'TTToolKit','~>0.0.7'
+  pod 'TTToolKit','~>0.0.9'
 
 end

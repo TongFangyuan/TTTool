@@ -11,9 +11,9 @@
 
 # 将当前本地的podspec文件传到CocoaPods官方的索引库中
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
-# pod trunk push TTToolKit.podspec 
+# pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.0.8";
+version = "0.0.9";
 
 Pod::Spec.new do |spec|
 
@@ -52,4 +52,9 @@ Pod::Spec.new do |spec|
     uikit.public_header_files = 'TTToolKit/UIKit/*.h'
   end
 
+  spec.subspec 'Foundation' do |foundation|
+    foundation.source_files = 'TTToolKit/Foundation/*.{h,m}'
+    foundation.public_header_files = 'TTToolKit/Foundation/*.h'
+
+  end
 end

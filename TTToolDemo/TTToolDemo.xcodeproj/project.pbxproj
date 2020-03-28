@@ -31,6 +31,15 @@
 		DAC8EB0F242F4AF0004EF984 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB08242F4AEF004EF984 /* UIView+SYJXibConfiguration.m */; };
 		DAC8EB10242F4AF0004EF984 /* UIView+TTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB0A242F4AEF004EF984 /* UIView+TTFrame.m */; };
 		DAC8EB11242F4AF0004EF984 /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB0B242F4AEF004EF984 /* UIView+TTGesture.m */; };
+		DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB16242F4F6A004EF984 /* NSArray+TTPlist.m */; };
+		DAC8EB1F242F5000004EF984 /* NSData+TTHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB19242F5000004EF984 /* NSData+TTHexString.m */; };
+		DAC8EB20242F5000004EF984 /* NSBundle+TTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB1B242F5000004EF984 /* NSBundle+TTBundle.m */; };
+		DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB1E242F5000004EF984 /* NSData+TTAES128.m */; };
+		DAC8EB2C242F506B004EF984 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB22242F506A004EF984 /* NSDictionary+String.m */; };
+		DAC8EB2D242F506B004EF984 /* NSDate+TTInternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB23242F506A004EF984 /* NSDate+TTInternetDateTime.m */; };
+		DAC8EB2E242F506B004EF984 /* NSObject+TTKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB27242F506A004EF984 /* NSObject+TTKVO.m */; };
+		DAC8EB2F242F506B004EF984 /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB28242F506A004EF984 /* NSFileManager+TTFile.m */; };
+		DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB2B242F506B004EF984 /* NSString+TTRegularExpression.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +109,24 @@
 		DAC8EB0B242F4AEF004EF984 /* UIView+TTGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTGesture.m"; sourceTree = "<group>"; };
 		DAC8EB0C242F4AEF004EF984 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
 		DAC8EB0D242F4AF0004EF984 /* UIView+TTGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTGesture.h"; sourceTree = "<group>"; };
+		DAC8EB16242F4F6A004EF984 /* NSArray+TTPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TTPlist.m"; sourceTree = "<group>"; };
+		DAC8EB17242F4F6A004EF984 /* NSArray+TTPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TTPlist.h"; sourceTree = "<group>"; };
+		DAC8EB19242F5000004EF984 /* NSData+TTHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TTHexString.m"; sourceTree = "<group>"; };
+		DAC8EB1A242F5000004EF984 /* NSData+TTHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TTHexString.h"; sourceTree = "<group>"; };
+		DAC8EB1B242F5000004EF984 /* NSBundle+TTBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TTBundle.m"; sourceTree = "<group>"; };
+		DAC8EB1C242F5000004EF984 /* NSData+TTAES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TTAES128.h"; sourceTree = "<group>"; };
+		DAC8EB1D242F5000004EF984 /* NSBundle+TTBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TTBundle.h"; sourceTree = "<group>"; };
+		DAC8EB1E242F5000004EF984 /* NSData+TTAES128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TTAES128.m"; sourceTree = "<group>"; };
+		DAC8EB22242F506A004EF984 /* NSDictionary+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+String.m"; sourceTree = "<group>"; };
+		DAC8EB23242F506A004EF984 /* NSDate+TTInternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TTInternetDateTime.m"; sourceTree = "<group>"; };
+		DAC8EB24242F506A004EF984 /* NSDate+TTInternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TTInternetDateTime.h"; sourceTree = "<group>"; };
+		DAC8EB25242F506A004EF984 /* NSDictionary+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+String.h"; sourceTree = "<group>"; };
+		DAC8EB26242F506A004EF984 /* NSObject+TTKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TTKVO.h"; sourceTree = "<group>"; };
+		DAC8EB27242F506A004EF984 /* NSObject+TTKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TTKVO.m"; sourceTree = "<group>"; };
+		DAC8EB28242F506A004EF984 /* NSFileManager+TTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TTFile.m"; sourceTree = "<group>"; };
+		DAC8EB29242F506A004EF984 /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TTFile.h"; sourceTree = "<group>"; };
+		DAC8EB2A242F506A004EF984 /* NSString+TTRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TTRegularExpression.h"; sourceTree = "<group>"; };
+		DAC8EB2B242F506B004EF984 /* NSString+TTRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TTRegularExpression.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC8EA80242EF7B8004EF984 /* TTToolKit.h */,
+				DAC8EB12242F4E45004EF984 /* Foundation */,
 				DAC8EA84242EFA8F004EF984 /* UIKit */,
 			);
 			name = TTToolKit;
@@ -229,6 +257,31 @@
 				DAC8EAE8242F48AF004EF984 /* UIApplication+TTKeyWindow.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DAC8EB12242F4E45004EF984 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8EB24242F506A004EF984 /* NSDate+TTInternetDateTime.h */,
+				DAC8EB23242F506A004EF984 /* NSDate+TTInternetDateTime.m */,
+				DAC8EB25242F506A004EF984 /* NSDictionary+String.h */,
+				DAC8EB22242F506A004EF984 /* NSDictionary+String.m */,
+				DAC8EB29242F506A004EF984 /* NSFileManager+TTFile.h */,
+				DAC8EB28242F506A004EF984 /* NSFileManager+TTFile.m */,
+				DAC8EB26242F506A004EF984 /* NSObject+TTKVO.h */,
+				DAC8EB27242F506A004EF984 /* NSObject+TTKVO.m */,
+				DAC8EB2A242F506A004EF984 /* NSString+TTRegularExpression.h */,
+				DAC8EB2B242F506B004EF984 /* NSString+TTRegularExpression.m */,
+				DAC8EB1D242F5000004EF984 /* NSBundle+TTBundle.h */,
+				DAC8EB1B242F5000004EF984 /* NSBundle+TTBundle.m */,
+				DAC8EB1C242F5000004EF984 /* NSData+TTAES128.h */,
+				DAC8EB1E242F5000004EF984 /* NSData+TTAES128.m */,
+				DAC8EB1A242F5000004EF984 /* NSData+TTHexString.h */,
+				DAC8EB19242F5000004EF984 /* NSData+TTHexString.m */,
+				DAC8EB17242F4F6A004EF984 /* NSArray+TTPlist.h */,
+				DAC8EB16242F4F6A004EF984 /* NSArray+TTPlist.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,24 +414,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC8EB1F242F5000004EF984 /* NSData+TTHexString.m in Sources */,
 				DAC8EAF9242F498B004EF984 /* UITableView+TTEditStyle.m in Sources */,
 				DAC8EB11242F4AF0004EF984 /* UIView+TTGesture.m in Sources */,
 				DAC8EAF0242F494D004EF984 /* UIFont+TTPingFang.m in Sources */,
+				DAC8EB2E242F506B004EF984 /* NSObject+TTKVO.m in Sources */,
+				DAC8EB20242F5000004EF984 /* NSBundle+TTBundle.m in Sources */,
 				DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */,
 				DAC8EAF8242F498B004EF984 /* UIStoryboard+TTCategory.m in Sources */,
 				DAC8EAED242F48F0004EF984 /* UIAlertController+TTAlert.m in Sources */,
 				DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */,
 				DAC8EB03242F4A22004EF984 /* UIViewController+TTAlert.m in Sources */,
 				DAC8EB04242F4A22004EF984 /* UIViewController+TTView.m in Sources */,
+				DAC8EB2D242F506B004EF984 /* NSDate+TTInternetDateTime.m in Sources */,
+				DAC8EB2F242F506B004EF984 /* NSFileManager+TTFile.m in Sources */,
 				DAC8EAEA242F48AF004EF984 /* UIApplication+TTKeyWindow.m in Sources */,
 				DAC8EB05242F4A22004EF984 /* UIViewController+TTNavBar.m in Sources */,
 				DAC8EB0F242F4AF0004EF984 /* UIView+SYJXibConfiguration.m in Sources */,
 				DAC8EB02242F4A22004EF984 /* UITableViewCell+TTEditStyle.m in Sources */,
 				DAC8EB0E242F4AF0004EF984 /* UIView+TTKeyboard.m in Sources */,
 				DAC8EA5D242EF762004EF984 /* main.m in Sources */,
+				DAC8EB2C242F506B004EF984 /* NSDictionary+String.m in Sources */,
+				DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */,
 				DAC8EB10242F4AF0004EF984 /* UIView+TTFrame.m in Sources */,
 				DAC8EA83242EF823004EF984 /* UIColor+TTHex.m in Sources */,
+				DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */,
 				DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */,
+				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
