@@ -1,0 +1,22 @@
+PODS:
+  - TTToolKit (0.0.5):
+    - TTToolKit/Categories (= 0.0.5)
+    - TTToolKit/Helper (= 0.0.5)
+    - TTToolKit/Macro (= 0.0.5)
+  - TTToolKit/Categories (0.0.5)
+  - TTToolKit/Helper (0.0.5)
+  - TTToolKit/Macro (0.0.5)
+
+DEPENDENCIES:
+  - TTToolKit (~> 0.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TTToolKit
+
+SPEC CHECKSUMS:
+  TTToolKit: 19fd8e8c32f1534507d7c9e15c58cbfed9b20503
+
+PODFILE CHECKSUM: 46aaf20171dd1d4399e27d66ae9de68068b05478
+
+COCOAPODS: 1.5.2
