@@ -34,7 +34,7 @@ typedef void(^FYTextFieldResultBlock)(UITextField * _Nonnull textField);
  *
  *  @param title   标题
  *  @param message 提示信息
- *  @param handler 确认按钮回调
+ *  @param confirmHandler 确认按钮回调
  */
 - (void)tt_showTitle:(NSString *_Nullable)title message:(NSString *_Nullable)message confirmHandler:(void(^_Nullable)(void))confirmHandler;
 /**
