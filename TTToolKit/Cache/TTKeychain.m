@@ -6,7 +6,7 @@
 //  Copyright (c) 2009-2011 Sam Soffes. All rights reserved.
 //
 
-#import "SSKeychain.h"
+#import "TTKeychain.h"
 
 NSString *const kSSKeychainErrorDomain = @"com.samsoffes.sskeychain";
 
@@ -22,11 +22,11 @@ NSString *const kSSKeychainWhereKey = @"svce";
 CFTypeRef SSKeychainAccessibilityType = NULL;
 #endif
 
-@interface SSKeychain ()
+@interface TTKeychain ()
 + (NSMutableDictionary *)_queryForService:(NSString *)service account:(NSString *)account;
 @end
 
-@implementation SSKeychain
+@implementation TTKeychain
 
 #pragma mark - Getting Accounts
 

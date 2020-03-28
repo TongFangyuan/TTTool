@@ -1,18 +1,20 @@
 PODS:
-  - TTToolKit (0.0.8):
-    - TTToolKit/UIKit (= 0.0.8)
-  - TTToolKit/UIKit (0.0.8)
+  - TTToolKit (0.0.9):
+    - TTToolKit/Foundation (= 0.0.9)
+    - TTToolKit/UIKit (= 0.0.9)
+  - TTToolKit/Foundation (0.0.9)
+  - TTToolKit/UIKit (0.0.9)
 
 DEPENDENCIES:
-  - TTToolKit (~> 0.0.8)
+  - TTToolKit (~> 0.0.9)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - TTToolKit
 
 SPEC CHECKSUMS:
-  TTToolKit: 5d2785a2b06c5b00d4a6f92dbf48631e29eb6be8
+  TTToolKit: 9545dd4fcc38ecb0d79d376c3cf93933630c16bd
 
-PODFILE CHECKSUM: 419a788bdd087885963d435c1cc9ab6add7e12b9
+PODFILE CHECKSUM: cc913a8ea2b27519f09a468ac083ba44457ba016
 
 COCOAPODS: 1.5.2

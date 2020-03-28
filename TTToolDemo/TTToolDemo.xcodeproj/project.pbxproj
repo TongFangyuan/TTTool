@@ -40,6 +40,11 @@
 		DAC8EB2E242F506B004EF984 /* NSObject+TTKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB27242F506A004EF984 /* NSObject+TTKVO.m */; };
 		DAC8EB2F242F506B004EF984 /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB28242F506A004EF984 /* NSFileManager+TTFile.m */; };
 		DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB2B242F506B004EF984 /* NSString+TTRegularExpression.m */; };
+		DAC8EB36242F5329004EF984 /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB32242F5328004EF984 /* NSData+AES128TL.m */; };
+		DAC8EB37242F5329004EF984 /* TTAES128Encrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB34242F5328004EF984 /* TTAES128Encrypter.m */; };
+		DAC8EB3B242F5415004EF984 /* TTApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB39242F5415004EF984 /* TTApp.m */; };
+		DAC8EB41242F5598004EF984 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB3D242F5597004EF984 /* TTKeychainManager.m */; };
+		DAC8EB42242F5598004EF984 /* TTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EB3E242F5597004EF984 /* TTKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +132,16 @@
 		DAC8EB29242F506A004EF984 /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TTFile.h"; sourceTree = "<group>"; };
 		DAC8EB2A242F506A004EF984 /* NSString+TTRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TTRegularExpression.h"; sourceTree = "<group>"; };
 		DAC8EB2B242F506B004EF984 /* NSString+TTRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TTRegularExpression.m"; sourceTree = "<group>"; };
+		DAC8EB32242F5328004EF984 /* NSData+AES128TL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES128TL.m"; sourceTree = "<group>"; };
+		DAC8EB33242F5328004EF984 /* NSData+AES128TL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128TL.h"; sourceTree = "<group>"; };
+		DAC8EB34242F5328004EF984 /* TTAES128Encrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAES128Encrypter.m; sourceTree = "<group>"; };
+		DAC8EB35242F5328004EF984 /* TTAES128Encrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAES128Encrypter.h; sourceTree = "<group>"; };
+		DAC8EB39242F5415004EF984 /* TTApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTApp.m; sourceTree = "<group>"; };
+		DAC8EB3A242F5415004EF984 /* TTApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTApp.h; sourceTree = "<group>"; };
+		DAC8EB3D242F5597004EF984 /* TTKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTKeychainManager.m; sourceTree = "<group>"; };
+		DAC8EB3E242F5597004EF984 /* TTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTKeychain.m; sourceTree = "<group>"; };
+		DAC8EB3F242F5598004EF984 /* TTKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTKeychainManager.h; sourceTree = "<group>"; };
+		DAC8EB40242F5598004EF984 /* TTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTKeychain.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				DAC8EA80242EF7B8004EF984 /* TTToolKit.h */,
+				DAC8EB3C242F5586004EF984 /* Cache */,
+				DAC8EB38242F5415004EF984 /* App */,
+				DAC8EB31242F530B004EF984 /* Encryption */,
 				DAC8EB12242F4E45004EF984 /* Foundation */,
 				DAC8EA84242EFA8F004EF984 /* UIKit */,
 			);
@@ -282,6 +300,37 @@
 				DAC8EB16242F4F6A004EF984 /* NSArray+TTPlist.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DAC8EB31242F530B004EF984 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8EB33242F5328004EF984 /* NSData+AES128TL.h */,
+				DAC8EB32242F5328004EF984 /* NSData+AES128TL.m */,
+				DAC8EB35242F5328004EF984 /* TTAES128Encrypter.h */,
+				DAC8EB34242F5328004EF984 /* TTAES128Encrypter.m */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		DAC8EB38242F5415004EF984 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8EB3A242F5415004EF984 /* TTApp.h */,
+				DAC8EB39242F5415004EF984 /* TTApp.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DAC8EB3C242F5586004EF984 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8EB40242F5598004EF984 /* TTKeychain.h */,
+				DAC8EB3E242F5597004EF984 /* TTKeychain.m */,
+				DAC8EB3F242F5598004EF984 /* TTKeychainManager.h */,
+				DAC8EB3D242F5597004EF984 /* TTKeychainManager.m */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,10 +471,13 @@
 				DAC8EB20242F5000004EF984 /* NSBundle+TTBundle.m in Sources */,
 				DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */,
 				DAC8EAF8242F498B004EF984 /* UIStoryboard+TTCategory.m in Sources */,
+				DAC8EB42242F5598004EF984 /* TTKeychain.m in Sources */,
 				DAC8EAED242F48F0004EF984 /* UIAlertController+TTAlert.m in Sources */,
 				DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */,
+				DAC8EB37242F5329004EF984 /* TTAES128Encrypter.m in Sources */,
 				DAC8EB03242F4A22004EF984 /* UIViewController+TTAlert.m in Sources */,
 				DAC8EB04242F4A22004EF984 /* UIViewController+TTView.m in Sources */,
+				DAC8EB3B242F5415004EF984 /* TTApp.m in Sources */,
 				DAC8EB2D242F506B004EF984 /* NSDate+TTInternetDateTime.m in Sources */,
 				DAC8EB2F242F506B004EF984 /* NSFileManager+TTFile.m in Sources */,
 				DAC8EAEA242F48AF004EF984 /* UIApplication+TTKeyWindow.m in Sources */,
@@ -437,9 +489,11 @@
 				DAC8EB2C242F506B004EF984 /* NSDictionary+String.m in Sources */,
 				DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */,
 				DAC8EB10242F4AF0004EF984 /* UIView+TTFrame.m in Sources */,
+				DAC8EB36242F5329004EF984 /* NSData+AES128TL.m in Sources */,
 				DAC8EA83242EF823004EF984 /* UIColor+TTHex.m in Sources */,
 				DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */,
 				DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */,
+				DAC8EB41242F5598004EF984 /* TTKeychainManager.m in Sources */,
 				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
 			);

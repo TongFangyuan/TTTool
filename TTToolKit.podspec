@@ -7,13 +7,13 @@
 #
 
 # 验证语法
-# pod lib lint
+# pod lib lint --allow-warnings
 
 # 将当前本地的podspec文件传到CocoaPods官方的索引库中
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
 # pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.0.9";
+version = "0.0.10";
 
 Pod::Spec.new do |spec|
 
@@ -55,6 +55,22 @@ Pod::Spec.new do |spec|
   spec.subspec 'Foundation' do |foundation|
     foundation.source_files = 'TTToolKit/Foundation/*.{h,m}'
     foundation.public_header_files = 'TTToolKit/Foundation/*.h'
-
   end
+
+  spec.subspec 'Encryption' do |encryption|
+    encryption.source_files = 'TTToolKit/Encryption/*.{h,m}'
+    encryption.public_header_files = 'TTToolKit/Encryption/TTAES128Encrypter.h'
+  end
+
+  spec.subspec 'App' do |app|
+    app.source_files = 'TTToolKit/App/*.{h,m}'
+    app.public_header_files = 'TTToolKit/App/*.h'
+  end
+  
+  spec.subspec 'Cache' do |cache|
+    cache.source_files = 'TTToolKit/Cache/*.{h,m}'
+    cache.public_header_files = 'TTToolKit/Cache/*.h'
+    cache.frameworks = 'Security'
+  end
+  
 end

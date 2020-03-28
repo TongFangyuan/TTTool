@@ -8,7 +8,7 @@
 //  依赖源码 https://github.com/samsoffes/sskeychain
 //
 #import "TTKeychainManager.h"
-#import "SSKeychain.h"
+#import "TTKeychain.h"
 #import <UIKit/UIKit.h>
 
 #define kDeviceIDAccount @"DeviceIDAccount"
@@ -32,11 +32,11 @@
 }
 
 - (void)savePassword:(NSString *)password forAccount:(NSString *)account {
-    [SSKeychain setPassword:password forService:self.service  account:account];
+    [TTKeychain setPassword:password forService:self.service  account:account];
 }
 
 - (NSString *)readPasswordForAccount:(NSString *)account {
-    return [SSKeychain passwordForService:self.service account:account];
+    return [TTKeychain passwordForService:self.service account:account];
 }
 
 
