@@ -13,7 +13,7 @@
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
 # pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.0.10";
+version = "0.1.0";
 
 Pod::Spec.new do |spec|
 
@@ -73,4 +73,9 @@ Pod::Spec.new do |spec|
     cache.frameworks = 'Security'
   end
   
+  spec.subspec 'Macro' do |macro|
+    macro.source_files = 'TTToolKit/Macro/*.h'
+    macro.public_header_files = 'TTToolKit/Macro/*.h'
+  end
+
 end

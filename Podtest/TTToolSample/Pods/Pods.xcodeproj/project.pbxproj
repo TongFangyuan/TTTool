@@ -7,62 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C32F8D1CEE7B1AD93FF8246A67A0CF /* UIView+TTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F379502FDEF42CE98D6FC80CCE201 /* UIView+TTFrame.m */; };
-		02FBEC7AA9508CAE56B5D70146471FC7 /* NSObject+TTKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2819B2A4C88CBC02E03C2F4EE2A534 /* NSObject+TTKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		036E3EB008202FCE46E7C56E0E0FEED1 /* UIViewController+TTNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 586109A3119F94FFCBD61133BB2480B2 /* UIViewController+TTNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0547B072A3214783ECCC5F3BB10F7EA7 /* UIImage+TTCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CD945429B5CC09CD552CA266CD14D0 /* UIImage+TTCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06660012FD443BF0033DA31177C1603B /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F139D8A6B29BF989183D7D307F282 /* UIApplication+TTKeyWindow.m */; };
-		11327D92A06052732801CDA0CF818CEC /* NSBundle+TTBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C93970EB2ACFC19489038E9DA54C867 /* NSBundle+TTBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18CE4ADCE6E75470BDCA1348104147A9 /* UITableViewCell+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F3064AD48FDB959A064DF84ED5AC8739 /* UITableViewCell+TTEditStyle.m */; };
-		1AE9E0F7930CACCEF0C5BFF1C5B00798 /* UIColor+TTHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 8250F8AE9CA394A6B30B140CF1CADE61 /* UIColor+TTHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BF0E0BE24A6ECFEC067470CFA338BDB /* UIViewController+TTView.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B2BAC27F83CE68FDC6E75B10D58D1D /* UIViewController+TTView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03827B384B19264ECC76113C3E56BEBD /* TTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8261AEE9D8135015329E203E709AF6 /* TTKeychain.m */; };
+		0E9ACEA60A103CEB0A0D3737EC4F011E /* NSDictionary+String.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB26C82D9505F55CF23687FAACD701D /* NSDictionary+String.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F0071E101F4AA6A57CCD85E501DD676 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 884F24F40369FD29669C2A0FA537AA01 /* TTKeychainManager.m */; };
+		0F72A2F705EE71F4D3DEAF49700C8CD0 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F85DE435022F0813612C23502FC3D /* NSString+TTRegularExpression.m */; };
+		18236CD67512CAA2A305BC38E671A47C /* NSDate+TTInternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C864CC4BDE924C283760856D00D683 /* NSDate+TTInternetDateTime.m */; };
+		189E3A4B2DA793B60E0950700FD5B7B5 /* TTAES128Encrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E032D06ECE51C5580EC3E5C38C917 /* TTAES128Encrypter.m */; };
+		25011B098B0D30FA4B7D92B6A9E9616C /* NSBundle+TTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4C6733DE39BE9F5CED2993898EBD84 /* NSBundle+TTBundle.m */; };
+		2B13B00E03199952A955349562EA8065 /* TTKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DBBA141069C4DB0E9485F288C2F14BC0 /* TTKeychainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		328429648D1568F8D7217FD4F0A0EFEC /* TTToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12AFB4440E81604BEF60CF79F8CCAC36 /* TTToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		334AE68C691EA5E95DB3724FAB332342 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = A43807AD12781E394CFB4A5FA9350130 /* NSDictionary+String.m */; };
+		344339A3043757972CD43832C7097EB5 /* UIImage+TTCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8153A1116C52DA749C664BFD22D945FD /* UIImage+TTCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3460FE712FA6C1CAA7A62A9BD3115E9A /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E9402E5BB3AFC2311A27BA152F792682 /* UIApplication+TTKeyWindow.m */; };
 		34B510787750B01AE1370C0F51CAAE04 /* Pods-TTToolSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A943A7CFFF7C59968687E5CE26FE52 /* Pods-TTToolSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35EBE15105F17E6DFD7E4568AD2A8F4B /* NSFileManager+TTFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE4C289CC3D0010262F0407F1C92E6 /* NSFileManager+TTFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CF682D60CC2A413E9501733DE693FC7 /* UITableView+TTEditStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE8A97CFAA0DBFE519FF6A9F76DD70B /* UITableView+TTEditStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40E1F4CC70ABF18BA53D04EFFFADA327 /* UIAlertController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C6785B15F0E33D753AB78F0443E7B104 /* UIAlertController+TTAlert.m */; };
-		41CF740FB25967D0432F7B5DEC4C11D1 /* UIViewController+TTAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 2401186EBD2B0295B6FEF15ABAF32F12 /* UIViewController+TTAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46D31E1B6E5C7819485AF26F79FE4184 /* NSData+TTAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E59C6C277D7187F2EA25509914FF51 /* NSData+TTAES128.m */; };
-		487081A72A74C97EC6110F526F12333B /* UIApplication+TTKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BE87C2BBB7FE885B8AF7207008140D /* UIApplication+TTKeyWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		524C3D666609FAA2192E978EC65AA243 /* TTToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CFB08B67FB852817699FD5CAB91213 /* TTToolKit-dummy.m */; };
-		54C8749CAD8BB8083ADD70E4510677DF /* UIViewController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF919466B19C993BA5757CF429A60E /* UIViewController+TTAlert.m */; };
-		57DFB5386912508A1861A3208902F596 /* UIView+TTKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5022922B71219A8C92D3EE23DDD213 /* UIView+TTKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A5F87EB6F4627AE8816529355CD24E3 /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094E3ED96BCAD93A25074C4D0E62461 /* NSFileManager+TTFile.m */; };
-		5EB5585B497E5F8C02B398A96F84C7B9 /* TTToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9639EB9A6CB197459B9949D06A78C9 /* TTToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62096833BB4D9359BDBF8BB8C8A29AE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
-		69864132D34E854FCBA28E07444C40BE /* UITableViewCell+TTEditStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 934DD00C02AB73BD0F77C559DF043C77 /* UITableViewCell+TTEditStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DA7B421A8D7A8111CBDB0AF1741B4BE /* UITableView+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8FBC8BD0242E02AB8002A9AD1551 /* UITableView+TTEditStyle.m */; };
-		70E2EC87F57920EB9677DD9DA484BC3F /* UIFont+TTPingFang.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C73E55D16DFFBB763D7972BD5FB5AB /* UIFont+TTPingFang.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72C20DDE41B1220FB7A53F9A4723DBB9 /* UIFont+TTPingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCA535311A5627300BC62840EFBC4D3 /* UIFont+TTPingFang.m */; };
-		77CFEF02F4E9C5159E83A318C8453F0A /* TTToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD75F878A18B09D5AF01984E61896E5D /* TTToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C92D053881278BD0F3D362165EF4FA6 /* NSString+TTRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EFC3511DCC6B10BA14C9911DD6823BE /* NSString+TTRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81C33780755098308FFCE582329D89BF /* NSData+TTHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD4A03847050C991B4CA9C3572A3A0 /* NSData+TTHexString.m */; };
-		83685C762021A039A53BA5B033C7EAEF /* NSBundle+TTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D4AE33E1FBAF1B6112208529F0F64 /* NSBundle+TTBundle.m */; };
-		9E3B9C82BA031B5AC66683D2490F749A /* UIView+TTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B964E77620E08BB2A25A902BA871F11D /* UIView+TTKeyboard.m */; };
-		A1F43EB9752C96F27FC885BA942E503C /* UIColor+TTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = A14CA7BABFEBA4B0931A0311B56D155C /* UIColor+TTHex.m */; };
-		A883DF75B62C68FD96A20683A3DCBF70 /* UIView+TTFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F0334C580729F69D223006295AA3F5 /* UIView+TTFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9CBE6316EDCAFC9C4DE77A671ABBF45 /* UIImage+TTCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B6E1E754C2F870DCD180C49E98B8E /* UIImage+TTCode.m */; };
-		AE6398C8CEF142FAF3C4E61289089ACE /* NSData+TTHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = E58BF7DB0467256CF5F752E2F44D72A8 /* NSData+TTHexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF96CCE37DBE15EB1E0D5F529782DABA /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = C56C01CC89B235220BC855F0D8331E51 /* NSString+TTRegularExpression.m */; };
-		AFFBE09F9E7BC0651D4941DF24979589 /* UIView+SYJXibConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B73007955A4FB352817391AFF1D7978 /* UIView+SYJXibConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C01464B4AB9352C4BC6EBAB31396B515 /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9401F2AE343883BFCF99035D3658E7 /* UIViewController+TTView.m */; };
-		C1D338BCDE134A6499D9EF2BD9C2AFB7 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3B7CED07B32BE1FE0B39CC687B090 /* UIView+SYJXibConfiguration.m */; };
-		C24398993279382352E28140FF1C173E /* NSDate+TTInternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C21CF2A1F69B4817B3AAF8775E87372 /* NSDate+TTInternetDateTime.m */; };
-		C8C454E540069A244DA5B4E9584E4EF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		C9D6E440740AC8BEAC0CA434EC2653AF /* UIViewController+TTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A04EA4D4AC130EFF37332BCB90031 /* UIViewController+TTNavBar.m */; };
-		CB755613D6B7934333AE01C9A8583804 /* NSDate+TTInternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = B31813620880373944B9C8AAF49B9F94 /* NSDate+TTInternetDateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D20F46852D8CC8DCDE294DEC6DD24FE7 /* NSDictionary+String.h in Headers */ = {isa = PBXBuildFile; fileRef = FECB80D30D4D275388DF9FCF1BAFB3CA /* NSDictionary+String.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4E8DA741BC49C3683B6D0E53EBF4C7B /* UIStoryboard+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D36CD62FCE336A88DAEE7284C2D361 /* UIStoryboard+TTCategory.m */; };
+		3AA7ED8DF80DEE43B921CA399F9D83DB /* TTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E08BEA81E0B282DDE2B2523BB04DDEF6 /* TTKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BAA6D95B4D558429A03CE9C77936236 /* NSArray+TTPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 55524E002F4EF734224CC03AA6BBB557 /* NSArray+TTPlist.m */; };
+		3FB1F4AFF0D0C0A6572C477B8C3E6E07 /* UITableViewCell+TTEditStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1BF8B3A5BFA0140AE073C251595455 /* UITableViewCell+TTEditStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42BC1AFD5808CD321B79B4BBA0E49C7E /* UIStoryboard+TTCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = C259F8A6DE842A11DB019E7C681BE9C8 /* UIStoryboard+TTCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CD033499927349CB552D94E02ECBE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7286781D33068611C6845FA7F8EF3386 /* Foundation.framework */; };
+		4A172202E83A0C0F5B7BB79EA4D81BBA /* UITableView+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B51032AEE1295CB8EB8875DD16D2F /* UITableView+TTEditStyle.m */; };
+		4A8723D538269968E20EA6BCBE182089 /* NSData+TTHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 06806D1E9791A8278BC1E25351750BBA /* NSData+TTHexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8AC486C71C40C93CCB3D4794EA75C6 /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBADFE0EE4743F6DA21DB86AC4D3A09 /* UIView+TTGesture.m */; };
+		4A8BC07068757CAC14C6822C580BF22C /* NSDate+TTInternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A00E7BEF6BE96B5E76FF6E78B71CDD /* NSDate+TTInternetDateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D0F3256B80B8B2838A59D69F0923345 /* NSData+TTHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F50A28063A4978779E55D2B0192F22 /* NSData+TTHexString.m */; };
+		4D699D5CC909EF5CB91D0494D04462E3 /* UIImage+TTCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F447A04D0B452BC33C34251ABEB816C4 /* UIImage+TTCode.m */; };
+		5375ED5855126C8287250BF1C95C478D /* UIAlertController+TTAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = A4867FDE35BAB648033E63313E942760 /* UIAlertController+TTAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5523CA9CB480809F2BBCB3836196E2B8 /* UIView+SYJXibConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD5CE60DD7B5C76EE2B5B2A34A51131 /* UIView+SYJXibConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5543719BAC1A511F00C3FFC75FCE1994 /* UITableView+TTEditStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8AC86D54F09AC137E43CB5ECB6A0FE /* UITableView+TTEditStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5700A6B45377368D86EA92851601948D /* TTToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 989319F6F67CDA632444D03A2849394E /* TTToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AE3752A159712142C734E3F7CDEC22F /* UIFont+TTPingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 397A24A67C6E4D944D130F5780A86E9F /* UIFont+TTPingFang.m */; };
+		5DE5FBAE42129C3E8463AB71EE8A3D53 /* TTApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07FF922A861041E52FCBFABA81AC25 /* TTApp.m */; };
+		612C3DCF410C87B894BD3C8899D2B3B5 /* NSObject+TTKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B08AB9814FD51E6DB4262D8BF9C4351 /* NSObject+TTKVO.m */; };
+		635B65313ADCCAD3CE25D7BB30CF2D74 /* NSArray+TTPlist.h in Headers */ = {isa = PBXBuildFile; fileRef = B23D76FBF7DDBEAFD7E6E2C0EE9F7339 /* NSArray+TTPlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		663117FCDA7C083EA24F463E9F18BC0A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14040659DB5339631480E9752B5BCE84 /* Security.framework */; };
+		67D870FE348B8172EDACAE56AFFAC863 /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4530139340DBC8FD69B5090E120361AA /* UIViewController+TTView.m */; };
+		7074F09F984DB6E4D37CCEB07370E04B /* NSBundle+TTBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F72B7EE198A8D552DE4D26D0D3AB6E1 /* NSBundle+TTBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B106D46E0D6B73354AC89D6E3BF4E8 /* NSData+AES128TL.h in Headers */ = {isa = PBXBuildFile; fileRef = 193CDB3916788161291C006D38C11545 /* NSData+AES128TL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		756A07CDD19D38070F4FB2ED7833978C /* UIAlertController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174D4DF4FE90DF07E013B40B1F4B4BA /* UIAlertController+TTAlert.m */; };
+		77F4231D751AAF1BFD850708A7DD5361 /* UIViewController+TTNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E0812779DDC84BF57DB91BFDC2E85E /* UIViewController+TTNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C02952A93514EBE835ED55858EC9844 /* UIColor+TTHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B380CE2B4A53BFD44038F04116BEDD /* UIColor+TTHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		859ED68D09812B68CCA43E95CB934658 /* TTApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A8EF3224A67B8B9C9218D51A24773F /* TTApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		875DA83ABFF26FFED74585AF3AA4E742 /* UIViewController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB2C5BEB7D62DE558269D9365646ED6 /* UIViewController+TTAlert.m */; };
+		8CAE4EC3E1B4A86857697C7B3821CF63 /* UIViewController+TTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF78F09D560A3D8DCB13B21BDF3C1263 /* UIViewController+TTNavBar.m */; };
+		8F0D4908187EF71849204E98220DAFF9 /* UIApplication+TTKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 623353D63B0A9CF6BE6A2E147E5745C5 /* UIApplication+TTKeyWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900B2CC3562AB791A6DF24E90738E0C7 /* UIStoryboard+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 176B07152CC6F363E432891AA0A39060 /* UIStoryboard+TTCategory.m */; };
+		9AE31F22E9F1C05682B864A402CC628D /* UIViewController+TTView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1CA8E54281C860B1435EE39F12A8B1 /* UIViewController+TTView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A56C7757F421E07002F1FF9E5472AE49 /* UITableViewCell+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E4A1B14C2864D890CE5B838FB9E2E1 /* UITableViewCell+TTEditStyle.m */; };
+		A68E02EB9117EAD95BA25DBEE19733A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C726826788541C0C0ED673D87AF36FB /* UIKit.framework */; };
+		A91CEAD41BCFA5F3225AE3C5695603D5 /* NSObject+TTKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBA3C724E8A5743235240D0B35A10CE /* NSObject+TTKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F6B9C91A455A9BC986CA5218336CAC /* UIFont+TTPingFang.h in Headers */ = {isa = PBXBuildFile; fileRef = 24938367846DE9E6B3A99302A078E71A /* UIFont+TTPingFang.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8DD8948B43F9982E5D2FC1D2B3B71F9 /* NSData+TTAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CB250316AC3A6048F1967BF728913B /* NSData+TTAES128.m */; };
+		C037E94F047A67445DB2029BA046E014 /* NSData+TTAES128.h in Headers */ = {isa = PBXBuildFile; fileRef = B388EF2DC711FE3739B63B5F8DFEA06A /* NSData+TTAES128.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C66CCF8382C192792CC3C25CBCEC08F8 /* TTAES128Encrypter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B90AC536185876EFAC67884008DAB8A /* TTAES128Encrypter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8C454E540069A244DA5B4E9584E4EF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7286781D33068611C6845FA7F8EF3386 /* Foundation.framework */; };
+		CA3009F90C0AF725843AEF6BCE1B7D2B /* TTToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2517C3C4AD0EDC9291DA682EBBC1BFA7 /* TTToolKit-dummy.m */; };
+		CDA6BAB292EC82B5EBE51FA79E3C8986 /* UIView+TTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8B437EC00D2C63C5E4B052F2A04A2 /* UIView+TTFrame.m */; };
+		D7421032792ECCE1206A3F92D89266B0 /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F17D10C16878325DB0D60991DB497530 /* NSFileManager+TTFile.m */; };
 		DEB47C4D9E5F2935F8AA2F4B62ED5206 /* Pods-TTToolSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4F359A73F3F199308885EF09C5F02D /* Pods-TTToolSample-dummy.m */; };
-		DF7F3A6D62098EF7231703697647F548 /* NSArray+TTPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE7EB55D2645A67AA5C8A1959E7076 /* NSArray+TTPlist.m */; };
-		DFE8EBA2E31CB376B9F3BBEB014EA03C /* UIView+TTGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F70E6C9A2AE2E07D7BCE14CB8D67CF6 /* UIView+TTGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1B0E4EAF53014B8819D228A44B208D3 /* NSObject+TTKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3023ECF0630140BF37FCC05F9D95DFF0 /* NSObject+TTKVO.m */; };
-		E42658238A77F6EAAB17CEF3C8428887 /* UIAlertController+TTAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = A10541AFABE20EA4F87B8A7DB4BC7115 /* UIAlertController+TTAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E80A62716BD056338C5D55698AB31B30 /* UIStoryboard+TTCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EEEBE9A1CBD3E0C13A3D12B77AA1C6F /* UIStoryboard+TTCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1D4D558A6692DA152784E83CA50B316 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA160F14EB9AA56A2011FE10431F350 /* NSDictionary+String.m */; };
-		F5A9FBDA6446282EB506F9861FFB24FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		FF43A65AC1101950B6FCDDD1A8C72975 /* NSData+TTAES128.h in Headers */ = {isa = PBXBuildFile; fileRef = C5CFDF3C2C63A718551B103110C7E104 /* NSData+TTAES128.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF8717F588FEDB9A414EB6278170E29C /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D9E3948B431A43F432B2B9FFECCE5E /* UIView+TTGesture.m */; };
-		FFC87F6FC3855259D705CCE30084456F /* NSArray+TTPlist.h in Headers */ = {isa = PBXBuildFile; fileRef = E376A4D10E3CD994B855FC5BBCA94CCB /* NSArray+TTPlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01FEAA708956968A97B9888A393F271 /* UIView+TTGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7F089F8D9E813EFA591F679B958A32 /* UIView+TTGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E64A0845C37D00CFA8AD4DE2ACC6C9 /* UIView+TTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A601A1D58B03D160892852223C7C3 /* UIView+TTKeyboard.m */; };
+		E1532E73E76664AE7462A57EAB172B07 /* UIView+TTFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F58CAFF57E80B6AB4DD4C957103B6D /* UIView+TTFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7550BF3F0F7B5FDCEFA35DA10E1B1D4 /* NSString+TTRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = A8964F1E2186D21578521CA7F4ED5FDD /* NSString+TTRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9115E9AB335D2428719DCDCC2970FC1 /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2FF922E3F17C29EFE3312E5BFD7F8 /* NSData+AES128TL.m */; };
+		EFDAE7261B94669A7D43612426154FB8 /* UIViewController+TTAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = C145B8D02EB4D09478025EB44F8D9AA5 /* UIViewController+TTAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2052CD57B9CBB7320AF8D5351EFCEC3 /* UIView+TTKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = F90CB07527FC6312ECB390EE76F0D66D /* UIView+TTKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F485E4DEA445BE03B416CBBD567CF342 /* UIColor+TTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F3436A8ACFA3334BEB7C319189FDBB /* UIColor+TTHex.m */; };
+		F8B26598D951BC70E8821A65B4AC9A69 /* NSFileManager+TTFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7384123D8B4FF60A4A9EB9A911B04F /* NSFileManager+TTFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA26E31FA718931549937C72EA0CA031 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E219165BF9F097DC542DC98695EAE3A /* UIView+SYJXibConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,76 +87,87 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08C73E55D16DFFBB763D7972BD5FB5AB /* UIFont+TTPingFang.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+TTPingFang.h"; path = "TTToolKit/UIKit/UIFont+TTPingFang.h"; sourceTree = "<group>"; };
-		0B73007955A4FB352817391AFF1D7978 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SYJXibConfiguration.h"; path = "TTToolKit/UIKit/UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
-		0CF3B7CED07B32BE1FE0B39CC687B090 /* UIView+SYJXibConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SYJXibConfiguration.m"; path = "TTToolKit/UIKit/UIView+SYJXibConfiguration.m"; sourceTree = "<group>"; };
-		17D9E3948B431A43F432B2B9FFECCE5E /* UIView+TTGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTGesture.m"; path = "TTToolKit/UIKit/UIView+TTGesture.m"; sourceTree = "<group>"; };
-		1A9F139D8A6B29BF989183D7D307F282 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+TTKeyWindow.m"; path = "TTToolKit/UIKit/UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
-		1C5F379502FDEF42CE98D6FC80CCE201 /* UIView+TTFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTFrame.m"; path = "TTToolKit/UIKit/UIView+TTFrame.m"; sourceTree = "<group>"; };
-		1FEB8EA660A87BC031827F85F082836C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2401186EBD2B0295B6FEF15ABAF32F12 /* UIViewController+TTAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTAlert.h"; path = "TTToolKit/UIKit/UIViewController+TTAlert.h"; sourceTree = "<group>"; };
-		25E59C6C277D7187F2EA25509914FF51 /* NSData+TTAES128.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TTAES128.m"; path = "TTToolKit/Foundation/NSData+TTAES128.m"; sourceTree = "<group>"; };
-		2F9401F2AE343883BFCF99035D3658E7 /* UIViewController+TTView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTView.m"; path = "TTToolKit/UIKit/UIViewController+TTView.m"; sourceTree = "<group>"; };
-		3023ECF0630140BF37FCC05F9D95DFF0 /* NSObject+TTKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TTKVO.m"; path = "TTToolKit/Foundation/NSObject+TTKVO.m"; sourceTree = "<group>"; };
-		3094E3ED96BCAD93A25074C4D0E62461 /* NSFileManager+TTFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+TTFile.m"; path = "TTToolKit/Foundation/NSFileManager+TTFile.m"; sourceTree = "<group>"; };
-		41CFB08B67FB852817699FD5CAB91213 /* TTToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTToolKit-dummy.m"; sourceTree = "<group>"; };
-		4AEE7EB55D2645A67AA5C8A1959E7076 /* NSArray+TTPlist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TTPlist.m"; path = "TTToolKit/Foundation/NSArray+TTPlist.m"; sourceTree = "<group>"; };
+		03F58CAFF57E80B6AB4DD4C957103B6D /* UIView+TTFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTFrame.h"; path = "TTToolKit/UIKit/UIView+TTFrame.h"; sourceTree = "<group>"; };
+		054F85DE435022F0813612C23502FC3D /* NSString+TTRegularExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TTRegularExpression.m"; path = "TTToolKit/Foundation/NSString+TTRegularExpression.m"; sourceTree = "<group>"; };
+		06806D1E9791A8278BC1E25351750BBA /* NSData+TTHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TTHexString.h"; path = "TTToolKit/Foundation/NSData+TTHexString.h"; sourceTree = "<group>"; };
+		0B08AB9814FD51E6DB4262D8BF9C4351 /* NSObject+TTKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TTKVO.m"; path = "TTToolKit/Foundation/NSObject+TTKVO.m"; sourceTree = "<group>"; };
+		12AFB4440E81604BEF60CF79F8CCAC36 /* TTToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-umbrella.h"; sourceTree = "<group>"; };
+		14040659DB5339631480E9752B5BCE84 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		176B07152CC6F363E432891AA0A39060 /* UIStoryboard+TTCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+TTCategory.m"; path = "TTToolKit/UIKit/UIStoryboard+TTCategory.m"; sourceTree = "<group>"; };
+		193CDB3916788161291C006D38C11545 /* NSData+AES128TL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+AES128TL.h"; path = "TTToolKit/Encryption/NSData+AES128TL.h"; sourceTree = "<group>"; };
+		19F3436A8ACFA3334BEB7C319189FDBB /* UIColor+TTHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TTHex.m"; path = "TTToolKit/UIKit/UIColor+TTHex.m"; sourceTree = "<group>"; };
+		2174D4DF4FE90DF07E013B40B1F4B4BA /* UIAlertController+TTAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+TTAlert.m"; path = "TTToolKit/UIKit/UIAlertController+TTAlert.m"; sourceTree = "<group>"; };
+		24938367846DE9E6B3A99302A078E71A /* UIFont+TTPingFang.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+TTPingFang.h"; path = "TTToolKit/UIKit/UIFont+TTPingFang.h"; sourceTree = "<group>"; };
+		2517C3C4AD0EDC9291DA682EBBC1BFA7 /* TTToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTToolKit-dummy.m"; sourceTree = "<group>"; };
+		28B380CE2B4A53BFD44038F04116BEDD /* UIColor+TTHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+TTHex.h"; path = "TTToolKit/UIKit/UIColor+TTHex.h"; sourceTree = "<group>"; };
+		2D7F089F8D9E813EFA591F679B958A32 /* UIView+TTGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTGesture.h"; path = "TTToolKit/UIKit/UIView+TTGesture.h"; sourceTree = "<group>"; };
+		37C864CC4BDE924C283760856D00D683 /* NSDate+TTInternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TTInternetDateTime.m"; path = "TTToolKit/Foundation/NSDate+TTInternetDateTime.m"; sourceTree = "<group>"; };
+		397A24A67C6E4D944D130F5780A86E9F /* UIFont+TTPingFang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TTPingFang.m"; path = "TTToolKit/UIKit/UIFont+TTPingFang.m"; sourceTree = "<group>"; };
+		3D7384123D8B4FF60A4A9EB9A911B04F /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+TTFile.h"; path = "TTToolKit/Foundation/NSFileManager+TTFile.h"; sourceTree = "<group>"; };
+		3ED7E17AD45B81F56A7BC246DB68C1A0 /* TTToolKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTToolKit.xcconfig; sourceTree = "<group>"; };
+		4530139340DBC8FD69B5090E120361AA /* UIViewController+TTView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTView.m"; path = "TTToolKit/UIKit/UIViewController+TTView.m"; sourceTree = "<group>"; };
+		4AA2FF922E3F17C29EFE3312E5BFD7F8 /* NSData+AES128TL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES128TL.m"; path = "TTToolKit/Encryption/NSData+AES128TL.m"; sourceTree = "<group>"; };
+		4D1A601A1D58B03D160892852223C7C3 /* UIView+TTKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTKeyboard.m"; path = "TTToolKit/UIKit/UIView+TTKeyboard.m"; sourceTree = "<group>"; };
 		4EFB70B8F91EDB9CECD5690DC68C7CC7 /* Pods-TTToolSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTToolSample.debug.xcconfig"; sourceTree = "<group>"; };
+		4F1CA8E54281C860B1435EE39F12A8B1 /* UIViewController+TTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTView.h"; path = "TTToolKit/UIKit/UIViewController+TTView.h"; sourceTree = "<group>"; };
+		4F2DBDC22547E7BDF27DB6801F7DC66B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A5BDA87B8805B9D0DC81D11FFCF576 /* Pods-TTToolSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTToolSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54E8B437EC00D2C63C5E4B052F2A04A2 /* UIView+TTFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTFrame.m"; path = "TTToolKit/UIKit/UIView+TTFrame.m"; sourceTree = "<group>"; };
 		55524DD8BCE3B6E20DCEB49B4844746B /* TTToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTToolKit.framework; path = TTToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57BF8FBC8BD0242E02AB8002A9AD1551 /* UITableView+TTEditStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+TTEditStyle.m"; path = "TTToolKit/UIKit/UITableView+TTEditStyle.m"; sourceTree = "<group>"; };
-		586109A3119F94FFCBD61133BB2480B2 /* UIViewController+TTNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTNavBar.h"; path = "TTToolKit/UIKit/UIViewController+TTNavBar.h"; sourceTree = "<group>"; };
+		55524E002F4EF734224CC03AA6BBB557 /* NSArray+TTPlist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TTPlist.m"; path = "TTToolKit/Foundation/NSArray+TTPlist.m"; sourceTree = "<group>"; };
+		57305138DB511209ADB0FB311D06F7F8 /* TTToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-prefix.pch"; sourceTree = "<group>"; };
 		58B579330862A1D9929F0C4EE672733F /* Pods-TTToolSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TTToolSample.modulemap"; sourceTree = "<group>"; };
-		5AE8A97CFAA0DBFE519FF6A9F76DD70B /* UITableView+TTEditStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+TTEditStyle.h"; path = "TTToolKit/UIKit/UITableView+TTEditStyle.h"; sourceTree = "<group>"; };
-		5B6A04EA4D4AC130EFF37332BCB90031 /* UIViewController+TTNavBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTNavBar.m"; path = "TTToolKit/UIKit/UIViewController+TTNavBar.m"; sourceTree = "<group>"; };
-		63F0334C580729F69D223006295AA3F5 /* UIView+TTFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTFrame.h"; path = "TTToolKit/UIKit/UIView+TTFrame.h"; sourceTree = "<group>"; };
+		5E219165BF9F097DC542DC98695EAE3A /* UIView+SYJXibConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SYJXibConfiguration.m"; path = "TTToolKit/UIKit/UIView+SYJXibConfiguration.m"; sourceTree = "<group>"; };
+		5F72B7EE198A8D552DE4D26D0D3AB6E1 /* NSBundle+TTBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TTBundle.h"; path = "TTToolKit/Foundation/NSBundle+TTBundle.h"; sourceTree = "<group>"; };
+		623353D63B0A9CF6BE6A2E147E5745C5 /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+TTKeyWindow.h"; path = "TTToolKit/UIKit/UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
 		66C0CDA7AA682F14925EBC285624E340 /* Pods-TTToolSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTToolSample-frameworks.sh"; sourceTree = "<group>"; };
-		68D36CD62FCE336A88DAEE7284C2D361 /* UIStoryboard+TTCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+TTCategory.m"; path = "TTToolKit/UIKit/UIStoryboard+TTCategory.m"; sourceTree = "<group>"; };
-		6EEEBE9A1CBD3E0C13A3D12B77AA1C6F /* UIStoryboard+TTCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+TTCategory.h"; path = "TTToolKit/UIKit/UIStoryboard+TTCategory.h"; sourceTree = "<group>"; };
-		6EFC3511DCC6B10BA14C9911DD6823BE /* NSString+TTRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TTRegularExpression.h"; path = "TTToolKit/Foundation/NSString+TTRegularExpression.h"; sourceTree = "<group>"; };
-		6F70E6C9A2AE2E07D7BCE14CB8D67CF6 /* UIView+TTGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTGesture.h"; path = "TTToolKit/UIKit/UIView+TTGesture.h"; sourceTree = "<group>"; };
-		6F8B6E1E754C2F870DCD180C49E98B8E /* UIImage+TTCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TTCode.m"; path = "TTToolKit/UIKit/UIImage+TTCode.m"; sourceTree = "<group>"; };
-		73BE87C2BBB7FE885B8AF7207008140D /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+TTKeyWindow.h"; path = "TTToolKit/UIKit/UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
-		756D4AE33E1FBAF1B6112208529F0F64 /* NSBundle+TTBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TTBundle.m"; path = "TTToolKit/Foundation/NSBundle+TTBundle.m"; sourceTree = "<group>"; };
-		8250F8AE9CA394A6B30B140CF1CADE61 /* UIColor+TTHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+TTHex.h"; path = "TTToolKit/UIKit/UIColor+TTHex.h"; sourceTree = "<group>"; };
-		86CD945429B5CC09CD552CA266CD14D0 /* UIImage+TTCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TTCode.h"; path = "TTToolKit/UIKit/UIImage+TTCode.h"; sourceTree = "<group>"; };
-		8ACD4A03847050C991B4CA9C3572A3A0 /* NSData+TTHexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TTHexString.m"; path = "TTToolKit/Foundation/NSData+TTHexString.m"; sourceTree = "<group>"; };
-		8C21CF2A1F69B4817B3AAF8775E87372 /* NSDate+TTInternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TTInternetDateTime.m"; path = "TTToolKit/Foundation/NSDate+TTInternetDateTime.m"; sourceTree = "<group>"; };
+		6CD5CE60DD7B5C76EE2B5B2A34A51131 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SYJXibConfiguration.h"; path = "TTToolKit/UIKit/UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
+		7286781D33068611C6845FA7F8EF3386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C726826788541C0C0ED673D87AF36FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7CB26C82D9505F55CF23687FAACD701D /* NSDictionary+String.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+String.h"; path = "TTToolKit/Foundation/NSDictionary+String.h"; sourceTree = "<group>"; };
+		7E3B51032AEE1295CB8EB8875DD16D2F /* UITableView+TTEditStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+TTEditStyle.m"; path = "TTToolKit/UIKit/UITableView+TTEditStyle.m"; sourceTree = "<group>"; };
+		7F07FF922A861041E52FCBFABA81AC25 /* TTApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTApp.m; path = TTToolKit/App/TTApp.m; sourceTree = "<group>"; };
+		8153A1116C52DA749C664BFD22D945FD /* UIImage+TTCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TTCode.h"; path = "TTToolKit/UIKit/UIImage+TTCode.h"; sourceTree = "<group>"; };
+		82E0812779DDC84BF57DB91BFDC2E85E /* UIViewController+TTNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTNavBar.h"; path = "TTToolKit/UIKit/UIViewController+TTNavBar.h"; sourceTree = "<group>"; };
+		884F24F40369FD29669C2A0FA537AA01 /* TTKeychainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTKeychainManager.m; path = TTToolKit/Cache/TTKeychainManager.m; sourceTree = "<group>"; };
+		88E4A1B14C2864D890CE5B838FB9E2E1 /* UITableViewCell+TTEditStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+TTEditStyle.m"; path = "TTToolKit/UIKit/UITableViewCell+TTEditStyle.m"; sourceTree = "<group>"; };
+		8BE041C9F34A75F60FB285A2EC21FC7A /* TTToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTToolKit.modulemap; sourceTree = "<group>"; };
 		8DFB4F2CC61AD16D25EA7EF095ED2327 /* Pods-TTToolSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTToolSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		934DD00C02AB73BD0F77C559DF043C77 /* UITableViewCell+TTEditStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+TTEditStyle.h"; path = "TTToolKit/UIKit/UITableViewCell+TTEditStyle.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99B2BAC27F83CE68FDC6E75B10D58D1D /* UIViewController+TTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTView.h"; path = "TTToolKit/UIKit/UIViewController+TTView.h"; sourceTree = "<group>"; };
+		94F50A28063A4978779E55D2B0192F22 /* NSData+TTHexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TTHexString.m"; path = "TTToolKit/Foundation/NSData+TTHexString.m"; sourceTree = "<group>"; };
+		989319F6F67CDA632444D03A2849394E /* TTToolKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTToolKit.h; path = TTToolKit/TTToolKit.h; sourceTree = "<group>"; };
+		99A8EF3224A67B8B9C9218D51A24773F /* TTApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTApp.h; path = TTToolKit/App/TTApp.h; sourceTree = "<group>"; };
 		99D9BCA8E532E7EEC3D40AE848F52656 /* Pods-TTToolSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTToolSample.release.xcconfig"; sourceTree = "<group>"; };
-		9C93970EB2ACFC19489038E9DA54C867 /* NSBundle+TTBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TTBundle.h"; path = "TTToolKit/Foundation/NSBundle+TTBundle.h"; sourceTree = "<group>"; };
-		9FEE4C289CC3D0010262F0407F1C92E6 /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+TTFile.h"; path = "TTToolKit/Foundation/NSFileManager+TTFile.h"; sourceTree = "<group>"; };
-		A10541AFABE20EA4F87B8A7DB4BC7115 /* UIAlertController+TTAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+TTAlert.h"; path = "TTToolKit/UIKit/UIAlertController+TTAlert.h"; sourceTree = "<group>"; };
-		A14CA7BABFEBA4B0931A0311B56D155C /* UIColor+TTHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TTHex.m"; path = "TTToolKit/UIKit/UIColor+TTHex.m"; sourceTree = "<group>"; };
-		A2FF919466B19C993BA5757CF429A60E /* UIViewController+TTAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTAlert.m"; path = "TTToolKit/UIKit/UIViewController+TTAlert.m"; sourceTree = "<group>"; };
-		AB5588427CC156BD5A7A50BD4EA41643 /* TTToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-prefix.pch"; sourceTree = "<group>"; };
-		ADA160F14EB9AA56A2011FE10431F350 /* NSDictionary+String.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+String.m"; path = "TTToolKit/Foundation/NSDictionary+String.m"; sourceTree = "<group>"; };
-		B31813620880373944B9C8AAF49B9F94 /* NSDate+TTInternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+TTInternetDateTime.h"; path = "TTToolKit/Foundation/NSDate+TTInternetDateTime.h"; sourceTree = "<group>"; };
-		B964E77620E08BB2A25A902BA871F11D /* UIView+TTKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTKeyboard.m"; path = "TTToolKit/UIKit/UIView+TTKeyboard.m"; sourceTree = "<group>"; };
-		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C56C01CC89B235220BC855F0D8331E51 /* NSString+TTRegularExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TTRegularExpression.m"; path = "TTToolKit/Foundation/NSString+TTRegularExpression.m"; sourceTree = "<group>"; };
-		C5CFDF3C2C63A718551B103110C7E104 /* NSData+TTAES128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TTAES128.h"; path = "TTToolKit/Foundation/NSData+TTAES128.h"; sourceTree = "<group>"; };
-		C6785B15F0E33D753AB78F0443E7B104 /* UIAlertController+TTAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+TTAlert.m"; path = "TTToolKit/UIKit/UIAlertController+TTAlert.m"; sourceTree = "<group>"; };
+		9B90AC536185876EFAC67884008DAB8A /* TTAES128Encrypter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTAES128Encrypter.h; path = TTToolKit/Encryption/TTAES128Encrypter.h; sourceTree = "<group>"; };
+		A43807AD12781E394CFB4A5FA9350130 /* NSDictionary+String.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+String.m"; path = "TTToolKit/Foundation/NSDictionary+String.m"; sourceTree = "<group>"; };
+		A4867FDE35BAB648033E63313E942760 /* UIAlertController+TTAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+TTAlert.h"; path = "TTToolKit/UIKit/UIAlertController+TTAlert.h"; sourceTree = "<group>"; };
+		A8964F1E2186D21578521CA7F4ED5FDD /* NSString+TTRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TTRegularExpression.h"; path = "TTToolKit/Foundation/NSString+TTRegularExpression.h"; sourceTree = "<group>"; };
+		ABBADFE0EE4743F6DA21DB86AC4D3A09 /* UIView+TTGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTGesture.m"; path = "TTToolKit/UIKit/UIView+TTGesture.m"; sourceTree = "<group>"; };
+		AEBA3C724E8A5743235240D0B35A10CE /* NSObject+TTKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TTKVO.h"; path = "TTToolKit/Foundation/NSObject+TTKVO.h"; sourceTree = "<group>"; };
+		B23D76FBF7DDBEAFD7E6E2C0EE9F7339 /* NSArray+TTPlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+TTPlist.h"; path = "TTToolKit/Foundation/NSArray+TTPlist.h"; sourceTree = "<group>"; };
+		B388EF2DC711FE3739B63B5F8DFEA06A /* NSData+TTAES128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TTAES128.h"; path = "TTToolKit/Foundation/NSData+TTAES128.h"; sourceTree = "<group>"; };
+		BA8AC86D54F09AC137E43CB5ECB6A0FE /* UITableView+TTEditStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+TTEditStyle.h"; path = "TTToolKit/UIKit/UITableView+TTEditStyle.h"; sourceTree = "<group>"; };
+		BC4C6733DE39BE9F5CED2993898EBD84 /* NSBundle+TTBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TTBundle.m"; path = "TTToolKit/Foundation/NSBundle+TTBundle.m"; sourceTree = "<group>"; };
+		C145B8D02EB4D09478025EB44F8D9AA5 /* UIViewController+TTAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTAlert.h"; path = "TTToolKit/UIKit/UIViewController+TTAlert.h"; sourceTree = "<group>"; };
+		C259F8A6DE842A11DB019E7C681BE9C8 /* UIStoryboard+TTCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+TTCategory.h"; path = "TTToolKit/UIKit/UIStoryboard+TTCategory.h"; sourceTree = "<group>"; };
+		C3A00E7BEF6BE96B5E76FF6E78B71CDD /* NSDate+TTInternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+TTInternetDateTime.h"; path = "TTToolKit/Foundation/NSDate+TTInternetDateTime.h"; sourceTree = "<group>"; };
 		CB17A85A03D78FF5BD94D244F7E9A587 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB332A27667A5A5B6A4AAA9C72607A22 /* TTToolKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTToolKit.xcconfig; sourceTree = "<group>"; };
-		CB9639EB9A6CB197459B9949D06A78C9 /* TTToolKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTToolKit.h; path = TTToolKit/TTToolKit.h; sourceTree = "<group>"; };
-		D8229E89E9D72243B3229C22CC3FE878 /* TTToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTToolKit.modulemap; sourceTree = "<group>"; };
-		DA5022922B71219A8C92D3EE23DDD213 /* UIView+TTKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTKeyboard.h"; path = "TTToolKit/UIKit/UIView+TTKeyboard.h"; sourceTree = "<group>"; };
+		CF78F09D560A3D8DCB13B21BDF3C1263 /* UIViewController+TTNavBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTNavBar.m"; path = "TTToolKit/UIKit/UIViewController+TTNavBar.m"; sourceTree = "<group>"; };
 		DA65CE27ED024C08E837824A24DDB005 /* Pods_TTToolSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TTToolSample.framework; path = "Pods-TTToolSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E376A4D10E3CD994B855FC5BBCA94CCB /* NSArray+TTPlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+TTPlist.h"; path = "TTToolKit/Foundation/NSArray+TTPlist.h"; sourceTree = "<group>"; };
+		DA8261AEE9D8135015329E203E709AF6 /* TTKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTKeychain.m; path = TTToolKit/Cache/TTKeychain.m; sourceTree = "<group>"; };
+		DBBA141069C4DB0E9485F288C2F14BC0 /* TTKeychainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTKeychainManager.h; path = TTToolKit/Cache/TTKeychainManager.h; sourceTree = "<group>"; };
+		DFB2C5BEB7D62DE558269D9365646ED6 /* UIViewController+TTAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTAlert.m"; path = "TTToolKit/UIKit/UIViewController+TTAlert.m"; sourceTree = "<group>"; };
+		E08BEA81E0B282DDE2B2523BB04DDEF6 /* TTKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTKeychain.h; path = TTToolKit/Cache/TTKeychain.h; sourceTree = "<group>"; };
+		E51E032D06ECE51C5580EC3E5C38C917 /* TTAES128Encrypter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTAES128Encrypter.m; path = TTToolKit/Encryption/TTAES128Encrypter.m; sourceTree = "<group>"; };
 		E52AE48CABE554E329B50343A07E15F0 /* Pods-TTToolSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTToolSample-resources.sh"; sourceTree = "<group>"; };
-		E58BF7DB0467256CF5F752E2F44D72A8 /* NSData+TTHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TTHexString.h"; path = "TTToolKit/Foundation/NSData+TTHexString.h"; sourceTree = "<group>"; };
-		EB2819B2A4C88CBC02E03C2F4EE2A534 /* NSObject+TTKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TTKVO.h"; path = "TTToolKit/Foundation/NSObject+TTKVO.h"; sourceTree = "<group>"; };
+		E9402E5BB3AFC2311A27BA152F792682 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+TTKeyWindow.m"; path = "TTToolKit/UIKit/UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
 		EF4F359A73F3F199308885EF09C5F02D /* Pods-TTToolSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTToolSample-dummy.m"; sourceTree = "<group>"; };
-		F3064AD48FDB959A064DF84ED5AC8739 /* UITableViewCell+TTEditStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+TTEditStyle.m"; path = "TTToolKit/UIKit/UITableViewCell+TTEditStyle.m"; sourceTree = "<group>"; };
+		F17D10C16878325DB0D60991DB497530 /* NSFileManager+TTFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+TTFile.m"; path = "TTToolKit/Foundation/NSFileManager+TTFile.m"; sourceTree = "<group>"; };
 		F3A943A7CFFF7C59968687E5CE26FE52 /* Pods-TTToolSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTToolSample-umbrella.h"; sourceTree = "<group>"; };
-		FD75F878A18B09D5AF01984E61896E5D /* TTToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-umbrella.h"; sourceTree = "<group>"; };
-		FDCA535311A5627300BC62840EFBC4D3 /* UIFont+TTPingFang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TTPingFang.m"; path = "TTToolKit/UIKit/UIFont+TTPingFang.m"; sourceTree = "<group>"; };
-		FECB80D30D4D275388DF9FCF1BAFB3CA /* NSDictionary+String.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+String.h"; path = "TTToolKit/Foundation/NSDictionary+String.h"; sourceTree = "<group>"; };
+		F447A04D0B452BC33C34251ABEB816C4 /* UIImage+TTCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TTCode.m"; path = "TTToolKit/UIKit/UIImage+TTCode.m"; sourceTree = "<group>"; };
+		F7CB250316AC3A6048F1967BF728913B /* NSData+TTAES128.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TTAES128.m"; path = "TTToolKit/Foundation/NSData+TTAES128.m"; sourceTree = "<group>"; };
+		F90CB07527FC6312ECB390EE76F0D66D /* UIView+TTKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTKeyboard.h"; path = "TTToolKit/UIKit/UIView+TTKeyboard.h"; sourceTree = "<group>"; };
+		FF1BF8B3A5BFA0140AE073C251595455 /* UITableViewCell+TTEditStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+TTEditStyle.h"; path = "TTToolKit/UIKit/UITableViewCell+TTEditStyle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,87 +179,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2FEE1A023CE7F865F2F5CBAD5D12AF1 /* Frameworks */ = {
+		C386CE8295DDF48B57AD550A18023E61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A9FBDA6446282EB506F9861FFB24FD /* Foundation.framework in Frameworks */,
-				62096833BB4D9359BDBF8BB8C8A29AE0 /* UIKit.framework in Frameworks */,
+				46CD033499927349CB552D94E02ECBE5 /* Foundation.framework in Frameworks */,
+				663117FCDA7C083EA24F463E9F18BC0A /* Security.framework in Frameworks */,
+				A68E02EB9117EAD95BA25DBEE19733A1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01AAEF2A20B3B2A29F9B7B876673EC8A /* UIKit */ = {
+		0AE330F48F9C22925009F9325BDA6385 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A10541AFABE20EA4F87B8A7DB4BC7115 /* UIAlertController+TTAlert.h */,
-				C6785B15F0E33D753AB78F0443E7B104 /* UIAlertController+TTAlert.m */,
-				73BE87C2BBB7FE885B8AF7207008140D /* UIApplication+TTKeyWindow.h */,
-				1A9F139D8A6B29BF989183D7D307F282 /* UIApplication+TTKeyWindow.m */,
-				8250F8AE9CA394A6B30B140CF1CADE61 /* UIColor+TTHex.h */,
-				A14CA7BABFEBA4B0931A0311B56D155C /* UIColor+TTHex.m */,
-				08C73E55D16DFFBB763D7972BD5FB5AB /* UIFont+TTPingFang.h */,
-				FDCA535311A5627300BC62840EFBC4D3 /* UIFont+TTPingFang.m */,
-				86CD945429B5CC09CD552CA266CD14D0 /* UIImage+TTCode.h */,
-				6F8B6E1E754C2F870DCD180C49E98B8E /* UIImage+TTCode.m */,
-				6EEEBE9A1CBD3E0C13A3D12B77AA1C6F /* UIStoryboard+TTCategory.h */,
-				68D36CD62FCE336A88DAEE7284C2D361 /* UIStoryboard+TTCategory.m */,
-				5AE8A97CFAA0DBFE519FF6A9F76DD70B /* UITableView+TTEditStyle.h */,
-				57BF8FBC8BD0242E02AB8002A9AD1551 /* UITableView+TTEditStyle.m */,
-				934DD00C02AB73BD0F77C559DF043C77 /* UITableViewCell+TTEditStyle.h */,
-				F3064AD48FDB959A064DF84ED5AC8739 /* UITableViewCell+TTEditStyle.m */,
-				0B73007955A4FB352817391AFF1D7978 /* UIView+SYJXibConfiguration.h */,
-				0CF3B7CED07B32BE1FE0B39CC687B090 /* UIView+SYJXibConfiguration.m */,
-				63F0334C580729F69D223006295AA3F5 /* UIView+TTFrame.h */,
-				1C5F379502FDEF42CE98D6FC80CCE201 /* UIView+TTFrame.m */,
-				6F70E6C9A2AE2E07D7BCE14CB8D67CF6 /* UIView+TTGesture.h */,
-				17D9E3948B431A43F432B2B9FFECCE5E /* UIView+TTGesture.m */,
-				DA5022922B71219A8C92D3EE23DDD213 /* UIView+TTKeyboard.h */,
-				B964E77620E08BB2A25A902BA871F11D /* UIView+TTKeyboard.m */,
-				2401186EBD2B0295B6FEF15ABAF32F12 /* UIViewController+TTAlert.h */,
-				A2FF919466B19C993BA5757CF429A60E /* UIViewController+TTAlert.m */,
-				586109A3119F94FFCBD61133BB2480B2 /* UIViewController+TTNavBar.h */,
-				5B6A04EA4D4AC130EFF37332BCB90031 /* UIViewController+TTNavBar.m */,
-				99B2BAC27F83CE68FDC6E75B10D58D1D /* UIViewController+TTView.h */,
-				2F9401F2AE343883BFCF99035D3658E7 /* UIViewController+TTView.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
-				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		136744E24F4D376988066162790AED9E /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				E376A4D10E3CD994B855FC5BBCA94CCB /* NSArray+TTPlist.h */,
-				4AEE7EB55D2645A67AA5C8A1959E7076 /* NSArray+TTPlist.m */,
-				9C93970EB2ACFC19489038E9DA54C867 /* NSBundle+TTBundle.h */,
-				756D4AE33E1FBAF1B6112208529F0F64 /* NSBundle+TTBundle.m */,
-				C5CFDF3C2C63A718551B103110C7E104 /* NSData+TTAES128.h */,
-				25E59C6C277D7187F2EA25509914FF51 /* NSData+TTAES128.m */,
-				E58BF7DB0467256CF5F752E2F44D72A8 /* NSData+TTHexString.h */,
-				8ACD4A03847050C991B4CA9C3572A3A0 /* NSData+TTHexString.m */,
-				B31813620880373944B9C8AAF49B9F94 /* NSDate+TTInternetDateTime.h */,
-				8C21CF2A1F69B4817B3AAF8775E87372 /* NSDate+TTInternetDateTime.m */,
-				FECB80D30D4D275388DF9FCF1BAFB3CA /* NSDictionary+String.h */,
-				ADA160F14EB9AA56A2011FE10431F350 /* NSDictionary+String.m */,
-				9FEE4C289CC3D0010262F0407F1C92E6 /* NSFileManager+TTFile.h */,
-				3094E3ED96BCAD93A25074C4D0E62461 /* NSFileManager+TTFile.m */,
-				EB2819B2A4C88CBC02E03C2F4EE2A534 /* NSObject+TTKVO.h */,
-				3023ECF0630140BF37FCC05F9D95DFF0 /* NSObject+TTKVO.m */,
-				6EFC3511DCC6B10BA14C9911DD6823BE /* NSString+TTRegularExpression.h */,
-				C56C01CC89B235220BC855F0D8331E51 /* NSString+TTRegularExpression.m */,
+				B23D76FBF7DDBEAFD7E6E2C0EE9F7339 /* NSArray+TTPlist.h */,
+				55524E002F4EF734224CC03AA6BBB557 /* NSArray+TTPlist.m */,
+				5F72B7EE198A8D552DE4D26D0D3AB6E1 /* NSBundle+TTBundle.h */,
+				BC4C6733DE39BE9F5CED2993898EBD84 /* NSBundle+TTBundle.m */,
+				B388EF2DC711FE3739B63B5F8DFEA06A /* NSData+TTAES128.h */,
+				F7CB250316AC3A6048F1967BF728913B /* NSData+TTAES128.m */,
+				06806D1E9791A8278BC1E25351750BBA /* NSData+TTHexString.h */,
+				94F50A28063A4978779E55D2B0192F22 /* NSData+TTHexString.m */,
+				C3A00E7BEF6BE96B5E76FF6E78B71CDD /* NSDate+TTInternetDateTime.h */,
+				37C864CC4BDE924C283760856D00D683 /* NSDate+TTInternetDateTime.m */,
+				7CB26C82D9505F55CF23687FAACD701D /* NSDictionary+String.h */,
+				A43807AD12781E394CFB4A5FA9350130 /* NSDictionary+String.m */,
+				3D7384123D8B4FF60A4A9EB9A911B04F /* NSFileManager+TTFile.h */,
+				F17D10C16878325DB0D60991DB497530 /* NSFileManager+TTFile.m */,
+				AEBA3C724E8A5743235240D0B35A10CE /* NSObject+TTKVO.h */,
+				0B08AB9814FD51E6DB4262D8BF9C4351 /* NSObject+TTKVO.m */,
+				A8964F1E2186D21578521CA7F4ED5FDD /* NSString+TTRegularExpression.h */,
+				054F85DE435022F0813612C23502FC3D /* NSString+TTRegularExpression.m */,
 			);
 			name = Foundation;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE95594645531289C7669E72CAEFD8 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		39E9F9B0DED6BAAAE212F8EAA3E9CA0F /* Targets Support Files */ = {
@@ -248,12 +233,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		549981301C1EA70FE433108C6BFA5709 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
+				99A8EF3224A67B8B9C9218D51A24773F /* TTApp.h */,
+				7F07FF922A861041E52FCBFABA81AC25 /* TTApp.m */,
 			);
-			name = Frameworks;
+			name = App;
 			sourceTree = "<group>";
 		};
 		5FDB81CD229C0366527ECF27C8736F63 /* Pods-TTToolSample */ = {
@@ -274,34 +260,37 @@
 			path = "Target Support Files/Pods-TTToolSample";
 			sourceTree = "<group>";
 		};
-		6C89F740A60A259FF8F6C9E11A95B254 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3799411EC141430407161A365AB3259 /* TTToolKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6C89F740A60A259FF8F6C9E11A95B254 /* Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				E4148093AAC185A87823A6618D10FEA3 /* Pods */,
 				A8DF83427A3A4679E2602C46C7D4DFB0 /* Products */,
 				39E9F9B0DED6BAAAE212F8EAA3E9CA0F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8C7A5027003E56B507991206202FE279 /* Support Files */ = {
+		7E81526BC588F180CA60B611F1313D64 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				1FEB8EA660A87BC031827F85F082836C /* Info.plist */,
-				D8229E89E9D72243B3229C22CC3FE878 /* TTToolKit.modulemap */,
-				CB332A27667A5A5B6A4AAA9C72607A22 /* TTToolKit.xcconfig */,
-				41CFB08B67FB852817699FD5CAB91213 /* TTToolKit-dummy.m */,
-				AB5588427CC156BD5A7A50BD4EA41643 /* TTToolKit-prefix.pch */,
-				FD75F878A18B09D5AF01984E61896E5D /* TTToolKit-umbrella.h */,
+				E08BEA81E0B282DDE2B2523BB04DDEF6 /* TTKeychain.h */,
+				DA8261AEE9D8135015329E203E709AF6 /* TTKeychain.m */,
+				DBBA141069C4DB0E9485F288C2F14BC0 /* TTKeychainManager.h */,
+				884F24F40369FD29669C2A0FA537AA01 /* TTKeychainManager.m */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		A6C986952165778A153D39A29ECC5701 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F2DBDC22547E7BDF27DB6801F7DC66B /* Info.plist */,
+				8BE041C9F34A75F60FB285A2EC21FC7A /* TTToolKit.modulemap */,
+				3ED7E17AD45B81F56A7BC246DB68C1A0 /* TTToolKit.xcconfig */,
+				2517C3C4AD0EDC9291DA682EBBC1BFA7 /* TTToolKit-dummy.m */,
+				57305138DB511209ADB0FB311D06F7F8 /* TTToolKit-prefix.pch */,
+				12AFB4440E81604BEF60CF79F8CCAC36 /* TTToolKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TTToolKit";
@@ -316,59 +305,133 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3799411EC141430407161A365AB3259 /* TTToolKit */ = {
+		ABFEFC0BF13B193974D267CC817E8625 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CB9639EB9A6CB197459B9949D06A78C9 /* TTToolKit.h */,
-				136744E24F4D376988066162790AED9E /* Foundation */,
-				8C7A5027003E56B507991206202FE279 /* Support Files */,
-				01AAEF2A20B3B2A29F9B7B876673EC8A /* UIKit */,
+				A4867FDE35BAB648033E63313E942760 /* UIAlertController+TTAlert.h */,
+				2174D4DF4FE90DF07E013B40B1F4B4BA /* UIAlertController+TTAlert.m */,
+				623353D63B0A9CF6BE6A2E147E5745C5 /* UIApplication+TTKeyWindow.h */,
+				E9402E5BB3AFC2311A27BA152F792682 /* UIApplication+TTKeyWindow.m */,
+				28B380CE2B4A53BFD44038F04116BEDD /* UIColor+TTHex.h */,
+				19F3436A8ACFA3334BEB7C319189FDBB /* UIColor+TTHex.m */,
+				24938367846DE9E6B3A99302A078E71A /* UIFont+TTPingFang.h */,
+				397A24A67C6E4D944D130F5780A86E9F /* UIFont+TTPingFang.m */,
+				8153A1116C52DA749C664BFD22D945FD /* UIImage+TTCode.h */,
+				F447A04D0B452BC33C34251ABEB816C4 /* UIImage+TTCode.m */,
+				C259F8A6DE842A11DB019E7C681BE9C8 /* UIStoryboard+TTCategory.h */,
+				176B07152CC6F363E432891AA0A39060 /* UIStoryboard+TTCategory.m */,
+				BA8AC86D54F09AC137E43CB5ECB6A0FE /* UITableView+TTEditStyle.h */,
+				7E3B51032AEE1295CB8EB8875DD16D2F /* UITableView+TTEditStyle.m */,
+				FF1BF8B3A5BFA0140AE073C251595455 /* UITableViewCell+TTEditStyle.h */,
+				88E4A1B14C2864D890CE5B838FB9E2E1 /* UITableViewCell+TTEditStyle.m */,
+				6CD5CE60DD7B5C76EE2B5B2A34A51131 /* UIView+SYJXibConfiguration.h */,
+				5E219165BF9F097DC542DC98695EAE3A /* UIView+SYJXibConfiguration.m */,
+				03F58CAFF57E80B6AB4DD4C957103B6D /* UIView+TTFrame.h */,
+				54E8B437EC00D2C63C5E4B052F2A04A2 /* UIView+TTFrame.m */,
+				2D7F089F8D9E813EFA591F679B958A32 /* UIView+TTGesture.h */,
+				ABBADFE0EE4743F6DA21DB86AC4D3A09 /* UIView+TTGesture.m */,
+				F90CB07527FC6312ECB390EE76F0D66D /* UIView+TTKeyboard.h */,
+				4D1A601A1D58B03D160892852223C7C3 /* UIView+TTKeyboard.m */,
+				C145B8D02EB4D09478025EB44F8D9AA5 /* UIViewController+TTAlert.h */,
+				DFB2C5BEB7D62DE558269D9365646ED6 /* UIViewController+TTAlert.m */,
+				82E0812779DDC84BF57DB91BFDC2E85E /* UIViewController+TTNavBar.h */,
+				CF78F09D560A3D8DCB13B21BDF3C1263 /* UIViewController+TTNavBar.m */,
+				4F1CA8E54281C860B1435EE39F12A8B1 /* UIViewController+TTView.h */,
+				4530139340DBC8FD69B5090E120361AA /* UIViewController+TTView.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		AEBE95594645531289C7669E72CAEFD8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7286781D33068611C6845FA7F8EF3386 /* Foundation.framework */,
+				14040659DB5339631480E9752B5BCE84 /* Security.framework */,
+				7C726826788541C0C0ED673D87AF36FB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B5436AAC3A1DAA2C08174ED349D856BC /* TTToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				989319F6F67CDA632444D03A2849394E /* TTToolKit.h */,
+				549981301C1EA70FE433108C6BFA5709 /* App */,
+				7E81526BC588F180CA60B611F1313D64 /* Cache */,
+				D6D827F8F043093F81DB2D8D72C8AECB /* Encryption */,
+				0AE330F48F9C22925009F9325BDA6385 /* Foundation */,
+				A6C986952165778A153D39A29ECC5701 /* Support Files */,
+				ABFEFC0BF13B193974D267CC817E8625 /* UIKit */,
 			);
 			name = TTToolKit;
 			path = TTToolKit;
 			sourceTree = "<group>";
 		};
+		D6D827F8F043093F81DB2D8D72C8AECB /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				193CDB3916788161291C006D38C11545 /* NSData+AES128TL.h */,
+				4AA2FF922E3F17C29EFE3312E5BFD7F8 /* NSData+AES128TL.m */,
+				9B90AC536185876EFAC67884008DAB8A /* TTAES128Encrypter.h */,
+				E51E032D06ECE51C5580EC3E5C38C917 /* TTAES128Encrypter.m */,
+			);
+			name = Encryption;
+			sourceTree = "<group>";
+		};
+		E4148093AAC185A87823A6618D10FEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5436AAC3A1DAA2C08174ED349D856BC /* TTToolKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		48A0E5EC4B647D870A5E9515E3C996A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635B65313ADCCAD3CE25D7BB30CF2D74 /* NSArray+TTPlist.h in Headers */,
+				7074F09F984DB6E4D37CCEB07370E04B /* NSBundle+TTBundle.h in Headers */,
+				73B106D46E0D6B73354AC89D6E3BF4E8 /* NSData+AES128TL.h in Headers */,
+				C037E94F047A67445DB2029BA046E014 /* NSData+TTAES128.h in Headers */,
+				4A8723D538269968E20EA6BCBE182089 /* NSData+TTHexString.h in Headers */,
+				4A8BC07068757CAC14C6822C580BF22C /* NSDate+TTInternetDateTime.h in Headers */,
+				0E9ACEA60A103CEB0A0D3737EC4F011E /* NSDictionary+String.h in Headers */,
+				F8B26598D951BC70E8821A65B4AC9A69 /* NSFileManager+TTFile.h in Headers */,
+				A91CEAD41BCFA5F3225AE3C5695603D5 /* NSObject+TTKVO.h in Headers */,
+				E7550BF3F0F7B5FDCEFA35DA10E1B1D4 /* NSString+TTRegularExpression.h in Headers */,
+				C66CCF8382C192792CC3C25CBCEC08F8 /* TTAES128Encrypter.h in Headers */,
+				859ED68D09812B68CCA43E95CB934658 /* TTApp.h in Headers */,
+				3AA7ED8DF80DEE43B921CA399F9D83DB /* TTKeychain.h in Headers */,
+				2B13B00E03199952A955349562EA8065 /* TTKeychainManager.h in Headers */,
+				328429648D1568F8D7217FD4F0A0EFEC /* TTToolKit-umbrella.h in Headers */,
+				5700A6B45377368D86EA92851601948D /* TTToolKit.h in Headers */,
+				5375ED5855126C8287250BF1C95C478D /* UIAlertController+TTAlert.h in Headers */,
+				8F0D4908187EF71849204E98220DAFF9 /* UIApplication+TTKeyWindow.h in Headers */,
+				7C02952A93514EBE835ED55858EC9844 /* UIColor+TTHex.h in Headers */,
+				B2F6B9C91A455A9BC986CA5218336CAC /* UIFont+TTPingFang.h in Headers */,
+				344339A3043757972CD43832C7097EB5 /* UIImage+TTCode.h in Headers */,
+				42BC1AFD5808CD321B79B4BBA0E49C7E /* UIStoryboard+TTCategory.h in Headers */,
+				5543719BAC1A511F00C3FFC75FCE1994 /* UITableView+TTEditStyle.h in Headers */,
+				3FB1F4AFF0D0C0A6572C477B8C3E6E07 /* UITableViewCell+TTEditStyle.h in Headers */,
+				5523CA9CB480809F2BBCB3836196E2B8 /* UIView+SYJXibConfiguration.h in Headers */,
+				E1532E73E76664AE7462A57EAB172B07 /* UIView+TTFrame.h in Headers */,
+				E01FEAA708956968A97B9888A393F271 /* UIView+TTGesture.h in Headers */,
+				F2052CD57B9CBB7320AF8D5351EFCEC3 /* UIView+TTKeyboard.h in Headers */,
+				EFDAE7261B94669A7D43612426154FB8 /* UIViewController+TTAlert.h in Headers */,
+				77F4231D751AAF1BFD850708A7DD5361 /* UIViewController+TTNavBar.h in Headers */,
+				9AE31F22E9F1C05682B864A402CC628D /* UIViewController+TTView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B49332063C64D94DD305D9A0DCA7A41B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				34B510787750B01AE1370C0F51CAAE04 /* Pods-TTToolSample-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC1EEDB4B9B1F1E7E7DD91EA7D8252A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFC87F6FC3855259D705CCE30084456F /* NSArray+TTPlist.h in Headers */,
-				11327D92A06052732801CDA0CF818CEC /* NSBundle+TTBundle.h in Headers */,
-				FF43A65AC1101950B6FCDDD1A8C72975 /* NSData+TTAES128.h in Headers */,
-				AE6398C8CEF142FAF3C4E61289089ACE /* NSData+TTHexString.h in Headers */,
-				CB755613D6B7934333AE01C9A8583804 /* NSDate+TTInternetDateTime.h in Headers */,
-				D20F46852D8CC8DCDE294DEC6DD24FE7 /* NSDictionary+String.h in Headers */,
-				35EBE15105F17E6DFD7E4568AD2A8F4B /* NSFileManager+TTFile.h in Headers */,
-				02FBEC7AA9508CAE56B5D70146471FC7 /* NSObject+TTKVO.h in Headers */,
-				7C92D053881278BD0F3D362165EF4FA6 /* NSString+TTRegularExpression.h in Headers */,
-				77CFEF02F4E9C5159E83A318C8453F0A /* TTToolKit-umbrella.h in Headers */,
-				5EB5585B497E5F8C02B398A96F84C7B9 /* TTToolKit.h in Headers */,
-				E42658238A77F6EAAB17CEF3C8428887 /* UIAlertController+TTAlert.h in Headers */,
-				487081A72A74C97EC6110F526F12333B /* UIApplication+TTKeyWindow.h in Headers */,
-				1AE9E0F7930CACCEF0C5BFF1C5B00798 /* UIColor+TTHex.h in Headers */,
-				70E2EC87F57920EB9677DD9DA484BC3F /* UIFont+TTPingFang.h in Headers */,
-				0547B072A3214783ECCC5F3BB10F7EA7 /* UIImage+TTCode.h in Headers */,
-				E80A62716BD056338C5D55698AB31B30 /* UIStoryboard+TTCategory.h in Headers */,
-				3CF682D60CC2A413E9501733DE693FC7 /* UITableView+TTEditStyle.h in Headers */,
-				69864132D34E854FCBA28E07444C40BE /* UITableViewCell+TTEditStyle.h in Headers */,
-				AFFBE09F9E7BC0651D4941DF24979589 /* UIView+SYJXibConfiguration.h in Headers */,
-				A883DF75B62C68FD96A20683A3DCBF70 /* UIView+TTFrame.h in Headers */,
-				DFE8EBA2E31CB376B9F3BBEB014EA03C /* UIView+TTGesture.h in Headers */,
-				57DFB5386912508A1861A3208902F596 /* UIView+TTKeyboard.h in Headers */,
-				41CF740FB25967D0432F7B5DEC4C11D1 /* UIViewController+TTAlert.h in Headers */,
-				036E3EB008202FCE46E7C56E0E0FEED1 /* UIViewController+TTNavBar.h in Headers */,
-				2BF0E0BE24A6ECFEC067470CFA338BDB /* UIViewController+TTView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +442,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1188AEBEE5723FE2A537664DF79E44F /* Build configuration list for PBXNativeTarget "TTToolKit" */;
 			buildPhases = (
-				02FED20DF2EC2943822D73E354A336FB /* Sources */,
-				E2FEE1A023CE7F865F2F5CBAD5D12AF1 /* Frameworks */,
-				CEC1EEDB4B9B1F1E7E7DD91EA7D8252A /* Headers */,
+				AD8A868023E32CBD946CCA0A50F1A514 /* Sources */,
+				C386CE8295DDF48B57AD550A18023E61 /* Frameworks */,
+				48A0E5EC4B647D870A5E9515E3C996A4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -438,43 +501,48 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02FED20DF2EC2943822D73E354A336FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF7F3A6D62098EF7231703697647F548 /* NSArray+TTPlist.m in Sources */,
-				83685C762021A039A53BA5B033C7EAEF /* NSBundle+TTBundle.m in Sources */,
-				46D31E1B6E5C7819485AF26F79FE4184 /* NSData+TTAES128.m in Sources */,
-				81C33780755098308FFCE582329D89BF /* NSData+TTHexString.m in Sources */,
-				C24398993279382352E28140FF1C173E /* NSDate+TTInternetDateTime.m in Sources */,
-				F1D4D558A6692DA152784E83CA50B316 /* NSDictionary+String.m in Sources */,
-				5A5F87EB6F4627AE8816529355CD24E3 /* NSFileManager+TTFile.m in Sources */,
-				E1B0E4EAF53014B8819D228A44B208D3 /* NSObject+TTKVO.m in Sources */,
-				AF96CCE37DBE15EB1E0D5F529782DABA /* NSString+TTRegularExpression.m in Sources */,
-				524C3D666609FAA2192E978EC65AA243 /* TTToolKit-dummy.m in Sources */,
-				40E1F4CC70ABF18BA53D04EFFFADA327 /* UIAlertController+TTAlert.m in Sources */,
-				06660012FD443BF0033DA31177C1603B /* UIApplication+TTKeyWindow.m in Sources */,
-				A1F43EB9752C96F27FC885BA942E503C /* UIColor+TTHex.m in Sources */,
-				72C20DDE41B1220FB7A53F9A4723DBB9 /* UIFont+TTPingFang.m in Sources */,
-				A9CBE6316EDCAFC9C4DE77A671ABBF45 /* UIImage+TTCode.m in Sources */,
-				D4E8DA741BC49C3683B6D0E53EBF4C7B /* UIStoryboard+TTCategory.m in Sources */,
-				6DA7B421A8D7A8111CBDB0AF1741B4BE /* UITableView+TTEditStyle.m in Sources */,
-				18CE4ADCE6E75470BDCA1348104147A9 /* UITableViewCell+TTEditStyle.m in Sources */,
-				C1D338BCDE134A6499D9EF2BD9C2AFB7 /* UIView+SYJXibConfiguration.m in Sources */,
-				01C32F8D1CEE7B1AD93FF8246A67A0CF /* UIView+TTFrame.m in Sources */,
-				FF8717F588FEDB9A414EB6278170E29C /* UIView+TTGesture.m in Sources */,
-				9E3B9C82BA031B5AC66683D2490F749A /* UIView+TTKeyboard.m in Sources */,
-				54C8749CAD8BB8083ADD70E4510677DF /* UIViewController+TTAlert.m in Sources */,
-				C9D6E440740AC8BEAC0CA434EC2653AF /* UIViewController+TTNavBar.m in Sources */,
-				C01464B4AB9352C4BC6EBAB31396B515 /* UIViewController+TTView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		29F9B57E51447197B283792D411A0F91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DEB47C4D9E5F2935F8AA2F4B62ED5206 /* Pods-TTToolSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8A868023E32CBD946CCA0A50F1A514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAA6D95B4D558429A03CE9C77936236 /* NSArray+TTPlist.m in Sources */,
+				25011B098B0D30FA4B7D92B6A9E9616C /* NSBundle+TTBundle.m in Sources */,
+				E9115E9AB335D2428719DCDCC2970FC1 /* NSData+AES128TL.m in Sources */,
+				B8DD8948B43F9982E5D2FC1D2B3B71F9 /* NSData+TTAES128.m in Sources */,
+				4D0F3256B80B8B2838A59D69F0923345 /* NSData+TTHexString.m in Sources */,
+				18236CD67512CAA2A305BC38E671A47C /* NSDate+TTInternetDateTime.m in Sources */,
+				334AE68C691EA5E95DB3724FAB332342 /* NSDictionary+String.m in Sources */,
+				D7421032792ECCE1206A3F92D89266B0 /* NSFileManager+TTFile.m in Sources */,
+				612C3DCF410C87B894BD3C8899D2B3B5 /* NSObject+TTKVO.m in Sources */,
+				0F72A2F705EE71F4D3DEAF49700C8CD0 /* NSString+TTRegularExpression.m in Sources */,
+				189E3A4B2DA793B60E0950700FD5B7B5 /* TTAES128Encrypter.m in Sources */,
+				5DE5FBAE42129C3E8463AB71EE8A3D53 /* TTApp.m in Sources */,
+				03827B384B19264ECC76113C3E56BEBD /* TTKeychain.m in Sources */,
+				0F0071E101F4AA6A57CCD85E501DD676 /* TTKeychainManager.m in Sources */,
+				CA3009F90C0AF725843AEF6BCE1B7D2B /* TTToolKit-dummy.m in Sources */,
+				756A07CDD19D38070F4FB2ED7833978C /* UIAlertController+TTAlert.m in Sources */,
+				3460FE712FA6C1CAA7A62A9BD3115E9A /* UIApplication+TTKeyWindow.m in Sources */,
+				F485E4DEA445BE03B416CBBD567CF342 /* UIColor+TTHex.m in Sources */,
+				5AE3752A159712142C734E3F7CDEC22F /* UIFont+TTPingFang.m in Sources */,
+				4D699D5CC909EF5CB91D0494D04462E3 /* UIImage+TTCode.m in Sources */,
+				900B2CC3562AB791A6DF24E90738E0C7 /* UIStoryboard+TTCategory.m in Sources */,
+				4A172202E83A0C0F5B7BB79EA4D81BBA /* UITableView+TTEditStyle.m in Sources */,
+				A56C7757F421E07002F1FF9E5472AE49 /* UITableViewCell+TTEditStyle.m in Sources */,
+				FA26E31FA718931549937C72EA0CA031 /* UIView+SYJXibConfiguration.m in Sources */,
+				CDA6BAB292EC82B5EBE51FA79E3C8986 /* UIView+TTFrame.m in Sources */,
+				4A8AC486C71C40C93CCB3D4794EA75C6 /* UIView+TTGesture.m in Sources */,
+				E0E64A0845C37D00CFA8AD4DE2ACC6C9 /* UIView+TTKeyboard.m in Sources */,
+				875DA83ABFF26FFED74585AF3AA4E742 /* UIViewController+TTAlert.m in Sources */,
+				8CAE4EC3E1B4A86857697C7B3821CF63 /* UIViewController+TTNavBar.m in Sources */,
+				67D870FE348B8172EDACAE56AFFAC863 /* UIViewController+TTView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +719,7 @@
 		};
 		947AD3F3CB34CAAB7B287760ECAB8C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB332A27667A5A5B6A4AAA9C72607A22 /* TTToolKit.xcconfig */;
+			baseConfigurationReference = 3ED7E17AD45B81F56A7BC246DB68C1A0 /* TTToolKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -724,7 +792,7 @@
 		};
 		ED6145ACC8D88A50C9B9461DC1BFC08A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB332A27667A5A5B6A4AAA9C72607A22 /* TTToolKit.xcconfig */;
+			baseConfigurationReference = 3ED7E17AD45B81F56A7BC246DB68C1A0 /* TTToolKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -65,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852DE00724318528008AB1FB /* MacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8EA4A242EF75C004EF984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAC8EA4B242EF75C004EF984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,6 +170,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		852DE00624318528008AB1FB /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				852DE00724318528008AB1FB /* MacroHeader.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		DAC8EA3E242EF75C004EF984 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC8EA80242EF7B8004EF984 /* TTToolKit.h */,
+				852DE00624318528008AB1FB /* Macro */,
 				DAC8EB3C242F5586004EF984 /* Cache */,
 				DAC8EB38242F5415004EF984 /* App */,
 				DAC8EB31242F530B004EF984 /* Encryption */,
