@@ -47,4 +47,7 @@
 /******************************   Cache   ******************************/
 #import "TTKeychainManager.h"
 
+/******************************   Macro   ******************************/
+#import "MacroHeader.h"
+
 #endif /* TTToolKit_h */
