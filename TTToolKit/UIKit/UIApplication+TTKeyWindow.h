@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIApplication (TTKeyWindow)
 
-
 /**
  * 获取主窗口的最底部的子视图，可能为空值
  */

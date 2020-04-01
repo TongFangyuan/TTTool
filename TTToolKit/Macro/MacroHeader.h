@@ -20,15 +20,15 @@
 #endif
 
 /******************************   语言国际化   ******************************/
-#ifndef Localized
-#define Localized(key)  NSLocalizedString((key), nil)
+#ifndef TTLocalized
+#define TTLocalized(key)  NSLocalizedString((key), nil)
 #endif
 
 /******************************   自定义Log   ******************************/
 #ifdef DEBUG
-#define NSLog(fmt,...) NSLog((@"[%s:%d行] " fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
+#define TTLog(fmt,...) NSLog((@"[%s:%d行] " fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
 #else
-#define NSLog(...)
+#define TTLog(...)
 #endif
 
 /******************************   图片   ******************************/
@@ -57,7 +57,6 @@
 #define kStringFormat(serverIP,urlString)        [NSString stringWithFormat:@"%@%@", serverIP, urlString]
 #define kCustomColor(r, g, b)                    [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
-
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define kNavBarHeight    44.0
 #define kTabBarHeight    ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
@@ -69,11 +68,5 @@
 #define WS(s)           __weak typeof(self)s =self;
 
 /******************************   Color   ******************************/
-#define kSepertorColor    [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.00]
-#define kButtonTintColor  [UIColor colorWithRed:0.95 green:0.55 blue:0.00 alpha:1.00]
-#define kTextWhiteColor   [UIColor colorWithRed:0.99 green:0.99 blue:0.99 alpha:1.00]
-#define kTextGrayColor    [UIColor colorWithRed:0.56 green:0.55 blue:0.57 alpha:1.00]
-#define kBlackGrayColor   [UIColor colorWithRed:0.07 green:0.07 blue:0.07 alpha:1.00]
-#define kBlackColor       [UIColor colorWithRed:0.05 green:0.05 blue:0.05 alpha:1.00]
 
 #endif /* MacroHeader_h */

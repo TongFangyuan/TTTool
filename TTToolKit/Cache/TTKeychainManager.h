@@ -14,12 +14,12 @@
 
 #import <Foundation/Foundation.h>
 
-#ifndef kKeychainWrite
-    #define kKeychainWrite(k,v)    [TTKeychainManager.shareManager savePassword:(v) forAccount:(k)]
+#ifndef TTKeychainManagerWrite
+    #define TTKeychainManagerWrite(k,v)    [TTKeychainManager.shareManager savePassword:(v) forAccount:(k)]
 #endif
 
-#ifndef kKeychainRead
-    #define kKeychainRead(k)       [TTKeychainManager.shareManager readPasswordForAccount:(k)]
+#ifndef TTKeychainManagerRead
+    #define TTKeychainManagerRead(k)       [TTKeychainManager.shareManager readPasswordForAccount:(k)]
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
