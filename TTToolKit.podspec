@@ -13,7 +13,7 @@
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
 # pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.1.1";
+version = "0.1.2";
 
 Pod::Spec.new do |spec|
 
@@ -59,7 +59,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Encryption' do |encryption|
     encryption.source_files = 'TTToolKit/Encryption/*.{h,m}'
-    encryption.public_header_files = 'TTToolKit/Encryption/TTAES128Encrypter.h'
+    encryption.public_header_files = 'TTToolKit/Encryption/*.h'
   end
 
   spec.subspec 'App' do |app|

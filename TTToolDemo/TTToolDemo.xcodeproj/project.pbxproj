@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EB0C82435C66600821D1D /* TTAES128Tool.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
 		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
 		DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA51242EF75C004EF984 /* ViewController.m */; };
@@ -66,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		852DE00724318528008AB1FB /* MacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
+		854EB0C72435C66600821D1D /* TTAES128Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAES128Tool.h; sourceTree = "<group>"; };
+		854EB0C82435C66600821D1D /* TTAES128Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAES128Tool.m; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8EA4A242EF75C004EF984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAC8EA4B242EF75C004EF984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 				DAC8EB32242F5328004EF984 /* NSData+AES128TL.m */,
 				DAC8EB35242F5328004EF984 /* TTAES128Encrypter.h */,
 				DAC8EB34242F5328004EF984 /* TTAES128Encrypter.m */,
+				854EB0C72435C66600821D1D /* TTAES128Tool.h */,
+				854EB0C82435C66600821D1D /* TTAES128Tool.m */,
 			);
 			path = Encryption;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 				DAC8EB41242F5598004EF984 /* TTKeychainManager.m in Sources */,
 				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
+				854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				INFOPLIST_FILE = TTToolDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -694,6 +701,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				INFOPLIST_FILE = TTToolDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
