@@ -13,7 +13,7 @@
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
 # pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.1.0";
+version = "0.1.1";
 
 Pod::Spec.new do |spec|
 
