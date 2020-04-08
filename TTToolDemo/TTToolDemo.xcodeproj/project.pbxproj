@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EB0C82435C66600821D1D /* TTAES128Tool.m */; };
+		85809CF1243DC229001813AC /* TTVolumeUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF0243DC229001813AC /* TTVolumeUnit.m */; };
+		85809CF4243DC2AE001813AC /* TTPhonePlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF2243DC2AE001813AC /* TTPhonePlayerTool.m */; };
+		85809CF7243DC2B7001813AC /* TTPlayerDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF5243DC2B6001813AC /* TTPlayerDescriptor.m */; };
+		85809CFD243DC2D0001813AC /* TTBaseMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFC243DC2D0001813AC /* TTBaseMusicPlayer.m */; };
+		85809D00243DC2D7001813AC /* TTBaseTTSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFE243DC2D7001813AC /* TTBaseTTSPlayer.m */; };
+		85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809D02243DC42E001813AC /* TTAudioSessionManager.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
 		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
 		DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA51242EF75C004EF984 /* ViewController.m */; };
@@ -69,6 +75,18 @@
 		852DE00724318528008AB1FB /* MacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		854EB0C72435C66600821D1D /* TTAES128Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAES128Tool.h; sourceTree = "<group>"; };
 		854EB0C82435C66600821D1D /* TTAES128Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAES128Tool.m; sourceTree = "<group>"; };
+		85809CEF243DC229001813AC /* TTVolumeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVolumeUnit.h; sourceTree = "<group>"; };
+		85809CF0243DC229001813AC /* TTVolumeUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVolumeUnit.m; sourceTree = "<group>"; };
+		85809CF2243DC2AE001813AC /* TTPhonePlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPhonePlayerTool.m; sourceTree = "<group>"; };
+		85809CF3243DC2AE001813AC /* TTPhonePlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhonePlayerTool.h; sourceTree = "<group>"; };
+		85809CF5243DC2B6001813AC /* TTPlayerDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPlayerDescriptor.m; sourceTree = "<group>"; };
+		85809CF6243DC2B6001813AC /* TTPlayerDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPlayerDescriptor.h; sourceTree = "<group>"; };
+		85809CFA243DC2D0001813AC /* TTBaseMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseMusicPlayer.h; sourceTree = "<group>"; };
+		85809CFC243DC2D0001813AC /* TTBaseMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseMusicPlayer.m; sourceTree = "<group>"; };
+		85809CFE243DC2D7001813AC /* TTBaseTTSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseTTSPlayer.m; sourceTree = "<group>"; };
+		85809CFF243DC2D7001813AC /* TTBaseTTSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseTTSPlayer.h; sourceTree = "<group>"; };
+		85809D01243DC42E001813AC /* TTAudioSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAudioSessionManager.h; sourceTree = "<group>"; };
+		85809D02243DC42E001813AC /* TTAudioSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAudioSessionManager.m; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8EA4A242EF75C004EF984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAC8EA4B242EF75C004EF984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +199,25 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		85809CEE243DC229001813AC /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				85809CEF243DC229001813AC /* TTVolumeUnit.h */,
+				85809CF0243DC229001813AC /* TTVolumeUnit.m */,
+				85809D01243DC42E001813AC /* TTAudioSessionManager.h */,
+				85809D02243DC42E001813AC /* TTAudioSessionManager.m */,
+				85809CFF243DC2D7001813AC /* TTBaseTTSPlayer.h */,
+				85809CFE243DC2D7001813AC /* TTBaseTTSPlayer.m */,
+				85809CFA243DC2D0001813AC /* TTBaseMusicPlayer.h */,
+				85809CFC243DC2D0001813AC /* TTBaseMusicPlayer.m */,
+				85809CF3243DC2AE001813AC /* TTPhonePlayerTool.h */,
+				85809CF2243DC2AE001813AC /* TTPhonePlayerTool.m */,
+				85809CF6243DC2B6001813AC /* TTPlayerDescriptor.h */,
+				85809CF5243DC2B6001813AC /* TTPlayerDescriptor.m */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
 		DAC8EA3E242EF75C004EF984 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC8EA80242EF7B8004EF984 /* TTToolKit.h */,
+				85809CEE243DC229001813AC /* MediaPlayer */,
 				852DE00624318528008AB1FB /* Macro */,
 				DAC8EB3C242F5586004EF984 /* Cache */,
 				DAC8EB38242F5415004EF984 /* App */,
@@ -478,11 +516,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85809CFD243DC2D0001813AC /* TTBaseMusicPlayer.m in Sources */,
 				DAC8EB1F242F5000004EF984 /* NSData+TTHexString.m in Sources */,
 				DAC8EAF9242F498B004EF984 /* UITableView+TTEditStyle.m in Sources */,
+				85809CF1243DC229001813AC /* TTVolumeUnit.m in Sources */,
 				DAC8EB11242F4AF0004EF984 /* UIView+TTGesture.m in Sources */,
 				DAC8EAF0242F494D004EF984 /* UIFont+TTPingFang.m in Sources */,
 				DAC8EB2E242F506B004EF984 /* NSObject+TTKVO.m in Sources */,
+				85809CF4243DC2AE001813AC /* TTPhonePlayerTool.m in Sources */,
 				DAC8EB20242F5000004EF984 /* NSBundle+TTBundle.m in Sources */,
 				DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */,
 				DAC8EAF8242F498B004EF984 /* UIStoryboard+TTCategory.m in Sources */,
@@ -490,10 +531,12 @@
 				DAC8EAED242F48F0004EF984 /* UIAlertController+TTAlert.m in Sources */,
 				DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */,
 				DAC8EB37242F5329004EF984 /* TTAES128Encrypter.m in Sources */,
+				85809CF7243DC2B7001813AC /* TTPlayerDescriptor.m in Sources */,
 				DAC8EB03242F4A22004EF984 /* UIViewController+TTAlert.m in Sources */,
 				DAC8EB04242F4A22004EF984 /* UIViewController+TTView.m in Sources */,
 				DAC8EB3B242F5415004EF984 /* TTApp.m in Sources */,
 				DAC8EB2D242F506B004EF984 /* NSDate+TTInternetDateTime.m in Sources */,
+				85809D00243DC2D7001813AC /* TTBaseTTSPlayer.m in Sources */,
 				DAC8EB2F242F506B004EF984 /* NSFileManager+TTFile.m in Sources */,
 				DAC8EAEA242F48AF004EF984 /* UIApplication+TTKeyWindow.m in Sources */,
 				DAC8EB05242F4A22004EF984 /* UIViewController+TTNavBar.m in Sources */,
@@ -511,6 +554,7 @@
 				DAC8EB41242F5598004EF984 /* TTKeychainManager.m in Sources */,
 				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
+				85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */,
 				854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

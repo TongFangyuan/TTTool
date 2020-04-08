@@ -51,4 +51,13 @@
 /******************************   Macro   ******************************/
 #import "MacroHeader.h"
 
+/******************************   MediaPlayer   ******************************/
+#import "TTVolumeUnit.h"
+#import "TTAudioSessionManager.h"
+#import "TTBaseTTSPlayer.h"
+#import "TTBaseMusicPlayer.h"
+#import "TTPhonePlayerTool.h"
+#import "TTPlayerDescriptor.h"
+
+
 #endif /* TTToolKit_h */

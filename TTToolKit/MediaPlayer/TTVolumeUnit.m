@@ -8,6 +8,7 @@
 
 #import "TTVolumeUnit.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
 static NSString * const TTSystemVolumeChangeNotification = @"AVSystemController_SystemVolumeDidChangeNotification";
 

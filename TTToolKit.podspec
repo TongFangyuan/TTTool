@@ -13,7 +13,7 @@
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
 # pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.1.2";
+version = "0.1.3";
 
 Pod::Spec.new do |spec|
 
@@ -76,6 +76,11 @@ Pod::Spec.new do |spec|
   spec.subspec 'Macro' do |macro|
     macro.source_files = 'TTToolKit/Macro/*.h'
     macro.public_header_files = 'TTToolKit/Macro/*.h'
+  end
+
+  spec.subspec 'MediaPlayer' do |mediaPlayer|
+    mediaPlayer.source_files = 'TTToolKit/MediaPlayer/*.{h,m}'
+    mediaPlayer.public_header_files = 'TTToolKit/MediaPlayer/*.h'
   end
 
 end
