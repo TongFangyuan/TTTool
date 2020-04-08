@@ -29,11 +29,11 @@ static NSDateFormatter *_internetDateTimeFormatter = nil;
 }
 
 // Get a date from a string - hint can be used to speed up
-+ (NSDate *)tt_dateFromInternetDateTimeString:(NSString *)dateString formatHint:(DateFormatHint)hint {
++ (NSDate *)tt_dateFromInternetDateTimeString:(NSString *)dateString formatHint:(TTDateFormatHint)hint {
     // Keep dateString around a while (for thread-safety)
     NSDate *date = nil;
     if (dateString) {
-        if (hint != DateFormatHintRFC3339) {
+        if (hint != TTDateFormatHintRFC3339) {
             // Try RFC822 first
             date = [NSDate tt_dateFromRFC822String:dateString];
             if (!date) date = [NSDate tt_dateFromRFC3339String:dateString];

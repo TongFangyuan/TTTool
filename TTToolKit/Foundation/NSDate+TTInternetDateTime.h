@@ -10,10 +10,10 @@
 
 // Formatting hints
 typedef enum {
-    DateFormatHintNone,
-    DateFormatHintRFC822,
-    DateFormatHintRFC3339
-} DateFormatHint;
+    TTDateFormatHintNone,
+    TTDateFormatHintRFC822,
+    TTDateFormatHintRFC3339
+} TTDateFormatHint;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 // - A format/specification hint can be used to speed up,
 //   otherwise both will be attempted in order to get a date
 + (NSDate *)tt_dateFromInternetDateTimeString:(NSString *)dateString
-                                formatHint:(DateFormatHint)hint;
+                                formatHint:(TTDateFormatHint)hint;
 
 // Get date from a string using a specific date specification
 + (NSDate *)tt_dateFromRFC3339String:(NSString *)dateString;
