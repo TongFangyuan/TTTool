@@ -17,7 +17,6 @@
 #import "UIFont+TTPingFang.h"
 #import "UIImage+TTCode.h"
 #import "UIStoryboard+TTCategory.h"
-#import "UITableView+TTEditStyle.h"
 #import "UIViewController+TTView.h"
 #import "UIViewController+TTNavBar.h"
 #import "UIViewController+TTAlert.h"

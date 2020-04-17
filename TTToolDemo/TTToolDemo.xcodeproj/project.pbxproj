@@ -30,7 +30,6 @@
 		DAC8EAF0242F494D004EF984 /* UIFont+TTPingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAEE242F494D004EF984 /* UIFont+TTPingFang.m */; };
 		DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAF1242F498A004EF984 /* UIImage+TTCode.m */; };
 		DAC8EAF8242F498B004EF984 /* UIStoryboard+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAF4242F498B004EF984 /* UIStoryboard+TTCategory.m */; };
-		DAC8EAF9242F498B004EF984 /* UITableView+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAF6242F498B004EF984 /* UITableView+TTEditStyle.m */; };
 		DAC8EB02242F4A22004EF984 /* UITableViewCell+TTEditStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAFB242F4A21004EF984 /* UITableViewCell+TTEditStyle.m */; };
 		DAC8EB03242F4A22004EF984 /* UIViewController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAFC242F4A21004EF984 /* UIViewController+TTAlert.m */; };
 		DAC8EB04242F4A22004EF984 /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EAFE242F4A21004EF984 /* UIViewController+TTView.m */; };
@@ -121,8 +120,6 @@
 		DAC8EAF2242F498A004EF984 /* UIImage+TTCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TTCode.h"; sourceTree = "<group>"; };
 		DAC8EAF3242F498A004EF984 /* UIStoryboard+TTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+TTCategory.h"; sourceTree = "<group>"; };
 		DAC8EAF4242F498B004EF984 /* UIStoryboard+TTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+TTCategory.m"; sourceTree = "<group>"; };
-		DAC8EAF5242F498B004EF984 /* UITableView+TTEditStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TTEditStyle.h"; sourceTree = "<group>"; };
-		DAC8EAF6242F498B004EF984 /* UITableView+TTEditStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TTEditStyle.m"; sourceTree = "<group>"; };
 		DAC8EAFA242F4A21004EF984 /* UIViewController+TTNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavBar.h"; sourceTree = "<group>"; };
 		DAC8EAFB242F4A21004EF984 /* UITableViewCell+TTEditStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TTEditStyle.m"; sourceTree = "<group>"; };
 		DAC8EAFC242F4A21004EF984 /* UIViewController+TTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTAlert.m"; sourceTree = "<group>"; };
@@ -319,8 +316,6 @@
 				DAC8EAF1242F498A004EF984 /* UIImage+TTCode.m */,
 				DAC8EAF3242F498A004EF984 /* UIStoryboard+TTCategory.h */,
 				DAC8EAF4242F498B004EF984 /* UIStoryboard+TTCategory.m */,
-				DAC8EAF5242F498B004EF984 /* UITableView+TTEditStyle.h */,
-				DAC8EAF6242F498B004EF984 /* UITableView+TTEditStyle.m */,
 				DAC8EAEF242F494D004EF984 /* UIFont+TTPingFang.h */,
 				DAC8EAEE242F494D004EF984 /* UIFont+TTPingFang.m */,
 				DAC8EAEB242F48F0004EF984 /* UIAlertController+TTAlert.h */,
@@ -523,7 +518,6 @@
 			files = (
 				85809CFD243DC2D0001813AC /* TTBaseMusicPlayer.m in Sources */,
 				DAC8EB1F242F5000004EF984 /* NSData+TTHexString.m in Sources */,
-				DAC8EAF9242F498B004EF984 /* UITableView+TTEditStyle.m in Sources */,
 				85809CF1243DC229001813AC /* TTVolumeUnit.m in Sources */,
 				DAC8EB11242F4AF0004EF984 /* UIView+TTGesture.m in Sources */,
 				DAC8EAF0242F494D004EF984 /* UIFont+TTPingFang.m in Sources */,
