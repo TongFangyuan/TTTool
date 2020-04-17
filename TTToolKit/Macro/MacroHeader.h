@@ -41,6 +41,7 @@
 #define Font(f)         [UIFont systemFontOfSize:f]
 #define FontM(f)        [UIFont fontWithName:@"PingFangSC-Medium" size: f]
 #define FontR(f)        [UIFont fontWithName:@"PingFangSC-Regular" size: f]
+#define FontS(f)        [UIFont fontWithName:@"PingFangSC-Semibold" size: f]
 
 /****************************** iPhone X 系列 ******************************/
 #define iPhoneX                ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
