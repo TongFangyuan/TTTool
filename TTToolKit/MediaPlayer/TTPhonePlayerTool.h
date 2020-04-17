@@ -1,5 +1,5 @@
 //
-//  VMPhonePlayerTool.h
+//  TTPhonePlayerTool.h
 //  MobileAir
 //
 //  Created by Tong on 2019/8/26.
@@ -11,8 +11,8 @@
 #import "TTBaseMusicPlayer.h"
 #import "TTBaseTTSPlayer.h"
 
-#ifndef VMPhonePlayerTool_DEBUG
-    #define VMPhonePlayerTool_DEBUG 1
+#ifndef TTPhonePlayerTool_DEBUG
+    #define TTPhonePlayerTool_DEBUG 1
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -76,11 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  注册某种类型音频的专属播放器
  
- @see VMMediaSourceName 音频来源类型
- @see VMMusicPlayerObject 播放器协议
+ @see TTMediaSourceName 音频来源类型
+ @see TTMusicPlayerObject 播放器协议
  
- @param source 需要注册音频类型，VMMediaSourceName（可以自定义类型）
- @param cls 播放器类，该类需要遵循 VMMusicPlayerObject 协议
+ @param source 需要注册音频类型，TTMediaSourceName（可以自定义类型）
+ @param cls 播放器类，该类需要遵循 TTMusicPlayerObject 协议
  */
 - (void)registerSource:(NSString *)source playerClass:(Class)cls;
 
@@ -127,10 +127,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - ------------- 辅助方法 ------------------
 
 /// 判断当前是否为爱音乐播放器
-extern BOOL VMPhonePlayerToolIsIMusicPlayer(void);
+extern BOOL TTPhonePlayerToolIsIMusicPlayer(void);
 /// 判断当前是否为电台播放器
-extern BOOL VMPhonePlayerToolIsRadioStationPlayer(void);
+extern BOOL TTPhonePlayerToolIsRadioStationPlayer(void);
 /// 是否需要自己播放TTS
-extern BOOL VMPhonePlayerToolIsSelfPlayTTS(void);
+extern BOOL TTPhonePlayerToolIsSelfPlayTTS(void);
 
 NS_ASSUME_NONNULL_END

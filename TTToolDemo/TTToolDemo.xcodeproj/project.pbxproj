@@ -14,6 +14,7 @@
 		85809CFD243DC2D0001813AC /* TTBaseMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFC243DC2D0001813AC /* TTBaseMusicPlayer.m */; };
 		85809D00243DC2D7001813AC /* TTBaseTTSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFE243DC2D7001813AC /* TTBaseTTSPlayer.m */; };
 		85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809D02243DC42E001813AC /* TTAudioSessionManager.m */; };
+		85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
 		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
 		DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA51242EF75C004EF984 /* ViewController.m */; };
@@ -87,6 +88,8 @@
 		85809CFF243DC2D7001813AC /* TTBaseTTSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseTTSPlayer.h; sourceTree = "<group>"; };
 		85809D01243DC42E001813AC /* TTAudioSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAudioSessionManager.h; sourceTree = "<group>"; };
 		85809D02243DC42E001813AC /* TTAudioSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAudioSessionManager.m; sourceTree = "<group>"; };
+		85F6EDDA2449B3B800E03BA9 /* UIViewController+TTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTCategory.h"; sourceTree = "<group>"; };
+		85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTCategory.m"; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8EA4A242EF75C004EF984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAC8EA4B242EF75C004EF984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				DAC8EB00242F4A22004EF984 /* UIViewController+TTNavBar.m */,
 				DAC8EB01242F4A22004EF984 /* UIViewController+TTView.h */,
 				DAC8EAFE242F4A21004EF984 /* UIViewController+TTView.m */,
+				85F6EDDA2449B3B800E03BA9 /* UIViewController+TTCategory.h */,
+				85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */,
 				DAC8EAF2242F498A004EF984 /* UIImage+TTCode.h */,
 				DAC8EAF1242F498A004EF984 /* UIImage+TTCode.m */,
 				DAC8EAF3242F498A004EF984 /* UIStoryboard+TTCategory.h */,
@@ -543,6 +548,7 @@
 				DAC8EB0F242F4AF0004EF984 /* UIView+SYJXibConfiguration.m in Sources */,
 				DAC8EB02242F4A22004EF984 /* UITableViewCell+TTEditStyle.m in Sources */,
 				DAC8EB0E242F4AF0004EF984 /* UIView+TTKeyboard.m in Sources */,
+				85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */,
 				DAC8EA5D242EF762004EF984 /* main.m in Sources */,
 				DAC8EB2C242F506B004EF984 /* NSDictionary+String.m in Sources */,
 				DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */,

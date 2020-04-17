@@ -1,5 +1,5 @@
 //
-//  VMBaseMusicPlayer.m
+//  TTBaseMusicPlayer.m
 //  MobileAir
 //
 //  Created by Tong on 2019/8/29.
@@ -26,7 +26,7 @@
     
 }
 
-#pragma mark - ------------- VMMusicPlayerObject ------------------
+#pragma mark - ------------- TTMusicPlayerObject ------------------
 
 - (void)play:(NSString *)url {
     if (!url) {
@@ -219,7 +219,7 @@
 }
 
 #pragma mark - ---- 辅助方法 ----
-+ (NSString *)VMMusicPlayerModeDesc:(TTPhonePlayMode)mode {
++ (NSString *)TTMusicPlayerModeDesc:(TTPhonePlayMode)mode {
     static dispatch_once_t onceToken;
     static NSDictionary *_modeDesc = nil;
     dispatch_once(&onceToken, ^{
@@ -343,27 +343,27 @@
 
 #pragma mark - ------------- PlayerItem 状态监听 ------------------
 
-static void* VMPlayerItemContext = &VMPlayerItemContext;
+static void* TTPlayerItemContext = &TTPlayerItemContext;
 
 /** 缓存超过指定时长，播放器继续播放 */
 static CGFloat kContinuePlayOverBufferTime = 0.5;
 
-typedef NSString * VMPlayerItemProperty;
+typedef NSString * TTPlayerItemProperty;
 /**
  这个属性的值是一个AVPlayerItemStatus，它指示接收器是否可以用于播放，一般为可以播放。
  最重要的需要观察的属性！！当你第一次创建AVPlayerItem时，其状态值为AVPlayerItemStatusUnknown，表示其媒体尚未加载，尚未排入队列进行播放。将AVPlayerItem与AVPlayer相关联后会立即开始排列该项目的媒体并准备播放，但是在准备好使用之前，需要等到其状态变为AVPlayerItemStatusReadyToPlay;
  */
-static VMPlayerItemProperty VMStatus = @"status";
+static TTPlayerItemProperty TTStatus = @"status";
 /** 已加载Item的时间范围 */
-static VMPlayerItemProperty VMLoadedTimeRanges = @"loadedTimeRanges";
+static TTPlayerItemProperty TTLoadedTimeRanges = @"loadedTimeRanges";
 /** 指示播放是否消耗了所有缓冲媒体，播放将停止或结束 */
-static VMPlayerItemProperty VMPlaybackBufferEmptys = @"playbackBufferEmpty";
+static TTPlayerItemProperty TTPlaybackBufferEmptys = @"playbackBufferEmpty";
 /** 缓存区是否已经满了，并且进一步的I / O是否被挂起 */
-static VMPlayerItemProperty VMPlaybackBufferFull = @"playbackBufferFull";
+static TTPlayerItemProperty TTPlaybackBufferFull = @"playbackBufferFull";
 /**
  指示该item是否能无延迟播放，用于监听缓存足够播放的状态，在这里，当属性playbackBufferFull指示YES时，可能是playbackLikelyToKeepUp指示NO。 在这种情况下，播放缓存已经达到了容量，但是没有统计数据来支持，所以播放可能持续，所以这里需要程序员决定是否继续媒体播放;
  */
-static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
+static TTPlayerItemProperty TTPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
 
 @implementation TTBaseMusicPlayer (PlayerItemObserver)
 
@@ -371,11 +371,11 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
     AVPlayerItem *playerItem = self.player.currentItem;
     if (playerItem) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidPlayToEndTime:) name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
-        [playerItem addObserver:self forKeyPath:VMStatus options:NSKeyValueObservingOptionNew context:VMPlayerItemContext];
-        [playerItem addObserver:self forKeyPath:VMLoadedTimeRanges options:NSKeyValueObservingOptionNew context:VMPlayerItemContext];
-        [playerItem addObserver:self forKeyPath:VMPlaybackBufferEmptys options:NSKeyValueObservingOptionNew context:VMPlayerItemContext];
-        [playerItem addObserver:self forKeyPath:VMPlaybackBufferFull options:NSKeyValueObservingOptionNew context:VMPlayerItemContext];
-        [playerItem addObserver:self forKeyPath:VMPlaybackLikelyToKeepUp options:NSKeyValueObservingOptionNew context:VMPlayerItemContext];
+        [playerItem addObserver:self forKeyPath:TTStatus options:NSKeyValueObservingOptionNew context:TTPlayerItemContext];
+        [playerItem addObserver:self forKeyPath:TTLoadedTimeRanges options:NSKeyValueObservingOptionNew context:TTPlayerItemContext];
+        [playerItem addObserver:self forKeyPath:TTPlaybackBufferEmptys options:NSKeyValueObservingOptionNew context:TTPlayerItemContext];
+        [playerItem addObserver:self forKeyPath:TTPlaybackBufferFull options:NSKeyValueObservingOptionNew context:TTPlayerItemContext];
+        [playerItem addObserver:self forKeyPath:TTPlaybackLikelyToKeepUp options:NSKeyValueObservingOptionNew context:TTPlayerItemContext];
     }
 }
 
@@ -383,21 +383,21 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
     AVPlayerItem *playerItem = self.player.currentItem;
     if (playerItem) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
-        [playerItem removeObserver:self forKeyPath:VMStatus];
-        [playerItem removeObserver:self forKeyPath:VMLoadedTimeRanges];
-        [playerItem removeObserver:self forKeyPath:VMPlaybackBufferEmptys];
-        [playerItem removeObserver:self forKeyPath:VMPlaybackBufferFull];
-        [playerItem removeObserver:self forKeyPath:VMPlaybackLikelyToKeepUp];
+        [playerItem removeObserver:self forKeyPath:TTStatus];
+        [playerItem removeObserver:self forKeyPath:TTLoadedTimeRanges];
+        [playerItem removeObserver:self forKeyPath:TTPlaybackBufferEmptys];
+        [playerItem removeObserver:self forKeyPath:TTPlaybackBufferFull];
+        [playerItem removeObserver:self forKeyPath:TTPlaybackLikelyToKeepUp];
     }
 }
 
 - (void)setupKVOChangeHandler {
     self.kvoSelMap = @{
-                       VMStatus:NSStringFromSelector(@selector(handleStatusChange:)),
-                       VMLoadedTimeRanges:NSStringFromSelector(@selector(handleLoadedTimeRanges:)),
-                       VMPlaybackBufferEmptys:NSStringFromSelector(@selector(handlePlaybackBufferEmpty:)),
-                       VMPlaybackBufferFull:NSStringFromSelector(@selector(handlePlaybackBufferFull:)),
-                       VMPlaybackLikelyToKeepUp:NSStringFromSelector(@selector(handlePlaybackLikelyToKeepUp:))
+                       TTStatus:NSStringFromSelector(@selector(handleStatusChange:)),
+                       TTLoadedTimeRanges:NSStringFromSelector(@selector(handleLoadedTimeRanges:)),
+                       TTPlaybackBufferEmptys:NSStringFromSelector(@selector(handlePlaybackBufferEmpty:)),
+                       TTPlaybackBufferFull:NSStringFromSelector(@selector(handlePlaybackBufferFull:)),
+                       TTPlaybackLikelyToKeepUp:NSStringFromSelector(@selector(handlePlaybackLikelyToKeepUp:))
                        };
 }
 
@@ -407,7 +407,7 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
-    if (context != VMPlayerItemContext) {
+    if (context != TTPlayerItemContext) {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
         return;
     }
@@ -458,7 +458,7 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
     if (item.playbackBufferEmpty) {
         NSLog(@"🔋 音频缓存为空，可能需要暂停播放");
         [self notiBufferEmpty];
-        [[NSNotificationCenter defaultCenter] postNotificationName:VMMusicPlayerBufferEmptyNotification object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:TTMusicPlayerBufferEmptyNotification object:nil];
     }
 }
 
@@ -472,7 +472,7 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 - (void)handlePlaybackLikelyToKeepUp:(AVPlayerItem *)item {
     if (item.playbackLikelyToKeepUp) {
         NSLog(@"🔋 可以无延迟播放音乐了");
-        [[NSNotificationCenter defaultCenter] postNotificationName:VMMusicPlayerNoDelayPlayingNotification object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:TTMusicPlayerNoDelayPlayingNotification object:nil];
     }
 }
 
@@ -526,13 +526,13 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 
 #pragma mark - ------------- 播放器状态通知给代理 ------------------
 
-@implementation TTBaseMusicPlayer (VMMusicPlayerStatusDelegate)
+@implementation TTBaseMusicPlayer (TTMusicPlayerStatusDelegate)
 
 - (void)notiPlayWillStart {
     if ([self.delegate respondsToSelector:@selector(playerWillStart:)]) {
         [self.delegate playerWillStart:self];
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:VMMusicPlayerDidStartNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:TTMusicPlayerDidStartNotification object:nil];
     NSLog(@"🔋 准备开始播放");
 }
 
@@ -562,7 +562,7 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
     if ([self.delegate respondsToSelector:@selector(playerDidFinished:)]) {
         [self.delegate playerDidFinished:self];
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:VMMusicPlayerDidFinishedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:TTMusicPlayerDidFinishedNotification object:nil];
     NSLog(@"🔋 播放完成");
 }
 
@@ -620,8 +620,8 @@ static VMPlayerItemProperty VMPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 
 #pragma mark - ------------- 通知 ------------------
 
-VMMusicPlayerStateNotificationName const VMMusicPlayerDidStartNotification = @"VMMusicPlayerDidStartNotification";        //!< 播放器开始播放
-VMMusicPlayerStateNotificationName const VMMusicPlayerDidFinishedNotification = @"VMMusicPlayerDidFinishedNotification";     //!< 播放器结束播放
+TTMusicPlayerStateNotificationName const TTMusicPlayerDidStartNotification = @"TTMusicPlayerDidStartNotification";        //!< 播放器开始播放
+TTMusicPlayerStateNotificationName const TTMusicPlayerDidFinishedNotification = @"TTMusicPlayerDidFinishedNotification";     //!< 播放器结束播放
 
-VMMusicPlayerStateNotificationName const VMMusicPlayerNoDelayPlayingNotification = @"VMMusicPlayerNoDelayPlayingNotification";    //!< 播放器可以无延迟播放音乐
-VMMusicPlayerStateNotificationName const VMMusicPlayerBufferEmptyNotification = @"VMMusicPlayerBufferEmptyNotification";    //!< 音频缓存为空，可能需要暂停播放
+TTMusicPlayerStateNotificationName const TTMusicPlayerNoDelayPlayingNotification = @"TTMusicPlayerNoDelayPlayingNotification";    //!< 播放器可以无延迟播放音乐
+TTMusicPlayerStateNotificationName const TTMusicPlayerBufferEmptyNotification = @"TTMusicPlayerBufferEmptyNotification";    //!< 音频缓存为空，可能需要暂停播放

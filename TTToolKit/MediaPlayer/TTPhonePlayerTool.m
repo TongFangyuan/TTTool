@@ -1,5 +1,5 @@
 //
-//  VMPhonePlayerTool.m
+//  TTPhonePlayerTool.m
 //  MobileAir
 //
 //  Created by Tong on 2019/8/26.
@@ -260,7 +260,7 @@ static id _shareInstance;
 
 - (void)setPlayMode:(TTPhonePlayMode)playMode {
     self.player.playMode = playMode;
-    NSLog(@"🔋 播放模式：%@", [TTBaseMusicPlayer VMMusicPlayerModeDesc:playMode]);
+    NSLog(@"🔋 播放模式：%@", [TTBaseMusicPlayer TTMusicPlayerModeDesc:playMode]);
 }
 
 #pragma mark - ------------- 播放器状态 ------------------
@@ -387,23 +387,23 @@ static id _shareInstance;
 
 
 #pragma mark - ------------- 辅助方法 ------------------
-extern BOOL VMPhonePlayerToolIsIMusicPlayer(void) {
+extern BOOL TTPhonePlayerToolIsIMusicPlayer(void) {
     id player = [TTPhonePlayerTool shareTool].player;
     if (!player) return NO;
     TTMediaSourceName source = [[TTPhonePlayerTool shareTool] mediaSourceForPlayer:player];
-    return [source isEqualToString:VMMediaSourceIMusic];
+    return [source isEqualToString:TTMediaSourceIMusic];
 }
 
-extern BOOL VMPhonePlayerToolIsRadioStationPlayer(void) {
+extern BOOL TTPhonePlayerToolIsRadioStationPlayer(void) {
     id player = [TTPhonePlayerTool shareTool].player;
     if (!player) return NO;
     TTMediaSourceName source = [[TTPhonePlayerTool shareTool] mediaSourceForPlayer:player];
-    return [source isEqualToString:VMMediaSourceRadioStation];
+    return [source isEqualToString:TTMediaSourceRadioStation];
 }
 
-extern BOOL VMPhonePlayerToolIsSelfPlayTTS(void) {
+extern BOOL TTPhonePlayerToolIsSelfPlayTTS(void) {
     id player = [TTPhonePlayerTool shareTool].player;
     if (!player) return NO;
     TTMediaSourceName source = [[TTPhonePlayerTool shareTool] mediaSourceForPlayer:player];
-    return [source isEqualToString:VMMediaSourceRadioStation] || [source isEqualToString:VMMediaSourceIMusic];
+    return [source isEqualToString:TTMediaSourceRadioStation] || [source isEqualToString:TTMediaSourceIMusic];
 }

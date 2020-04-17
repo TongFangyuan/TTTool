@@ -1,5 +1,5 @@
 //
-//  VMBaseTTSPlayer.m
+//  TTBaseTTSPlayer.m
 //  MobileAir
 //
 //  Created by Tong on 2019/9/3.
@@ -8,19 +8,19 @@
 
 #import "TTBaseTTSPlayer.h"
 
-VMTTSNotificaionName const VMTTSPlayDidStartNotification  = @"VMTTSPlayDidStartNotification";
-VMTTSNotificaionName const VMTTSPlayDidFinishNotification = @"VMTTSPlayDidFinishNotification";
+TTTTSNotificaionName const TTTTSPlayDidStartNotification  = @"TTTTSPlayDidStartNotification";
+TTTTSNotificaionName const TTTTSPlayDidFinishNotification = @"TTTTSPlayDidFinishNotification";
 
-void VMBaseTTSPlayerNotiPlayStart() {
+void TTBaseTTSPlayerNotiPlayStart() {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:VMTTSPlayDidStartNotification object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:TTTTSPlayDidStartNotification object:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"ASSoundBoxManagerDidStartTTSPlaybackNotification" object:nil];
     });
 }
 
-void VMBaseTTSPlayerNotiPlayFinish() {
+void TTBaseTTSPlayerNotiPlayFinish() {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:VMTTSPlayDidFinishNotification object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:TTTTSPlayDidFinishNotification object:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"TLSoundBoxManagerDidCompleteTTSPlaybackNotification" object:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"ASSoundBoxManagerDidCompleteTTSPlaybackNotification" object:nil];
     });
@@ -111,7 +111,7 @@ void VMBaseTTSPlayerNotiPlayFinish() {
 #pragma mark - ------------- 外部通知 ------------------
 - (void)notiPlayStart {
     NSLog(@"🎺 TTS开始播放通知");
-    VMBaseTTSPlayerNotiPlayStart();
+    TTBaseTTSPlayerNotiPlayStart();
 }
 
 - (void)notiPlayFinish {
@@ -119,7 +119,7 @@ void VMBaseTTSPlayerNotiPlayFinish() {
     if (self.callback) {
         self.callback();
     }
-    VMBaseTTSPlayerNotiPlayFinish();
+    TTBaseTTSPlayerNotiPlayFinish();
 }
 
 @end
@@ -127,14 +127,14 @@ void VMBaseTTSPlayerNotiPlayFinish() {
 
 #pragma mark - ------------- PlayerItem 状态监听 ------------------
 
-static void* VMPlayerItemContext = &VMPlayerItemContext;
+static void* TTPlayerItemContext = &TTPlayerItemContext;
 
-typedef NSString * VMPlayerItemProperty;
+typedef NSString * TTPlayerItemProperty;
 /**
  这个属性的值是一个AVPlayerItemStatus，它指示接收器是否可以用于播放，一般为可以播放。
  最重要的需要观察的属性！！当你第一次创建AVPlayerItem时，其状态值为AVPlayerItemStatusUnknown，表示其媒体尚未加载，尚未排入队列进行播放。将AVPlayerItem与AVPlayer相关联后会立即开始排列该项目的媒体并准备播放，但是在准备好使用之前，需要等到其状态变为AVPlayerItemStatusReadyToPlay;
  */
-static VMPlayerItemProperty VMStatus = @"status";
+static TTPlayerItemProperty TTStatus = @"status";
 
 @implementation TTBaseTTSPlayer (PlayerItemObserver)
 
@@ -142,20 +142,20 @@ static VMPlayerItemProperty VMStatus = @"status";
     AVPlayerItem *playerItem = self.player.currentItem;
     if (playerItem) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidPlayToEndTime:) name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
-        [playerItem addObserver:self forKeyPath:VMStatus options:NSKeyValueObservingOptionNew context:VMPlayerItemContext];    }
+        [playerItem addObserver:self forKeyPath:TTStatus options:NSKeyValueObservingOptionNew context:TTPlayerItemContext];    }
 }
 
 - (void)removePlayerItemObserver {
     AVPlayerItem *playerItem = self.player.currentItem;
     if (playerItem) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:playerItem];
-        [playerItem removeObserver:self forKeyPath:VMStatus];
+        [playerItem removeObserver:self forKeyPath:TTStatus];
     }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
-    if (context != VMPlayerItemContext) {
+    if (context != TTPlayerItemContext) {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
         return;
     }
@@ -164,7 +164,7 @@ static VMPlayerItemProperty VMStatus = @"status";
         NSLog(@"🐵 不是当前 PlayerItem");
         return;
     }
-    if ([keyPath isEqualToString:VMStatus]) {
+    if ([keyPath isEqualToString:TTStatus]) {
         [self handleStatusChange:object];
     }
     

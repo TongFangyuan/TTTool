@@ -1,5 +1,5 @@
 //
-//  VMBaseMusicPlayer.h
+//  TTBaseMusicPlayer.h
 //  MobileAir
 //
 //  Created by Tong on 2019/8/29.
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 播放器基类
  *
- * 遵循 VMMusicPlayerObject 协议
+ * 遵循 TTMusicPlayerObject 协议
  *
  * @note note
  * @attention attention
@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - ---- 辅助方法 ----
 /// 播放模式字符串
-+ (NSString *)VMMusicPlayerModeDesc:(TTPhonePlayMode)mode;
++ (NSString *)TTMusicPlayerModeDesc:(TTPhonePlayMode)mode;
 
 @end
 
@@ -65,8 +65,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * 不同播放模式下的歌曲上下首切换
  *
- * @note VMPhonePlayMode
- * @see  VMPhonePlayMode
+ * @note TTPhonePlayMode
+ * @see  TTPhonePlayMode
  */
 @interface TTBaseMusicPlayer (AlbumTrack)
 
@@ -125,9 +125,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  播放状态通知给Delegate
  
- @see VMMusicPlayerStatusDelegate
+ @see TTMusicPlayerStatusDelegate
  */
-@interface TTBaseMusicPlayer (VMMusicPlayerStatusDelegate)
+@interface TTBaseMusicPlayer (TTMusicPlayerStatusDelegate)
 
 - (void)notiPlayWillStart;
 - (void)notiPlayDidStart;
@@ -156,10 +156,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark - ------------- 通知定义 ------------------
-typedef NSString * VMMusicPlayerStateNotificationName;
+typedef NSString * TTMusicPlayerStateNotificationName;
 
-extern VMMusicPlayerStateNotificationName const VMMusicPlayerDidStartNotification;        //!< 播放器开始播放
-extern VMMusicPlayerStateNotificationName const VMMusicPlayerDidFinishedNotification;     //!< 播放器结束播放
-extern VMMusicPlayerStateNotificationName const VMMusicPlayerNoDelayPlayingNotification;     //!< 播放器可以无延迟播放音乐
-extern VMMusicPlayerStateNotificationName const VMMusicPlayerBufferEmptyNotification;     //!< 音频缓存为空，可能需要暂停播放
+extern TTMusicPlayerStateNotificationName const TTMusicPlayerDidStartNotification;        //!< 播放器开始播放
+extern TTMusicPlayerStateNotificationName const TTMusicPlayerDidFinishedNotification;     //!< 播放器结束播放
+extern TTMusicPlayerStateNotificationName const TTMusicPlayerNoDelayPlayingNotification;     //!< 播放器可以无延迟播放音乐
+extern TTMusicPlayerStateNotificationName const TTMusicPlayerBufferEmptyNotification;     //!< 音频缓存为空，可能需要暂停播放
 NS_ASSUME_NONNULL_END

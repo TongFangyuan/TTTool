@@ -1,5 +1,5 @@
 //
-//  VMBaseTTSPlayer.h
+//  TTBaseTTSPlayer.h
 //  MobileAir
 //
 //  Created by Tong on 2019/9/3.
@@ -11,13 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString * VMTTSNotificaionName;
+typedef NSString * TTTTSNotificaionName;
 
-extern VMTTSNotificaionName const VMTTSPlayDidStartNotification;
-extern VMTTSNotificaionName const VMTTSPlayDidFinishNotification;
+extern TTTTSNotificaionName const TTTTSPlayDidStartNotification;
+extern TTTTSNotificaionName const TTTTSPlayDidFinishNotification;
 
-extern void VMBaseTTSPlayerNotiPlayStart(void);
-extern void VMBaseTTSPlayerNotiPlayFinish(void);
+extern void TTBaseTTSPlayerNotiPlayStart(void);
+extern void TTBaseTTSPlayerNotiPlayFinish(void);
 
 @protocol TTTTSPlayerProtocol <NSObject>
 

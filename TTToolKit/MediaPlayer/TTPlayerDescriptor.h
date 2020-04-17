@@ -1,5 +1,5 @@
 //
-//  VMPlayerDescriptor.h
+//  TTPlayerDescriptor.h
 //  MobileAir
 //
 //  Created by Tong on 2019/9/3.
@@ -225,17 +225,17 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
 
 
 #pragma mark - ------------- 音频资源类型定义 ------------------
-extern TTMediaSourceName const VMMediaSourceLocal;          //!< 本地资源
-extern TTMediaSourceName const VMMediaSourceTuringWeb;      //!< 图灵web端资源
-extern TTMediaSourceName const VMMediaSourceTuringMusic;    //!< 图灵音乐领域资源
-extern TTMediaSourceName const VMMediaSourceTuringStory;    //!< 图灵故事
-extern TTMediaSourceName const VMMediaSourceTuringPoetry;   //!< 图灵诗词
-extern TTMediaSourceName const VMMediaSourceAlexaMusic;     //!< alexa音乐
-extern TTMediaSourceName const VMMediaSourceIMusic;         //!< 爱音乐资源
-extern TTMediaSourceName const VMMediaSourceTuringTTS;      //!< 图灵TTS播放
-extern TTMediaSourceName const VMMediaSourceTuringOnlieTTS; //!< 图灵语音合成TTS
-extern TTMediaSourceName const VMMediaSourceAlexaTTS;       //!< AlexaTTS资源
-extern TTMediaSourceName const VMMediaSourceTuringInstrument; //!< 图灵乐器
-extern TTMediaSourceName const VMMediaSourceRadioStation;   //!< 国际电台
+extern TTMediaSourceName const TTMediaSourceLocal;          //!< 本地资源
+extern TTMediaSourceName const TTMediaSourceTuringWeb;      //!< 图灵web端资源
+extern TTMediaSourceName const TTMediaSourceTuringMusic;    //!< 图灵音乐领域资源
+extern TTMediaSourceName const TTMediaSourceTuringStory;    //!< 图灵故事
+extern TTMediaSourceName const TTMediaSourceTuringPoetry;   //!< 图灵诗词
+extern TTMediaSourceName const TTMediaSourceAlexaMusic;     //!< alexa音乐
+extern TTMediaSourceName const TTMediaSourceIMusic;         //!< 爱音乐资源
+extern TTMediaSourceName const TTMediaSourceTuringTTS;      //!< 图灵TTS播放
+extern TTMediaSourceName const TTMediaSourceTuringOnlieTTS; //!< 图灵语音合成TTS
+extern TTMediaSourceName const TTMediaSourceAlexaTTS;       //!< AlexaTTS资源
+extern TTMediaSourceName const TTMediaSourceTuringInstrument; //!< 图灵乐器
+extern TTMediaSourceName const TTMediaSourceRadioStation;   //!< 国际电台
 
 NS_ASSUME_NONNULL_END

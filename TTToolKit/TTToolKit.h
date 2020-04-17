@@ -21,6 +21,7 @@
 #import "UIViewController+TTView.h"
 #import "UIViewController+TTNavBar.h"
 #import "UIViewController+TTAlert.h"
+#import "UIViewController+TTCategory.h"
 #import "UITableViewCell+TTEditStyle.h"
 #import "UIView+SYJXibConfiguration.h"
 #import "UIView+TTFrame.h"
