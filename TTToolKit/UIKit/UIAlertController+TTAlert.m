@@ -55,8 +55,16 @@
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     if (cancelAction) [alert addAction:cancelAction];
     if (confirmAction) [alert addAction:confirmAction];
-    if (!sourceVC) sourceVC = UIApplication.sharedApplication.keyWindow.rootViewController;
+    if (!sourceVC) sourceVC = [self getTopViewController];
     [sourceVC presentViewController:alert animated:YES completion:nil];
 }
 
++ (UIViewController*)getTopViewController
+{
+    UIViewController *topVC = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    while (topVC.presentedViewController != nil) {
+        topVC = topVC.presentedViewController;
+    }
+    return topVC;
+}
 @end
