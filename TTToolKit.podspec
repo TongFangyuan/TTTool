@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TTToolKit"
-  spec.version      = "0.1.5"
+  spec.version      = "0.1.6"
   spec.summary      = "TTToolKit工具类"
   spec.description  = <<-DESC
                     An integrated, simple, independent, efficient, lightweight, and continuously updated image selects a third-party framework.
