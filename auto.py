@@ -142,7 +142,7 @@ def podPush():
 
 
 updateVersion()
-podCommandEdit()
+#podCommandEdit()
 libLint()
 gitOperation()
 podPush()
