@@ -46,7 +46,11 @@
 
 + (NSString *)appName {
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
-    return [infoDic objectForKey:@"CFBundleDisplayName"];
+    NSString *name = [infoDic objectForKey:@"CFBundleDisplayName"];
+    if (!name ) {
+        name = [infoDic objectForKey:@"CFBundleName"];
+    }
+    return name;
 }
 
 + (NSString *)getModel
