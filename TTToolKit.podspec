@@ -13,7 +13,7 @@
 # pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
 # pod trunk push TTToolKit.podspec --allow-warnings
 
-version = "0.1.4";
+# version = "0.1.4";
 
 Pod::Spec.new do |spec|
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TTToolKit"
-  spec.version      = version
+  spec.version      = "0.1.5"
   spec.summary      = "TTToolKit工具类"
   spec.description  = <<-DESC
                     An integrated, simple, independent, efficient, lightweight, and continuously updated image selects a third-party framework.
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "tongfy" => "573682532@qq.com" }
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
-  spec.source       = { :git => "https://github.com/TongFangyuan/TTTool.git", :tag => "#{version}" }
+  spec.source       = { :git => "https://github.com/TongFangyuan/TTTool.git", :tag => "#{spec.version}" }
   spec.requires_arc = true
   spec.frameworks = 'UIKit'
 

@@ -4,7 +4,7 @@ import fileinput
 # ======================  edit by yourself  ======================
 sources = [
           #'https://github.com/YinTokey/Egen.git',
-          https://github.com/TongFangyuan/TTTool.git
+          'https://github.com/TongFangyuan/TTTool.git',
           ]
 #
 project_name = 'TTToolKit'
