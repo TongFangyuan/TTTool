@@ -50,7 +50,7 @@
                                ? CGSizeEqualToSize(CGSizeMake(750, 1624), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhoneXS_Max           ([UIScreen instancesRespondToSelector:@selector(currentMode)] \
                                ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
-#define iPhoneX_All                              (iPhoneX || iPhoneXR || iPhoneXS_Max)
+#define iPhoneX_All                              [[UIApplication sharedApplication] statusBarFrame].size.height==44.0f
 #define k_Height_NavContentBar                   44.0f
 #define k_Height_StatusBar                       (iPhoneX_All? 44.0 : 20.0)
 #define k_Height_NavBar                          (iPhoneX_All ? 88.0 : 64.0)
