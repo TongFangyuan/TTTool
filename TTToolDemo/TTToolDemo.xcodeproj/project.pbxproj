@@ -14,6 +14,11 @@
 		85809CFD243DC2D0001813AC /* TTBaseMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFC243DC2D0001813AC /* TTBaseMusicPlayer.m */; };
 		85809D00243DC2D7001813AC /* TTBaseTTSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFE243DC2D7001813AC /* TTBaseTTSPlayer.m */; };
 		85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809D02243DC42E001813AC /* TTAudioSessionManager.m */; };
+		85BEC47C2455857700F57219 /* TTToolKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85BEC47B2455857700F57219 /* TTToolKit.bundle */; };
+		85BEC4852455858700F57219 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC47E2455858700F57219 /* TTBaseViewController.m */; };
+		85BEC4862455858700F57219 /* TTBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC47F2455858700F57219 /* TTBaseTabBarController.m */; };
+		85BEC4872455858700F57219 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC4802455858700F57219 /* TTBaseNavigationController.m */; };
+		85BEC4882455858700F57219 /* NSBundle+TTToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC4842455858700F57219 /* NSBundle+TTToolKit.m */; };
 		85C80BF02452F33B00F7F5EA /* TTSizeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */; };
 		85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
@@ -73,7 +78,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		852DE00724318528008AB1FB /* MacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		854EB0C72435C66600821D1D /* TTAES128Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAES128Tool.h; sourceTree = "<group>"; };
 		854EB0C82435C66600821D1D /* TTAES128Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAES128Tool.m; sourceTree = "<group>"; };
 		85809CEF243DC229001813AC /* TTVolumeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVolumeUnit.h; sourceTree = "<group>"; };
@@ -88,6 +92,16 @@
 		85809CFF243DC2D7001813AC /* TTBaseTTSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseTTSPlayer.h; sourceTree = "<group>"; };
 		85809D01243DC42E001813AC /* TTAudioSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAudioSessionManager.h; sourceTree = "<group>"; };
 		85809D02243DC42E001813AC /* TTAudioSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAudioSessionManager.m; sourceTree = "<group>"; };
+		85BEC47B2455857700F57219 /* TTToolKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TTToolKit.bundle; sourceTree = "<group>"; };
+		85BEC47D2455858700F57219 /* NSBundle+TTToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TTToolKit.h"; sourceTree = "<group>"; };
+		85BEC47E2455858700F57219 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
+		85BEC47F2455858700F57219 /* TTBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseTabBarController.m; sourceTree = "<group>"; };
+		85BEC4802455858700F57219 /* TTBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseNavigationController.m; sourceTree = "<group>"; };
+		85BEC4812455858700F57219 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigationController.h; sourceTree = "<group>"; };
+		85BEC4822455858700F57219 /* TTBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseTabBarController.h; sourceTree = "<group>"; };
+		85BEC4832455858700F57219 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
+		85BEC4842455858700F57219 /* NSBundle+TTToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TTToolKit.m"; sourceTree = "<group>"; };
+		85BEC48A245588D600F57219 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		85C80BEE2452F33B00F7F5EA /* TTSizeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSizeAdapter.h; sourceTree = "<group>"; };
 		85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSizeAdapter.m; sourceTree = "<group>"; };
 		85F6EDDA2449B3B800E03BA9 /* UIViewController+TTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTCategory.h"; sourceTree = "<group>"; };
@@ -194,14 +208,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		852DE00624318528008AB1FB /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				852DE00724318528008AB1FB /* MacroHeader.h */,
-			);
-			path = Macro;
-			sourceTree = "<group>";
-		};
 		85809CEE243DC229001813AC /* MediaPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +225,22 @@
 				85809CF5243DC2B6001813AC /* TTPlayerDescriptor.m */,
 			);
 			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		85BEC47A2455853100F57219 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				85BEC48A245588D600F57219 /* MacroHeader.h */,
+				85BEC4812455858700F57219 /* TTBaseNavigationController.h */,
+				85BEC4802455858700F57219 /* TTBaseNavigationController.m */,
+				85BEC4822455858700F57219 /* TTBaseTabBarController.h */,
+				85BEC47F2455858700F57219 /* TTBaseTabBarController.m */,
+				85BEC4832455858700F57219 /* TTBaseViewController.h */,
+				85BEC47E2455858700F57219 /* TTBaseViewController.m */,
+				85BEC47D2455858700F57219 /* NSBundle+TTToolKit.h */,
+				85BEC4842455858700F57219 /* NSBundle+TTToolKit.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		DAC8EA3E242EF75C004EF984 = {
@@ -281,12 +303,11 @@
 		DAC8EA7F242EF794004EF984 /* TTToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				85BEC47B2455857700F57219 /* TTToolKit.bundle */,
 				DAC8EA80242EF7B8004EF984 /* TTToolKit.h */,
+				85BEC47A2455853100F57219 /* Base */,
 				85809CEE243DC229001813AC /* MediaPlayer */,
-				852DE00624318528008AB1FB /* Macro */,
-				DAC8EB3C242F5586004EF984 /* Cache */,
-				DAC8EB38242F5415004EF984 /* App */,
-				DAC8EB31242F530B004EF984 /* Encryption */,
+				DAC8EB38242F5415004EF984 /* Helper */,
 				DAC8EB12242F4E45004EF984 /* Foundation */,
 				DAC8EA84242EFA8F004EF984 /* UIKit */,
 			);
@@ -356,9 +377,17 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		DAC8EB31242F530B004EF984 /* Encryption */ = {
+		DAC8EB38242F5415004EF984 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				DAC8EB3A242F5415004EF984 /* TTApp.h */,
+				DAC8EB39242F5415004EF984 /* TTApp.m */,
+				85C80BEE2452F33B00F7F5EA /* TTSizeAdapter.h */,
+				85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */,
+				DAC8EB40242F5598004EF984 /* TTKeychain.h */,
+				DAC8EB3E242F5597004EF984 /* TTKeychain.m */,
+				DAC8EB3F242F5598004EF984 /* TTKeychainManager.h */,
+				DAC8EB3D242F5597004EF984 /* TTKeychainManager.m */,
 				DAC8EB33242F5328004EF984 /* NSData+AES128TL.h */,
 				DAC8EB32242F5328004EF984 /* NSData+AES128TL.m */,
 				DAC8EB35242F5328004EF984 /* TTAES128Encrypter.h */,
@@ -366,29 +395,7 @@
 				854EB0C72435C66600821D1D /* TTAES128Tool.h */,
 				854EB0C82435C66600821D1D /* TTAES128Tool.m */,
 			);
-			path = Encryption;
-			sourceTree = "<group>";
-		};
-		DAC8EB38242F5415004EF984 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				DAC8EB3A242F5415004EF984 /* TTApp.h */,
-				DAC8EB39242F5415004EF984 /* TTApp.m */,
-				85C80BEE2452F33B00F7F5EA /* TTSizeAdapter.h */,
-				85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		DAC8EB3C242F5586004EF984 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				DAC8EB40242F5598004EF984 /* TTKeychain.h */,
-				DAC8EB3E242F5597004EF984 /* TTKeychain.m */,
-				DAC8EB3F242F5598004EF984 /* TTKeychainManager.h */,
-				DAC8EB3D242F5597004EF984 /* TTKeychainManager.m */,
-			);
-			path = Cache;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +503,7 @@
 			files = (
 				DAC8EA5A242EF762004EF984 /* LaunchScreen.storyboard in Resources */,
 				DAC8EA57242EF762004EF984 /* Assets.xcassets in Resources */,
+				85BEC47C2455857700F57219 /* TTToolKit.bundle in Resources */,
 				DAC8EA55242EF75C004EF984 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,11 +539,13 @@
 				DAC8EB20242F5000004EF984 /* NSBundle+TTBundle.m in Sources */,
 				DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */,
 				DAC8EAF8242F498B004EF984 /* UIStoryboard+TTCategory.m in Sources */,
+				85BEC4872455858700F57219 /* TTBaseNavigationController.m in Sources */,
 				DAC8EB42242F5598004EF984 /* TTKeychain.m in Sources */,
 				DAC8EAED242F48F0004EF984 /* UIAlertController+TTAlert.m in Sources */,
 				DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */,
 				85C80BF02452F33B00F7F5EA /* TTSizeAdapter.m in Sources */,
 				DAC8EB37242F5329004EF984 /* TTAES128Encrypter.m in Sources */,
+				85BEC4862455858700F57219 /* TTBaseTabBarController.m in Sources */,
 				85809CF7243DC2B7001813AC /* TTPlayerDescriptor.m in Sources */,
 				DAC8EB03242F4A22004EF984 /* UIViewController+TTAlert.m in Sources */,
 				DAC8EB04242F4A22004EF984 /* UIViewController+TTView.m in Sources */,
@@ -554,6 +564,7 @@
 				DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */,
 				DAC8EB10242F4AF0004EF984 /* UIView+TTFrame.m in Sources */,
 				DAC8EB36242F5329004EF984 /* NSData+AES128TL.m in Sources */,
+				85BEC4852455858700F57219 /* TTBaseViewController.m in Sources */,
 				DAC8EA83242EF823004EF984 /* UIColor+TTHex.m in Sources */,
 				DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */,
 				DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */,
@@ -561,6 +572,7 @@
 				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
 				85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */,
+				85BEC4882455858700F57219 /* NSBundle+TTToolKit.m in Sources */,
 				854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,8 +39,8 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/TongFangyuan/TTTool.git", :tag => "#{version}" }
   spec.requires_arc = true
   spec.frameworks = 'UIKit'
+  spec.resource     = 'TTToolKit/TTToolKit.bundle'
 
-  
   # 代码源文件地址，**/*表示Classes目录及其子目录下所有文件，如果有多个目录下则用逗号分开，
   # 如果需要在项目中分组显示，这里也要做相应的设置
   spec.source_files  = 'TTToolKit/TTToolKit.h'
@@ -58,30 +58,19 @@ Pod::Spec.new do |spec|
     foundation.public_header_files = 'TTToolKit/Foundation/*.h'
   end
 
-  spec.subspec 'Encryption' do |encryption|
-    encryption.source_files = 'TTToolKit/Encryption/*.{h,m}'
-    encryption.public_header_files = 'TTToolKit/Encryption/*.h'
-  end
-
-  spec.subspec 'App' do |app|
-    app.source_files = 'TTToolKit/App/*.{h,m}'
-    app.public_header_files = 'TTToolKit/App/*.h'
-  end
-  
-  spec.subspec 'Cache' do |cache|
-    cache.source_files = 'TTToolKit/Cache/*.{h,m}'
-    cache.public_header_files = 'TTToolKit/Cache/*.h'
-    cache.frameworks = 'Security'
-  end
-  
-  spec.subspec 'Macro' do |macro|
-    macro.source_files = 'TTToolKit/Macro/*.h'
-    macro.public_header_files = 'TTToolKit/Macro/*.h'
+  spec.subspec 'Helper' do |helper|
+    helper.source_files = 'TTToolKit/Helper/*.{h,m}'
+    helper.public_header_files = 'TTToolKit/Helper/*.h'
   end
 
   spec.subspec 'MediaPlayer' do |mediaPlayer|
     mediaPlayer.source_files = 'TTToolKit/MediaPlayer/*.{h,m}'
     mediaPlayer.public_header_files = 'TTToolKit/MediaPlayer/*.h'
+  end
+
+  spec.subspec 'Base' do |base|
+    base.source_files = 'TTToolKit/Base/*.{h,m}'
+    base.public_header_files = 'TTToolKit/Base/*.h'
   end
 
 end

@@ -38,19 +38,12 @@
 #import "NSObject+TTKVO.h"
 #import "NSString+TTRegularExpression.h"
 
-/******************************   Encryption   ******************************/
-#import "TTAES128Encrypter.h"
-#import "TTAES128Tool.h"
-
-/******************************   App   ******************************/
+/******************************   Helper   ******************************/
 #import "TTApp.h"
 #import "TTSizeAdapter.h"
-
-/******************************   Cache   ******************************/
+#import "TTAES128Encrypter.h"
+#import "TTAES128Tool.h"
 #import "TTKeychainManager.h"
-
-/******************************   Macro   ******************************/
-#import "MacroHeader.h"
 
 /******************************   MediaPlayer   ******************************/
 #import "TTVolumeUnit.h"
@@ -60,5 +53,10 @@
 #import "TTPhonePlayerTool.h"
 #import "TTPlayerDescriptor.h"
 
+/******************************   Base   ******************************/
+#import "MacroHeader.h"
+#import "TTBaseNavigationController.h"
+#import "TTBaseTabBarController.h"
+#import "TTBaseViewController.h"
 
 #endif /* TTToolKit_h */
