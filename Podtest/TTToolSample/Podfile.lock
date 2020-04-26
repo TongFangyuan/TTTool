@@ -1,19 +1,15 @@
 PODS:
-  - TTToolKit (0.1.4):
-    - TTToolKit/App (= 0.1.4)
-    - TTToolKit/Cache (= 0.1.4)
-    - TTToolKit/Encryption (= 0.1.4)
-    - TTToolKit/Foundation (= 0.1.4)
-    - TTToolKit/Macro (= 0.1.4)
-    - TTToolKit/MediaPlayer (= 0.1.4)
-    - TTToolKit/UIKit (= 0.1.4)
-  - TTToolKit/App (0.1.4)
-  - TTToolKit/Cache (0.1.4)
-  - TTToolKit/Encryption (0.1.4)
-  - TTToolKit/Foundation (0.1.4)
-  - TTToolKit/Macro (0.1.4)
-  - TTToolKit/MediaPlayer (0.1.4)
-  - TTToolKit/UIKit (0.1.4)
+  - TTToolKit (0.1.8):
+    - TTToolKit/Base (= 0.1.8)
+    - TTToolKit/Foundation (= 0.1.8)
+    - TTToolKit/Helper (= 0.1.8)
+    - TTToolKit/MediaPlayer (= 0.1.8)
+    - TTToolKit/UIKit (= 0.1.8)
+  - TTToolKit/Base (0.1.8)
+  - TTToolKit/Foundation (0.1.8)
+  - TTToolKit/Helper (0.1.8)
+  - TTToolKit/MediaPlayer (0.1.8)
+  - TTToolKit/UIKit (0.1.8)
 
 DEPENDENCIES:
   - TTToolKit (~> 0.1.4)
@@ -23,8 +19,8 @@ SPEC REPOS:
     - TTToolKit
 
 SPEC CHECKSUMS:
-  TTToolKit: 399bed25476a00b32b5994e9bbad3f55624f812a
+  TTToolKit: fcdd02c0f890740146573dc3deafccbcc2fe243f
 
 PODFILE CHECKSUM: 96bc54f5caec52e995361d3aa1defeb03bc76dc1
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
