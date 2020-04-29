@@ -124,7 +124,7 @@
     
     // config
     self.view.backgroundColor = [UIColor colorWithRed:0.97 green:0.96 blue:0.97 alpha:1.00];
-    self.hiddenNavBar = NO;
+    self.hiddenNavBar = self.navigationController.navigationBar.hidden;
     self.navBarTheme = TTUIThemeLight;
     self.statusBarTheme = TTUIThemeDark;
 }

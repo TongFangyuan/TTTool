@@ -67,6 +67,8 @@
 #define kScreenHeight    [UIScreen mainScreen].bounds.size.height
 
 #define WS(s)           __weak typeof(self)s =self;
+#define WeakSelf(ws)   __weak typeof(self) ws = self;
+#define StrongSelf(ss) __strong typeof(ws) ss = ws;
 
 /******************************   Color   ******************************/
 
