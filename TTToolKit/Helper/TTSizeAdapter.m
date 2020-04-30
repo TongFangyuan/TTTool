@@ -52,8 +52,15 @@
 }
 
 - (CGSize)scaleSize:(CGSize)size {
-
     return CGSizeMake(size.width*self.widthScale, size.height*self.widthScale);
+}
+
+- (CGFloat)convertPt:(CGFloat)pt scale:(CGFloat)scale {
+    return pt*scale;
+}
+
+- (CGSize)convertSize:(CGSize)size scale:(CGFloat)scale {
+    return CGSizeMake(size.width*scale, size.height*scale);
 }
 
 #pragma mark - private

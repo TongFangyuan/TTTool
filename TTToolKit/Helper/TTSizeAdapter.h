@@ -12,6 +12,8 @@
 #define CGWS(f) [TTSizeAdapter.share scaleWidth:f] //宽度缩放
 #define CGSS(s) [TTSizeAdapter.share scaleSize:s]  // size 缩放
 #define CGHS(f) [TTSizeAdapter.share scaleHegiht:f] // 高度缩放
+#define CGCP(pt, s)  [[TTSizeAdapter share] convertPt:pt scale:s]
+#define CGCS(sz, s)  [[TTSizeAdapter share] convertSize:sz scale:s]
 
 typedef enum : NSUInteger {
     TTiPhone678,
@@ -64,6 +66,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// size适配，根据机型和标注图宽度比进行缩放
 /// @param size <#size description#>
 - (CGSize)scaleSize:(CGSize)size;
+
+/// pt缩放
+- (CGFloat)convertPt:(CGFloat)pt scale:(CGFloat)scale;
+/// size缩放
+- (CGSize)convertSize:(CGSize)size scale:(CGFloat)scale;
 
 
 @end

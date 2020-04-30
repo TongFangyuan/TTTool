@@ -44,6 +44,7 @@
 #define FontS(f)        [UIFont fontWithName:@"PingFangSC-Semibold" size: f]
 
 /****************************** iPhone X 系列 ******************************/
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhoneX                ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
                                ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhoneXR               ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
