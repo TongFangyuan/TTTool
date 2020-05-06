@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4E7F05BF7F2FCCD90BD4F97B /* Pods_TTToolSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F7ED9EBCF1E6C53CE6EC6F /* Pods_TTToolSample.framework */; };
+		855E843E245AB9F900A9F0EC /* TTToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E843D245AB9F900A9F0EC /* TTToolTest.m */; };
 		85F52BF4242DD643006813CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F52BF3242DD643006813CC /* AppDelegate.m */; };
 		85F52BF7242DD643006813CC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F52BF6242DD643006813CC /* SceneDelegate.m */; };
 		85F52BFA242DD643006813CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F52BF9242DD643006813CC /* ViewController.m */; };
@@ -17,10 +18,23 @@
 		85F52C05242DD649006813CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F52C04242DD649006813CC /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		855E8440245AB9F900A9F0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85F52BE7242DD643006813CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85F52BEE242DD643006813CC;
+			remoteInfo = TTToolSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		14F7ED9EBCF1E6C53CE6EC6F /* Pods_TTToolSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTToolSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FB0212161C733F4AB4B37A /* Pods-TTToolSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTToolSample/Pods-TTToolSample.debug.xcconfig"; sourceTree = "<group>"; };
 		499869CCD3FA813D976B18C4 /* Pods-TTToolSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTToolSample/Pods-TTToolSample.release.xcconfig"; sourceTree = "<group>"; };
+		855E843B245AB9F900A9F0EC /* TTToolTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTToolTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855E843D245AB9F900A9F0EC /* TTToolTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTToolTest.m; sourceTree = "<group>"; };
+		855E843F245AB9F900A9F0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85F52BEF242DD643006813CC /* TTToolSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F52BF2242DD643006813CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85F52BF3242DD643006813CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		855E8438245AB9F900A9F0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85F52BEC242DD643006813CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		855E843C245AB9F900A9F0EC /* TTToolTest */ = {
+			isa = PBXGroup;
+			children = (
+				855E843D245AB9F900A9F0EC /* TTToolTest.m */,
+				855E843F245AB9F900A9F0EC /* Info.plist */,
+			);
+			path = TTToolTest;
+			sourceTree = "<group>";
+		};
 		85F52BE6242DD643006813CC = {
 			isa = PBXGroup;
 			children = (
 				85F52BF1242DD643006813CC /* TTToolSample */,
+				855E843C245AB9F900A9F0EC /* TTToolTest */,
 				85F52BF0242DD643006813CC /* Products */,
 				E219F8CE1E79ED9B757F0BE1 /* Pods */,
 				A29D4D91E93B09A254D0A809 /* Frameworks */,
@@ -61,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				85F52BEF242DD643006813CC /* TTToolSample.app */,
+				855E843B245AB9F900A9F0EC /* TTToolTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +135,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		855E843A245AB9F900A9F0EC /* TTToolTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855E8444245AB9F900A9F0EC /* Build configuration list for PBXNativeTarget "TTToolTest" */;
+			buildPhases = (
+				855E8437245AB9F900A9F0EC /* Sources */,
+				855E8438245AB9F900A9F0EC /* Frameworks */,
+				855E8439245AB9F900A9F0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855E8441245AB9F900A9F0EC /* PBXTargetDependency */,
+			);
+			name = TTToolTest;
+			productName = TTToolTest;
+			productReference = 855E843B245AB9F900A9F0EC /* TTToolTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		85F52BEE242DD643006813CC /* TTToolSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85F52C08242DD649006813CC /* Build configuration list for PBXNativeTarget "TTToolSample" */;
@@ -131,6 +181,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Tongfy;
 				TargetAttributes = {
+					855E843A245AB9F900A9F0EC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 85F52BEE242DD643006813CC;
+					};
 					85F52BEE242DD643006813CC = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -150,11 +204,19 @@
 			projectRoot = "";
 			targets = (
 				85F52BEE242DD643006813CC /* TTToolSample */,
+				855E843A245AB9F900A9F0EC /* TTToolTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		855E8439245AB9F900A9F0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85F52BED242DD643006813CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +268,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		855E8437245AB9F900A9F0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855E843E245AB9F900A9F0EC /* TTToolTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85F52BEB242DD643006813CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +288,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		855E8441245AB9F900A9F0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85F52BEE242DD643006813CC /* TTToolSample */;
+			targetProxy = 855E8440245AB9F900A9F0EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		85F52BFB242DD643006813CC /* Main.storyboard */ = {
@@ -239,6 +317,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		855E8442245AB9F900A9F0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
+				INFOPLIST_FILE = TTToolTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.cchip.TTToolTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTToolSample.app/TTToolSample";
+			};
+			name = Debug;
+		};
+		855E8443245AB9F900A9F0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
+				INFOPLIST_FILE = TTToolTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.cchip.TTToolTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTToolSample.app/TTToolSample";
+			};
+			name = Release;
+		};
 		85F52C06242DD649006813CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +506,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		855E8444245AB9F900A9F0EC /* Build configuration list for PBXNativeTarget "TTToolTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855E8442245AB9F900A9F0EC /* Debug */,
+				855E8443245AB9F900A9F0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		85F52BEA242DD643006813CC /* Build configuration list for PBXProject "TTToolSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
