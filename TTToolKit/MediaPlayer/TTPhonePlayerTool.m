@@ -283,6 +283,7 @@ static id _shareInstance;
 }
 - (void)player:(id<TTMusicPlayerObject>)player playError:(NSError *)error{
     self.isMediaPlaying = player.isPlaying;
+    [self playNext];
 }
 - (void)playerBufferFull:(id<TTMusicPlayerObject>)player{
 
