@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isMediaPlaying;
 /** 交互推送的音乐 */
 @property (nonatomic, assign) BOOL isBoxMusic;
+/** 音频资源类型*/
+@property (nonatomic, strong, readonly, nullable) NSString *mediaSource;
 
 /******************** 禁用阿里音乐播放器 **********/
 @property (nonatomic, assign) BOOL disableRecognizer;

@@ -263,6 +263,14 @@ static id _shareInstance;
     NSLog(@"🔋 播放模式：%@", [TTBaseMusicPlayer TTMusicPlayerModeDesc:playMode]);
 }
 
+- (TTPhonePlayMode)playMode {
+    return self.player.playMode;
+}
+
+- (NSString *)mediaSource {
+    return [self mediaSourceForPlayer:self.player];
+}
+
 #pragma mark - ------------- 播放器状态 ------------------
 - (void)playerWillStart:(id<TTMusicPlayerObject>)player {
     if (player.albumTrack) {
