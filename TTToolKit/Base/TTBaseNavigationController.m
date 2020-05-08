@@ -52,7 +52,7 @@ UINavigationControllerDelegate
     UIBarButtonItem *barItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
     [barItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
     [barItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateDisabled];
-
+    
 }
 
 
@@ -83,7 +83,7 @@ UINavigationControllerDelegate
             [leftBackButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
             // 自动隐藏TabBar
             viewController.hidesBottomBarWhenPushed = YES;
-
+            
         }
     }
     // 调用父类push实现方法,可以在对应ViewController再次覆盖leftBarButtonItem默认返回样式
@@ -99,6 +99,17 @@ UINavigationControllerDelegate
         self.interactivePopGestureRecognizer.enabled = NO;
     }else{
         self.interactivePopGestureRecognizer.enabled = YES;
+    }
+}
+
+- (void)navigationController:(UINavigationController *)navigationController
+      willShowViewController:(UIViewController *)viewController
+                    animated:(BOOL)animated
+{
+    id<TTNavbarAppearance> obj = (id<TTNavbarAppearance>)viewController;
+    if ([obj respondsToSelector:@selector(hiddenNavBar)]) {
+        BOOL hiddenNavbar = obj.hiddenNavBar;
+        [navigationController setNavigationBarHidden:hiddenNavbar animated:animated];
     }
 }
 

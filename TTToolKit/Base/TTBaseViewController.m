@@ -129,6 +129,14 @@
     self.statusBarTheme = TTUIThemeDark;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
 #pragma mark - ---- Public ----
 - (void)backButtonEvent:(id)sender {
     
@@ -144,7 +152,6 @@
     if (_hiddenNavBar!=hiddenNavBar)
     {
         _hiddenNavBar = hiddenNavBar;
-        [self.navigationController setNavigationBarHidden:hiddenNavBar animated:NO];
     }
 }
 

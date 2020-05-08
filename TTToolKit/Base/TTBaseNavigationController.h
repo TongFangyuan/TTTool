@@ -20,4 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
  
 @end
 
+@protocol TTNavbarAppearance <NSObject>
+
+@property (nonatomic, assign) BOOL hiddenNavBar;
+
+@end
+
 NS_ASSUME_NONNULL_END
