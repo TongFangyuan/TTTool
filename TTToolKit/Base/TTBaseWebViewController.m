@@ -44,6 +44,14 @@
         self.title = webView.title;        
     }
 }
+#pragma mark - ---- override ----
+- (void)backButtonEvent:(id)sender {
+    if ([self.m_webView canGoBack]) {
+        [self.m_webView goBack];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 
 #pragma mark - ---- Properties ----
 -(WKWebView *)m_webView {
