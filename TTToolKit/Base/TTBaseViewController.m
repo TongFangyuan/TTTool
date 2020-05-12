@@ -93,6 +93,9 @@
     TTNavTitleLabel  *m_titleLabel;
 }
 
+@property (nonatomic,strong) UIView *grayMask;
+
+
 @end
 
 @implementation TTBaseViewController
@@ -273,6 +276,34 @@
         [m_titleLabel sizeToFit];
         self.navigationItem.titleView = m_titleLabel;
     }
+}
+
+- (void)setShowMask:(BOOL)showMask
+{
+    if (_showMask!=showMask) {
+        _showMask = showMask;
+        
+        self.grayMask.hidden = !showMask;
+        [self.view bringSubviewToFront:self.grayMask];
+    }
+}
+
+- (void)setEnableGestureUnderMask:(BOOL)enable
+{
+    if (_enableGestureUnderMask != enable) {
+        _enableGestureUnderMask = enable;
+        
+        self.grayMask.userInteractionEnabled = !enable;
+    }
+}
+
+- (UIView *)grayMask {
+    if (!_grayMask) {
+        _grayMask = [UIView new];
+        _grayMask.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.7f];
+        _grayMask.hidden = YES;
+    }
+    return _grayMask;
 }
 
 #pragma mark - ---- Override ----

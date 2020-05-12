@@ -15,11 +15,11 @@
 		85809D00243DC2D7001813AC /* TTBaseTTSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CFE243DC2D7001813AC /* TTBaseTTSPlayer.m */; };
 		85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809D02243DC42E001813AC /* TTAudioSessionManager.m */; };
 		85BEC47C2455857700F57219 /* TTToolKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85BEC47B2455857700F57219 /* TTToolKit.bundle */; };
-		85BEC4852455858700F57219 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC47E2455858700F57219 /* TTBaseViewController.m */; };
 		85BEC4862455858700F57219 /* TTBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC47F2455858700F57219 /* TTBaseTabBarController.m */; };
 		85BEC4872455858700F57219 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC4802455858700F57219 /* TTBaseNavigationController.m */; };
 		85BEC4882455858700F57219 /* NSBundle+TTToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC4842455858700F57219 /* NSBundle+TTToolKit.m */; };
 		85C80BF02452F33B00F7F5EA /* TTSizeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */; };
+		85EF4371246A880200E8590E /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC47E2455858700F57219 /* TTBaseViewController.m */; };
 		85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
 		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
@@ -564,7 +564,6 @@
 				DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */,
 				DAC8EB10242F4AF0004EF984 /* UIView+TTFrame.m in Sources */,
 				DAC8EB36242F5329004EF984 /* NSData+AES128TL.m in Sources */,
-				85BEC4852455858700F57219 /* TTBaseViewController.m in Sources */,
 				DAC8EA83242EF823004EF984 /* UIColor+TTHex.m in Sources */,
 				DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */,
 				DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */,
@@ -572,6 +571,7 @@
 				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
 				85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */,
+				85EF4371246A880200E8590E /* TTBaseViewController.m in Sources */,
 				85BEC4882455858700F57219 /* NSBundle+TTToolKit.m in Sources */,
 				854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */,
 			);

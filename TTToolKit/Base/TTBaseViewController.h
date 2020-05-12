@@ -39,6 +39,10 @@ typedef enum : NSUInteger {
 @property (nonatomic,strong) UIFont   *navBarTitleFont;
 /// 设置是否隐藏导航栏
 @property (nonatomic,assign) BOOL      hiddenNavBar;
+/// 蒙版视图显示,默认为NO（带有透明度的灰色遮罩层，不让用户操作）
+@property (nonatomic,assign) BOOL showMask;
+/// 遮罩层下，接受用户点击，默认为NO
+@property (nonatomic,assign) BOOL enableGestureUnderMask;
 
 /// 点击导航栏返回按钮事件
 - (void)backButtonEvent:(id)sender;
