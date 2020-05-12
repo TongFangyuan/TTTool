@@ -6,6 +6,7 @@
 //  Copyright © 2019 tongfy. All rights reserved.
 //
 
+#define TTIPhone55S CGSizeMake(320.f, 568.f)
 #define TTIPhone678Size CGSizeMake(375.f, 667.f)
 #define TTIPhone678PlusSize CGSizeMake(414.f, 736.f)
 #define TTIPhoneXXSSize CGSizeMake(375.f, 812.f)
@@ -79,14 +80,16 @@
                      @(TTiPhone678):NSStringFromCGSize(TTIPhone678Size),
                      @(TTiPhone678Plus):NSStringFromCGSize(TTIPhone678PlusSize),
                      @(TTiPhoneXXS):NSStringFromCGSize(TTIPhoneXXSSize),
-                     @(TTiPhoneXRXSMAX):NSStringFromCGSize(TTIPhoneXRXSMAXSize)
+                     @(TTiPhoneXRXSMAX):NSStringFromCGSize(TTIPhoneXRXSMAXSize),
+                     @(TTiPhone55S):NSStringFromCGSize(TTIPhone55S)
                      };
     
     self.iPhoneMap = @{
                        NSStringFromCGSize(TTIPhone678Size):@(TTiPhone678),
                        NSStringFromCGSize(TTIPhone678PlusSize):@(TTiPhone678Plus),
                        NSStringFromCGSize(TTIPhoneXXSSize):@(TTiPhoneXXS),
-                       NSStringFromCGSize(TTIPhoneXRXSMAXSize):@(TTiPhoneXRXSMAX)
+                       NSStringFromCGSize(TTIPhoneXRXSMAXSize):@(TTiPhoneXRXSMAX),
+                       NSStringFromCGSize(TTIPhone55S):@(TTiPhone55S)
                        };
     
     /// 设置当前机型

@@ -19,7 +19,8 @@ typedef enum : NSUInteger {
     TTiPhone678,
     TTiPhone678Plus,
     TTiPhoneXXS,
-    TTiPhoneXRXSMAX
+    TTiPhoneXRXSMAX,
+    TTiPhone55S
 } TTiPhone;
 
 NS_ASSUME_NONNULL_BEGIN

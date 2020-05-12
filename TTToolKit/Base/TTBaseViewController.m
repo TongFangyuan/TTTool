@@ -119,6 +119,11 @@
         m_backButton = backBtn;
     }
     
+    // 遮罩层
+    self.showMask = NO;
+    [self.view addSubview:self.grayMask];
+    self.enableGestureUnderMask = NO;
+    
     TTNavTitleLabel *titleLabel = [TTNavTitleLabel new];
     titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
     titleLabel.lightTextColor = [UIColor colorWithRed:0.17 green:0.17 blue:0.17 alpha:1.00];
@@ -127,7 +132,7 @@
     
     // config
     self.view.backgroundColor = [UIColor colorWithRed:0.97 green:0.96 blue:0.97 alpha:1.00];
-    self.hiddenNavBar = self.navigationController.navigationBar.hidden;
+    self.hiddenNavBar = NO;
     self.navBarTheme = TTUIThemeLight;
     self.statusBarTheme = TTUIThemeDark;
 }
@@ -138,6 +143,11 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.grayMask.frame = self.view.bounds;
 }
 
 #pragma mark - ---- Public ----
