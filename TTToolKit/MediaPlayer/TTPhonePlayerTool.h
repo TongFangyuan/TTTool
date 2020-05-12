@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *currentTimeText;
 /** 剩下格式时间 */
 @property (nonatomic, copy) NSString *durationText;
-/** 是否在后台 */
+/** 音乐播放是否在前台 */
 @property (nonatomic,assign) BOOL isForeground;
 /** 电话打断结束后是否需要继续播放 */
 @property (nonatomic,assign) BOOL needContinue;
@@ -68,6 +68,10 @@ NS_ASSUME_NONNULL_BEGIN
 // -------------------------------- 歌曲信息  end --------------------------------
 
 + (instancetype)shareTool;
+
+- (void)applicationDidEnterBackground:(UIApplication *)application;
+- (void)applicationWillEnterForeground:(UIApplication *)application;
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event;
 
 @end
 

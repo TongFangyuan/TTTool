@@ -308,7 +308,51 @@ static id _shareInstance;
 - (void)player:(id<TTMusicPlayerObject>)player cacheToPostion:(CGFloat)postion {
     
 }
+
+#pragma mark - ---- Application 事件处理 ----
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [TTPhonePlayerTool shareTool].isForeground = NO;
+    [[TTPhonePlayerTool shareTool] operate];
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application{
+    [TTPhonePlayerTool shareTool].isForeground = YES;
+}
+
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event{
+    switch (event.subtype) {
+        case UIEventSubtypeRemoteControlPlay:
+        {
+            [[TTPhonePlayerTool shareTool] operate];
+            [[TTPhonePlayerTool shareTool] continuePlay];
+        }
+            break;
+        case UIEventSubtypeRemoteControlTogglePlayPause:
+        case UIEventSubtypeRemoteControlPause:
+        {
+            [[TTPhonePlayerTool shareTool] operate];
+            [TTPhonePlayerTool shareTool].manualPause = YES;
+            [[TTPhonePlayerTool shareTool] pause];
+        }
+            break;
+        case UIEventSubtypeRemoteControlNextTrack:
+        {
+            [[TTPhonePlayerTool shareTool] playNext];
+        }
+            break;
+        case UIEventSubtypeRemoteControlPreviousTrack:
+        {
+            [[TTPhonePlayerTool shareTool] playPrevious];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
 @end
+
 
 
 #pragma mark - ------------- 播放器注册分类  ------------------
