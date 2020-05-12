@@ -20,6 +20,7 @@
 		85BEC4882455858700F57219 /* NSBundle+TTToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC4842455858700F57219 /* NSBundle+TTToolKit.m */; };
 		85C80BF02452F33B00F7F5EA /* TTSizeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */; };
 		85EF4371246A880200E8590E /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BEC47E2455858700F57219 /* TTBaseViewController.m */; };
+		85EF4387246A911300E8590E /* TTBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF4386246A911300E8590E /* TTBaseWebViewController.m */; };
 		85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
 		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
@@ -104,6 +105,8 @@
 		85BEC48A245588D600F57219 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		85C80BEE2452F33B00F7F5EA /* TTSizeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSizeAdapter.h; sourceTree = "<group>"; };
 		85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSizeAdapter.m; sourceTree = "<group>"; };
+		85EF4385246A911200E8590E /* TTBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseWebViewController.h; sourceTree = "<group>"; };
+		85EF4386246A911300E8590E /* TTBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseWebViewController.m; sourceTree = "<group>"; };
 		85F6EDDA2449B3B800E03BA9 /* UIViewController+TTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTCategory.h"; sourceTree = "<group>"; };
 		85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTCategory.m"; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,6 +240,8 @@
 				85BEC47F2455858700F57219 /* TTBaseTabBarController.m */,
 				85BEC4832455858700F57219 /* TTBaseViewController.h */,
 				85BEC47E2455858700F57219 /* TTBaseViewController.m */,
+				85EF4385246A911200E8590E /* TTBaseWebViewController.h */,
+				85EF4386246A911300E8590E /* TTBaseWebViewController.m */,
 				85BEC47D2455858700F57219 /* NSBundle+TTToolKit.h */,
 				85BEC4842455858700F57219 /* NSBundle+TTToolKit.m */,
 			);
@@ -553,6 +558,7 @@
 				DAC8EB2D242F506B004EF984 /* NSDate+TTInternetDateTime.m in Sources */,
 				85809D00243DC2D7001813AC /* TTBaseTTSPlayer.m in Sources */,
 				DAC8EB2F242F506B004EF984 /* NSFileManager+TTFile.m in Sources */,
+				85EF4387246A911300E8590E /* TTBaseWebViewController.m in Sources */,
 				DAC8EAEA242F48AF004EF984 /* UIApplication+TTKeyWindow.m in Sources */,
 				DAC8EB05242F4A22004EF984 /* UIViewController+TTNavBar.m in Sources */,
 				DAC8EB0F242F4AF0004EF984 /* UIView+SYJXibConfiguration.m in Sources */,
