@@ -24,13 +24,6 @@
 #define TTLocalized(key)  NSLocalizedString((key), nil)
 #endif
 
-/******************************   自定义Log   ******************************/
-#ifdef DEBUG
-#define TTLog(fmt,...) NSLog((@"[%s:%d行] " fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
-#else
-#define TTLog(...)
-#endif
-
 /******************************   图片   ******************************/
 #define TTGetImage(s) [UIImage imageNamed:(s)]
 

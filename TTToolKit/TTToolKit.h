@@ -44,6 +44,7 @@
 #import "TTAES128Encrypter.h"
 #import "TTAES128Tool.h"
 #import "TTKeychainManager.h"
+#import "TTLog.h"
 
 /******************************   MediaPlayer   ******************************/
 #import "TTVolumeUnit.h"

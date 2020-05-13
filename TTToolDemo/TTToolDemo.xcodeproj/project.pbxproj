@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852F5142246B966B002D581D /* TTTestPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F5141246B966B002D581D /* TTTestPlayer.m */; };
+		852F5145246B9A26002D581D /* TTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F5144246B9A26002D581D /* TTLog.m */; };
 		854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EB0C82435C66600821D1D /* TTAES128Tool.m */; };
 		85809CF1243DC229001813AC /* TTVolumeUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF0243DC229001813AC /* TTVolumeUnit.m */; };
 		85809CF4243DC2AE001813AC /* TTPhonePlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF2243DC2AE001813AC /* TTPhonePlayerTool.m */; };
@@ -80,6 +82,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852F5140246B966B002D581D /* TTTestPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTestPlayer.h; sourceTree = "<group>"; };
+		852F5141246B966B002D581D /* TTTestPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestPlayer.m; sourceTree = "<group>"; };
+		852F5143246B9A26002D581D /* TTLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTLog.h; sourceTree = "<group>"; };
+		852F5144246B9A26002D581D /* TTLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTLog.m; sourceTree = "<group>"; };
 		854EB0C72435C66600821D1D /* TTAES128Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAES128Tool.h; sourceTree = "<group>"; };
 		854EB0C82435C66600821D1D /* TTAES128Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAES128Tool.m; sourceTree = "<group>"; };
 		85809CEF243DC229001813AC /* TTVolumeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVolumeUnit.h; sourceTree = "<group>"; };
@@ -279,6 +285,8 @@
 			children = (
 				DAC8EA4A242EF75C004EF984 /* AppDelegate.h */,
 				DAC8EA4B242EF75C004EF984 /* AppDelegate.m */,
+				852F5140246B966B002D581D /* TTTestPlayer.h */,
+				852F5141246B966B002D581D /* TTTestPlayer.m */,
 				DAC8EA4D242EF75C004EF984 /* SceneDelegate.h */,
 				DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */,
 				DAC8EA50242EF75C004EF984 /* ViewController.h */,
@@ -404,6 +412,8 @@
 				DAC8EB34242F5328004EF984 /* TTAES128Encrypter.m */,
 				854EB0C72435C66600821D1D /* TTAES128Tool.h */,
 				854EB0C82435C66600821D1D /* TTAES128Tool.m */,
+				852F5143246B9A26002D581D /* TTLog.h */,
+				852F5144246B9A26002D581D /* TTLog.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -569,6 +579,7 @@
 				DAC8EB05242F4A22004EF984 /* UIViewController+TTNavBar.m in Sources */,
 				DAC8EB0F242F4AF0004EF984 /* UIView+SYJXibConfiguration.m in Sources */,
 				DAC8EB02242F4A22004EF984 /* UITableViewCell+TTEditStyle.m in Sources */,
+				852F5142246B966B002D581D /* TTTestPlayer.m in Sources */,
 				DAC8EB0E242F4AF0004EF984 /* UIView+TTKeyboard.m in Sources */,
 				85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */,
 				DAC8EA5D242EF762004EF984 /* main.m in Sources */,
@@ -576,6 +587,7 @@
 				DAC8EB18242F4F6A004EF984 /* NSArray+TTPlist.m in Sources */,
 				DAC8EB10242F4AF0004EF984 /* UIView+TTFrame.m in Sources */,
 				DAC8EB36242F5329004EF984 /* NSData+AES128TL.m in Sources */,
+				852F5145246B9A26002D581D /* TTLog.m in Sources */,
 				DAC8EA83242EF823004EF984 /* UIColor+TTHex.m in Sources */,
 				DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */,
 				DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */,
@@ -690,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -742,7 +754,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -791,8 +803,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				INFOPLIST_FILE = TTToolDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -811,7 +824,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TTToolDemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -827,7 +840,9 @@
 		DAC8EA7D242EF763004EF984 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				INFOPLIST_FILE = TTToolDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -836,7 +851,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsy.TTToolDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = TTToolDemo;
 			};
 			name = Debug;
@@ -844,7 +859,9 @@
 		DAC8EA7E242EF763004EF984 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6GAG79FX3;
 				INFOPLIST_FILE = TTToolDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -853,7 +870,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsy.TTToolDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = TTToolDemo;
 			};
 			name = Release;

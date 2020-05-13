@@ -499,9 +499,8 @@ static TTPlayerItemProperty TTPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 }
 
 - (NSTimeInterval)currentTime {
-    CMTime ctime = self.player.currentTime;
-    NSTimeInterval currentTimeSec = ctime.value/ctime.timescale;
-    return currentTimeSec;
+    AVPlayerItem *item = self.player.currentItem;
+    return CMTimeGetSeconds(item.currentTime);
 }
 
 - (NSTimeInterval)cacheTime {
@@ -514,8 +513,21 @@ static TTPlayerItemProperty TTPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 }
 
 - (NSTimeInterval)duration {
+    
     AVPlayerItem *item = self.player.currentItem;
-    float timeLength = item.duration.value * 1 / item.duration.timescale;
+    double timeLength =  CMTimeGetSeconds(item.duration);
+    if (isnan(timeLength)) {
+        timeLength = CMTimeGetSeconds(item.asset.duration);
+    }
+    
+#if TT_DEBUG
+    if (CMTIME_IS_INDEFINITE(item.duration)) {
+        // The value of duration may remain kCMTimeIndefinite for live streams.
+        // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389386-duration?language=objc
+        CMTimeShow(item.duration);
+    }
+#endif
+    
     return timeLength > 0 ? timeLength : self.currentTime;
 }
 

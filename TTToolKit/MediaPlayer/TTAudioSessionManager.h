@@ -40,6 +40,8 @@ extern void TTAudioSessionManagerSetCategory(AVAudioSessionCategory category, AV
 
 + (instancetype)shareSession;
 
+- (void)setup;
+
 @end
 
 NS_ASSUME_NONNULL_END
