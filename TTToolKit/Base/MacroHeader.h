@@ -37,7 +37,12 @@
 #define FontS(f)        [UIFont fontWithName:@"PingFangSC-Semibold" size: f]
 
 /****************************** iPhone X 系列 ******************************/
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
 #define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6P  (IS_IPHONE && kScreenHeight == 736.0)
 #define iPhoneX                ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
                                ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhoneXR               ([UIScreen instancesRespondToSelector:@selector(currentMode)]\
