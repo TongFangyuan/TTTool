@@ -25,6 +25,9 @@ extern void  TTVolumeUnitAdjustVolume(float adjustValue);
 /// 获取当前音量: 0.0～1.0
 @property (nonatomic, assign, readonly) float volume;
 
+/// Default YES
+@property (nonatomic, assign) BOOL hiddenVolumeView;
+
 + (instancetype)shareUnit;
 
 /// 设置音量: 0.0～1.0

@@ -97,6 +97,7 @@ static id _shareInstance;
 - (instancetype)init {
     if (self=[super init]) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(systemVolumeChange:) name:TTSystemVolumeChangeNotification object:nil];
+        self.hiddenVolumeView = YES;
     }
     return self;
 }
@@ -107,6 +108,20 @@ static id _shareInstance;
         [UIApplication.sharedApplication.keyWindow addSubview:_volumeView];
     }
     return _volumeView;
+}
+
+- (void)setHiddenVolumeView:(BOOL)hidden {
+    if (_hiddenVolumeView != hidden) {
+        _hiddenVolumeView = hidden;
+        if (hidden) {
+            self.volumeView.frame = CGRectMake(-100, -100, 40, 40);
+            self.volumeView.hidden = NO;
+            [UIApplication.sharedApplication.keyWindow addSubview:self.volumeView];
+        } else {
+            [self.volumeView setHidden:YES];
+            [self.volumeView  removeFromSuperview];
+        }
+    }
 }
 
 - (UISlider *)volumeSlider {
