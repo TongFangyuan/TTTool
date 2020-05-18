@@ -19,6 +19,9 @@
 + (void)saveObject:(id)object forKey:(NSString *)key;
 /// 取数据
 + (id)objectForKey:(NSString *)key;
+/// 移除数据
++ (void)removeObjectForKey:(NSString *)key;
+
 
 /// 获取格式化后的字符串 例如：v1.1.2(20)
 + (NSString *)getFormatterVersion;

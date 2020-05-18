@@ -19,12 +19,21 @@
 
 + (void)saveObject:(id)object forKey:(NSString *)key
 {
+    if (!key) return;
     [[NSUserDefaults standardUserDefaults] setObject:object forKey:key];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
++ (void)removeObjectForKey:(NSString *)key {
+    if (!key) return;
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+}
+
 + (id)objectForKey:(NSString *)key
 {
+    if (!key) {
+        return nil;
+    }
     return [NSUserDefaults.standardUserDefaults objectForKey:key];
 }
 
