@@ -60,6 +60,7 @@ static id _shareInstance;
     [self stop];
     self.player = [self playerWithSource:source];
     self.player.delegate = self;
+    self.player.playMode = self.playMode;
     [self.player play:url];
 }
 
@@ -67,6 +68,7 @@ static id _shareInstance;
     [self stop];
     self.player = [self playerWithSource:source];
     self.player.delegate = self;
+    self.player.playMode = self.playMode;
     [self.player playAlbum:album];
 }
 
@@ -80,6 +82,7 @@ static id _shareInstance;
     [player play:albums index:index];
     player.delegate = self;
     self.player = player;
+    self.player.playMode = self.playMode;
     
     id<TTAlbumTrackProtocol> album = albums[index];
     self.currentTrackIndex = index;
@@ -261,10 +264,7 @@ static id _shareInstance;
 - (void)setPlayMode:(TTPhonePlayMode)playMode {
     self.player.playMode = playMode;
     NSLog(@"🔋 播放模式：%@", [TTBaseMusicPlayer TTMusicPlayerModeDesc:playMode]);
-}
-
-- (TTPhonePlayMode)playMode {
-    return self.player.playMode;
+    _playMode = playMode;
 }
 
 - (NSString *)mediaSource {
