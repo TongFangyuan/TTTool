@@ -36,6 +36,9 @@
 #define FontR(f)        [UIFont fontWithName:@"PingFangSC-Regular" size: f]
 #define FontS(f)        [UIFont fontWithName:@"PingFangSC-Semibold" size: f]
 
+#define TTFontRegular(f) [UIFont systemFontOfSize:f weight:UIFontWeightRegular]
+#define TTFontLight(f)   [UIFont systemFontOfSize:f weight:UIFontWeightLight]
+
 /****************************** iPhone X 系列 ******************************/
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)

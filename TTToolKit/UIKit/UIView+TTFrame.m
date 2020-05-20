@@ -64,6 +64,12 @@
     return self.center.y;
 }
 
+- (void)setCenterY:(CGFloat)centerY {
+    CGPoint center = self.center;
+    center.y = centerY;
+    self.center = center;
+}
+
 - (CGFloat)right {
     return CGRectGetMaxX(self.frame);
 }
