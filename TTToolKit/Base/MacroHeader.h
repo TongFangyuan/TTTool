@@ -39,6 +39,8 @@
 #define TTFontLight(f)   [UIFont systemFontOfSize:f weight:UIFontWeightLight]
 #define TTFontRegular(f) [UIFont systemFontOfSize:f weight:UIFontWeightRegular]
 #define TTFontBold(f) [UIFont systemFontOfSize:f weight:UIFontWeightBold]
+#define TTFontSemibold(f) [UIFont systemFontOfSize:f weight:UIFontWeightSemibold]
+#define TTFontMedium(f) [UIFont systemFontOfSize:f weight:UIFontWeightMedium]
 
 /****************************** iPhone X 系列 ******************************/
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
