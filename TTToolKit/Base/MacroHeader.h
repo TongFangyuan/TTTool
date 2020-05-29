@@ -55,7 +55,15 @@
                                ? CGSizeEqualToSize(CGSizeMake(750, 1624), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhoneXS_Max           ([UIScreen instancesRespondToSelector:@selector(currentMode)] \
                                ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone11ProMax CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(414, 896))
+// iPhone X/XS/11 Pro
+#define iPhone11Pro    CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(375, 812))
+// iPhone XR/11
+#define iPhone11       CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(414, 896))
+
 #define iPhoneX_All                              [[UIApplication sharedApplication] statusBarFrame].size.height==44.0f
+
 #define k_Height_NavContentBar                   44.0f
 #define k_Height_StatusBar                       (iPhoneX_All? 44.0 : 20.0)
 #define k_Height_NavBar                          (iPhoneX_All ? 88.0 : 64.0)
