@@ -274,6 +274,7 @@ static id _shareInstance;
 #pragma mark - ------------- 播放器状态 ------------------
 - (void)playerWillStart:(id<TTMusicPlayerObject>)player {
     if (player.albumTrack) {
+        self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
     }
 }
