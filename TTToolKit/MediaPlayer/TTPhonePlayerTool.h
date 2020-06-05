@@ -120,13 +120,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@protocol TTPhonePlayToolObserver;
+
 @interface TTPhonePlayerTool (MusicPlayer)
 
-/// 暂停音乐播放器
 - (void)pauseMusicPlayer;
-
-/// 停止音乐播放器
 - (void)stopMusicPlayer;
+- (void)seekMusicToPosition:(CGFloat)position;
+- (void)manualPauseMusic;
+- (void)manualPlayMusic;
+
+- (void)addObserver:(id<TTPhonePlayToolObserver>)observer;
+- (void)removeObserver:(id<TTPhonePlayToolObserver>)observer;
 
 @end
 
@@ -138,5 +143,19 @@ extern BOOL TTPhonePlayerToolIsIMusicPlayer(void);
 extern BOOL TTPhonePlayerToolIsRadioStationPlayer(void);
 /// 是否需要自己播放TTS
 extern BOOL TTPhonePlayerToolIsSelfPlayTTS(void);
+
+
+@protocol TTPhonePlayToolObserver <NSObject>
+
+- (void)willPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx;
+- (void)didPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx;
+- (void)didPlayingStateChange:(BOOL)isPlaying;
+- (void)didSeekToPosition:(CGFloat)position;
+- (void)didPlayToPosition:(CGFloat)position;
+- (void)didCacheToPostion:(CGFloat)position;
+- (void)didPlayerBufferFull;
+- (void)didPlayerBufferEmpty;
+
+@end
 
 NS_ASSUME_NONNULL_END

@@ -8,15 +8,18 @@
 
 #import "TTPhonePlayerTool.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "TTUnitMacros.h"
 
 @interface TTPhonePlayerTool ()<TTMusicPlayerStatusDelegate>
 
 @property (nonatomic, strong, readwrite) id<TTMusicPlayerObject> player;
+@property (nonatomic, strong) dispatch_semaphore_t lock;
 
 /**
  播放器类型管理
  */
 @property (nonatomic,strong) NSMutableDictionary *clsManager;
+@property (nonatomic,strong) NSMutableArray<id <TTPhonePlayToolObserver>> *observers;
 
 @end
 
@@ -51,6 +54,7 @@ static id _shareInstance;
     if (self=[super init]) {
         self.clsManager = [NSMutableDictionary dictionary];
         self.localControl = kLocalPlaySpeechTypePlay;
+        self.observers = [NSMutableArray array];
     }
     return self;
 }
@@ -134,11 +138,11 @@ static id _shareInstance;
 
 - (void)playControl:(LocalPlaySpeechType)control {
     //Fix: 爱音乐无法恢复播放的问题
-//    if (!self.albumTrack) {
-//        NSLog(@"没有专辑信息，不接着走");
-//        return;
-//    }
-
+    //    if (!self.albumTrack) {
+    //        NSLog(@"没有专辑信息，不接着走");
+    //        return;
+    //    }
+    
     switch (control) {
         case kLocalPlaySpeechTypePlay:
         {
@@ -271,43 +275,118 @@ static id _shareInstance;
     return [self mediaSourceForPlayer:self.player];
 }
 
+- (dispatch_semaphore_t)lock {
+    if (!_lock) {
+        _lock = dispatch_semaphore_create(1);
+    }
+    return _lock;
+}
+
 #pragma mark - ------------- 播放器状态 ------------------
 - (void)playerWillStart:(id<TTMusicPlayerObject>)player {
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
+        
+        for (id<TTPhonePlayToolObserver> obj in self.observers) {
+            if ([obj respondsToSelector:@selector(willPlayAlbumTrack:index:)]) {
+                [obj willPlayAlbumTrack:player.albumTrack index:player.currentTrackIndex];
+            }
+        }
     }
 }
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player{
     self.isMediaPlaying = player.isPlaying;
+    
+    if (player.albumTrack) {
+        self.currentTrackIndex = player.currentTrackIndex;
+        self.albumTrack = player.albumTrack;
+        for (id<TTPhonePlayToolObserver> obj in self.observers) {
+            if ([obj respondsToSelector:@selector(didPlayAlbumTrack:index:)]) {
+                [obj didPlayAlbumTrack:player.albumTrack index:player.currentTrackIndex];
+            }
+        }
+    }
+    
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
+            [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+    }
+    
 }
+
 - (void)playerDidPaused:(id<TTMusicPlayerObject>)player{
     self.isMediaPlaying = player.isPlaying;
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
+            [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+    }
 }
 - (void)playerDidFinished:(id<TTMusicPlayerObject>)player{
     self.isMediaPlaying = player.isPlaying;
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
+            [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+    }
 }
 - (void)playerDidContiuPlay:(id<TTMusicPlayerObject>)player{
     self.isMediaPlaying = player.isPlaying;
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
+            [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+    }
 }
 - (void)player:(id<TTMusicPlayerObject>)player playError:(NSError *)error{
     self.isMediaPlaying = player.isPlaying;
     [self playNext];
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
+            [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+    }
 }
 - (void)playerBufferFull:(id<TTMusicPlayerObject>)player{
-
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayerBufferFull)]) {
+            [obj didPlayerBufferFull];
+        }
+    }
 }
 - (void)playerBufferEmpty:(id<TTMusicPlayerObject>)player{
-    
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayerBufferEmpty)]) {
+            [obj didPlayerBufferEmpty];
+        }
+    }
 }
 - (void)player:(id<TTMusicPlayerObject>)player didSeekToPostion:(CGFloat)postion{
     self.isMediaPlaying = player.isPlaying;
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
+            [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+        if ([obj respondsToSelector:@selector(didSeekToPosition:)]) {
+            [obj didSeekToPosition:postion];
+        }
+    }
 }
 - (void)player:(id<TTMusicPlayerObject>)player playToPostion:(CGFloat)postion{
-    
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+       if ([obj respondsToSelector:@selector(didPlayToPosition:)]) {
+            [obj didPlayToPosition:postion];
+        }
+    }
 }
 - (void)player:(id<TTMusicPlayerObject>)player cacheToPostion:(CGFloat)postion {
-    
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+       if ([obj respondsToSelector:@selector(didCacheToPostion:)]) {
+           [obj didCacheToPostion:postion];
+       }
+    }
 }
 
 #pragma mark - ---- Application 事件处理 ----
@@ -402,7 +481,7 @@ static id _shareInstance;
     //延时一段时间暂停音乐播放器
     [self performSelector:@selector(pauseMusicPlayer) withObject:nil afterDelay:0.5];
     [self stopTTSPlayer];
-
+    
     id<TTTTSPlayerProtocol> player = (id<TTTTSPlayerProtocol>)[self playerWithSource:source];
     [player play:urls callback:callback];
     self.ttsPLayer = player;
@@ -435,6 +514,36 @@ static id _shareInstance;
 
 - (void)stopMusicPlayer {
     [self.player stop];
+}
+
+- (void)manualPauseMusic {
+    self.manualPause = YES;
+    [self.player pause];
+}
+
+- (void)manualPlayMusic {
+    self.manualPause = NO;
+    [self.player continuePlay];
+}
+
+- (void)seekMusicToPosition:(CGFloat)position {
+    [self.player seekToPosition:position];
+}
+
+- (void)addObserver:(id<TTPhonePlayToolObserver>)observer {
+    if (![self.observers containsObject:observer]) {
+        TT_LOCK(self.lock);
+        [self.observers addObject:observer];
+        TT_UNLOCK(self.lock);
+    }
+}
+
+- (void)removeObserver:(id<TTPhonePlayToolObserver>)observer {
+    if ([self.observers containsObject:observer]) {
+        TT_LOCK(self.lock);
+        [self.observers removeObject:observer];
+        TT_UNLOCK(self.lock);
+    }
 }
 
 @end

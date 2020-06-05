@@ -112,6 +112,7 @@
 		85BEC48A245588D600F57219 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		85C80BEE2452F33B00F7F5EA /* TTSizeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSizeAdapter.h; sourceTree = "<group>"; };
 		85C80BEF2452F33B00F7F5EA /* TTSizeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSizeAdapter.m; sourceTree = "<group>"; };
+		85ED24F62489DA8D009D3D26 /* TTUnitMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUnitMacros.h; sourceTree = "<group>"; };
 		85EF4385246A911200E8590E /* TTBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseWebViewController.h; sourceTree = "<group>"; };
 		85EF4386246A911300E8590E /* TTBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseWebViewController.m; sourceTree = "<group>"; };
 		85EF4388246A91B700E8590E /* TTBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseTableViewController.h; sourceTree = "<group>"; };
@@ -243,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				85BEC48A245588D600F57219 /* MacroHeader.h */,
+				85ED24F62489DA8D009D3D26 /* TTUnitMacros.h */,
 				85BEC4812455858700F57219 /* TTBaseNavigationController.h */,
 				85BEC4802455858700F57219 /* TTBaseNavigationController.m */,
 				85BEC4822455858700F57219 /* TTBaseTabBarController.h */,
