@@ -8,7 +8,6 @@
 
 #import "TTPhonePlayerTool.h"
 #import <MediaPlayer/MediaPlayer.h>
-#import "TTUnitMacros.h"
 
 @interface TTPhonePlayerTool ()<TTMusicPlayerStatusDelegate>
 

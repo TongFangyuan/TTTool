@@ -10,6 +10,7 @@
 #import "TTAudioSessionManager.h"
 #import "TTBaseMusicPlayer.h"
 #import "TTBaseTTSPlayer.h"
+#import "TTUnitMacros.h"
 
 #ifndef TTPhonePlayerTool_DEBUG
     #define TTPhonePlayerTool_DEBUG 1
