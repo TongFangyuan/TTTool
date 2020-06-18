@@ -16,11 +16,11 @@
 #define CGCS(sz, s)  [[TTSizeAdapter share] convertSize:sz scale:s]
 
 typedef enum : NSUInteger {
-    TTiPhone678,
-    TTiPhone678Plus,
-    TTiPhoneXXS,
-    TTiPhoneXRXSMAX,
-    TTiPhone55S
+    TTiPhone678,     // 375x667  (iPhone 6/6S/7/8)
+    TTiPhone678Plus, // 414x736  (iPhone 6/6S/7/8 Plus)
+    TTiPhoneXXS,     // 375x812  (iPhone X/XS/11 Pro)
+    TTiPhoneXRXSMAX, // 414x896  (iPhone XR/11/XS Max/11 Pro Max)
+    TTiPhone55S      // 320x568  (iPhone 5/5S/5C/SE)
 } TTiPhone;
 
 NS_ASSUME_NONNULL_BEGIN
