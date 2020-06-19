@@ -15,6 +15,9 @@
 #define CGCP(pt, s)  [[TTSizeAdapter share] convertPt:pt scale:s]
 #define CGCS(sz, s)  [[TTSizeAdapter share] convertSize:sz scale:s]
 
+#define TTSH(f) [[TTSizeAdapter share] scaleHegiht:f]
+#define TTSW(f) [[TTSizeAdapter share] scaleWidth:f]
+
 typedef enum : NSUInteger {
     TTiPhone678,     // 375x667  (iPhone 6/6S/7/8)
     TTiPhone678Plus, // 414x736  (iPhone 6/6S/7/8 Plus)
@@ -75,5 +78,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @end
+
+@interface TTAdapterItem : NSObject
+
+/// 根据传入数组取值，赋值顺序依次为TTiPhone678、TTiPhone678Plus、TTiPhoneXXS、TTiPhoneXRXSMAX、TTiPhone55S
++ (instancetype)itemWithFloats:(NSArray<NSNumber *> *)floats;
+
+/// 默认取iPhone6机型的值
+- (CGFloat)fittingFloat;
+
+@end
+
 
 NS_ASSUME_NONNULL_END

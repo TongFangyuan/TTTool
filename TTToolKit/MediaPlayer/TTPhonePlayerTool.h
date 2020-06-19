@@ -148,6 +148,7 @@ extern BOOL TTPhonePlayerToolIsSelfPlayTTS(void);
 
 @protocol TTPhonePlayToolObserver <NSObject>
 
+@optional
 - (void)willPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx;
 - (void)didPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx;
 - (void)didPlayingStateChange:(BOOL)isPlaying;

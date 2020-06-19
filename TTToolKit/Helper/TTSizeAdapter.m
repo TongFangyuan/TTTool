@@ -122,3 +122,42 @@
 }
 
 @end
+
+@interface TTAdapterItem ()
+@property (nonatomic, strong) NSMutableDictionary *dict;
+@end
+
+@implementation TTAdapterItem
+
++ (instancetype)itemWithFloats:(NSArray<NSNumber *> *)floats {
+    return [[self alloc] initWithFloats:floats];
+}
+
+- (instancetype)initWithFloats:(NSArray<NSNumber *> *)floats {
+    if (self = [super init]) {
+        self.dict = [NSMutableDictionary dictionary];
+        if (floats.count) {
+            [self.dict setValue:floats[0] forKey:@(TTiPhone678)];
+        }
+        if (floats.count>=2) {
+            [self.dict setValue:floats[1] forKey:@(TTiPhone678Plus)];
+        }
+        if (floats.count>=3) {
+            [self.dict setValue:floats[2] forKey:@(TTiPhoneXXS)];
+        }
+        if (floats.count>=4) {
+            [self.dict setValue:floats[3] forKey:@(TTiPhoneXRXSMAX)];
+        }
+        if (floats.count>=5) {
+            [self.dict setValue:floats[4] forKey:@(TTiPhone55S)];
+        }
+    }
+    return self;
+}
+
+- (CGFloat)fittingFloat {
+    return [self.dict[@(TTSizeAdapter.share.currentIPhone)] floatValue];
+}
+
+@end
+
