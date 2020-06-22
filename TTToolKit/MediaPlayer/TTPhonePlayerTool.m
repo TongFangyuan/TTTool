@@ -403,26 +403,28 @@ static id _shareInstance;
     switch (event.subtype) {
         case UIEventSubtypeRemoteControlPlay:
         {
-            [[TTPhonePlayerTool shareTool] operate];
             [[TTPhonePlayerTool shareTool] continuePlay];
+            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         case UIEventSubtypeRemoteControlTogglePlayPause:
         case UIEventSubtypeRemoteControlPause:
         {
-            [[TTPhonePlayerTool shareTool] operate];
             [TTPhonePlayerTool shareTool].manualPause = YES;
             [[TTPhonePlayerTool shareTool] pause];
+            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         case UIEventSubtypeRemoteControlNextTrack:
         {
             [[TTPhonePlayerTool shareTool] playNext];
+            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         case UIEventSubtypeRemoteControlPreviousTrack:
         {
             [[TTPhonePlayerTool shareTool] playPrevious];
+            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         default:
