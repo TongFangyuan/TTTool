@@ -296,7 +296,7 @@ static id _shareInstance;
 }
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player{
     self.isMediaPlaying = player.isPlaying;
-    
+    [[TTPhonePlayerTool shareTool] operate];
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
@@ -404,7 +404,6 @@ static id _shareInstance;
         case UIEventSubtypeRemoteControlPlay:
         {
             [[TTPhonePlayerTool shareTool] continuePlay];
-            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         case UIEventSubtypeRemoteControlTogglePlayPause:
@@ -412,19 +411,16 @@ static id _shareInstance;
         {
             [TTPhonePlayerTool shareTool].manualPause = YES;
             [[TTPhonePlayerTool shareTool] pause];
-            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         case UIEventSubtypeRemoteControlNextTrack:
         {
             [[TTPhonePlayerTool shareTool] playNext];
-            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         case UIEventSubtypeRemoteControlPreviousTrack:
         {
             [[TTPhonePlayerTool shareTool] playPrevious];
-            [[TTPhonePlayerTool shareTool] operate];
         }
             break;
         default:
