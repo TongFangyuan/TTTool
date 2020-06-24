@@ -37,6 +37,7 @@ typedef enum : NSUInteger {
 @property (nonatomic,strong) UIColor *navTitleColorForDark;
 /// 导航栏标题字体
 @property (nonatomic,strong) UIFont   *navBarTitleFont;
+/// ⚠️⚠️ 控制导航栏的隐藏请直接设置属性值就好，不然会有bug：滑动返回顶部出现黑块
 /// 设置是否隐藏导航栏
 @property (nonatomic,assign) BOOL      hiddenNavBar;
 /// 蒙版视图显示,默认为NO（带有透明度的灰色遮罩层，不让用户操作）
