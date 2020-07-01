@@ -36,7 +36,18 @@ typedef NSString * TTMediaSourceName;
 #pragma mark - ---- 播放器功能协议定义 ----
 @protocol TTMusicPlayerObject;
 
-@protocol TTMusicPlayerStatusDelegate <NSObject>
+/// 兼容之前的代码
+@protocol XZXMediaPlayerStatusDelegate <NSObject>
+@optional
+- (void)xzxMediaPlayerPlayStart;
+- (void)xzxMediaPlayerPaused;
+- (void)xzxMediaPlayerPlayError:(NSError *)error;
+- (void)xzxMediaPlayerSeekPosition:(CGFloat)position;
+- (void)xzxMediaPlayerUpdateProgress:(CGFloat)position;
+- (void)xzxMediaPlayerPlayFinished;
+@end
+
+@protocol TTMusicPlayerStatusDelegate <XZXMediaPlayerStatusDelegate>
 @optional
 - (void)playerWillStart:(id<TTMusicPlayerObject>)player;
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player;
