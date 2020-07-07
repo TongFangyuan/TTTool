@@ -51,6 +51,23 @@ NS_ASSUME_NONNULL_BEGIN
                confirmHandler:(void(^ _Nullable)(void))confirmHandler
                 cancelHandler:(void(^ _Nullable)(void))cancelHandler;
 
+
+/// Alert弹窗
+/// @param title 标题
+/// @param message 内容
+/// @param yesText YES文本
+/// @param noText NO文本
+/// @param sourceVC 源控制器
+/// @param confirmHandler YES回调
+/// @param cancelHandler NO回调
++ (void)tt_showAlertWithTitle:(NSString *)title
+                      message:(NSString *)message
+                      yesText:(NSString *)yesText
+                       noText:(NSString *)noText
+                     sourceVC:(UIViewController * _Nullable)sourceVC
+               confirmHandler:(void(^ _Nullable)(void))confirmHandler
+                cancelHandler:(void(^ _Nullable)(void))cancelHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

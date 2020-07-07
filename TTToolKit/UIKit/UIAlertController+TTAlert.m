@@ -28,17 +28,32 @@
                      sourceVC:(UIViewController * _Nullable)sourceVC
                confirmHandler:(void(^ _Nullable)(void))confirmHandler
                 cancelHandler:(void(^ _Nullable)(void))cancelHandler {
-    
+    [self tt_showAlertWithTitle:title
+                        message:message
+                        yesText:NSLocalizedStringFromTable(@"确定", @"TTAlert", nil)
+                         noText:NSLocalizedStringFromTable(@"取消", @"TTAlert", nil)
+                       sourceVC:sourceVC
+                 confirmHandler:confirmHandler
+                  cancelHandler:cancelHandler];
+}
+
++ (void)tt_showAlertWithTitle:(NSString *)title
+                      message:(NSString *)message
+                      yesText:(NSString *)yesText
+                       noText:(NSString *)noText
+                     sourceVC:(UIViewController * _Nullable)sourceVC
+               confirmHandler:(void(^ _Nullable)(void))confirmHandler
+                cancelHandler:(void(^ _Nullable)(void))cancelHandler {
     UIAlertAction *confirmAlertAction = nil;
     if (confirmHandler) {
-      confirmAlertAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"确定", @"TTAlert", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+      confirmAlertAction = [UIAlertAction actionWithTitle:yesText style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             confirmHandler();
         }];
     }
     
     UIAlertAction *cancelAlertAction = nil;
     if (cancelHandler) {
-        cancelAlertAction = [UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"取消", @"TTAlert", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        cancelAlertAction = [UIAlertAction actionWithTitle:noText style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             cancelHandler();
         }];
     }
