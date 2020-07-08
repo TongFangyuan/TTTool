@@ -222,7 +222,8 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
 /// 下一首
 - (void)playNext;
 
-- (void)operate;
+- (void)updateLockScreenInfo;
+
 
 // -------------------------------- 可能会丢弃的属性方法 --------------------------------
 /**
@@ -230,7 +231,11 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
 
  @param music 歌曲信息
  */
-- (void)setLockScreenNowPlayingInfo:(id<TTAlbumTrackProtocol>)music;
+- (void)setLockScreenNowPlayingInfo:(id<TTAlbumTrackProtocol>)music DEPRECATED_MSG_ATTRIBUTE("提示使用updateLockScreenInfo方法代替");
+
+
+/// 内部本质调用的是 setLockScreenNowPlayingInfo: 方法
+- (void)operate DEPRECATED_MSG_ATTRIBUTE("提示使用updateLockScreenInfo方法代替");
 
 @end
 

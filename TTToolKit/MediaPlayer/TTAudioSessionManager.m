@@ -127,7 +127,7 @@ static id _shareInstance;
             [[TTPhonePlayerTool shareTool] interruptPause];
         }
     } else if (AVAudioSessionInterruptionTypeEnded == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
-        if ([TTPhonePlayerTool shareTool].needContinue) {
+        if ([TTPhonePlayerTool shareTool].needContinue && ![TTPhonePlayerTool shareTool].isMediaPlaying) {
             [[TTPhonePlayerTool shareTool] continuePlay];
         }
     }

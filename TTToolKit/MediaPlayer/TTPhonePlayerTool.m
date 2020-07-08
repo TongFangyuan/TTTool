@@ -119,10 +119,6 @@ static id _shareInstance;
     }
 }
 
-- (void)operate {
-    [self setLockScreenNowPlayingInfo:self.albumTrack];
-}
-
 - (void)pause {
     
     [self stopTTSPlayer];
@@ -189,30 +185,47 @@ static id _shareInstance;
     [self playNextSongToMatchInfo];
 }
 
-- (void)setLockScreenNowPlayingInfo:(id<TTAlbumTrackProtocol>)music {
-    if (!music||[music isKindOfClass:[NSNull class]]) return;
-    
-    if ([AVAudioSession sharedInstance].categoryOptions == AVAudioSessionCategoryOptionDuckOthers) {
+- (void)updateLockScreenInfo {
+    if ([UIApplication sharedApplication].applicationState==UIApplicationStateActive) {
         return;
     }
+    
+    id<TTAlbumTrackProtocol> album = self.albumTrack;
+    if (!album) return;
+    
     NSMutableDictionary *info = [[NSMutableDictionary alloc] init];
-    // 专辑
-    //info[MPMediaItemPropertyAlbumTitle] = music.nickname;
-    // 标题(音乐名称)
-    info[MPMediaItemPropertyTitle] = music.songName;
-    // 作者
-    info[MPMediaItemPropertyArtist] = music.singer;
-    // 显示播放时间和剩余时间及进度
-    
-    // 图片
-    if (music.lockImage) {
-        info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:music.lockImage];
-    } else if (music.imageUrl && [music.imageUrl isEqualToString:@""] == NO) {
-    }
+    info[MPMediaItemPropertyTitle] = album.songName;
+    info[MPMediaItemPropertyArtist] = album.singer;
     info[MPMediaItemPropertyPlaybackDuration] = @(self.duration);
-    info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
     
-    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+    if (album.lockImage) {
+        info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:album.lockImage];
+    }
+    
+    if (album.imageUrl) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSURL *URL = [NSURL URLWithString:album.imageUrl];
+            NSData *imgData = [NSData dataWithContentsOfURL:URL];
+            UIImage *image = [[UIImage alloc] initWithData:imgData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:image];
+                info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
+                [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+            });
+        });
+    } else {
+    info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+    }
+    
+}
+
+- (void)operate {
+    [self updateLockScreenInfo];
+}
+
+- (void)setLockScreenNowPlayingInfo:(id<TTAlbumTrackProtocol>)music {
+    [self updateLockScreenInfo];
 }
 
 - (void)stop {
@@ -220,7 +233,6 @@ static id _shareInstance;
 }
 
 - (void)playNextSongToMatchInfo {
-    
     self.isMediaPlaying = YES;
     self.manualPause = NO;
     self.currentTrackIndex = self.player.currentTrackIndex;
@@ -306,9 +318,10 @@ static id _shareInstance;
 }
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player{
 //    NSLog(@"🔥 playerDidStart");
+    [self updateLockScreenInfo];
     
     self.isMediaPlaying = player.isPlaying;
-    [[TTPhonePlayerTool shareTool] operate];
+
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
@@ -328,7 +341,7 @@ static id _shareInstance;
 
 - (void)playerDidPaused:(id<TTMusicPlayerObject>)player{
 //    NSLog(@"🔥 playerDidPaused");
-
+    [self updateLockScreenInfo];
     
     self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
@@ -357,6 +370,7 @@ static id _shareInstance;
 }
 - (void)playerDidContiuPlay:(id<TTMusicPlayerObject>)player{
 //    NSLog(@"🔥 playerDidContiuPlay");
+    [self updateLockScreenInfo];
 
     self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
@@ -432,36 +446,36 @@ static id _shareInstance;
 #pragma mark - ---- Application 事件处理 ----
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    [TTPhonePlayerTool shareTool].isForeground = NO;
-    [[TTPhonePlayerTool shareTool] operate];
+    self.isForeground = NO;
+    [self updateLockScreenInfo];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application{
-    [TTPhonePlayerTool shareTool].isForeground = YES;
+    self.isForeground = YES;
 }
 
 - (void)remoteControlReceivedWithEvent:(UIEvent *)event{
     switch (event.subtype) {
         case UIEventSubtypeRemoteControlPlay:
         {
-            [[TTPhonePlayerTool shareTool] continuePlay];
+            [self continuePlay];
         }
             break;
         case UIEventSubtypeRemoteControlTogglePlayPause:
         case UIEventSubtypeRemoteControlPause:
         {
-            [TTPhonePlayerTool shareTool].manualPause = YES;
-            [[TTPhonePlayerTool shareTool] pause];
+            self.manualPause = YES;
+            [self pause];
         }
             break;
         case UIEventSubtypeRemoteControlNextTrack:
         {
-            [[TTPhonePlayerTool shareTool] playNext];
+            [self playNext];
         }
             break;
         case UIEventSubtypeRemoteControlPreviousTrack:
         {
-            [[TTPhonePlayerTool shareTool] playPrevious];
+            [self playPrevious];
         }
             break;
         default:
