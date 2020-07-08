@@ -169,10 +169,6 @@ extern BOOL TTPhonePlayerToolIsSelfPlayTTS(void);
 - (void)didPlayerBufferFull;
 - (void)didPlayerBufferEmpty;
 
-
-- (void)willPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx DEPRECATED_MSG_ATTRIBUTE("提示使用musicPlayer:updateAlbumTrack:方法代替");
-- (void)didPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx DEPRECATED_MSG_ATTRIBUTE("提示使用musicPlayer:updateAlbumTrack:方法代替");
-
 @end
 
 NS_ASSUME_NONNULL_END

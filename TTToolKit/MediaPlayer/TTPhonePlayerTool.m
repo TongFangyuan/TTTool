@@ -287,24 +287,21 @@ static id _shareInstance;
 //    NSLog(@"🔥 playerWillStart");
     
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        
         if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
             [obj musicPlayer:player changeState:TTPlayerStateLoading];
         }
-    }
+    
+    if (player.albumTrack) {
+            if ([obj respondsToSelector:@selector(musicPlayer:updateAlbumTrack:)]) {
+                [obj musicPlayer:player updateAlbumTrack:player.albumTrack];
+            }
+            }
+        }
     
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
-        
-        for (id<TTPhonePlayToolObserver> obj in self.observers) {
-            if ([obj respondsToSelector:@selector(musicPlayer:updateAlbumTrack:)]) {
-                [obj musicPlayer:player updateAlbumTrack:player.albumTrack];
-            }
-            
-            if ([obj respondsToSelector:@selector(willPlayAlbumTrack:index:)]) {
-                [obj willPlayAlbumTrack:player.albumTrack index:player.currentTrackIndex];
-            }
-        }
     }
 }
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player{
@@ -315,11 +312,6 @@ static id _shareInstance;
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
-        for (id<TTPhonePlayToolObserver> obj in self.observers) {
-            if ([obj respondsToSelector:@selector(didPlayAlbumTrack:index:)]) {
-                [obj didPlayAlbumTrack:player.albumTrack index:player.currentTrackIndex];
-            }
-        }
     }
     
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
@@ -428,7 +420,7 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player cacheToPostion:(CGFloat)postion {
-    NSLog(@"🔥 cacheToPostion");
+//    NSLog(@"🔥 cacheToPostion");
 
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
        if ([obj respondsToSelector:@selector(didCacheToPostion:)]) {
