@@ -82,7 +82,6 @@ static id _shareInstance;
     [self stop];
     
     id<TTMusicPlayerObject> player = [self playerWithSource:source];
-    [player play:albums index:index];
     player.delegate = self;
     self.player = player;
     self.player.playMode = self.playMode;
@@ -92,6 +91,8 @@ static id _shareInstance;
     self.albumTracks = albums.copy;
     self.albumTrack = album;
     self.needContinue = YES;
+    
+    [player play:albums index:index];
 }
 
 - (void)allStop {
@@ -283,11 +284,23 @@ static id _shareInstance;
 
 #pragma mark - ------------- 播放器状态 ------------------
 - (void)playerWillStart:(id<TTMusicPlayerObject>)player {
+//    NSLog(@"🔥 playerWillStart");
+    
+    for (id<TTPhonePlayToolObserver> obj in self.observers) {
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStateLoading];
+        }
+    }
+    
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
         
         for (id<TTPhonePlayToolObserver> obj in self.observers) {
+            if ([obj respondsToSelector:@selector(musicPlayer:updateAlbumTrack:)]) {
+                [obj musicPlayer:player updateAlbumTrack:player.albumTrack];
+            }
+            
             if ([obj respondsToSelector:@selector(willPlayAlbumTrack:index:)]) {
                 [obj willPlayAlbumTrack:player.albumTrack index:player.currentTrackIndex];
             }
@@ -295,6 +308,8 @@ static id _shareInstance;
     }
 }
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player{
+//    NSLog(@"🔥 playerDidStart");
+    
     self.isMediaPlaying = player.isPlaying;
     [[TTPhonePlayerTool shareTool] operate];
     if (player.albumTrack) {
@@ -311,35 +326,59 @@ static id _shareInstance;
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
         }
+        
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStateStarted];
+        }
     }
     
 }
 
 - (void)playerDidPaused:(id<TTMusicPlayerObject>)player{
+//    NSLog(@"🔥 playerDidPaused");
+
+    
     self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+        
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStatePaused];
         }
     }
 }
 - (void)playerDidFinished:(id<TTMusicPlayerObject>)player{
+//    NSLog(@"🔥 playerDidFinished");
+
     self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
+        }
+        
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStateFinshed];
         }
     }
 }
 - (void)playerDidContiuPlay:(id<TTMusicPlayerObject>)player{
+//    NSLog(@"🔥 playerDidContiuPlay");
+
     self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
         }
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStateResume];
+        }
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player playError:(NSError *)error{
+//    NSLog(@"🔥 playError: %@",error);
+
     self.isMediaPlaying = player.isPlaying;
     [self playNext];
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
@@ -349,6 +388,8 @@ static id _shareInstance;
     }
 }
 - (void)playerBufferFull:(id<TTMusicPlayerObject>)player{
+//    NSLog(@"🔥 playerBufferFull");
+
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayerBufferFull)]) {
             [obj didPlayerBufferFull];
@@ -356,6 +397,8 @@ static id _shareInstance;
     }
 }
 - (void)playerBufferEmpty:(id<TTMusicPlayerObject>)player{
+//    NSLog(@"🔥 playerBufferEmpty");
+
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayerBufferEmpty)]) {
             [obj didPlayerBufferEmpty];
@@ -363,6 +406,8 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player didSeekToPostion:(CGFloat)postion{
+//    NSLog(@"🔥 didSeekToPostion");
+
     self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
@@ -374,6 +419,8 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player playToPostion:(CGFloat)postion{
+//    NSLog(@"🔥 playToPostion");
+
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
        if ([obj respondsToSelector:@selector(didPlayToPosition:)]) {
             [obj didPlayToPosition:postion];
@@ -381,6 +428,8 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player cacheToPostion:(CGFloat)postion {
+    NSLog(@"🔥 cacheToPostion");
+
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
        if ([obj respondsToSelector:@selector(didCacheToPostion:)]) {
            [obj didCacheToPostion:postion];

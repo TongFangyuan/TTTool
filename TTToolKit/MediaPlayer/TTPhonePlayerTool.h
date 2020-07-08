@@ -18,6 +18,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    TTPlayerStateNone,
+    TTPlayerStateLoading,
+    TTPlayerStateStarted,
+    TTPlayerStateStuck,
+    TTPlayerStatePaused,
+    TTPlayerStateResume,
+    TTPlayerStateFinshed,
+} TTPlayerState;
+
 @interface TTPhonePlayerTool : NSObject <TTPhonePlayToolObject>
 
 /** 正在工作的播放器 */
@@ -149,14 +159,19 @@ extern BOOL TTPhonePlayerToolIsSelfPlayTTS(void);
 @protocol TTPhonePlayToolObserver <NSObject>
 
 @optional
-- (void)willPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx;
-- (void)didPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx;
+- (void)musicPlayer:(id<TTMusicPlayerObject>)player changeState:(TTPlayerState)state;
+- (void)musicPlayer:(id<TTMusicPlayerObject>)player updateAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack;
+
 - (void)didPlayingStateChange:(BOOL)isPlaying;
 - (void)didSeekToPosition:(CGFloat)position;
 - (void)didPlayToPosition:(CGFloat)position;
 - (void)didCacheToPostion:(CGFloat)position;
 - (void)didPlayerBufferFull;
 - (void)didPlayerBufferEmpty;
+
+
+- (void)willPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx DEPRECATED_MSG_ATTRIBUTE("提示使用musicPlayer:updateAlbumTrack:方法代替");
+- (void)didPlayAlbumTrack:(id<TTAlbumTrackProtocol>)albumTrack index:(NSInteger)idx DEPRECATED_MSG_ATTRIBUTE("提示使用musicPlayer:updateAlbumTrack:方法代替");
 
 @end
 
