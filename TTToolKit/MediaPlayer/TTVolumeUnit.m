@@ -143,7 +143,7 @@ static id _shareInstance;
     if([[noti.userInfo objectForKey:@"AVSystemController_AudioVolumeChangeReasonNotificationParameter"] isEqualToString:@"ExplicitVolumeChange"]) {
         float volume = [[[noti userInfo] objectForKey:@"AVSystemController_AudioVolumeNotificationParameter"] floatValue];
         NSLog(@"🔊 系统音量变化：%.2f", volume);
-        self.volume = volume;
+//        self.volume = volume;
         [[NSNotificationCenter defaultCenter] postNotificationName:TTVolumeUnitChangeNotification object:@(volume)];
     }
 }
