@@ -224,8 +224,9 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
 
 - (void)updateLockScreenInfo;
 
-
-// -------------------------------- 可能会丢弃的属性方法 --------------------------------
+#pragma mark  ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
+#pragma mark  ⚠️  废 弃 方 法
+#pragma mark  ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
 /**
  设置系统锁频界面，歌曲信息
 
