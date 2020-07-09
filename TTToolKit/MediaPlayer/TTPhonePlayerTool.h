@@ -62,7 +62,7 @@ typedef enum : NSUInteger {
 /** 是否手动暂停 */
 @property (nonatomic,assign) BOOL manualPause;
 /** 本地控制 */
-@property (nonatomic ,assign) LocalPlaySpeechType localControl;
+@property (nonatomic ,assign) TTMusicPlayerControl localControl;
 /** 播放模式 */
 @property (nonatomic, assign) TTPhonePlayMode playMode;
 /** 当前播放器是否正在工作 */
