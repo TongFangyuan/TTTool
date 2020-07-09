@@ -132,7 +132,7 @@ static id _shareInstance;
 }
 
 
-- (void)playControl:(LocalPlaySpeechType)control {
+- (void)playControl:(TTMusicPlayerControl)control {
     //Fix: 爱音乐无法恢复播放的问题
     //    if (!self.albumTrack) {
     //        NSLog(@"没有专辑信息，不接着走");
@@ -140,7 +140,7 @@ static id _shareInstance;
     //    }
     
     switch (control) {
-        case kLocalPlaySpeechTypePlay:
+        case TTMusicPlayerControlPlay:
         {
             if (self.manualPause)
             {
@@ -148,28 +148,48 @@ static id _shareInstance;
                 return;
             }
             [self continuePlay];
-            break;
-        }
-        case kLocalPlaySpeechTypePause:
+            
+        } break;
+        case TTMusicPlayerControlPause:
         {
             [self pause];
-            break;
-        }
-        case kLocalPlaySpeechTypePrev:
+            
+        } break;
+        case TTMusicPlayerControlPre:
         {
             [self playPrevious];
-            break;
-        }
-        case kLocalPlaySpeechTypeNext:
+            
+        } break;
+        case TTMusicPlayerControlNext:
         {
             [self playNext];
-            break;
-        }
-        case kLocalPlaySpeechTypeStop:
+            
+        } break;
+        case TTMusicPlayerControlStop:
         {
             [self stop];
-            break;
-        }
+            
+        } break;
+        case TTMusicPlayerControlManualPause:
+        {
+            self.manualPause  = YES;
+            self.needContinue = NO;
+            [self pause];
+        } break;
+        case TTMusicPlayerControlManualResume:
+        {
+            self.manualPause = NO;
+            [self continuePlay];
+        } break;
+        case TTMusicPlayerControlInterruptPause:
+        {
+            self.needContinue = YES;
+            [self pause];
+        } break;
+        case TTMusicPlayerControlInterruptResume:
+        {
+            [self continuePlay];
+        } break;
         default:
             break;
     }

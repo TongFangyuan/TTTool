@@ -136,13 +136,16 @@ typedef enum : NSUInteger {
 
 #pragma mark - ------------- 播放器助手对象协议 ------------------
 
-/** 本地播放歌曲语音交互操作类型 */
-typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
-    kLocalPlaySpeechTypePlay  = 1,
-    kLocalPlaySpeechTypePause = 2,
-    kLocalPlaySpeechTypePrev  = 3,
-    kLocalPlaySpeechTypeNext  = 4,
-    kLocalPlaySpeechTypeStop  = 5
+typedef NS_ENUM(NSInteger, TTMusicPlayerControl) {
+    TTMusicPlayerControlPlay = 1,
+    TTMusicPlayerControlPause,
+    TTMusicPlayerControlPre,
+    TTMusicPlayerControlNext,
+    TTMusicPlayerControlStop,
+    TTMusicPlayerControlManualPause,
+    TTMusicPlayerControlManualResume,
+    TTMusicPlayerControlInterruptPause,
+    TTMusicPlayerControlInterruptResume,
 };
 
 @protocol TTPhonePlayToolObject <NSObject>
@@ -178,7 +181,7 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
 @property (nonatomic,assign) BOOL manualPause;
 
 /** 本地控制 */
-@property (nonatomic ,assign) LocalPlaySpeechType localControl;
+@property (nonatomic ,assign) TTMusicPlayerControl localControl;
 /** 播放模式 */
 @property (nonatomic, assign) TTPhonePlayMode playMode;
 /** 有音箱时的播放状态 */
@@ -206,7 +209,8 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
             source:(TTMediaSourceName)source;
 
 /// 播放控制
-- (void)playControl:(LocalPlaySpeechType)control;
+- (void)playControl:(TTMusicPlayerControl)control;
+
 /// 暂停音乐播放器
 - (void)pause;
 /// 电话打进来时候暂停音乐播放器
@@ -227,6 +231,16 @@ typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
 #pragma mark  ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
 #pragma mark  ⚠️  废 弃 方 法
 #pragma mark  ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
+
+/** 本地播放歌曲语音交互操作类型 */
+typedef NS_ENUM(NSUInteger, LocalPlaySpeechType) {
+    kLocalPlaySpeechTypePlay  = TTMusicPlayerControlPlay,
+    kLocalPlaySpeechTypePause = TTMusicPlayerControlPause,
+    kLocalPlaySpeechTypePrev  = TTMusicPlayerControlPre,
+    kLocalPlaySpeechTypeNext  = TTMusicPlayerControlNext,
+    kLocalPlaySpeechTypeStop  = TTMusicPlayerControlStop
+} DEPRECATED_MSG_ATTRIBUTE("提示使用 TTMusicPlayerControl 代替");
+
 /**
  设置系统锁频界面，歌曲信息
 

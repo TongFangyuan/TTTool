@@ -67,23 +67,10 @@ UINavigationControllerDelegate
         // 如果不是TTBaseViewController类，统一设置导航UI
         if (![viewController isKindOfClass:[TTBaseViewController class]])
         {
-            UIButton *leftBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
-            [leftBackButton setImage:[NSBundle tt_blackBackImage] forState:UIControlStateNormal];
-            leftBackButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-            CGRect frame = leftBackButton.frame;
-            frame.size = CGSizeMake(40, 40);
-            leftBackButton.frame = frame;
-            
-            // 继续向左移
-            leftBackButton.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-            
-            UIBarButtonItem *leftBackItem = [[UIBarButtonItem alloc] initWithCustomView:leftBackButton];
+            UIBarButtonItem *leftBackItem  = [[UIBarButtonItem alloc] initWithImage:[NSBundle tt_blackBackImage] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
             viewController.navigationItem.leftBarButtonItems = @[leftBackItem];
-            // 添加点击事件
-            [leftBackButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
             // 自动隐藏TabBar
             viewController.hidesBottomBarWhenPushed = YES;
-            
         }
     }
     // 调用父类push实现方法,可以在对应ViewController再次覆盖leftBarButtonItem默认返回样式
