@@ -52,7 +52,7 @@ static id _shareInstance;
 - (instancetype)init {
     if (self=[super init]) {
         self.clsManager = [NSMutableDictionary dictionary];
-        self.localControl = kLocalPlaySpeechTypePlay;
+        self.localControl = TTMusicPlayerControlPlay;
         self.observers = [NSMutableArray array];
     }
     return self;
@@ -253,7 +253,6 @@ static id _shareInstance;
 }
 
 - (void)playNextSongToMatchInfo {
-    self.isMediaPlaying = YES;
     self.manualPause = NO;
     self.currentTrackIndex = self.player.currentTrackIndex;
     self.albumTrack = (id<TTAlbumTrackProtocol>)self.player.albumTrack;
@@ -340,8 +339,6 @@ static id _shareInstance;
 //    NSLog(@"🔥 playerDidStart");
     [self updateLockScreenInfo];
     
-    self.isMediaPlaying = player.isPlaying;
-
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
         self.albumTrack = player.albumTrack;
@@ -363,7 +360,6 @@ static id _shareInstance;
 //    NSLog(@"🔥 playerDidPaused");
     [self updateLockScreenInfo];
     
-    self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -377,7 +373,6 @@ static id _shareInstance;
 - (void)playerDidFinished:(id<TTMusicPlayerObject>)player{
 //    NSLog(@"🔥 playerDidFinished");
 
-    self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -392,7 +387,6 @@ static id _shareInstance;
 //    NSLog(@"🔥 playerDidContiuPlay");
     [self updateLockScreenInfo];
 
-    self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -405,7 +399,6 @@ static id _shareInstance;
 - (void)player:(id<TTMusicPlayerObject>)player playError:(NSError *)error{
 //    NSLog(@"🔥 playError: %@",error);
 
-    self.isMediaPlaying = player.isPlaying;
     [self playNext];
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
@@ -434,7 +427,6 @@ static id _shareInstance;
 - (void)player:(id<TTMusicPlayerObject>)player didSeekToPostion:(CGFloat)postion{
 //    NSLog(@"🔥 didSeekToPostion");
 
-    self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];

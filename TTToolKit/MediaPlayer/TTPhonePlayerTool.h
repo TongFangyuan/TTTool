@@ -66,7 +66,7 @@ typedef enum : NSUInteger {
 /** 播放模式 */
 @property (nonatomic, assign) TTPhonePlayMode playMode;
 /** 当前播放器是否正在工作 */
-@property (nonatomic, assign) BOOL isMediaPlaying;
+@property (nonatomic, assign, readonly) BOOL isMediaPlaying;
 /** 交互推送的音乐 */
 @property (nonatomic, assign) BOOL isBoxMusic;
 /** 音频资源类型*/

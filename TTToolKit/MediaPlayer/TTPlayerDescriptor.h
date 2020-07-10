@@ -185,7 +185,7 @@ typedef NS_ENUM(NSInteger, TTMusicPlayerControl) {
 /** 播放模式 */
 @property (nonatomic, assign) TTPhonePlayMode playMode;
 /** 有音箱时的播放状态 */
-@property (nonatomic, assign) BOOL isMediaPlaying;
+@property (nonatomic, assign, readonly) BOOL isMediaPlaying;
 /** 交互推送的音乐 */
 @property (nonatomic, assign) BOOL isBoxMusic;
 
