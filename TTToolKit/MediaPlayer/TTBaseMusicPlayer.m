@@ -472,6 +472,7 @@ static TTPlayerItemProperty TTPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 - (void)handlePlaybackLikelyToKeepUp:(AVPlayerItem *)item {
     if (item.playbackLikelyToKeepUp) {
         NSLog(@"🔋 可以无延迟播放音乐了");
+        [self notiBufferFull];
         [[NSNotificationCenter defaultCenter] postNotificationName:TTMusicPlayerNoDelayPlayingNotification object:nil];
     }
 }

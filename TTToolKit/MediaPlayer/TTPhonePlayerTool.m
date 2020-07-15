@@ -11,6 +11,7 @@
 
 @interface TTPhonePlayerTool ()<TTMusicPlayerStatusDelegate>
 
+@property (nonatomic, assign, readwrite) BOOL isMediaPlaying;
 @property (nonatomic, strong, readwrite) id<TTMusicPlayerObject> player;
 @property (nonatomic, strong) dispatch_semaphore_t lock;
 
@@ -253,6 +254,7 @@ static id _shareInstance;
 }
 
 - (void)playNextSongToMatchInfo {
+    self.isMediaPlaying = YES;
     self.manualPause = NO;
     self.currentTrackIndex = self.player.currentTrackIndex;
     self.albumTrack = (id<TTAlbumTrackProtocol>)self.player.albumTrack;
@@ -315,7 +317,7 @@ static id _shareInstance;
 
 #pragma mark - ------------- 播放器状态 ------------------
 - (void)playerWillStart:(id<TTMusicPlayerObject>)player {
-//    NSLog(@"🔥 playerWillStart");
+    //    NSLog(@"🔥 playerWillStart");
     
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         
@@ -336,8 +338,9 @@ static id _shareInstance;
     }
 }
 - (void)playerDidStart:(id<TTMusicPlayerObject>)player{
-//    NSLog(@"🔥 playerDidStart");
+    //    NSLog(@"🔥 playerDidStart");
     [self updateLockScreenInfo];
+    self.isMediaPlaying = player.isPlaying;
     
     if (player.albumTrack) {
         self.currentTrackIndex = player.currentTrackIndex;
@@ -357,9 +360,9 @@ static id _shareInstance;
 }
 
 - (void)playerDidPaused:(id<TTMusicPlayerObject>)player{
-//    NSLog(@"🔥 playerDidPaused");
+    //    NSLog(@"🔥 playerDidPaused");
     [self updateLockScreenInfo];
-    
+    self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -371,8 +374,9 @@ static id _shareInstance;
     }
 }
 - (void)playerDidFinished:(id<TTMusicPlayerObject>)player{
-//    NSLog(@"🔥 playerDidFinished");
-
+    //    NSLog(@"🔥 playerDidFinished");
+    self.isMediaPlaying = player.isPlaying;
+    
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -384,9 +388,10 @@ static id _shareInstance;
     }
 }
 - (void)playerDidContiuPlay:(id<TTMusicPlayerObject>)player{
-//    NSLog(@"🔥 playerDidContiuPlay");
+    //    NSLog(@"🔥 playerDidContiuPlay");
     [self updateLockScreenInfo];
-
+    self.isMediaPlaying = player.isPlaying;
+    
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -397,8 +402,9 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player playError:(NSError *)error{
-//    NSLog(@"🔥 playError: %@",error);
-
+    //    NSLog(@"🔥 playError: %@",error);
+    self.isMediaPlaying = player.isPlaying;
+    
     [self playNext];
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
@@ -407,26 +413,32 @@ static id _shareInstance;
     }
 }
 - (void)playerBufferFull:(id<TTMusicPlayerObject>)player{
-//    NSLog(@"🔥 playerBufferFull");
-
+    //    NSLog(@"🔥 playerBufferFull");
+    
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayerBufferFull)]) {
             [obj didPlayerBufferFull];
+        }
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStateBuffFinsh];
         }
     }
 }
 - (void)playerBufferEmpty:(id<TTMusicPlayerObject>)player{
 //    NSLog(@"🔥 playerBufferEmpty");
-
+    
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayerBufferEmpty)]) {
             [obj didPlayerBufferEmpty];
         }
+        if ([obj respondsToSelector:@selector(musicPlayer:changeState:)]) {
+            [obj musicPlayer:player changeState:TTPlayerStateBuffStart];
+        }
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player didSeekToPostion:(CGFloat)postion{
-//    NSLog(@"🔥 didSeekToPostion");
-
+    //    NSLog(@"🔥 didSeekToPostion");
+    self.isMediaPlaying = player.isPlaying;
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
         if ([obj respondsToSelector:@selector(didPlayingStateChange:)]) {
             [obj didPlayingStateChange:self.isMediaPlaying];
@@ -437,8 +449,9 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player playToPostion:(CGFloat)postion{
-//    NSLog(@"🔥 playToPostion");
-
+    //    NSLog(@"🔥 playToPostion");
+    
+    
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
        if ([obj respondsToSelector:@selector(didPlayToPosition:)]) {
             [obj didPlayToPosition:postion];
@@ -446,8 +459,8 @@ static id _shareInstance;
     }
 }
 - (void)player:(id<TTMusicPlayerObject>)player cacheToPostion:(CGFloat)postion {
-//    NSLog(@"🔥 cacheToPostion");
-
+    //    NSLog(@"🔥 cacheToPostion");
+    
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
        if ([obj respondsToSelector:@selector(didCacheToPostion:)]) {
            [obj didCacheToPostion:postion];
