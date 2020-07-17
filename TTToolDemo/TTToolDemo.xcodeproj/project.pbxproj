@@ -10,6 +10,7 @@
 		852F5142246B966B002D581D /* TTTestPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F5141246B966B002D581D /* TTTestPlayer.m */; };
 		852F5145246B9A26002D581D /* TTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F5144246B9A26002D581D /* TTLog.m */; };
 		854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EB0C82435C66600821D1D /* TTAES128Tool.m */; };
+		857B509324C17EF20001E937 /* NSData+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 857B509224C17EF20001E937 /* NSData+TTFile.m */; };
 		85809CF1243DC229001813AC /* TTVolumeUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF0243DC229001813AC /* TTVolumeUnit.m */; };
 		85809CF4243DC2AE001813AC /* TTPhonePlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF2243DC2AE001813AC /* TTPhonePlayerTool.m */; };
 		85809CF7243DC2B7001813AC /* TTPlayerDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 85809CF5243DC2B6001813AC /* TTPlayerDescriptor.m */; };
@@ -88,6 +89,8 @@
 		852F5144246B9A26002D581D /* TTLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTLog.m; sourceTree = "<group>"; };
 		854EB0C72435C66600821D1D /* TTAES128Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAES128Tool.h; sourceTree = "<group>"; };
 		854EB0C82435C66600821D1D /* TTAES128Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAES128Tool.m; sourceTree = "<group>"; };
+		857B509124C17EF20001E937 /* NSData+TTFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+TTFile.h"; sourceTree = "<group>"; };
+		857B509224C17EF20001E937 /* NSData+TTFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+TTFile.m"; sourceTree = "<group>"; };
 		85809CEF243DC229001813AC /* TTVolumeUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVolumeUnit.h; sourceTree = "<group>"; };
 		85809CF0243DC229001813AC /* TTVolumeUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVolumeUnit.m; sourceTree = "<group>"; };
 		85809CF2243DC2AE001813AC /* TTPhonePlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPhonePlayerTool.m; sourceTree = "<group>"; };
@@ -393,6 +396,8 @@
 				DAC8EB19242F5000004EF984 /* NSData+TTHexString.m */,
 				DAC8EB17242F4F6A004EF984 /* NSArray+TTPlist.h */,
 				DAC8EB16242F4F6A004EF984 /* NSArray+TTPlist.m */,
+				857B509124C17EF20001E937 /* NSData+TTFile.h */,
+				857B509224C17EF20001E937 /* NSData+TTFile.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				85C80BF02452F33B00F7F5EA /* TTSizeAdapter.m in Sources */,
 				DAC8EB37242F5329004EF984 /* TTAES128Encrypter.m in Sources */,
 				85BEC4862455858700F57219 /* TTBaseTabBarController.m in Sources */,
+				857B509324C17EF20001E937 /* NSData+TTFile.m in Sources */,
 				85809CF7243DC2B7001813AC /* TTPlayerDescriptor.m in Sources */,
 				DAC8EB03242F4A22004EF984 /* UIViewController+TTAlert.m in Sources */,
 				DAC8EB04242F4A22004EF984 /* UIViewController+TTView.m in Sources */,

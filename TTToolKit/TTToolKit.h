@@ -37,6 +37,7 @@
 #import "NSFileManager+TTFile.h"
 #import "NSObject+TTKVO.h"
 #import "NSString+TTRegularExpression.h"
+#import "NSData+TTFile.h"
 
 /******************************   Helper   ******************************/
 #import "TTApp.h"
