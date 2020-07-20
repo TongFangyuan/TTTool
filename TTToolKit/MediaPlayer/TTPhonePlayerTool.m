@@ -207,6 +207,9 @@ static id _shareInstance;
 }
 
 - (void)updateLockScreenInfo {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
     if ([UIApplication sharedApplication].applicationState==UIApplicationStateActive) {
         return;
     }
@@ -238,6 +241,9 @@ static id _shareInstance;
     info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
         [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
     }
+    
+    });
+    
     
 }
 
