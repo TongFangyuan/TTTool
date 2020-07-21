@@ -31,4 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+#pragma mark - ---- MD5 ----
+@interface NSString (TTMD5)
+
+- (NSString *)tt_md5;
+
+@end
+
 NS_ASSUME_NONNULL_END
