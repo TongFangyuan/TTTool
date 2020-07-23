@@ -121,6 +121,8 @@ typedef enum : NSUInteger {
 - (void)next;
 /** 播放上一首 */
 - (void)previous;
+- (void)updateAblumTracks:(NSArray<id<TTAlbumTrackProtocol>> *)ablums;
+
 // -------------------------------- 播放控制  --------------------------------
 
 

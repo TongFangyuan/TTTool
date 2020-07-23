@@ -68,6 +68,10 @@
     [self playAlbum:album];
 }
 
+- (void)updateAblumTracks:(NSArray<id<TTAlbumTrackProtocol>> *)ablums {
+    self.songList = [NSArray arrayWithArray:ablums];
+}
+
 - (void)seekToPosition:(CGFloat)position {
     if (!self.timeObserver) {
         NSLog(@"🔋 无法跳播");

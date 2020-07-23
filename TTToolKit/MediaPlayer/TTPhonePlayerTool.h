@@ -142,6 +142,8 @@ typedef enum : NSUInteger {
 - (void)manualPauseMusic;
 - (void)manualPlayMusic;
 
+- (void)updatePlaylist:(NSArray<id<TTAlbumTrackProtocol>> *)albums;
+
 - (void)addObserver:(id<TTPhonePlayToolObserver>)observer;
 - (void)removeObserver:(id<TTPhonePlayToolObserver>)observer;
 

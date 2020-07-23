@@ -609,6 +609,11 @@ static id _shareInstance;
     [self.player continuePlay];
 }
 
+- (void)updatePlaylist:(NSArray<id<TTAlbumTrackProtocol>> *)albums {
+    self.albumTracks = [NSArray arrayWithArray:albums];
+    [self.player updateAblumTracks:albums];
+}
+
 - (void)seekMusicToPosition:(CGFloat)position {
     [self.player seekToPosition:position];
 }
