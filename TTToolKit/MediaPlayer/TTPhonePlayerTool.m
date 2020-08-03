@@ -206,55 +206,6 @@ static id _shareInstance;
     [self playNextSongToMatchInfo];
 }
 
-- (void)updateLockScreenInfo {
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-    if ([UIApplication sharedApplication].applicationState==UIApplicationStateActive) {
-        return;
-    }
-    
-    id<TTAlbumTrackProtocol> album = self.albumTrack;
-    if (!album) return;
-    
-    NSMutableDictionary *info = [[NSMutableDictionary alloc] init];
-    info[MPMediaItemPropertyTitle] = album.songName;
-    info[MPMediaItemPropertyArtist] = album.singer;
-    info[MPMediaItemPropertyPlaybackDuration] = @(self.duration);
-    
-    if (album.lockImage) {
-        info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:album.lockImage];
-    }
-    
-    if (album.imageUrl) {
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            NSURL *URL = [NSURL URLWithString:album.imageUrl];
-            NSData *imgData = [NSData dataWithContentsOfURL:URL];
-            UIImage *image = [[UIImage alloc] initWithData:imgData];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:image];
-                info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
-                [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
-            });
-        });
-    } else {
-    info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
-        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
-    }
-    
-    });
-    
-    
-}
-
-- (void)operate {
-    [self updateLockScreenInfo];
-}
-
-- (void)setLockScreenNowPlayingInfo:(id<TTAlbumTrackProtocol>)music {
-    [self updateLockScreenInfo];
-}
-
 - (void)stop {
     [self stopMusicPlayer];
 }
@@ -311,7 +262,9 @@ static id _shareInstance;
 }
 
 - (NSString *)mediaSource {
-    return [self mediaSourceForPlayer:self.player];
+    NSString *source = [self mediaSourceForPlayer:self.player];
+    NSLog(@"当前音频资源类型：%@",source);
+    return source;
 }
 
 - (dispatch_semaphore_t)lock {
@@ -474,6 +427,67 @@ static id _shareInstance;
     }
 }
 
+#pragma mark - ---- 锁屏信息更新 ----
+- (void)updateLockScreenInfo {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if ([UIApplication sharedApplication].applicationState==UIApplicationStateActive) {
+            NSLog(@"App 在后台，不更新锁屏信息");
+            return;
+        }
+        
+        id<TTAlbumTrackProtocol> album = self.albumTrack;
+        if (!album) {
+            NSLog(@"歌曲信息为空，不更新锁屏信息");
+            return;
+        }
+        
+        NSMutableDictionary *info = [[NSMutableDictionary alloc] init];
+        info[MPMediaItemPropertyTitle] = album.songName;
+        info[MPMediaItemPropertyArtist] = album.singer;
+        info[MPMediaItemPropertyPlaybackDuration] = @(self.duration);
+        
+        if (album.lockImage) {
+            info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:album.lockImage];
+        }
+        
+        if (album.imageUrl) {
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                NSURL *URL = [NSURL URLWithString:album.imageUrl];
+                NSData *imgData = [NSData dataWithContentsOfURL:URL];
+                UIImage *image = [[UIImage alloc] initWithData:imgData];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if ([image isKindOfClass:[NSNull class]] || !image) {
+                        info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
+                        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+                    } else {
+                        info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:image];
+                        info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
+                        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+                        NSLog(@"锁屏信息：%@",info);
+                    }
+                });
+            });
+        } else {
+            info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = @(self.currentTime);
+            [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:info];
+            NSLog(@"锁屏信息：%@",info);
+        }
+        
+    });
+    
+    
+}
+
+- (void)operate {
+    [self updateLockScreenInfo];
+}
+
+- (void)setLockScreenNowPlayingInfo:(id<TTAlbumTrackProtocol>)music {
+    [self updateLockScreenInfo];
+}
+
 #pragma mark - ---- Application 事件处理 ----
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
@@ -490,25 +504,25 @@ static id _shareInstance;
         case UIEventSubtypeRemoteControlPlay:
         {
             [self continuePlay];
-        }
-            break;
+            [self updateLockScreenInfo];
+        } break;
         case UIEventSubtypeRemoteControlTogglePlayPause:
         case UIEventSubtypeRemoteControlPause:
         {
             self.manualPause = YES;
             [self pause];
-        }
-            break;
+            [self updateLockScreenInfo];
+        } break;
         case UIEventSubtypeRemoteControlNextTrack:
         {
             [self playNext];
-        }
-            break;
+            [self updateLockScreenInfo];
+        }  break;
         case UIEventSubtypeRemoteControlPreviousTrack:
         {
             [self playPrevious];
-        }
-            break;
+            [self updateLockScreenInfo];
+        }  break;
         default:
             break;
     }
