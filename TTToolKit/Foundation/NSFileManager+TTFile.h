@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    TTSystermDirectoryDocuments,
+    TTSystermDirectoryLibrary,
+    TTSystermDirectoryTmp,
+    TTSystermDirectoryHome,
+} TTSystermDirectory;
+
 @interface NSFileManager (TTFile)
 
 /**
@@ -22,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
  Returns nil if the mobile container does not exist or could not be determined.
  */
 + (NSURL *)tt_URLForICloudContainerIdentifier:(nullable NSString *)identifier;
+
++ (NSString *)tt_getSystermDirectory:(TTSystermDirectory)directory;
++ (NSString *)tt_createDicrectory:(NSString *)dicName
+               inSystermDirectory:(TTSystermDirectory)sysDirectory;
 
 @end
 
