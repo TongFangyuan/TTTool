@@ -433,7 +433,7 @@ static id _shareInstance;
     dispatch_async(dispatch_get_main_queue(), ^{
         
         if ([UIApplication sharedApplication].applicationState==UIApplicationStateActive) {
-            NSLog(@"App 在后台，不更新锁屏信息");
+            NSLog(@"App state active，不更新锁屏信息");
             return;
         }
         

@@ -21,9 +21,15 @@ void TTAudioSessionManagerIMusicPlayerMode(NSError * error) {
     TTAudioSessionManagerSetCategory(category, options, error);
 }
 
-void TTAudioSessionManagerRecorderMode(NSError* _Nullable error) {
+void TTAudioSessionManagerRecorderMixMode(NSError* _Nullable error) {
     AVAudioSessionCategory category = AVAudioSessionCategoryPlayAndRecord;
     AVAudioSessionCategoryOptions options = AVAudioSessionCategoryOptionAllowBluetoothA2DP | AVAudioSessionCategoryOptionDefaultToSpeaker | AVAudioSessionCategoryOptionMixWithOthers;
+    TTAudioSessionManagerSetCategory(category, options, error);
+}
+
+void TTAudioSessionManagerRecorderMode(NSError* _Nullable error) {
+    AVAudioSessionCategory category = AVAudioSessionCategoryPlayAndRecord;
+    AVAudioSessionCategoryOptions options = AVAudioSessionCategoryOptionAllowBluetoothA2DP | AVAudioSessionCategoryOptionDefaultToSpeaker;
     TTAudioSessionManagerSetCategory(category, options, error);
 }
 
@@ -123,9 +129,7 @@ static id _shareInstance;
     }
     NSLog(@"音频打断:%@",noti);
     if (AVAudioSessionInterruptionTypeBegan == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
-        if ([TTPhonePlayerTool shareTool].isMediaPlaying) {
             [[TTPhonePlayerTool shareTool] interruptPause];
-        }
     } else if (AVAudioSessionInterruptionTypeEnded == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
         if ([TTPhonePlayerTool shareTool].needContinue && ![TTPhonePlayerTool shareTool].isMediaPlaying) {
             [[TTPhonePlayerTool shareTool] continuePlay];

@@ -20,9 +20,13 @@ extern void TTAudioSessionManagerNormalPlayerMode(NSError* _Nullable error);
 /// @param error error description
 extern void TTAudioSessionManagerIMusicPlayerMode(NSError* _Nullable error);
 
-/// 录音模式
+/// 录音模式，混播
 /// @param error error description
+extern void TTAudioSessionManagerRecorderMixMode(NSError* _Nullable error);
+
+/// 录音模式
 extern void TTAudioSessionManagerRecorderMode(NSError* _Nullable error);
+
 
 /// 获取音频焦点
 /// @param active active description
