@@ -499,33 +499,64 @@ static id _shareInstance;
     self.isForeground = YES;
 }
 
-- (void)remoteControlReceivedWithEvent:(UIEvent *)event{
-    switch (event.subtype) {
-        case UIEventSubtypeRemoteControlPlay:
-        {
+- (void)remoteControlEventHandler {
+    
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    
+    // 直接使用sharedCommandCenter来获取MPRemoteCommandCenter的shared实例
+    MPRemoteCommandCenter *commandCenter = [MPRemoteCommandCenter sharedCommandCenter];
+    // 启用播放命令 (锁屏界面和上拉快捷功能菜单处的播放按钮触发的命令)
+    commandCenter.playCommand.enabled = YES;
+    // 为播放命令添加响应事件, 在点击后触发
+    [commandCenter.playCommand addTarget:self action:@selector(playAction)];
+    
+    // 播放, 暂停, 上下曲的命令默认都是启用状态, 即enabled默认为YES
+    // 为暂停, 上一曲, 下一曲分别添加对应的响应事件
+    [commandCenter.pauseCommand addTarget:self action:@selector(pauseAction)];
+    [commandCenter.previousTrackCommand addTarget:self action:@selector(previousTrackAction)];
+    [commandCenter.nextTrackCommand addTarget:self action:@selector(nextTrackAction)];
+    
+    // 启用耳机的播放/暂停命令 (耳机上的播放按钮触发的命令)
+    commandCenter.togglePlayPauseCommand.enabled = YES;
+    // 为耳机的按钮操作添加相关的响应事件
+    [commandCenter.togglePlayPauseCommand addTarget:self action:@selector(playOrPauseAction)];
+    
+}
+
+-(MPRemoteCommandHandlerStatus)playAction {
             [self continuePlay];
             [self updateLockScreenInfo];
-        } break;
-        case UIEventSubtypeRemoteControlTogglePlayPause:
-        case UIEventSubtypeRemoteControlPause:
-        {
+    return MPRemoteCommandHandlerStatusSuccess;
+}
+
+-(MPRemoteCommandHandlerStatus)pauseAction {
             self.manualPause = YES;
             [self pause];
             [self updateLockScreenInfo];
-        } break;
-        case UIEventSubtypeRemoteControlNextTrack:
-        {
+    return MPRemoteCommandHandlerStatusSuccess;
+}
+
+-(MPRemoteCommandHandlerStatus)previousTrackAction {
+    [self playPrevious];
+    [self updateLockScreenInfo];
+    return MPRemoteCommandHandlerStatusSuccess;
+}
+
+-(MPRemoteCommandHandlerStatus)nextTrackAction {
             [self playNext];
             [self updateLockScreenInfo];
-        }  break;
-        case UIEventSubtypeRemoteControlPreviousTrack:
-        {
-            [self playPrevious];
-            [self updateLockScreenInfo];
-        }  break;
-        default:
-            break;
+    return MPRemoteCommandHandlerStatusSuccess;
+}
+
+-(MPRemoteCommandHandlerStatus)playOrPauseAction {
+    if (self.isMediaPlaying) {
+        self.manualPause = YES;
+        [self pause];
+    } else {
+        [self continuePlay];
     }
+            [self updateLockScreenInfo];
+    return MPRemoteCommandHandlerStatusSuccess;
 }
 
 @end

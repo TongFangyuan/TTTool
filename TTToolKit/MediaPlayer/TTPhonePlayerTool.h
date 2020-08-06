@@ -83,7 +83,7 @@ typedef enum : NSUInteger {
 
 - (void)applicationDidEnterBackground:(UIApplication *)application;
 - (void)applicationWillEnterForeground:(UIApplication *)application;
-- (void)remoteControlReceivedWithEvent:(UIEvent *)event;
+- (void)remoteControlEventHandler;//远程控制监听,在`application:didFinishLaunchingWithOptions:`调用
 
 @end
 

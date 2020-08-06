@@ -37,7 +37,7 @@ void TTAudioSessionManagerSetActive(BOOL active, NSError* _Nullable error) {
     AVAudioSession *session = [AVAudioSession sharedInstance];
     if (session.secondaryAudioShouldBeSilencedHint) {
         [session setActive:active withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
-        NSLog(@"🐸 获取音频焦点");
+        NSLog(@"🈚️ 获取音频焦点 error: %@",error);
     }
 }
 
@@ -45,7 +45,7 @@ void TTAudioSessionManagerSetCategory(AVAudioSessionCategory category, AVAudioSe
     AVAudioSession *session = [AVAudioSession sharedInstance];
     if (![session.category isEqualToString:category] || session.categoryOptions!=options) {
         [[AVAudioSession sharedInstance] setCategory:category withOptions:options error:&error];
-        NSLog(@"🐸 SessionCategory：%@ options: %ld", category, options);
+        NSLog(@"🈚️ SessionCategory：%@ options: %ld error: %@", category, options, error);
     }
 }
 
@@ -68,6 +68,10 @@ NSString *TTAudioSessionRouteChangeReasonString(AVAudioSessionRouteChangeReason 
 }
 
 @implementation TTAudioSessionManager
+
++ (void)load {
+    [TTAudioSessionManager performSelector:@selector(shareSession) withObject:nil];
+}
 
 #pragma mark - 单例
 static id _shareInstance;
@@ -124,13 +128,12 @@ static id _shareInstance;
 #pragma mark - ------------- 事件 ------------------
 
 - (void)sessionInterruption:(NSNotification *)noti {
-    if ([noti.userInfo count] == 0) {
-        return;
-    }
-    NSLog(@"音频打断:%@",noti);
+    
     if (AVAudioSessionInterruptionTypeBegan == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
+        NSLog(@"🈚️ 音频打断开始");
             [[TTPhonePlayerTool shareTool] interruptPause];
     } else if (AVAudioSessionInterruptionTypeEnded == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
+        NSLog(@"🈚️ 音频打断结束");
         if ([TTPhonePlayerTool shareTool].needContinue && ![TTPhonePlayerTool shareTool].isMediaPlaying) {
             [[TTPhonePlayerTool shareTool] continuePlay];
         }
@@ -139,7 +142,7 @@ static id _shareInstance;
 
 - (void)sessionRouteChange:(NSNotification *)noti {
     AVAudioSessionRouteChangeReason reason = [noti.userInfo[AVAudioSessionRouteChangeReasonKey] unsignedIntegerValue];
-    NSLog(@"音频路由切换,原因：%@", TTAudioSessionRouteChangeReasonString(reason));
+    NSLog(@"🈚️ 音频路由切换,原因：%@", TTAudioSessionRouteChangeReasonString(reason));
     if (reason==AVAudioSessionRouteChangeReasonOldDeviceUnavailable) {
         [TTPhonePlayerTool shareTool].manualPause = YES;
         [[TTPhonePlayerTool shareTool] pause];
@@ -147,16 +150,16 @@ static id _shareInstance;
 }
 
 - (void)sessionMediaServerKill:(NSNotification *)noti {
-    NSLog(@"Mediakill:%@",noti);
+    NSLog(@"🈚️ 音频 Mediakill:%@",noti);
 }
 
 - (void)sessionMediaRestart:(NSNotification *)noti {
-    NSLog(@"MediaRestart:%@",noti);
+    NSLog(@"🈚️ MediaRestart:%@",noti);
 }
 
 - (void)sessionOtherAppAudioStartOrStop:(NSNotification *)noti {
     int value = [noti.userInfo[@"AVAudioSessionSilenceSecondaryAudioHintTypeKey"] intValue];
-    NSLog(@"其他App播放状态:%d",value);
+    NSLog(@"🈚️ 其他App播放状态:%d",value);
 }
 
 @end
