@@ -131,6 +131,10 @@ static id _shareInstance;
     
     if (AVAudioSessionInterruptionTypeBegan == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
         NSLog(@"🈚️ 音频打断开始");
+#ifdef DEBUG
+        NSString *mediaSource = TTPhonePlayerTool.shareTool.mediaSource;
+        NSLog(@"🈚️ 当前资源类型：%@",mediaSource);
+#endif
             [[TTPhonePlayerTool shareTool] interruptPause];
     } else if (AVAudioSessionInterruptionTypeEnded == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
         NSLog(@"🈚️ 音频打断结束");

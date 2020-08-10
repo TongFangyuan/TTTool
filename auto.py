@@ -1,16 +1,5 @@
 import os, sys
 
-# ======================  edit by yourself  ======================
-sources = [
-          #'https://github.com/YinTokey/Egen.git',
-          'https://github.com/TongFangyuan/TTTool.git',
-          ]
-#
-project_name = 'TTToolKit'
-podspec_file_name = 'TTToolKit.podspec'
-
-# ==================================================================
-
 
 pod_lib_command = "pod lib lint --allow-warnings"
 pod_register_command = "pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose"
