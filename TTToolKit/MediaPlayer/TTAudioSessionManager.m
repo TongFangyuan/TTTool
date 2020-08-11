@@ -164,6 +164,9 @@ static id _shareInstance;
 - (void)sessionOtherAppAudioStartOrStop:(NSNotification *)noti {
     int value = [noti.userInfo[@"AVAudioSessionSilenceSecondaryAudioHintTypeKey"] intValue];
     NSLog(@"🈚️ 其他App播放状态:%d",value);
+    if (value==0 && ![TTPhonePlayerTool.shareTool.mediaSource isEqualToString:TTMediaSourceIMusic]) {
+        [[TTPhonePlayerTool shareTool] continuePlay];
+    }
 }
 
 @end

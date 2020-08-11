@@ -208,6 +208,7 @@ static id _shareInstance;
 
 - (void)stop {
     [self stopMusicPlayer];
+    [self.ttsPLayer stop];
 }
 
 - (void)playNextSongToMatchInfo {
