@@ -135,7 +135,12 @@ static id _shareInstance;
         NSString *mediaSource = TTPhonePlayerTool.shareTool.mediaSource;
         NSLog(@"🈚️ 当前资源类型：%@",mediaSource);
 #endif
+        // Bug #9979 播放器：播放周杰伦歌曲10分钟，播放器界面，歌曲停止播放
+        if (TTPhonePlayerToolIsIMusicPlayer() && UIApplication.sharedApplication.applicationState==UIApplicationStateActive) {
+            NSLog(@"🈚️ 当前是爱音乐播放且app在前台，不暂停音乐");
+        } else {
             [[TTPhonePlayerTool shareTool] interruptPause];
+        }
     } else if (AVAudioSessionInterruptionTypeEnded == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
         NSLog(@"🈚️ 音频打断结束");
         if ([TTPhonePlayerTool shareTool].needContinue && ![TTPhonePlayerTool shareTool].isMediaPlaying) {
