@@ -10,17 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#ifdef DEBUG
-    #define TTLog(fmt,...) NSLog((@"[%s:%d行] " fmt),[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,##__VA_ARGS__)
-#else
-    #define TTLog(...)
-#endif
-
-#ifndef TT_DEBUG
-    #define TT_DEBUG 0
-#endif
+#define TTLog(fmt,...) [TTLog log: fmt, ##__VA_ARGS__]
 
 @interface TTLog : NSObject
+
+@property (nonatomic, class, assign) BOOL enable; //!< default YES.
+
++ (void)log:(NSString *)format , ... NS_FORMAT_FUNCTION(1, 2);
+
+@property (nonatomic, assign) BOOL enable;
 
 @end
 
