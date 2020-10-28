@@ -126,9 +126,12 @@
     
     TTNavTitleLabel *titleLabel = [TTNavTitleLabel new];
     titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
-    titleLabel.lightTextColor = [UIColor colorWithRed:0.17 green:0.17 blue:0.17 alpha:1.00];
+    titleLabel.lightTextColor = [UIColor redColor];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.frame = CGRectMake(0, 0, 200.f, 50.f);
     titleLabel.darkTextColor = kWhiteColor;
     m_titleLabel = titleLabel;
+    self.navBarTitle = self.title;
     
     // config
     self.view.backgroundColor = [UIColor colorWithRed:0.97 green:0.96 blue:0.97 alpha:1.00];
@@ -219,14 +222,10 @@
 
 - (void)setNavBarTitle:(NSString *)title
 {
-    if (![_navBarTitle isEqualToString:title])
-    {
         _navBarTitle = [title copy];
         
         m_titleLabel.text = title;
-        [m_titleLabel sizeToFit];
         self.navigationItem.titleView = m_titleLabel;
-    }
 }
 
 - (void)setHiddenStatusBar:(BOOL)hiddenStatusBar
@@ -259,31 +258,28 @@
         _navBarTitleFont = font;
         
         m_titleLabel.font = font;
-        [m_titleLabel sizeToFit];
         self.navigationItem.titleView = m_titleLabel;
     }
 }
 
 - (void)setNavTitleColor:(UIColor *)color
 {
-    if ([_navTitleColor isEqual:color]) {
+    if (![_navTitleColor isEqual:color]) {
         _navTitleColor = color;
         
         m_titleLabel.textColor = color;
         m_titleLabel.lightTextColor = color;
-        [m_titleLabel sizeToFit];
         self.navigationItem.titleView = m_titleLabel;
     }
 }
 
 - (void)setNavTitleColorForDark:(UIColor *)color
 {
-    if ([_navTitleColorForDark isEqual:color]) {
+    if (![_navTitleColorForDark isEqual:color]) {
         _navTitleColorForDark = color;
         
         m_titleLabel.textColor = color;
-        m_titleLabel.lightTextColor = color;
-        [m_titleLabel sizeToFit];
+        m_titleLabel.darkTextColor = color;
         self.navigationItem.titleView = m_titleLabel;
     }
 }

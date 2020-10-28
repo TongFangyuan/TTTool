@@ -31,8 +31,8 @@
     childVc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    [childVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:74/255.0 green:80/255.0 blue:99/255.0 alpha:1]} forState:UIControlStateNormal];
-    [childVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:38/255.0 green:188/255.0 blue:114/255.0 alpha:1]} forState:UIControlStateSelected];
+    [childVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:175/255.0 green:176/255.0 blue:177/255.0 alpha:1]} forState:UIControlStateNormal];
+    [childVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]} forState:UIControlStateSelected];
     
     if (cls) {
         UINavigationController *nav = [(UINavigationController *)[cls alloc] initWithRootViewController:childVc];
