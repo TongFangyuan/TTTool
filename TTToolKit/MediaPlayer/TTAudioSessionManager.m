@@ -67,6 +67,12 @@ NSString *TTAudioSessionRouteChangeReasonString(AVAudioSessionRouteChangeReason 
     return _descDict[@(reason)]?:@"未知";
 }
 
+@interface TTAudioSessionManager()
+
+@property (nonatomic, strong) NSMutableArray<id<TTAudioSessionManagerDelegate>> *delegates;
+
+@end
+
 @implementation TTAudioSessionManager
 
 + (void)load {
@@ -99,6 +105,7 @@ static id _shareInstance;
 
 - (instancetype)init {
     if (self=[super init]) {
+        _delegates = [NSMutableArray array];
         [self addNotiObserver];
     }
     return self;
@@ -125,28 +132,46 @@ static id _shareInstance;
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVAudioSessionInterruptionNotification object:nil];
 }
 
-#pragma mark - ------------- 事件 ------------------
+#pragma mark - < 代理 >
+- (void)addDelegate:(id<TTAudioSessionManagerDelegate>)delegate {
+    [self.delegates addObject:delegate];
+}
 
+- (void)removeDeleagte:(id<TTAudioSessionManagerDelegate>)delegate {
+    [self.delegates removeObject:delegate];
+}
+
+#pragma mark - ------------- 事件 ------------------
 - (void)sessionInterruption:(NSNotification *)noti {
     
-    if (AVAudioSessionInterruptionTypeBegan == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
+    AVAudioSessionInterruptionType type = [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue];
+    
+    if (AVAudioSessionInterruptionTypeBegan == type) {
         NSLog(@"🈚️ 音频打断开始");
 #ifdef DEBUG
         NSString *mediaSource = TTPhonePlayerTool.shareTool.mediaSource;
         NSLog(@"🈚️ 当前资源类型：%@",mediaSource);
 #endif
         // Bug #9979 播放器：播放周杰伦歌曲10分钟，播放器界面，歌曲停止播放
-        if (TTPhonePlayerToolIsIMusicPlayer() && UIApplication.sharedApplication.applicationState==UIApplicationStateActive) {
+        if (TTPhonePlayerToolIsIMusicPlayer()) {
             NSLog(@"🈚️ 当前是爱音乐播放且app在前台，不暂停音乐");
         } else {
+            NSLog(@"🈚️ 中断音乐");
             [[TTPhonePlayerTool shareTool] interruptPause];
         }
-    } else if (AVAudioSessionInterruptionTypeEnded == [noti.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
+    } else if (AVAudioSessionInterruptionTypeEnded == type) {
         NSLog(@"🈚️ 音频打断结束");
         if ([TTPhonePlayerTool shareTool].needContinue && ![TTPhonePlayerTool shareTool].isMediaPlaying) {
+            NSLog(@"🈚️ 恢复音乐");
             [[TTPhonePlayerTool shareTool] continuePlay];
         }
     }
+    
+    [self.delegates enumerateObjectsUsingBlock:^(id<TTAudioSessionManagerDelegate>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj respondsToSelector:@selector(audioSession:didInterruption:usnerInfo:)]) {
+            [obj audioSession:AVAudioSession.sharedInstance didInterruption:type usnerInfo:noti.userInfo];
+        }
+    }];
 }
 
 - (void)sessionRouteChange:(NSNotification *)noti {
@@ -169,7 +194,7 @@ static id _shareInstance;
 - (void)sessionOtherAppAudioStartOrStop:(NSNotification *)noti {
     int value = [noti.userInfo[@"AVAudioSessionSilenceSecondaryAudioHintTypeKey"] intValue];
     NSLog(@"🈚️ 其他App播放状态:%d",value);
-    if (value==0 && ![TTPhonePlayerTool.shareTool.mediaSource isEqualToString:TTMediaSourceIMusic]) {
+    if (value==0 && ![TTPhonePlayerTool.shareTool.mediaSource isEqualToString:TTMediaSourceIMusic] && TTPhonePlayerTool.shareTool.manualPause==NO) {
         [[TTPhonePlayerTool shareTool] continuePlay];
     }
 }

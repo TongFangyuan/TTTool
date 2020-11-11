@@ -83,13 +83,18 @@
     }
     NSLog(@"🔋 准备跳播：%f",position);
     self.isSeeking = YES;
+    BOOL isPlaying = self.isPlaying;
     typeof(self) weakSelf = self;
     [self.player seekToTime:CMTimeMake(position*self.duration, 1) completionHandler:^(BOOL finished) {
         if (finished) {
             NSLog(@"🔋 跳播完成：%f",position);
             weakSelf.isSeeking = NO;
-            [weakSelf continuePlay];
             [weakSelf notiPlayDidSeekToPosition:position];
+            if (isPlaying) {
+            [weakSelf continuePlay];
+            } else {
+                [weakSelf pause];
+            }
         }
     }];
 }
