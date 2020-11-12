@@ -34,7 +34,7 @@
     if (self.navigationController.viewControllers.count!=1)
     {
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backBtn setImage:[NSBundle tt_whiteBackImage] forState:UIControlStateNormal];
+        [backBtn setImage:[NSBundle tt_blackBackImage] forState:UIControlStateNormal];
         [backBtn addTarget:self action:@selector(backButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
           backBtn.bounds = CGRectMake(0, 0, 40, 40);
         backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -42,6 +42,8 @@
         self.navigationItem.leftBarButtonItems = @[item];
         m_backButton = backBtn;
     }
+    self.navBarTintColor = [UIColor whiteColor];
+    self.navTitleColor = [UIColor blackColor];
     
     // 遮罩层
     self.showMask = NO;
