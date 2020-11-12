@@ -18,9 +18,7 @@
     UIButton *m_backButton;
     UILabel  *m_titleLabel;
 }
-
 @property (nonatomic,strong) UIView *grayMask;
-
 
 @end
 
@@ -36,7 +34,7 @@
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [backBtn setImage:[NSBundle tt_blackBackImage] forState:UIControlStateNormal];
         [backBtn addTarget:self action:@selector(backButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
-          backBtn.bounds = CGRectMake(0, 0, 40, 40);
+        backBtn.bounds = CGRectMake(0, 0, 40, 40);
         backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
         self.navigationItem.leftBarButtonItems = @[item];
@@ -50,13 +48,23 @@
     [self.view addSubview:self.grayMask];
     self.enableGestureUnderMask = NO;
     
+    // 标题
     UILabel *titleLabel = [UILabel new];
     titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    CGFloat space = 16.f;
+    CGFloat itemSpace = 6.f;
+    CGFloat leftItemWidth = self.navigationItem.leftBarButtonItem.customView.frame.size.width;
+    CGFloat titleW = (UIScreen.mainScreen.bounds.size.width*0.5f-space-itemSpace-leftItemWidth) * 2.f;
+    titleLabel.frame = CGRectMake(0, 0, titleW, 44.f);
+    titleLabel.text = self.title;
     m_titleLabel = titleLabel;
+    self.navigationItem.titleView = m_titleLabel;
+    
     if (self.navigationItem.title) {
         self.navBarTitle = self.navigationItem.title;
     } else if (self.title) {
-    self.navBarTitle = self.title;
+        self.navBarTitle = self.title;
     }
     
     // config
@@ -80,64 +88,56 @@
 
 #pragma mark - ---- Public ----
 - (void)backButtonEvent:(id)sender {
-    
     //解决编辑状态黑影问题
     [self.view endEditing:YES];
-    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - ---- Properties ----
 - (void)setHiddenNavBar:(BOOL)hiddenNavBar
 {
-    if (_hiddenNavBar!=hiddenNavBar)
-    {
-        _hiddenNavBar = hiddenNavBar;
-    }
+    _hiddenNavBar = hiddenNavBar;
 }
 
 - (void)setStatusBarTheme:(TTUITheme)style
 {
-        _statusBarTheme = style;
-        
-        if (style==TTUIThemeLight)
-        {
-            m_statusBarStyle = UIStatusBarStyleLightContent;
-        }
-        else if (style==TTUIThemeDark)
-        {
-            if (@available(iOS 13.0, *)) {
-                m_statusBarStyle = UIStatusBarStyleDarkContent;
-            } else {
-                m_statusBarStyle = UIStatusBarStyleDefault;
-            }
-        }
+    _statusBarTheme = style;
     
-        [self setNeedsStatusBarAppearanceUpdate];
+    if (style==TTUIThemeLight)
+    {
+        m_statusBarStyle = UIStatusBarStyleLightContent;
+    }
+    else if (style==TTUIThemeDark)
+    {
+        if (@available(iOS 13.0, *)) {
+            m_statusBarStyle = UIStatusBarStyleDarkContent;
+        } else {
+            m_statusBarStyle = UIStatusBarStyleDefault;
+        }
+    }
+    
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)setNavBarBackImage:(UIImage *)image
 {
-        _navBarBackImage = image;
-        [m_backButton setImage:image forState:UIControlStateNormal];
-        [m_backButton sizeToFit];
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:m_backButton];
-        self.navigationItem.leftBarButtonItem = item;
+    _navBarBackImage = image;
+    [m_backButton setImage:image forState:UIControlStateNormal];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:m_backButton];
+    self.navigationItem.leftBarButtonItem = item;
 }
 
 - (void)setNavBarTitle:(NSString *)title
 {
-        _navBarTitle = [title copy];
-        
-        m_titleLabel.text = title;
-    [m_titleLabel sizeToFit];
-        self.navigationItem.titleView = m_titleLabel;
+    _navBarTitle = [title copy];
+    m_titleLabel.text = title;
+    self.navigationItem.titleView = m_titleLabel;
 }
 
 - (void)setHiddenStatusBar:(BOOL)hiddenStatusBar
 {
-        _hiddenNavBar = hiddenStatusBar;
-        [self setNeedsStatusBarAppearanceUpdate];
+    _hiddenNavBar = hiddenStatusBar;
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 
@@ -148,34 +148,29 @@
 
 - (void)setNavBarTitleFont:(UIFont *)font
 {
-        _navBarTitleFont = font;
-        
-        m_titleLabel.font = font;
-    [m_titleLabel sizeToFit];
-        self.navigationItem.titleView = m_titleLabel;
+    _navBarTitleFont = font;
+    m_titleLabel.font = font;
+    self.navigationItem.titleView = m_titleLabel;
 }
 
 - (void)setNavTitleColor:(UIColor *)color
 {
-        _navTitleColor = color;
-        m_titleLabel.textColor = color;
-    [m_titleLabel sizeToFit];
-        self.navigationItem.titleView = m_titleLabel;
+    _navTitleColor = color;
+    m_titleLabel.textColor = color;
+    self.navigationItem.titleView = m_titleLabel;
 }
 
 - (void)setShowMask:(BOOL)showMask
 {
-        _showMask = showMask;
-        
-        self.grayMask.hidden = !showMask;
-        [self.view bringSubviewToFront:self.grayMask];
+    _showMask = showMask;
+    self.grayMask.hidden = !showMask;
+    [self.view bringSubviewToFront:self.grayMask];
 }
 
 - (void)setEnableGestureUnderMask:(BOOL)enable
 {
-        _enableGestureUnderMask = enable;
-        
-        self.grayMask.userInteractionEnabled = !enable;
+    _enableGestureUnderMask = enable;
+    self.grayMask.userInteractionEnabled = !enable;
 }
 
 - (UIView *)grayMask {
