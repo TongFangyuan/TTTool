@@ -121,6 +121,7 @@
 
 - (void)setNavBarBackImage:(UIImage *)image
 {
+    _navBarBackImage = image;
     if (m_backButton) {
         [m_backButton setImage:image forState:UIControlStateNormal];        
     }
