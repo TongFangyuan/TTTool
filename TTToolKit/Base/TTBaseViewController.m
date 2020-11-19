@@ -121,10 +121,9 @@
 
 - (void)setNavBarBackImage:(UIImage *)image
 {
-    _navBarBackImage = image;
-    [m_backButton setImage:image forState:UIControlStateNormal];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:m_backButton];
-    self.navigationItem.leftBarButtonItem = item;
+    if (m_backButton) {
+        [m_backButton setImage:image forState:UIControlStateNormal];        
+    }
 }
 
 - (void)setNavBarTitle:(NSString *)title
