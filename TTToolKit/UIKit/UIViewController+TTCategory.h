@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取tabbarController
 - (__kindof  UITabBarController * _Nullable)tt_tabbarController;
 
+- (__kindof UIViewController *)tt_getTopViewController;
+
 @end
 
 NS_ASSUME_NONNULL_END

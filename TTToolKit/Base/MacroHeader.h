@@ -75,6 +75,7 @@
 #define kNavBarHeight    44.0
 #define kTabBarHeight    ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 #define kTopHeight       (kStatusBarHeight + kNavBarHeight)
+#define kBottomHeight    ([[UIApplication sharedApplication] statusBarFrame].size.height>20?34:0)
 
 #define kScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight    [UIScreen mainScreen].bounds.size.height
