@@ -10,7 +10,7 @@
 
 @implementation NSData (TTHexString)
 
-+ (NSData *)tt_convertToData:(NSString *)str {
++ (nullable NSData *)tt_convertToData:(NSString *)str {
     if (!str || [str length] ==0) {
         return nil;
     }
@@ -37,9 +37,9 @@
     return hexData;
 }
 
-+ (NSString *)tt_convertToHexString:(NSData *)data {
++ (nullable NSString *)tt_convertToHexString:(NSData *)data {
     if (!data || [data length] ==0) {
-        return @"";
+        return nil;
     }
     NSMutableString *string = [[NSMutableString alloc]initWithCapacity:[data length]/2];
     

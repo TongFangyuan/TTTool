@@ -16,12 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 将16进制字符串转为NSData对象
  */
-+ (NSData *)tt_convertToData:(NSString*)hexString;
++ (nullable NSData *)tt_convertToData:(NSString*)hexString;
 
 /**
  * 将NSData对象转为16进制字符串
  */
-+ (NSString *)tt_convertToHexString:(NSData *)data;
++ (nullable NSString *)tt_convertToHexString:(NSData *)data;
 
 @end
 

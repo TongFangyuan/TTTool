@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark -
 /// 将颜色转换成RGB
-+ (NSArray *)tt_convertColorToRGB:(UIColor *)color;
++ (nullable NSArray *)tt_convertColorToRGB:(UIColor *)color;
 
 @end
 

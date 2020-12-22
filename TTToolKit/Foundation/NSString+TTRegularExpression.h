@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
  推荐的表达式
  @"[^a-zA-Z0-9\u4e00-\u9fa5]"  删除所有特殊字符和标点符号
  */
-- (NSString *)tt_deleteCharactersWithPattern:(NSString *)pattern;
+- (nullable NSString *)tt_deleteCharactersWithPattern:(NSString *)pattern;
 
 @end
 

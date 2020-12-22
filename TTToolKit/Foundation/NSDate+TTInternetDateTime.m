@@ -48,7 +48,7 @@ static NSDateFormatter *_internetDateTimeFormatter = nil;
 }
 
 // See http://www.faqs.org/rfcs/rfc822.html
-+ (NSDate *)tt_dateFromRFC822String:(NSString *)dateString {
++ (nullable NSDate *)tt_dateFromRFC822String:(NSString *)dateString {
     // Keep dateString around a while (for thread-safety)
     NSDate *date = nil;
     if (dateString) {
@@ -101,7 +101,7 @@ static NSDateFormatter *_internetDateTimeFormatter = nil;
 }
 
 // See http://www.faqs.org/rfcs/rfc3339.html
-+ (NSDate *)tt_dateFromRFC3339String:(NSString *)dateString {
++ (nullable NSDate *)tt_dateFromRFC3339String:(NSString *)dateString {
     // Keep dateString around a while (for thread-safety)
     NSDate *date = nil;
     if (dateString) {

@@ -297,14 +297,14 @@
     return self.songList.lastObject;
 }
 
-- (id<TTAlbumTrackProtocol>)orderNextAlbumTrack {
+- (nullable id<TTAlbumTrackProtocol>)orderNextAlbumTrack {
     if (self.currentTrackIndex>=self.songList.count-1) {
         return nil;
     }
     return self.songList[self.currentTrackIndex+1];
 }
 
-- (id<TTAlbumTrackProtocol>)orderPreviousAlbumTrack {
+- (nullable id<TTAlbumTrackProtocol>)orderPreviousAlbumTrack {
     if (self.currentTrackIndex==0) {
         return nil;
     }

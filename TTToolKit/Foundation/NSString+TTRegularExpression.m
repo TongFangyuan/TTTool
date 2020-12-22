@@ -11,7 +11,7 @@
 
 @implementation NSString (TTRegularExpression)
 
-- (NSString *)tt_deleteCharactersWithPattern:(NSString *)pattern {
+- (nullable NSString *)tt_deleteCharactersWithPattern:(NSString *)pattern {
     if (self.length==0 || !self) return nil;
     NSError *error = nil;
     NSRegularExpression *regularExpress = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];

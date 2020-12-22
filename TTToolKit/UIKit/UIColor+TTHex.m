@@ -80,7 +80,7 @@
 }
 
 //将颜色转换成RGB
-+ (NSArray *)tt_convertColorToRGB:(UIColor *)color {
++ (nullable NSArray *)tt_convertColorToRGB:(UIColor *)color {
     NSInteger numComponents = CGColorGetNumberOfComponents(color.CGColor);
     NSArray *array = nil;
     if (numComponents == 4) {

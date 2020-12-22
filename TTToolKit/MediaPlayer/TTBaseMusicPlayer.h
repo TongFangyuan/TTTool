@@ -79,8 +79,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (id<TTAlbumTrackProtocol>)randomAlbumTrack;
 - (id<TTAlbumTrackProtocol>)firstAlbumTrack;
 - (id<TTAlbumTrackProtocol>)lastAlbumTrack;
-- (id<TTAlbumTrackProtocol>)orderNextAlbumTrack;
-- (id<TTAlbumTrackProtocol>)orderPreviousAlbumTrack;
+- (nullable id<TTAlbumTrackProtocol>)orderNextAlbumTrack;
+- (nullable id<TTAlbumTrackProtocol>)orderPreviousAlbumTrack;
 - (id<TTAlbumTrackProtocol>)circleNextAlbumTrack;
 - (id<TTAlbumTrackProtocol>)circlePreviousAlbumTrack;
 

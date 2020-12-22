@@ -29,8 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
                                 formatHint:(TTDateFormatHint)hint;
 
 // Get date from a string using a specific date specification
-+ (NSDate *)tt_dateFromRFC3339String:(NSString *)dateString;
-+ (NSDate *)tt_dateFromRFC822String:(NSString *)dateString;
++ (nullable NSDate *)tt_dateFromRFC3339String:(NSString *)dateString;
++ (nullable NSDate *)tt_dateFromRFC822String:(NSString *)dateString;
 
 @end
 
