@@ -26,6 +26,7 @@
 		85EF4387246A911300E8590E /* TTBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF4386246A911300E8590E /* TTBaseWebViewController.m */; };
 		85EF438A246A91B800E8590E /* TTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF4389246A91B700E8590E /* TTBaseTableViewController.m */; };
 		85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */; };
+		DA17895425C8EF6F007558C0 /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17895225C8EF6F007558C0 /* UITextField+PlaceHolder.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
 		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
 		DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA51242EF75C004EF984 /* ViewController.m */; };
@@ -122,6 +123,8 @@
 		85EF4389246A91B700E8590E /* TTBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseTableViewController.m; sourceTree = "<group>"; };
 		85F6EDDA2449B3B800E03BA9 /* UIViewController+TTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTCategory.h"; sourceTree = "<group>"; };
 		85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTCategory.m"; sourceTree = "<group>"; };
+		DA17895225C8EF6F007558C0 /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
+		DA17895325C8EF6F007558C0 /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8EA4A242EF75C004EF984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAC8EA4B242EF75C004EF984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 		DAC8EA84242EFA8F004EF984 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DA17895325C8EF6F007558C0 /* UITextField+PlaceHolder.h */,
+				DA17895225C8EF6F007558C0 /* UITextField+PlaceHolder.m */,
 				DAC8EB0C242F4AEF004EF984 /* UIView+SYJXibConfiguration.h */,
 				DAC8EB08242F4AEF004EF984 /* UIView+SYJXibConfiguration.m */,
 				DAC8EB06242F4AEE004EF984 /* UIView+TTFrame.h */,
@@ -572,6 +577,7 @@
 				DAC8EAED242F48F0004EF984 /* UIAlertController+TTAlert.m in Sources */,
 				DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */,
 				85C80BF02452F33B00F7F5EA /* TTSizeAdapter.m in Sources */,
+				DA17895425C8EF6F007558C0 /* UITextField+PlaceHolder.m in Sources */,
 				DAC8EB37242F5329004EF984 /* TTAES128Encrypter.m in Sources */,
 				85BEC4862455858700F57219 /* TTBaseTabBarController.m in Sources */,
 				857B509324C17EF20001E937 /* NSData+TTFile.m in Sources */,

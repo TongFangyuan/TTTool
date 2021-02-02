@@ -26,6 +26,7 @@
 #import "UIView+TTFrame.h"
 #import "UIView+TTGesture.h"
 #import "UIView+TTKeyboard.h"
+#import "UITextField+PlaceHolder.h"
 
 /******************************   Foundation   ******************************/
 #import "NSArray+TTPlist.h"
