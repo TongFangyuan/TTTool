@@ -44,6 +44,16 @@
     return self.frame.size.height;
 }
 
+- (CGSize)size {
+    return self.frame.size;
+}
+
+- (void)setSize:(CGSize)size {
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
 - (void)setHeight:(CGFloat)height {
     CGRect frame = self.frame;
     frame.size.height = height;
