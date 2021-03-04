@@ -14,7 +14,7 @@
 # pod trunk push TTToolKit.podspec --allow-warnings
 
 # 🔥🔥🔥 在此处编辑版本号
-version = "0.1.28";
+version = "0.1.29";
 
 Pod::Spec.new do |spec|
 

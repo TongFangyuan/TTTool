@@ -27,7 +27,7 @@ typedef enum : NSUInteger {
     TTiPhoneXRXSMAX,       // 414x896  (iPhone XR/11/XS Max/11 Pro Max)
     TTiPhone55S,           // 320x568  (iPhone 5/5S/5C/SE)
     TTiPhone12,            // 390x844 (iPhone 12/12 Pro)
-    TTiPhone12ProMax,      // 390x844 iPhone 12 Pro Max
+    TTiPhone12ProMax,      // 428x926 iPhone 12 Pro Max
 } TTiPhone;
 
 /**
