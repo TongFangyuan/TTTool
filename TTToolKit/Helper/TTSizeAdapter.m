@@ -6,11 +6,13 @@
 //  Copyright © 2019 tongfy. All rights reserved.
 //
 
-#define TTIPhone55S CGSizeMake(320.f, 568.f)
-#define TTIPhone678Size CGSizeMake(375.f, 667.f)
-#define TTIPhone678PlusSize CGSizeMake(414.f, 736.f)
-#define TTIPhoneXXSSize CGSizeMake(375.f, 812.f)
-#define TTIPhoneXRXSMAXSize CGSizeMake(414.f, 896.f)
+#define TTIPhone55S             CGSizeMake(320.f, 568.f)
+#define TTIPhone678Size         CGSizeMake(375.f, 667.f)       // iPhone 6/6S/7/8
+#define TTIPhone678PlusSize     CGSizeMake(414.f, 736.f)   // iPhone 6 P/6S P/7 P/8 P
+#define TTIPhoneXXSSize         CGSizeMake(375.f, 812.f)       // iPhone X/XS/11 Pro/12 mini
+#define TTIPhoneXRXSMAXSize     CGSizeMake(414.f, 896.f)   // iPhone XR/11/XS Max/11 Pro Max
+#define TTIPhone12Size          CGSizeMake(390.f,844.f)         // iPhone 12/12 Pro
+#define TTIPhone12ProMaxSize    CGSizeMake(428.f,926.f)       // iPhone 12 Pro Max
 
 #import "TTSizeAdapter.h"
 
@@ -81,7 +83,9 @@
                      @(TTiPhone678Plus):NSStringFromCGSize(TTIPhone678PlusSize),
                      @(TTiPhoneXXS):NSStringFromCGSize(TTIPhoneXXSSize),
                      @(TTiPhoneXRXSMAX):NSStringFromCGSize(TTIPhoneXRXSMAXSize),
-                     @(TTiPhone55S):NSStringFromCGSize(TTIPhone55S)
+                     @(TTiPhone55S):NSStringFromCGSize(TTIPhone55S),
+                     @(TTiPhone12):NSStringFromCGSize(TTIPhone12Size),
+                     @(TTiPhone12ProMax):NSStringFromCGSize(TTIPhone12ProMaxSize)
                      };
     
     self.iPhoneMap = @{
@@ -89,7 +93,9 @@
                        NSStringFromCGSize(TTIPhone678PlusSize):@(TTiPhone678Plus),
                        NSStringFromCGSize(TTIPhoneXXSSize):@(TTiPhoneXXS),
                        NSStringFromCGSize(TTIPhoneXRXSMAXSize):@(TTiPhoneXRXSMAX),
-                       NSStringFromCGSize(TTIPhone55S):@(TTiPhone55S)
+                       NSStringFromCGSize(TTIPhone55S):@(TTiPhone55S),
+                       NSStringFromCGSize(TTIPhone12Size):@(TTiPhone12),
+                       NSStringFromCGSize(TTIPhone12ProMaxSize):@(TTiPhone12ProMax)
                        };
     
     /// 设置当前机型
@@ -151,6 +157,22 @@
         if (floats.count>=5) {
             [self.dict setValue:floats[4] forKey:@(TTiPhone55S)];
         }
+        if (floats.count>=6) {
+            [self.dict setValue:floats[5] forKey:@(TTiPhone12)];
+        }
+        if (floats.count>=7) {
+            [self.dict setValue:floats[6] forKey:@(TTiPhone12ProMax)];
+        }
+    }
+    return self;
+}
+
++ (instancetype)itemWithDict:(NSDictionary *)dict {
+    return [[self alloc] initWithDict:dict];
+}
+- (instancetype)initWithDict:(NSDictionary *)dict  {
+    if (self = [super init]) {
+        self.dict = [NSMutableDictionary dictionaryWithDictionary:dict];
     }
     return self;
 }
