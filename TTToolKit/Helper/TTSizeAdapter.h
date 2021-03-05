@@ -18,16 +18,20 @@
 #define TTSH(f) [[TTSizeAdapter share] scaleHegiht:f]
 #define TTSW(f) [[TTSizeAdapter share] scaleWidth:f]
 
+// 是否为刘海屏系列手机
+#define TTIsiPhoneXAll TTSizeAdapter.share.isiPhoneXAll
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
-    TTiPhone678,           // 375x667  (iPhone 6/6S/7/8)
-    TTiPhone678Plus,       // 414x736  (iPhone 6/6S/7/8 Plus)
-    TTiPhoneXXS,           // 375x812  (iPhone X/XS/11 Pro/12 mini)
-    TTiPhoneXRXSMAX,       // 414x896  (iPhone XR/11/XS Max/11 Pro Max)
-    TTiPhone55S,           // 320x568  (iPhone 5/5S/5C/SE)
-    TTiPhone12,            // 390x844 (iPhone 12/12 Pro)
-    TTiPhone12ProMax,      // 428x926 iPhone 12 Pro Max
+    TTiPhone55S      = 0,            // 320x568  iPhone 5/5S/5C/SE
+    TTiPhone678      = 1 << 0,       // 375x667  iPhone 6/6S/7/8
+    TTiPhone678Plus  = 1 << 1,       // 414x736  iPhone 6/6S/7/8 Plus
+    TTiPhoneXXS      = 1 << 2,       // 375x812  iPhone X/XS/11 Pro/12 mini
+    TTiPhoneXRXSMAX  = 1 << 3,       // 414x896  iPhone XR/11/XS Max/11 Pro Max
+    TTiPhone12       = 1 << 4,       // 390x844  iPhone 12/12 Pro
+    TTiPhone12ProMax = 1 << 5,       // 428x926  iPhone 12 Pro Max
+    TTiPhoneXAll     = TTiPhoneXXS|TTiPhoneXRXSMAX|TTiPhone12|TTiPhone12ProMax, // 所有刘海屏机型
 } TTiPhone;
 
 /**
@@ -44,6 +48,8 @@ typedef enum : NSUInteger {
  当前机型，内部自动设置
  */
 @property (nonatomic, assign, readonly) TTiPhone currentIPhone;
+
+@property (nonatomic, assign, readonly) BOOL isiPhoneXAll;
 
 + (nonnull instancetype)share;
 

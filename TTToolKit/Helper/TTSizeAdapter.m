@@ -75,7 +75,6 @@
 }
 
 
-
 - (void)configAdapter {
     
     self.sizeMap = @{
@@ -101,6 +100,8 @@
     /// 设置当前机型
     CGSize size = [[UIScreen mainScreen] bounds].size;
     self.currentIPhone = [self getIPhoneWithSize:size];
+    
+    _isiPhoneXAll = self.currentIPhone & TTiPhoneXAll;
 
 }
 
@@ -142,27 +143,14 @@
 - (instancetype)initWithFloats:(NSArray<NSNumber *> *)floats {
     if (self = [super init]) {
         self.dict = [NSMutableDictionary dictionary];
-        if (floats.count) {
-            [self.dict setValue:floats[0] forKey:@(TTiPhone678)];
-        }
-        if (floats.count>=2) {
-            [self.dict setValue:floats[1] forKey:@(TTiPhone678Plus)];
-        }
-        if (floats.count>=3) {
-            [self.dict setValue:floats[2] forKey:@(TTiPhoneXXS)];
-        }
-        if (floats.count>=4) {
-            [self.dict setValue:floats[3] forKey:@(TTiPhoneXRXSMAX)];
-        }
-        if (floats.count>=5) {
-            [self.dict setValue:floats[4] forKey:@(TTiPhone55S)];
-        }
-        if (floats.count>=6) {
-            [self.dict setValue:floats[5] forKey:@(TTiPhone12)];
-        }
-        if (floats.count>=7) {
-            [self.dict setValue:floats[6] forKey:@(TTiPhone12ProMax)];
-        }
+        self.dict[@(TTiPhone678)] = floats[0];
+        if (floats.count) self.dict[@(TTiPhone678)] = floats[0];;
+        if (floats.count>=2) self.dict[@(TTiPhone678Plus)] = floats[1];
+        if (floats.count>=3) self.dict[@(TTiPhoneXXS)] = floats[2];
+        if (floats.count>=4) self.dict[@(TTiPhoneXRXSMAX)] = floats[3];
+        if (floats.count>=5) self.dict[@(TTiPhone55S)] = floats[4];
+        if (floats.count>=6) self.dict[@(TTiPhone12)] = floats[5];
+        if (floats.count>=7) self.dict[@(TTiPhone12ProMax)] = floats[6];
     }
     return self;
 }
@@ -170,6 +158,7 @@
 + (instancetype)itemWithDict:(NSDictionary *)dict {
     return [[self alloc] initWithDict:dict];
 }
+
 - (instancetype)initWithDict:(NSDictionary *)dict  {
     if (self = [super init]) {
         self.dict = [NSMutableDictionary dictionaryWithDictionary:dict];
@@ -178,7 +167,14 @@
 }
 
 - (CGFloat)fittingFloat {
-    return [self.dict[@(TTSizeAdapter.share.currentIPhone)] floatValue];
+    TTiPhone iphone = TTSizeAdapter.share.currentIPhone;
+    if ([self.dict.allKeys containsObject:@(iphone)]) {
+        return [self.dict[@(iphone)] floatValue];
+    }
+    else if (iphone&TTiPhoneXAll && [self.dict.allKeys containsObject:@(TTiPhoneXAll)]) {
+        return [self.dict[@(TTiPhoneXAll)] floatValue];
+    }
+    return CGFLOAT_MIN;
 }
 
 @end

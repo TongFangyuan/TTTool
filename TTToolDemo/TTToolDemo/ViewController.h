@@ -6,9 +6,9 @@
 //  Copyright © 2020 童方园. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TTBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : TTBaseViewController
 
 
 @end

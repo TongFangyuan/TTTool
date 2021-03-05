@@ -27,8 +27,8 @@
 		85EF438A246A91B800E8590E /* TTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF4389246A91B700E8590E /* TTBaseTableViewController.m */; };
 		85F6EDDC2449B3B900E03BA9 /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */; };
 		DA17895425C8EF6F007558C0 /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17895225C8EF6F007558C0 /* UITextField+PlaceHolder.m */; };
+		DA46CAE625F0DC80004C0398 /* TTSizeAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA46CAE525F0DC80004C0398 /* TTSizeAdapterViewController.m */; };
 		DAC8EA4C242EF75C004EF984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4B242EF75C004EF984 /* AppDelegate.m */; };
-		DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */; };
 		DAC8EA52242EF75C004EF984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8EA51242EF75C004EF984 /* ViewController.m */; };
 		DAC8EA55242EF75C004EF984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC8EA53242EF75C004EF984 /* Main.storyboard */; };
 		DAC8EA57242EF762004EF984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC8EA56242EF762004EF984 /* Assets.xcassets */; };
@@ -124,11 +124,11 @@
 		85F6EDDB2449B3B800E03BA9 /* UIViewController+TTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTCategory.m"; sourceTree = "<group>"; };
 		DA17895225C8EF6F007558C0 /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
 		DA17895325C8EF6F007558C0 /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
+		DA46CAE425F0DC80004C0398 /* TTSizeAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSizeAdapterViewController.h; sourceTree = "<group>"; };
+		DA46CAE525F0DC80004C0398 /* TTSizeAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSizeAdapterViewController.m; sourceTree = "<group>"; };
 		DAC8EA47242EF75C004EF984 /* TTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8EA4A242EF75C004EF984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAC8EA4B242EF75C004EF984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DAC8EA4D242EF75C004EF984 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		DAC8EA50242EF75C004EF984 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DAC8EA51242EF75C004EF984 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DAC8EA54242EF75C004EF984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -264,6 +264,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		DA46CAE325F0DC5D004C0398 /* SizeAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				DA46CAE425F0DC80004C0398 /* TTSizeAdapterViewController.h */,
+				DA46CAE525F0DC80004C0398 /* TTSizeAdapterViewController.m */,
+			);
+			path = SizeAdapter;
+			sourceTree = "<group>";
+		};
 		DAC8EA3E242EF75C004EF984 = {
 			isa = PBXGroup;
 			children = (
@@ -288,12 +297,11 @@
 		DAC8EA49242EF75C004EF984 /* TTToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA46CAE325F0DC5D004C0398 /* SizeAdapter */,
 				DAC8EA4A242EF75C004EF984 /* AppDelegate.h */,
 				DAC8EA4B242EF75C004EF984 /* AppDelegate.m */,
 				852F5140246B966B002D581D /* TTTestPlayer.h */,
 				852F5141246B966B002D581D /* TTTestPlayer.m */,
-				DAC8EA4D242EF75C004EF984 /* SceneDelegate.h */,
-				DAC8EA4E242EF75C004EF984 /* SceneDelegate.m */,
 				DAC8EA50242EF75C004EF984 /* ViewController.h */,
 				DAC8EA51242EF75C004EF984 /* ViewController.m */,
 				DAC8EA53242EF75C004EF984 /* Main.storyboard */,
@@ -598,12 +606,12 @@
 				852F5145246B9A26002D581D /* TTLog.m in Sources */,
 				DAC8EA83242EF823004EF984 /* UIColor+TTHex.m in Sources */,
 				DAC8EB21242F5000004EF984 /* NSData+TTAES128.m in Sources */,
-				DAC8EA4F242EF75C004EF984 /* SceneDelegate.m in Sources */,
 				DAC8EB41242F5598004EF984 /* TTKeychainManager.m in Sources */,
 				DAC8EB30242F506B004EF984 /* NSString+TTRegularExpression.m in Sources */,
 				DAC8EAF7242F498B004EF984 /* UIImage+TTCode.m in Sources */,
 				85809D03243DC42E001813AC /* TTAudioSessionManager.m in Sources */,
 				85EF4371246A880200E8590E /* TTBaseViewController.m in Sources */,
+				DA46CAE625F0DC80004C0398 /* TTSizeAdapterViewController.m in Sources */,
 				85BEC4882455858700F57219 /* NSBundle+TTToolKit.m in Sources */,
 				854EB0C92435C66600821D1D /* TTAES128Tool.m in Sources */,
 			);

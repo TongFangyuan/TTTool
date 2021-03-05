@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TTToolKit.h"
 #import "TTTestPlayer.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) NSTimer *timer;
@@ -29,6 +30,12 @@
     [[TTPhonePlayerTool shareTool] playMusic:kMusirUrl source:kMusicSource];
     self.timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(progressupdate:) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    ViewController *vc = [[ViewController alloc] init];
+    TTBaseNavigationController *nav = [[TTBaseNavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 
