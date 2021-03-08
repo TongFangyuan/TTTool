@@ -16,22 +16,22 @@ PODS:
     - TTCategories/UIKit (= 0.0.1)
   - TTCategories/Foundation (0.0.1)
   - TTCategories/UIKit (0.0.1)
-  - TTToolKit (0.1.0):
+  - TTToolKit (0.2.0):
     - TTCategories (~> 0.0.1)
-    - TTToolKit/Encryption (= 0.1.0)
-    - TTToolKit/Helper (= 0.1.0)
-    - TTToolKit/Keychain (= 0.1.0)
-    - TTToolKit/Log (= 0.1.0)
-    - TTToolKit/UX (= 0.1.0)
-  - TTToolKit/Encryption (0.1.0):
+    - TTToolKit/Encryption (= 0.2.0)
+    - TTToolKit/Helper (= 0.2.0)
+    - TTToolKit/Keychain (= 0.2.0)
+    - TTToolKit/Log (= 0.2.0)
+    - TTToolKit/UX (= 0.2.0)
+  - TTToolKit/Encryption (0.2.0):
     - TTCategories (~> 0.0.1)
-  - TTToolKit/Helper (0.1.0):
+  - TTToolKit/Helper (0.2.0):
     - TTCategories (~> 0.0.1)
-  - TTToolKit/Keychain (0.1.0):
+  - TTToolKit/Keychain (0.2.0):
     - TTCategories (~> 0.0.1)
-  - TTToolKit/Log (0.1.0):
+  - TTToolKit/Log (0.2.0):
     - TTCategories (~> 0.0.1)
-  - TTToolKit/UX (0.1.0):
+  - TTToolKit/UX (0.2.0):
     - TTCategories (~> 0.0.1)
 
 DEPENDENCIES:
@@ -62,8 +62,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   TTCategories: 3d9055d186ab5cdb1eb2f8d4acc9a731971a2cdb
-  TTToolKit: 15d824d7ff5138a94f4951512179ec9ba4b4b5f9
+  TTToolKit: 27f5eb3607286099bb7fdf353459df10caea375d
 
-PODFILE CHECKSUM: 4f5677058c055d5d5a12398c42cb4f7b857010b0
+PODFILE CHECKSUM: f13f1f0325a2ccb198cc1104f0e4bd1e2c29de2d
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

@@ -1,24 +1,24 @@
 {
   "name": "TTToolKit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of TTToolKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/TongFangyuan/TTToolKit",
+  "description": "常用工具类整理",
+  "homepage": "https://github.com/TongFangyuan/TTTool",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "TongFangyuan": "9019860+TongFangyuan@users.noreply.github.com"
+    "573682532@qq.com": "9019860+TongFangyuan@users.noreply.github.com"
   },
   "source": {
-    "git": "https://github.com/TongFangyuan/TTToolKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/TongFangyuan/TTTool.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "TTToolKit/Classes/**/*",
+  "source_files": "TTToolKit/Classes/MacroHeader.h",
   "resources": "TTToolKit/Assets/TTToolKit.bundle",
   "dependencies": {
     "TTCategories": [

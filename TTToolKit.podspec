@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTToolKit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.1'
   s.summary          = 'A short description of TTToolKit.'
 
 # This description is used to generate tags and improve search results.
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+常用工具类整理
                        DESC
 
   s.homepage         = 'https://github.com/TongFangyuan/TTTool'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'TongFangyuan' => '9019860+TongFangyuan@users.noreply.github.com' }
+  s.author           = { '573682532@qq.com' => '9019860+TongFangyuan@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/TongFangyuan/TTTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TTToolKit/Classes/**/*'
+  s.source_files = 'TTToolKit/Classes/MacroHeader.h'
   s.resource     = 'TTToolKit/Assets/TTToolKit.bundle'
   
   s.subspec 'Encryption' do |ency|

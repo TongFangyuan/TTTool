@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007BAEFAECE401C49EF96B4EBA54E5C8 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 071F1EEBEC186B55B7099AD94F8E3D0F /* TTKeychainManager.m */; };
 		008A37B2A63BC1F3E33557FEF5BEE189 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = AF83021A4ED0CDCFD0414DA1128BE6E1 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00B3EF135DE4634D6FA1E5EF15239824 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 3896C37D2F99A0DA5D81FD1149849B53 /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01A37DDCD93971D5C02DA36B9FEFBBF6 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 086EBD094E749824056B34E8987ACE8D /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,19 +20,20 @@
 		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD5E94080CFCBC0E0BA61F9E6779BA7 /* NSArray+MASAdditions.m */; };
 		0A45D2934C4546B50E1D64C2D50E8F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
 		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F8ED0C6F576AEFDFDE160C2BDE7506E /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C3E0443547B651410F29E48F23C0812 /* TTSizeAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9ED406A45CCB74135D51D025F554DC /* TTSizeAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DE0AA588BC61692033B67CFCE4EC742 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CABB64142DE53880D0A8DDF915315F /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F4D55AE90E62ACB3092F9BACD21EFCC /* UIViewController+TTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48CDAFC20CD16FDD160A70410D378A /* UIViewController+TTNavBar.m */; };
+		10A7E5568F0EB78B136D5B9EAE451C25 /* TTKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE173E06AFDE0C5A99655194E1C918E /* TTKeychainManager.m */; };
 		114C2163DAE74196CAF6FA2E5FB633D7 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 90331D3B539C1FD393129A576F2D89AA /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12C14FE4834134BC916F8DD42B875D3B /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B1C11879B3DBEBFE4A892C39F593EC /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140394F97EEF0A95AB171649249F211C /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E5709CD6F307CE51130129879696FB /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1490AA2AED50F9EDBA72B8637BB0563B /* TTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F8556CC021DAF1CBA45A90DF19634E /* TTBaseTableViewController.m */; };
-		1506B5959AB93D5BCCBB0224A590D803 /* TTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9552B180A09954B845032C0570A965 /* TTBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		157A2480609C88C0FDD3284CC21F6EAF /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D1A4D5AD9BFC67B38F63E86BC3F92 /* FBSnapshotTestController.m */; };
 		15C0054801F96BA3329545B1FAA6A85E /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A6F0BC0CD4175FA9FA302E1B4093B /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		17EECCA24CCA1E0295A9851A91DF8247 /* NSArray+TTPlist.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B65F9DDB63416FB37289FAAE9BBE /* NSArray+TTPlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		188A55E8570219DC971027460C2BCF1B /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1989F6A7FC5EA0F6614611F11A741E /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		19621E59AF2C3772FF6290740DB6EAB4 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9212B09681C4389CBBF4A9E1652E6A /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B30525C62B94D18BEA3489DE427823 /* Masonry-dummy.m */; };
+		1985388171D194A2191372D980512DBE /* TTAES128Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 572DE535939D5F3B4732CDFECEE138BE /* TTAES128Tool.m */; };
 		1ADC9CC5ACAEC96C5A842117AEC2459D /* NSDictionary+String.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB61910D78488D06C649B7902208904 /* NSDictionary+String.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B6E2A4D21EDE16DAD59D53E10B37DA5 /* UITextField+PlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E9238CD633BC3D2BB00E99277E6CBF /* UITextField+PlaceHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B8EC8E067841EA0544FC7D3524B9DE2 /* NSDictionary+String.m in Sources */ = {isa = PBXBuildFile; fileRef = EC959D15D1F0FD763CCC3F89B3849941 /* NSDictionary+String.m */; };
@@ -44,8 +44,10 @@
 		20471DE376ACB94F0E144A26EFFCFD21 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A31EAD87CB692B32CB6698E7996AC7A7 /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		20B866F70C9E65C07BFF6282A2CC6662 /* UIView+TTKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C714C5759F37131F8550838292461A /* UIView+TTKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21736FBD68FBD9C8D10BAAA35F540050 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1081D4FB6BD08A2C2C1F8381C527F83C /* SPTExampleGroup.m */; };
+		2226AA529FB19C6BE10AD65740469216 /* TTBaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B30B208F558E8FB0EAFD32A651C7AF /* TTBaseWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		234BB26073B719D6542B6D818CC3B8C9 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A00E0D8F6949C8A9120CD8843682454 /* SpectaUtility.m */; };
 		244D8552B11F2D1B417EBB82BBE9E938 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 04682BC179E67CD2A7682306974DB542 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		24E49D25B28DABB194DE7DD0AAFBE415 /* NSData+AES128TL.h in Headers */ = {isa = PBXBuildFile; fileRef = 47557F1A989F56182D45316386948252 /* NSData+AES128TL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25C2905BD04D69AB3CCA7BCC93D07AC7 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC8890966426482602F9EC79A8B4B93 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2740ACA2DB0A8400047ACD405C24C455 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B08FF4B87815229C8FEF605388E201F5 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		274949497D5A1831A1F9BBE122AF5664 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE56450FED0BC8AE4FE6BEE7BB8F420 /* FBSnapshotTestCase.m */; };
@@ -56,15 +58,16 @@
 		2A46DD69C90BDFA0AD55A31D0F16A78A /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F36EA301BF7947F47E7B9B4D54BBFC /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A93B4FF56A270D64F8CCBF8D2DD0A6D /* EXPMatchers+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B48BAD6B43F368B4DA4AD1CDF10C01 /* EXPMatchers+FBSnapshotTest.m */; };
 		2CA3FCFAA16F485B7ED342CC520DFAEE /* UIViewController+TTView.m in Sources */ = {isa = PBXBuildFile; fileRef = E73E90D33F6394EE872E2BFBCCC3E701 /* UIViewController+TTView.m */; };
+		304132FB2C792C253AACCA12B616E233 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04F27728188AD7582347633FEAB697 /* TTBaseViewController.m */; };
 		32762E6201C8909C32899F1EA489913B /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A78AC8FA312A38D321C3E5D36ACA72F /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		329A51C0420708F5914C7F8B32C76BED /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561957E3C90C1F8B608914B260BB4A3 /* SwiftSupport.swift */; };
 		3372164C22B301D4D5F1C9C7C6DDB25D /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E50901AA425DCBBAA012E17C88650F06 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		33F207372E03EFDB0E0EF6DC63BF2CCF /* TTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC32DCCFAB7B401F13B90ECAF413ABD /* TTBaseTableViewController.m */; };
 		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = BA926F6B212D2605866A7F5B28AE6F24 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		367B340A521D3035682B22AD6787881C /* UIView+SYJXibConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 557751EB4707BA50614B8886F42AADF4 /* UIView+SYJXibConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3681AC7A2C3E52B5F6514D1560E13191 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = F26163A7150332F4A560B92E242D8216 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38A289C0550F25C9EDBF6A54BABC5A18 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A677AB5E8ECFDC493A61D03BBF7DD3E9 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39D6CB849D9AC5280E64DEF0C6406383 /* TTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 55EFA77B8B3CA3AD0DD7BFE24926E228 /* TTLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B158B532ADAE5D35F5802A2E83616E6 /* TTSizeAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A13F64653742DA358F0E8E34B4768D6 /* TTSizeAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A6C8302AD2149996701013EC9AD9DAA /* TTBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4B8392A2E1E96CE08171B0C3667519 /* TTBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B2A59E466E5E952E51862D462BD0A6C /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = F76285BB52B3993BC1B8F84CB7038ADB /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C82710DF39F627A44AE7067B65F92C7 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = A993E5FECBAC30EE82D39C0D730E07A2 /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D2B18825C28A7E1CD5845C972870D7A /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = A378C11DE67E12A7653F674EA9DD70C0 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -75,11 +78,11 @@
 		416D3BE841B08CED03D16649957ECB10 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 51092AD32A5313AD0CEC056AE185795A /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41B490A5CB6565458F1F507A8AD0FB45 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 887A7A05808BBEE30E03F73ADEC43A2B /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421E2E02871F45F6FC44045DF1144A54 /* ExpectaObject+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = FABC90DA5301AD67A7579DA8D1B22A69 /* ExpectaObject+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4245BB5D523DA09014A6FACDCBC30AB9 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238A25D8966C07F544BD7A16FD05C5BC /* TTBaseViewController.m */; };
 		42AA041D2C5897C843D5FB30C06B007C /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = D87716948C4F091E618F15E4A11A3BE8 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		44E479D4461EF4B721AC183AA21AC0F5 /* UIApplication+TTKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB640BC6AB350ACABCF895E4B67BDE7 /* UIApplication+TTKeyWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46ACAF12638940470981FA6689B0469F /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = F681C48FE0ABDC3678F0FDA08DC81922 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		47D26C4DAEE5133E053EBCCA73B61C0F /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F2256E13DC84F17709642E42E3F6A6 /* UIImage+Snapshot.m */; };
+		4823D12227D4C922B4A8EAB95897403A /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = 63449215FBBDB42DE4641E0D75E160BE /* NSData+AES128TL.m */; };
 		4A03F7E68886AE6A13DFC35E9A9B942A /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = B29AAF668E604F48625D47A32C4B1A32 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A43CA2D271338DF5BFFEA94E613630EC /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C3F9F1D20E29ED8C38D113EF48D4D09 /* UIViewController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A240B9EFC9CFEC557481A257C1FF8D /* UIViewController+TTAlert.m */; };
@@ -96,13 +99,10 @@
 		5566921687296E09A28887F5DC269BDA /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 0753F5227A153652A7F6F9080189078D /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5684070BD969334B74B8F7A450FDCC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
 		575137BEE06F51818CD96B82213621B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2C7A6D628BDF34C7D66D3B22277176 /* XCTest.framework */; };
-		57C8B7E2E7673C88EC1BE1831E6D8699 /* TTToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBD3AC20FB0CF41D0465D410DE79CBD /* TTToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58AF805046CFD9986EFEAACCBA61F9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
 		58E9D2FCF2970C601A9447A0D4D2FDC5 /* UIAlertController+TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDEEE66DB3AA2CA65F8BCCAFA828BD /* UIAlertController+TTAlert.m */; };
-		5926C6A7470C3611F0EE6E5A63F6F818 /* NSBundle+TTToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59738FE3C3C658B11D031B5C629422D0 /* NSBundle+TTToolKit.m */; };
 		59D34E8065607E956AC2DC046E76B743 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = D663531D17F8E51981A8E053500C1BE6 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59EE981BE2E13FF5C8D0110F460D675D /* UIFont+TTPingFang.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A51572D135C2E87963DBDFE5E9F611 /* UIFont+TTPingFang.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A93DFDB59FFDB62732FDAA5E5C59C9F /* TTKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF2626C87C6DB1D255FA2EA4253E83D /* TTKeychainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C6754FDD1DFAD63B3689EE5A7897F01 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8411B555B841CB50ECFE1D101B5F802C /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D5AB502D85BF8E27246A5964F6B3E9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC9659BAB6D1271030309A0CC88EF18 /* UIKit.framework */; };
 		5DD71838737687E6FA4583D98B08D7D4 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 176BAD79074B6A3CCA966829072D655A /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -112,11 +112,11 @@
 		6185B291B856199C0F28FAC836BECE70 /* NSData+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5DDA47BBBD583B2B81352F55744AC1 /* NSData+TTFile.m */; };
 		61CA94EF2639807466427720DA2091C6 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 543B299B69186662C725DEAEEFE1FAE9 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		62E551E2D06D6CC46FEA244D299BE2A4 /* Expecta+Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B14E9C763E2388C8AFAD74166A6C45E /* Expecta+Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B5B9816FB6DB3A0DAF2EE1FCFCEEA1 /* TTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2A6ECD50D526A4C27950E9A0278888 /* TTBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		660F79D9086A7962E1FFFA101802E8E0 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E1B5E08B0B930BF6DA15825BE2569E /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66ABBD694E306E452A0D3DB3972FA429 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9318CD0034D3BAF2C325F22B291BAC /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		673CCCFB2AFC09C9CE6DED34109C0A94 /* TTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F7BAD43752748613E730DAD24B8586 /* TTKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67AAC44BB42473673CCFBE7B54F59E9E /* UIView+TTGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9546034273BAE105133DB4D1B3A20313 /* UIView+TTGesture.m */; };
-		6915E8D8D559DF9C4210AE1219878D5B /* MacroHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF81755D3EFFF2E2AE4A133A19C224B /* MacroHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6839F6343D3EF705716E4102FED0E2EE /* TTApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F0C0580E99F0C2ED89D2E5D13D0599 /* TTApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC138B1E47B7919A98E8484614579761 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A9851E216F81F78BA985BE51CFC19EC /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1140D68F88A561E129B615A7BB58D1CE /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A98AED5C7336D862141A7143D40DFF9 /* UIImage+TTCode.h in Headers */ = {isa = PBXBuildFile; fileRef = F2AF475463BF95F51A9CD97A02BDC0A8 /* UIImage+TTCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,31 +126,33 @@
 		6E8A45EF6CD46D90A634E1E9163E562E /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6868B6A6660FB8215B0DB3C1327B4C9F /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		70351F8949D4D6C7A26FCB0BDBEB528D /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B205313A15D57939FD978A6890831 /* SPTCallSite.m */; };
 		711EF7C6DA0E4016B0D629C9823EEFF7 /* UIFont+TTPingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D24D2ADAFFD293C163AE13C90EB50E /* UIFont+TTPingFang.m */; };
-		71A0A170C03DF2F1275ED0DD456B8637 /* NSData+AES128TL.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5EF229429A60F7E7EE6E0D2D7D31E /* NSData+AES128TL.m */; };
-		73AE947EC256D29CA168521AA6F2C4BF /* NSBundle+TTToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 95243DD34307AD9473D09811FB1AC9E0 /* NSBundle+TTToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		750B8A719A8A6C923A96A413C7473371 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2C7A6D628BDF34C7D66D3B22277176 /* XCTest.framework */; };
 		760C2F0063C117D5B3F47AEC2C2D23BD /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCCDB9832A4C6F3B9F3565E679EA33 /* SpectaDSL.m */; };
 		7709CF64039955B3BAF42CDA38E0F96F /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8816D81C270647B1F9B5871BEC19F8 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		774AF943E08FAD97BCD1395D41D8C399 /* TTBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752998491D8048D1E665AE44EDFCDA82 /* TTBaseWebViewController.m */; };
 		777DB2CAF42F78F06C61F9A4AA3AD09C /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C085F49883164B90BB8094ACC4C9E7B7 /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77D8AC22A3F4297CDE9B2094EE8AEF38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
-		7857683E0556BE36B7EEC15891FB536A /* TTAES128Encrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8901E0C2693F4E13E58E41FBBED422E /* TTAES128Encrypter.m */; };
 		7863056FE013C1830BD5982DE144A2DF /* NSData+TTAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = D13AB850A7FECE9F0E6A4BCD10399D98 /* NSData+TTAES128.m */; };
 		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56EAB2E4CFB28220145F68DD08625C /* MASConstraintMaker.m */; };
+		78D80213605F158BABFA08E1169224F4 /* TTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B986FE16078D4918E06139594CC638F3 /* TTLog.m */; };
+		790160AB3D8797C20C07F4E7C46E49A9 /* NSBundle+TTToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07B706C0015A38EDB0FE156D579948 /* NSBundle+TTToolKit.m */; };
 		7967AB2E31F5D064244EB23735D0B3E8 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8157D6238269201C53E02A924F7A084D /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		798035FF35D6144ACEDB7B9DCCC22160 /* UIColor+TTHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354DCAC9E9620A0BDC313DF701F7241 /* UIColor+TTHex.m */; };
 		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FC61922B7E00DDAB5B4D8BF49596B60E /* MASCompositeConstraint.m */; };
 		7C169F8ADD7CE6CD4BDEF6F0AAA909D2 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = FC158EFD2FCE539799D019B5B4C3FE42 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D22935560DBA8F2EE62C3609A9EC3F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2C7A6D628BDF34C7D66D3B22277176 /* XCTest.framework */; };
+		7DB760ACEF34BE979E392BCF6D428166 /* TTAES128Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C347454432D561C8CA37CBD9028BBD /* TTAES128Tool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8A20F94491C45F7EE5385583DB1EF5 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 00EF96498C6B9F752DB0528BDE2A3932 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F75037F5F8E1A2F597112B6AFEC0DE5 /* NSString+TTRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C29A7E69E7540735F995704937FAB4A /* NSString+TTRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		821F025A006CB157497E83C0EC102052 /* Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DF8E30D112347C20BEA0BBCACC43BF /* Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82D21FB562FB8556526CAAA90C052EDE /* TTApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D25C0B924F7AF624645C7E264474B5A /* TTApp.m */; };
+		846B4AE7B4D4AEDF102DF6E7CE96D666 /* TTAES128Encrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE24EA99C2227CF1DDA32CB149E92C81 /* TTAES128Encrypter.m */; };
 		850E38ABD196F6844F7BCF89586C1A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
 		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D6471B497B123169B23DC94BF5941C /* MASLayoutConstraint.m */; };
-		85E7876E4A97E78986F4967743CEF983 /* TTBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4745099AC044AB2EEE4A1F68523CC9AF /* TTBaseTabBarController.m */; };
 		86C3ADFC6947D228B2DF2555DA9EAF35 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 1215211BDCF56E199B5F6188065662B3 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		871FD72BD33ABC771238AF03BFC27FE9 /* NSData+AES128TL.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE172047555A65E699C71976D1E8E3C /* NSData+AES128TL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		873165886F20870B205EBE37F8185546 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = D007C631DDF14321B73EB09AE588C4BC /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87602C676D877CE47FD5F9D1813EAA96 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2C7A6D628BDF34C7D66D3B22277176 /* XCTest.framework */; };
+		8831939FCD9F95129E8AAFDB7616A4F3 /* TTKeychainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 785FDA3C7E76B5B4812D415B931BC26C /* TTKeychainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88428AE8F449989AA0B59DCDA908B07C /* NSObject+TTKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93CFD9F10790F14406FD5BD4A42849 /* NSObject+TTKVO.m */; };
 		8B8CB2F1361DD1EA4711D54F596569F4 /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8CE766284C64A269077B83368D43D8 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C5793CB7D50AC7A72782EFD6A382F145 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,21 +162,21 @@
 		8D92738A43A51B9CD54FE283AA51398A /* Pods-TTToolKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A92CA04AF0795C01EF89674D37233E /* Pods-TTToolKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD8E7B425482FFC22DD917E54B1560D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
 		8E30B7DA0041E761CA840C538EC05152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
-		8EFFC960DDA49B8D581BFCE13FC01EE1 /* TTAES128Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = B233687B47AE31C2F7C82C3E3C3E6D66 /* TTAES128Tool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9128318870524A6A53DD6B0333366C29 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 75012F0D4FA2750298735537D0436FAB /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		915EB6EC0691E562A7613C53BACA2AE2 /* TTCategories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D7DDE851F6773009AA81895EBBA4AC /* TTCategories.framework */; };
+		91A1478829EA5A996545BC98B041B2B7 /* TTToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A31C5A9FF73251AD58224B0BDCBA840D /* TTToolKit-dummy.m */; };
 		91D97431FC345B310CCCB8D1E1ED5121 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FCE5EE31F3391421223DDF1EC3496F /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91F08081D0286CC0733C2D5A9B4A8F32 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E2DFFBA687457BD609B53AF681530 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		932B3FA94CFA06E495DC24A0C9FE5C71 /* UIStoryboard+TTCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E766D3F6391368944246933518A15A5 /* UIStoryboard+TTCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C298ACF6BB329B91EB6712C260D4E479 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94F733645B2826DB33AD5E8AC2F72CBE /* UIViewController+TTView.h in Headers */ = {isa = PBXBuildFile; fileRef = D666D508F2E99A0D4AE2E7E1693D6E50 /* UIViewController+TTView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95779446940C2BFF44F34B23D428E2FA /* TTBaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E7A093D16824D003E16C1A22A51E58 /* TTBaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9587F54673DFEEE2AA189C84D108F789 /* TTCategories-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A46B5D7CE0B49D194BAD2D4B8233C14 /* TTCategories-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96BC54118F99CACBCEDE0B64784E0737 /* Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A346F47F4F731243C1AD7A80A0682 /* Expecta-dummy.m */; };
 		97D9A825385A35B046B1DFF01F24136F /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2F8573052753C460E4532E0AD18783 /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9954AC2372750F9C309AB089FFD7274F /* NSData+TTAES128.h in Headers */ = {isa = PBXBuildFile; fileRef = 4918D3838E5DAB3CEFB93AB3210CB31B /* NSData+TTAES128.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A1BA4458BC014F25C1C1F6B96B3AA98 /* NSBundle+TTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D200D4027B6A56168F65FBD900CEAF9 /* NSBundle+TTBundle.m */; };
 		9AC1A3902FC9162C9B432B411928B215 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C8553E7994D4D3ABB2B872FA62340FBC /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D2A9462A762068C78D6192AB7015EEA /* TTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 590D2D46823D7D43232972CA681308D1 /* TTLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6129642A2D56191E3A521C00CB6FA993 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E404D49C9317B14AA6AE055E3248DE9 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB6CA973FA2FE6D65686318DC0968AC /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A22B2CB643F054FD1DD1853267AFE5BC /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 83AEB17ACFB01086155D64C61BD64B23 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,16 +184,15 @@
 		A36E38E5342BBC81B1C33527270F32A3 /* NSData+TTHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79238BFCEBFEA2DE6D989E144D479B /* NSData+TTHexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3C20865C32C2C59B18EFFE4143D9125 /* TTCategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D13ABA39CAFC43B8017501AE19777980 /* TTCategories-dummy.m */; };
 		A47A2EC16D86F9593F3F3C3FE8BF8436 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E48593AD11A4B0BF2B961C2008013BF2 /* FBSnapshotTestCase-dummy.m */; };
-		A86C3A3E16BE35810FB81D1BCE11D061 /* TTSizeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD7F7AABA45FBBC39E36F628ED2FD8 /* TTSizeAdapter.m */; };
 		A8A8E05A38765E53A6972809D2B52521 /* Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 885A49406BB93C7BE8DF3D4E51132A42 /* Specta-dummy.m */; };
 		A975915D17B3A57587797A6365A9F8CE /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 557B7188110CD5A7C86528FAAE8A7220 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAD41575D71560C5BE9D3BEC532028F7 /* EXPMatchers+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 725C4CE1833499879AD3628F16C9C452 /* EXPMatchers+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABB868832335B31943DE85A34DD5F313 /* Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5837717B7289E0808B0E43B73EDAA6AA /* Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACBDE7479CEDFD9F3261E26D6B1015FC /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = A033765C5BA24491A3CA5CBDFED2C8C9 /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF493331C1B8B62E4FB770EE9C144E22 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB96FCF8BE225B9B3F4D009C9492D97 /* Expecta.framework */; };
+		B0984109632AB990165139C403BE8C50 /* TTBaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D7A9D78D1FAACD80B56BC662A5BA8F /* TTBaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1E009C09736B0D8150B3FF489A1B627 /* ExpectaObject+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAEEEEB0D4D60DD94F5D07E7FA45CB9 /* ExpectaObject+FBSnapshotTest.m */; };
 		B24C0951E730C8D7B6539598555A0126 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8B4402D076B02964647E9252AFDC3A /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B28C2CF2D922225CE444CE043176EE9F /* TTAES128Encrypter.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA2172AAA1E707F81F04A4203D6BE25 /* TTAES128Encrypter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2CAE990789BC51EED4BC94BE0A5D7F0 /* UIViewController+TTCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D09784310FB1B0819E9CBE1BECDD11C /* UIViewController+TTCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B31E1ABB0DF9F6E7C3B8BEC90C04FCBE /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4773815CD9137325E41EC2BCA045FC /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B42FB8232AFDDFC1E1A09BAA444A54DE /* UIViewController+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09ACC398C173C2CEBDB8C65BE2702B /* UIViewController+TTCategory.m */; };
@@ -200,29 +201,28 @@
 		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2D2C2F2080DC8BD6E3A2909E9F0EF /* MASViewConstraint.m */; };
 		B8087558C5C3B44D4F83F8F623AE421F /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 93957EC873935133826119974BE01AAE /* SPTTestSuite.m */; };
 		B829A3931112F6C2FCC79951C5A2FB3B /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A852152A1F6FFAA94835C2A905A53F5 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B918F88C35FAA7725804D30FA5756267 /* TTToolKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76E2FAAA121F3CC22D18E67EBECBB65C /* TTToolKit.bundle */; };
+		B918F88C35FAA7725804D30FA5756267 /* TTToolKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33C4377195A101D3925413399C337798 /* TTToolKit.bundle */; };
+		B93B1AAD5C32E31DEFB9366E8C1D4F74 /* TTBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B20F5B4995F91FA5395E44E87D522C0 /* TTBaseTabBarController.m */; };
 		B999DEBC999F335CC8E6C471F942F93D /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07468D5A86B7251E7DA6839FE2A11624 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BAC7B4439573202CA015B19482F32B91 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B49933CCB5F3108B57A18E8858E74EF /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE143B7E0A5BEB3FAB7C9CCA2B923C4 /* TTBaseTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = F546792049F2EBDC4A9D805E41A327F6 /* TTBaseTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDFE34027B6EE0D1E1DB37AE2A5F3685 /* UIViewController+TTNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E541F7D2519F35293E1A51121057551 /* UIViewController+TTNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF5825B89BE2F33A5D7767D78274853A /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0583D8A9FADEDE84D1C04CF683658D /* TTBaseNavigationController.m */; };
 		C00E1BAAC614AF9A68AE28A6DDDCBEE9 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA929869C83B38148F2268CA12281C2 /* UIImage+Diff.m */; };
 		C017C08316BD80E61E0406ACC37DC456 /* NSString+TTRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D820D58FA5905F2D047EB5723297510F /* NSString+TTRegularExpression.m */; };
 		C01D7F86A9EA161F2DB62C5A6DFAB330 /* UIViewController+TTAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82F28E5CAC5E778DB4797C1FB36698 /* UIViewController+TTAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45F6ADFA744A4D9A82D28CF9738509 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		C18FBD6CD221CAFD1AF15CC99A48CB84 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 971F01CB885E3ED198EECE7C2893CED7 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C442441B72483723E9E89A6DD3BF05E1 /* TTSizeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 838EA531B99D068D932E314DF3741F56 /* TTSizeAdapter.m */; };
 		C4632B64DD0F3ADB3BB829A6EBC322E6 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 564682C0A905F0FA5624FAAF646E37B5 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C7D0D8E4CF3BCAF45E08F6A22F9871EE /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7995E88334834721CFC535EE39B2DA18 /* SPTExample.m */; };
 		C89AF7398992FDC37257EDC094852BF6 /* UIView+SYJXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E24B8E0E3CAC3EA22DD7AAF277F6A /* UIView+SYJXibConfiguration.m */; };
 		C8D5363E37368C0CFE0DA66E1F5DD75D /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB355D59D0DDF718870B6FAF1A9A0B1D /* Specta.framework */; };
-		CA8900CF13EB03D4265EADA28272BD8F /* TTToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0641C20DF54FE2468021F290AE6A26 /* TTToolKit-dummy.m */; };
 		CAEE0E44BC37459BD49C0B1D626B0477 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8D20CD5A5FAC750C74788DCB40A85 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CF96DF224270667334A16D4BD1BBFA4D /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6A726EEA8008EF9F8CB82078C7AFF7 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1833E96BCF70BD22FC6DB6AAE08FE62 /* TTApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE1F912E44B5610B33FAEDBD34F66CB /* TTApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D327EEB8522F6389513EB84ACF12F242 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E210F086536DCC5164ADD7BDB1246EE /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D3B67B217BBE1DB36DCD6C84BDBAFB15 /* TTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7451AE3FE17B607193675A0BB421 /* TTLog.m */; };
 		D4472453A8147DF973BAAB33AE7320E0 /* Expecta+Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25707E76A52C3EBC730D90CF80EAFB00 /* Expecta+Snapshots-dummy.m */; };
-		D4AD39152DD42421AA0187829316D9B8 /* TTAES128Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AC376423306C3BDAA223F9947B3AFC /* TTAES128Tool.m */; };
 		D5C3E91A2121AE27F99028292B9436A8 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 09519640FB9AEC5AFEDF436EB1CA97DD /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D639F329D7A4CDA46E2D506C177A25AC /* TTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F098D6A8B5A6B7A841E7CD1CA52E2A /* TTKeychain.m */; };
 		D85D536231439C5B247CE7DD26541BAF /* NSArray+TTPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B5E5E39DC9BF99A5EE9EB3CACC451 /* NSArray+TTPlist.m */; };
 		D8BAAB77273ED830B2989F2FDC1AAA23 /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F80B2063A3EFDC3B183472B56A94D0 /* SPTSharedExampleGroups.m */; };
 		DB61008619E2FB6EB7D015C92C12602A /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF24A726862F294B5B0AB7C14CC9AE /* UIApplication+StrictKeyWindow.m */; };
@@ -231,33 +231,34 @@
 		DE419F55BEB1FCBC589A5FEB3134A319 /* NSFileManager+TTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7D843B0CF1F78BA5B562802FE8791 /* NSFileManager+TTFile.m */; };
 		DE4A7D097F1B08B33C4A50C1B6D5F287 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D82B40D2B0F6FAFA68939E1B8DEBB /* SPTSpec.m */; };
 		DE7FC5D8F81CE893DB6EDF99865350C5 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A19C8B32DE18534E58ED99EFF06CCA /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E01861D46C170FD0FEE9C23564B11DBB /* TTBaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F794E92E77814CCEFC5446207A188C21 /* TTBaseWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0C2DE82451B50B366B162F225492314 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1277D09A1BC3205D88C20918C4EEA /* XCTestCase+Specta.m */; };
 		E10B7C82A2E84D90FE5DBA18216D694E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC9659BAB6D1271030309A0CC88EF18 /* UIKit.framework */; };
+		E10BE6046D70BCFEECD16C28EDDE3BCE /* TTToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 435122C098BF1B2ACBF5707F43BAAC10 /* TTToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2058F4A0E7638E420DE96F8DC17AAA9 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D036C11AFFCAD0E1896AE11860A9D3 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E322E587CE43A06415B32525B20CAD60 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = B20ED6672012DE4F011D9068E87D1486 /* UIImage+Compare.m */; };
+		E39599AFDDA94B5D464E88142E4C3D08 /* NSBundle+TTToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9E791766F979CD3ADF3F15A258C120 /* NSBundle+TTToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3E3403D3EF8A62147F8A8414271FF8C /* UIStoryboard+TTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E1A45CC2E08EFBC247486A9D6C2248 /* UIStoryboard+TTCategory.m */; };
 		E5C542BDF038801D822DDB97E429C759 /* Pods-TTToolKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0518B66446089A901EEB6FF00BD82D90 /* Pods-TTToolKit_Example-dummy.m */; };
 		E791EEB9E7DA8C5DBDFF80A2BA7A6A4F /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D151F810CF23B911E7FEEDE3108DBD7 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9027A78CBBBF4770741A8F6764A912EA /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E88E96AAAEC6DED03F5D8962CBC3502D /* TTAES128Encrypter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5372DCA1FC07AC1912718249240005DB /* TTAES128Encrypter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176393A9FE24554F2E99751F20037BE /* MASConstraint.m */; };
 		E8F65049CBE3AA1AED67A82124226FEC /* NSFileManager+TTFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE4814588ECF93A8EB240E5CABA0A11 /* NSFileManager+TTFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8FFDC9DF7A5D2AF9574310542A6C55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */; };
 		E9074471B6C5C5A7E6A79738374159E1 /* NSDate+TTInternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 7678BA48A1E931CDE55A58B4354B13A4 /* NSDate+TTInternetDateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E969F8D679A40C630D2E855651A49D90 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0854E4CCB07B2E7DE64F6C8BE289600D /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9879587C5095E79C33F62270F95CFC9 /* TTApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4645A7F15FDD71DBF639C3CA3E524AD8 /* TTApp.m */; };
 		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA2D02DD96376AC94E283B0E5D428F4 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBC99DCB637CF8E765FC053150D6141B /* TTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 45944318DDAE1BF75F714E2DA602D7F5 /* TTKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC57F974317D76B799CFE2A018B5F9E2 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 47948C2215D29B5A0729B47289E96AB0 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EDCB05BCC89D0EB767B67938D7EEE7FA /* UIColor+TTHex.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EE5D56FE5350E84DB1932BDE37B3C8 /* UIColor+TTHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC477D6B17E9AB60D60728946BA8D1D /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67501109E8668CACB06160E4928981E /* FBSnapshotTestCase.framework */; };
-		EECA9C50220D08D35A0877B4F35E6F61 /* TTBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B49DD515682BBC666EC251460CF475 /* TTBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EED3802CD4C4CE04027F09A9B722D853 /* TTBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EBC5A985381A3FCEB7058F8E16A51 /* TTBaseWebViewController.m */; };
+		EF470C7BC127EEEBD001B15F60C59668 /* MacroHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 404F337598BD36ECC52882163D715628 /* MacroHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F026DB6AC3A9E9109610E08ED7CE8A3A /* UIApplication+TTKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BA2D07AD35B70D4ED240F5F738513 /* UIApplication+TTKeyWindow.m */; };
-		F1DC99261F328AF1FDB7B9327C0CFCCD /* TTBaseTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7332E1A027F73B9919C61978CC1CA25 /* TTBaseTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F31CCBB90D75D9E5A83545FD95954FFA /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3291D7ABAECA413D21FB4B90FE4F6105 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F39F12CF9927F7A26983ABBADCF063F2 /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EBE8141C85559A5D038A1585A8A1CC /* SPTCompiledExample.m */; };
 		F3EDE6D241EE2A6D0992A24ACDDBAB35 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE6F870F174FD4A001CEA4668808F5 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4591B9C7F70268A3F94B40ADDBA5202 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA37058870BF7577ACEEABF1390C76 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4CB662B5B7250647F91AAFCFBB4E526 /* TTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D627ECFCF0CA20338438545341D0E2F3 /* TTKeychain.m */; };
 		F76563F532D664EED7225E05714F5F67 /* UIAlertController+TTAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 161FED8E40420A0B3DDC82213EDEEC83 /* UIAlertController+TTAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F83F2827FAA10860177F3D4A832436E3 /* Pods-TTToolKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F73F648F2C8C0CB1CA2864A318695B /* Pods-TTToolKit_Tests-dummy.m */; };
 		F83F448B6E71D05EC063888CB3D6E3AE /* NSBundle+TTBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7715239B5AFE57CBBE0C71FC8EBE502C /* NSBundle+TTBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -265,7 +266,6 @@
 		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7779E531435050BFA7D51D1A6764C1F2 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB28A8C2B1CFDD68BE028B8502E0FD7B /* UIView+TTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B63E311FF841D069825B85EF3543F /* UIView+TTKeyboard.m */; };
 		FBC9734FF84807AE5347B2196D7EBC6D /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B7A44E3C1C3817B22FD2B53B8B8AA9 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE2E72275C098604D3C3478797C4F846 /* TTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C54B50038CC841BF6D0CC623648C8C /* TTBaseNavigationController.m */; };
 		FF32DED27190F37F99C2334259533E13 /* UIView+TTFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B81F570468C5A50ED2C5D180791F33 /* UIView+TTFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -363,28 +363,27 @@
 		00EF96498C6B9F752DB0528BDE2A3932 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
 		018CBEAA2449A2800A68760BC00EBEA0 /* Expecta+Snapshots-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Expecta+Snapshots-Info.plist"; sourceTree = "<group>"; };
 		01F2D2C2F2080DC8BD6E3A2909E9F0EF /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		02F0C0580E99F0C2ED89D2E5D13D0599 /* TTApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTApp.h; path = TTToolKit/Classes/Helper/TTApp.h; sourceTree = "<group>"; };
 		03300DCBF6C1651043783BD081CF64A9 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		04682BC179E67CD2A7682306974DB542 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
 		0518B66446089A901EEB6FF00BD82D90 /* Pods-TTToolKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTToolKit_Example-dummy.m"; sourceTree = "<group>"; };
 		05A92CA04AF0795C01EF89674D37233E /* Pods-TTToolKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTToolKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		05D036C11AFFCAD0E1896AE11860A9D3 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
-		071F1EEBEC186B55B7099AD94F8E3D0F /* TTKeychainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTKeychainManager.m; sourceTree = "<group>"; };
 		07468D5A86B7251E7DA6839FE2A11624 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
 		0753F5227A153652A7F6F9080189078D /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
 		0854E4CCB07B2E7DE64F6C8BE289600D /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
 		086EBD094E749824056B34E8987ACE8D /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
 		08F7F0770B4878B9883B87DCD8569CB4 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Expecta.framework; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09519640FB9AEC5AFEDF436EB1CA97DD /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		0A01066150AC9DFFF1FDDEFA552BCB6F /* TTToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTToolKit.debug.xcconfig; sourceTree = "<group>"; };
 		0B6A34CBAD350BF3A8E4F7785EBE9FD8 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
 		0CE4814588ECF93A8EB240E5CABA0A11 /* NSFileManager+TTFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+TTFile.h"; path = "TTCategories/Classes/Foundation/NSFileManager+TTFile.h"; sourceTree = "<group>"; };
 		0D200D4027B6A56168F65FBD900CEAF9 /* NSBundle+TTBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TTBundle.m"; path = "TTCategories/Classes/Foundation/NSBundle+TTBundle.m"; sourceTree = "<group>"; };
 		0D93CFD9F10790F14406FD5BD4A42849 /* NSObject+TTKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TTKVO.m"; path = "TTCategories/Classes/Foundation/NSObject+TTKVO.m"; sourceTree = "<group>"; };
 		0E766D3F6391368944246933518A15A5 /* UIStoryboard+TTCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+TTCategory.h"; path = "TTCategories/Classes/UIKit/UIStoryboard+TTCategory.h"; sourceTree = "<group>"; };
-		1044FFA8ED59B237489A4C99FB6B42FB /* TTToolKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TTToolKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1081D4FB6BD08A2C2C1F8381C527F83C /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
 		1140D68F88A561E129B615A7BB58D1CE /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		1215211BDCF56E199B5F6188065662B3 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
-		1317BD43827F4089E9734C1FFFC9E022 /* TTToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-prefix.pch"; sourceTree = "<group>"; };
 		13EB6606767F2C5E34752696E22C91A9 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		15B13B063AA97C48C9010C298AECBDDA /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Specta.framework; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		161FED8E40420A0B3DDC82213EDEEC83 /* UIAlertController+TTAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+TTAlert.h"; path = "TTCategories/Classes/UIKit/UIAlertController+TTAlert.h"; sourceTree = "<group>"; };
@@ -398,16 +397,12 @@
 		1EB12D13798D0C5B880850F30F29F930 /* Expecta+Snapshots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Expecta+Snapshots.debug.xcconfig"; sourceTree = "<group>"; };
 		1EE19FE1D7CD6C66E58773A984FD0678 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		1FD5E94080CFCBC0E0BA61F9E6779BA7 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		1FF2626C87C6DB1D255FA2EA4253E83D /* TTKeychainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTKeychainManager.h; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A240B9EFC9CFEC557481A257C1FF8D /* UIViewController+TTAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTAlert.m"; path = "TTCategories/Classes/UIKit/UIViewController+TTAlert.m"; sourceTree = "<group>"; };
 		20B68C9269B45825E82F4F5ECE0EB27C /* Expecta_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Expecta_Snapshots.framework; path = "Expecta+Snapshots.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2354F9B2BD90F3A2BCD6352C7C18126D /* NSObject+TTKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TTKVO.h"; path = "TTCategories/Classes/Foundation/NSObject+TTKVO.h"; sourceTree = "<group>"; };
-		238A25D8966C07F544BD7A16FD05C5BC /* TTBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
 		23D6471B497B123169B23DC94BF5941C /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		24986225B5CDFCD06CD977E8C7B9C793 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
-		24E7A093D16824D003E16C1A22A51E58 /* TTBaseTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTBaseTableViewController.h; sourceTree = "<group>"; };
-		255BE47A6C036257B74BDC12C12DE5C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		25707E76A52C3EBC730D90CF80EAFB00 /* Expecta+Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta+Snapshots-dummy.m"; sourceTree = "<group>"; };
 		26B155C012EEF334C4F8FA715F91165C /* Pods-TTToolKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTToolKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		27A8A939834389E161EAA6D05B48D6F8 /* Expecta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Expecta.release.xcconfig; sourceTree = "<group>"; };
@@ -421,14 +416,15 @@
 		2D4688F65BC8E07547CFD172DF23372F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		2E210F086536DCC5164ADD7BDB1246EE /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		2E713381B949D5B477FDE671BBD1E2F4 /* Pods-TTToolKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTToolKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		2E9E791766F979CD3ADF3F15A258C120 /* NSBundle+TTToolKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TTToolKit.h"; path = "TTToolKit/Classes/UX/NSBundle+TTToolKit.h"; sourceTree = "<group>"; };
 		2F8ED0C6F576AEFDFDE160C2BDE7506E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		3005762719D90BFBED95ED282378AE4D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		307C720CFB58AE5F3CA24EBC42FC79DF /* Pods-TTToolKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTToolKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		308986ADF6EE3C7567D2799B6A52D05A /* TTToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTToolKit.release.xcconfig; sourceTree = "<group>"; };
 		30B1C11879B3DBEBFE4A892C39F593EC /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
-		31646EEBC94ACFE7E321D093B1A27AA7 /* TTToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTToolKit-Info.plist"; sourceTree = "<group>"; };
 		3176393A9FE24554F2E99751F20037BE /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		3291D7ABAECA413D21FB4B90FE4F6105 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
-		33B49DD515682BBC666EC251460CF475 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigationController.h; sourceTree = "<group>"; };
+		33C4377195A101D3925413399C337798 /* TTToolKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TTToolKit.bundle; path = TTToolKit/Assets/TTToolKit.bundle; sourceTree = "<group>"; };
 		34B30525C62B94D18BEA3489DE427823 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		350395861094F811B33D5D1B84F807DB /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
 		372B205313A15D57939FD978A6890831 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
@@ -438,58 +434,59 @@
 		3D09ACC398C173C2CEBDB8C65BE2702B /* UIViewController+TTCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTCategory.m"; path = "TTCategories/Classes/UIKit/UIViewController+TTCategory.m"; sourceTree = "<group>"; };
 		3DA1277D09A1BC3205D88C20918C4EEA /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
 		3DAE6F870F174FD4A001CEA4668808F5 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
-		3F9552B180A09954B845032C0570A965 /* TTBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
 		3FEC417BDF2EA86845291992922E3CB0 /* TTCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTCategories.framework; path = TTCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		404F337598BD36ECC52882163D715628 /* MacroHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MacroHeader.h; path = TTToolKit/Classes/MacroHeader.h; sourceTree = "<group>"; };
 		42F73F648F2C8C0CB1CA2864A318695B /* Pods-TTToolKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTToolKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		4645A7F15FDD71DBF639C3CA3E524AD8 /* TTApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTApp.m; sourceTree = "<group>"; };
+		435122C098BF1B2ACBF5707F43BAAC10 /* TTToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-umbrella.h"; sourceTree = "<group>"; };
+		45944318DDAE1BF75F714E2DA602D7F5 /* TTKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTKeychain.h; path = TTToolKit/Classes/Keychain/TTKeychain.h; sourceTree = "<group>"; };
 		4666A95D82D47BF1C47630D7BD18B8BD /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
-		4745099AC044AB2EEE4A1F68523CC9AF /* TTBaseTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTBaseTabBarController.m; sourceTree = "<group>"; };
+		47557F1A989F56182D45316386948252 /* NSData+AES128TL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+AES128TL.h"; path = "TTToolKit/Classes/Encryption/NSData+AES128TL.h"; sourceTree = "<group>"; };
 		47948C2215D29B5A0729B47289E96AB0 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
 		4918D3838E5DAB3CEFB93AB3210CB31B /* NSData+TTAES128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TTAES128.h"; path = "TTCategories/Classes/Foundation/NSData+TTAES128.h"; sourceTree = "<group>"; };
 		499F6F6718821B20D6F2FC1B28FAAA4D /* Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta-prefix.pch"; sourceTree = "<group>"; };
-		4A13F64653742DA358F0E8E34B4768D6 /* TTSizeAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTSizeAdapter.h; sourceTree = "<group>"; };
+		4A2A6ECD50D526A4C27950E9A0278888 /* TTBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseViewController.h; path = TTToolKit/Classes/UX/TTBaseViewController.h; sourceTree = "<group>"; };
 		4A852152A1F6FFAA94835C2A905A53F5 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		4AB6CA973FA2FE6D65686318DC0968AC /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
-		4BE93FF461FC8325E234239CBDD99254 /* TTToolKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTToolKit.debug.xcconfig; sourceTree = "<group>"; };
 		4C3D82B40D2B0F6FAFA68939E1B8DEBB /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		4CF82726E8ED619F5F9A8FA77D731556 /* TTToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTToolKit.modulemap; sourceTree = "<group>"; };
 		4EBEC663B6680042E4FF7EA1C0556322 /* TTCategories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTCategories.release.xcconfig; sourceTree = "<group>"; };
-		4EF81755D3EFFF2E2AE4A133A19C224B /* MacroHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MacroHeader.h; path = TTToolKit/Classes/MacroHeader.h; sourceTree = "<group>"; };
 		4F5DDA47BBBD583B2B81352F55744AC1 /* NSData+TTFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TTFile.m"; path = "TTCategories/Classes/Foundation/NSData+TTFile.m"; sourceTree = "<group>"; };
 		4F8816D81C270647B1F9B5871BEC19F8 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
 		4F9C4C5EF1773055CBED02F0F7926898 /* Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
-		4FBD3AC20FB0CF41D0465D410DE79CBD /* TTToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-umbrella.h"; sourceTree = "<group>"; };
 		4FE91A62513770E10AD69AC7C64212A1 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		51092AD32A5313AD0CEC056AE185795A /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
 		513E62D002AA0DE969E614CEF3442FBE /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		5354DCAC9E9620A0BDC313DF701F7241 /* UIColor+TTHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TTHex.m"; path = "TTCategories/Classes/UIKit/UIColor+TTHex.m"; sourceTree = "<group>"; };
-		53C54B50038CC841BF6D0CC623648C8C /* TTBaseNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTBaseNavigationController.m; sourceTree = "<group>"; };
+		5372DCA1FC07AC1912718249240005DB /* TTAES128Encrypter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTAES128Encrypter.h; path = TTToolKit/Classes/Encryption/TTAES128Encrypter.h; sourceTree = "<group>"; };
 		53FCEA5AE2F8DF02BF9FDB15A4F36650 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
 		543B299B69186662C725DEAEEFE1FAE9 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
 		557751EB4707BA50614B8886F42AADF4 /* UIView+SYJXibConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SYJXibConfiguration.h"; path = "TTCategories/Classes/UIKit/UIView+SYJXibConfiguration.h"; sourceTree = "<group>"; };
 		557B7188110CD5A7C86528FAAE8A7220 /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
-		55EFA77B8B3CA3AD0DD7BFE24926E228 /* TTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTLog.h; sourceTree = "<group>"; };
 		562CA7363DC00F32842C66C4446742EA /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
 		564682C0A905F0FA5624FAAF646E37B5 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		572DE535939D5F3B4732CDFECEE138BE /* TTAES128Tool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTAES128Tool.m; path = TTToolKit/Classes/Encryption/TTAES128Tool.m; sourceTree = "<group>"; };
 		5837717B7289E0808B0E43B73EDAA6AA /* Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-umbrella.h"; sourceTree = "<group>"; };
+		590D2D46823D7D43232972CA681308D1 /* TTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTLog.h; path = TTToolKit/Classes/Log/TTLog.h; sourceTree = "<group>"; };
 		596BD3C70EB780ECE41DCAF200D91B58 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		59738FE3C3C658B11D031B5C629422D0 /* NSBundle+TTToolKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TTToolKit.m"; sourceTree = "<group>"; };
 		59D24D2ADAFFD293C163AE13C90EB50E /* UIFont+TTPingFang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TTPingFang.m"; path = "TTCategories/Classes/UIKit/UIFont+TTPingFang.m"; sourceTree = "<group>"; };
 		59DDEEE66DB3AA2CA65F8BCCAFA828BD /* UIAlertController+TTAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+TTAlert.m"; path = "TTCategories/Classes/UIKit/UIAlertController+TTAlert.m"; sourceTree = "<group>"; };
 		5A78AC8FA312A38D321C3E5D36ACA72F /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		5A9ED406A45CCB74135D51D025F554DC /* TTSizeAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTSizeAdapter.h; path = TTToolKit/Classes/UX/TTSizeAdapter.h; sourceTree = "<group>"; };
 		5AB640BC6AB350ACABCF895E4B67BDE7 /* UIApplication+TTKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+TTKeyWindow.h"; path = "TTCategories/Classes/UIKit/UIApplication+TTKeyWindow.h"; sourceTree = "<group>"; };
 		5BEC5FBFB2EBD5D04D6D7C2F19437F44 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CE1F912E44B5610B33FAEDBD34F66CB /* TTApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTApp.h; sourceTree = "<group>"; };
+		5CB6DC07E1156F0530FE0990C7F7858F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5D07B706C0015A38EDB0FE156D579948 /* NSBundle+TTToolKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TTToolKit.m"; path = "TTToolKit/Classes/UX/NSBundle+TTToolKit.m"; sourceTree = "<group>"; };
 		5D3E2DFFBA687457BD609B53AF681530 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
-		5D66AEDB0CB0BC56045E03D16C301A5A /* TTToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTToolKit.release.xcconfig; sourceTree = "<group>"; };
 		5E541F7D2519F35293E1A51121057551 /* UIViewController+TTNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTNavBar.h"; path = "TTCategories/Classes/UIKit/UIViewController+TTNavBar.h"; sourceTree = "<group>"; };
 		5F9318CD0034D3BAF2C325F22B291BAC /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
 		6129642A2D56191E3A521C00CB6FA993 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		61AC376423306C3BDAA223F9947B3AFC /* TTAES128Tool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTAES128Tool.m; sourceTree = "<group>"; };
 		62D709CB8F1E8EE3AF45424A3369E792 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		63449215FBBDB42DE4641E0D75E160BE /* NSData+AES128TL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES128TL.m"; path = "TTToolKit/Classes/Encryption/NSData+AES128TL.m"; sourceTree = "<group>"; };
 		64EE0BF97DE573F7C37EAB86BF7C7E5F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		6514F635821CF64A452791F7BB07ED3B /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
 		6561957E3C90C1F8B608914B260BB4A3 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		65E135C43C35CDBBC87C23DAD5920CC9 /* TTToolKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TTToolKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		671A10B9B09651C295A2BCC4EB8F1568 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		67B48BAD6B43F368B4DA4AD1CDF10C01 /* EXPMatchers+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+FBSnapshotTest.m"; sourceTree = "<group>"; };
 		6868B6A6660FB8215B0DB3C1327B4C9F /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
@@ -497,32 +494,34 @@
 		6A00E0D8F6949C8A9120CD8843682454 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
 		6AA2D02DD96376AC94E283B0E5D428F4 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		6B7A6F0BC0CD4175FA9FA302E1B4093B /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
-		6DF5A715A9F70E21C1CEB6CBC182C246 /* TTToolKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTToolKit.modulemap; sourceTree = "<group>"; };
 		6FB5C950411E55B03E4BDE0ABBD4981B /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		715B63E311FF841D069825B85EF3543F /* UIView+TTKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTKeyboard.m"; path = "TTCategories/Classes/UIKit/UIView+TTKeyboard.m"; sourceTree = "<group>"; };
 		725C4CE1833499879AD3628F16C9C452 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
 		72A19C8B32DE18534E58ED99EFF06CCA /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
 		73F80B2063A3EFDC3B183472B56A94D0 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
 		75012F0D4FA2750298735537D0436FAB /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		752998491D8048D1E665AE44EDFCDA82 /* TTBaseWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseWebViewController.m; path = TTToolKit/Classes/UX/TTBaseWebViewController.m; sourceTree = "<group>"; };
 		7678BA48A1E931CDE55A58B4354B13A4 /* NSDate+TTInternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+TTInternetDateTime.h"; path = "TTCategories/Classes/Foundation/NSDate+TTInternetDateTime.h"; sourceTree = "<group>"; };
 		768601BA02A2D4A627635B225F3164BE /* Pods-TTToolKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TTToolKit_Example.modulemap"; sourceTree = "<group>"; };
-		76E2FAAA121F3CC22D18E67EBECBB65C /* TTToolKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TTToolKit.bundle; path = TTToolKit/Assets/TTToolKit.bundle; sourceTree = "<group>"; };
 		7715239B5AFE57CBBE0C71FC8EBE502C /* NSBundle+TTBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TTBundle.h"; path = "TTCategories/Classes/Foundation/NSBundle+TTBundle.h"; sourceTree = "<group>"; };
 		7779E531435050BFA7D51D1A6764C1F2 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		785FDA3C7E76B5B4812D415B931BC26C /* TTKeychainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTKeychainManager.h; path = TTToolKit/Classes/Keychain/TTKeychainManager.h; sourceTree = "<group>"; };
 		7995E88334834721CFC535EE39B2DA18 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		7A26282A792E6441A502478D6AFAEB5C /* TTToolKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTToolKit-Info.plist"; sourceTree = "<group>"; };
 		7B49933CCB5F3108B57A18E8858E74EF /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		7BA25248E3B66BA435EA0535108673EB /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		7BAEEEEB0D4D60DD94F5D07E7FA45CB9 /* ExpectaObject+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpectaObject+FBSnapshotTest.m"; sourceTree = "<group>"; };
 		7C29A7E69E7540735F995704937FAB4A /* NSString+TTRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TTRegularExpression.h"; path = "TTCategories/Classes/Foundation/NSString+TTRegularExpression.h"; sourceTree = "<group>"; };
-		7C4592F758CBC1651522B633461A6374 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		7CB61910D78488D06C649B7902208904 /* NSDictionary+String.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+String.h"; path = "TTCategories/Classes/Foundation/NSDictionary+String.h"; sourceTree = "<group>"; };
+		7D25C0B924F7AF624645C7E264474B5A /* TTApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTApp.m; path = TTToolKit/Classes/Helper/TTApp.m; sourceTree = "<group>"; };
+		7E4B8392A2E1E96CE08171B0C3667519 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseNavigationController.h; path = TTToolKit/Classes/UX/TTBaseNavigationController.h; sourceTree = "<group>"; };
 		7E79238BFCEBFEA2DE6D989E144D479B /* NSData+TTHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TTHexString.h"; path = "TTCategories/Classes/Foundation/NSData+TTHexString.h"; sourceTree = "<group>"; };
 		7FF384E3666A44D6816405B5D0B97EB6 /* Pods-TTToolKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTToolKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8157D6238269201C53E02A924F7A084D /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
 		81B7A44E3C1C3817B22FD2B53B8B8AA9 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
 		81E1A45CC2E08EFBC247486A9D6C2248 /* UIStoryboard+TTCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+TTCategory.m"; path = "TTCategories/Classes/UIKit/UIStoryboard+TTCategory.m"; sourceTree = "<group>"; };
-		82DD7F7AABA45FBBC39E36F628ED2FD8 /* TTSizeAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTSizeAdapter.m; sourceTree = "<group>"; };
 		82F1B2D9CAAED42EE347B106E0650221 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		838EA531B99D068D932E314DF3741F56 /* TTSizeAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTSizeAdapter.m; path = TTToolKit/Classes/UX/TTSizeAdapter.m; sourceTree = "<group>"; };
 		83AEB17ACFB01086155D64C61BD64B23 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
 		8411B555B841CB50ECFE1D101B5F802C /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
 		885A49406BB93C7BE8DF3D4E51132A42 /* Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Specta-dummy.m"; sourceTree = "<group>"; };
@@ -531,7 +530,7 @@
 		8A8CE766284C64A269077B83368D43D8 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
 		8AFCCDB9832A4C6F3B9F3565E679EA33 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
 		8B14E9C763E2388C8AFAD74166A6C45E /* Expecta+Snapshots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta+Snapshots-umbrella.h"; sourceTree = "<group>"; };
-		8B2EBC5A985381A3FCEB7058F8E16A51 /* TTBaseWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTBaseWebViewController.m; sourceTree = "<group>"; };
+		8B20F5B4995F91FA5395E44E87D522C0 /* TTBaseTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseTabBarController.m; path = TTToolKit/Classes/UX/TTBaseTabBarController.m; sourceTree = "<group>"; };
 		8B9212B09681C4389CBBF4A9E1652E6A /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
 		8B950532AB4F1725AB13BBE166C7AC3C /* TTToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTToolKit.framework; path = TTToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07212E9FA0908FDA674B8ED06D4487 /* Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Specta.modulemap; sourceTree = "<group>"; };
@@ -545,22 +544,21 @@
 		91F36EA301BF7947F47E7B9B4D54BBFC /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
 		9393729CC88FE745F716C88D486DAAA0 /* Expecta+Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Expecta+Snapshots.modulemap"; sourceTree = "<group>"; };
 		93957EC873935133826119974BE01AAE /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
-		95243DD34307AD9473D09811FB1AC9E0 /* NSBundle+TTToolKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TTToolKit.h"; sourceTree = "<group>"; };
 		9546034273BAE105133DB4D1B3A20313 /* UIView+TTGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTGesture.m"; path = "TTCategories/Classes/UIKit/UIView+TTGesture.m"; sourceTree = "<group>"; };
 		95BB64F93E55BBBC3CE639C7FEE88BF9 /* Expecta-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Expecta-Info.plist"; sourceTree = "<group>"; };
-		95F7BAD43752748613E730DAD24B8586 /* TTKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTKeychain.h; sourceTree = "<group>"; };
 		96AE5C43FBF782F13588235323DD89D9 /* Pods-TTToolKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTToolKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		971F01CB885E3ED198EECE7C2893CED7 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
 		97A2DA7729F27E761BD9E9CDCB3634CF /* TTCategories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTCategories.debug.xcconfig; sourceTree = "<group>"; };
 		99096D43658FFCB2A8D0B9B3D864C64E /* Pods-TTToolKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTToolKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		99FCE5EE31F3391421223DDF1EC3496F /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DAE7451AE3FE17B607193675A0BB421 /* TTLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTLog.m; sourceTree = "<group>"; };
 		9EC8890966426482602F9EC79A8B4B93 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		9F069E076B8A0F129511E66C957E4428 /* Pods-TTToolKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTToolKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9FBA37058870BF7577ACEEABF1390C76 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
 		9FC9659BAB6D1271030309A0CC88EF18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A033765C5BA24491A3CA5CBDFED2C8C9 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		A1B30B208F558E8FB0EAFD32A651C7AF /* TTBaseWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseWebViewController.h; path = TTToolKit/Classes/UX/TTBaseWebViewController.h; sourceTree = "<group>"; };
+		A31C5A9FF73251AD58224B0BDCBA840D /* TTToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTToolKit-dummy.m"; sourceTree = "<group>"; };
 		A31EAD87CB692B32CB6698E7996AC7A7 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
 		A378C11DE67E12A7653F674EA9DD70C0 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		A43CA2D271338DF5BFFEA94E613630EC /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
@@ -577,7 +575,6 @@
 		B08FF4B87815229C8FEF605388E201F5 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
 		B20D1A4D5AD9BFC67B38F63E86BC3F92 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		B20ED6672012DE4F011D9068E87D1486 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		B233687B47AE31C2F7C82C3E3C3E6D66 /* TTAES128Tool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTAES128Tool.h; sourceTree = "<group>"; };
 		B29AAF668E604F48625D47A32C4B1A32 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
 		B2E1B5E08B0B930BF6DA15825BE2569E /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
 		B31028DACF5122848C1081669472A70F /* Pods-TTToolKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTToolKit_Example-Info.plist"; sourceTree = "<group>"; };
@@ -585,14 +582,16 @@
 		B4F03FA5891F7E328ED3A5F299C00355 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		B67501109E8668CACB06160E4928981E /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CF24A726862F294B5B0AB7C14CC9AE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		B8901E0C2693F4E13E58E41FBBED422E /* TTAES128Encrypter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTAES128Encrypter.m; sourceTree = "<group>"; };
+		B7E181710B5B159E5E57115397609195 /* TTToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTToolKit-prefix.pch"; sourceTree = "<group>"; };
+		B986FE16078D4918E06139594CC638F3 /* TTLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTLog.m; path = TTToolKit/Classes/Log/TTLog.m; sourceTree = "<group>"; };
+		BA0647F6BDF1C04E8F61201FE953A0E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BA926F6B212D2605866A7F5B28AE6F24 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		BAA8D20CD5A5FAC750C74788DCB40A85 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		BE24EA99C2227CF1DDA32CB149E92C81 /* TTAES128Encrypter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTAES128Encrypter.m; path = TTToolKit/Classes/Encryption/TTAES128Encrypter.m; sourceTree = "<group>"; };
 		BE48CDAFC20CD16FDD160A70410D378A /* UIViewController+TTNavBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTNavBar.m"; path = "TTCategories/Classes/UIKit/UIViewController+TTNavBar.m"; sourceTree = "<group>"; };
 		BE4BA2D07AD35B70D4ED240F5F738513 /* UIApplication+TTKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+TTKeyWindow.m"; path = "TTCategories/Classes/UIKit/UIApplication+TTKeyWindow.m"; sourceTree = "<group>"; };
 		BE4FD5A55A3861D13CFF7CFCEF92B024 /* TTCategories-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTCategories-Info.plist"; sourceTree = "<group>"; };
 		BE5E24B8E0E3CAC3EA22DD7AAF277F6A /* UIView+SYJXibConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SYJXibConfiguration.m"; path = "TTCategories/Classes/UIKit/UIView+SYJXibConfiguration.m"; sourceTree = "<group>"; };
-		BF0641C20DF54FE2468021F290AE6A26 /* TTToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTToolKit-dummy.m"; sourceTree = "<group>"; };
 		BF6A726EEA8008EF9F8CB82078C7AFF7 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
 		BFB96FCF8BE225B9B3F4D009C9492D97 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02555A9A1989D094D0CFBD08F27DE9C /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
@@ -609,23 +608,23 @@
 		C5C714C5759F37131F8550838292461A /* UIView+TTKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTKeyboard.h"; path = "TTCategories/Classes/UIKit/UIView+TTKeyboard.h"; sourceTree = "<group>"; };
 		C641F2FB01BC5600FF4597BA6F5D44F6 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
 		C8553E7994D4D3ABB2B872FA62340FBC /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
-		C8F098D6A8B5A6B7A841E7CD1CA52E2A /* TTKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTKeychain.m; sourceTree = "<group>"; };
 		C962535F1E340AB9DA36DFAB2719373E /* TTCategories.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTCategories.modulemap; sourceTree = "<group>"; };
 		C97E653B682E87D3F2E8390958247A7A /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		C9CABB64142DE53880D0A8DDF915315F /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
 		CB355D59D0DDF718870B6FAF1A9A0B1D /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC138B1E47B7919A98E8484614579761 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		CC1989F6A7FC5EA0F6614611F11A741E /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		CDE173E06AFDE0C5A99655194E1C918E /* TTKeychainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTKeychainManager.m; path = TTToolKit/Classes/Keychain/TTKeychainManager.m; sourceTree = "<group>"; };
 		D007C631DDF14321B73EB09AE588C4BC /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
 		D13AB850A7FECE9F0E6A4BCD10399D98 /* NSData+TTAES128.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TTAES128.m"; path = "TTCategories/Classes/Foundation/NSData+TTAES128.m"; sourceTree = "<group>"; };
 		D13ABA39CAFC43B8017501AE19777980 /* TTCategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTCategories-dummy.m"; sourceTree = "<group>"; };
 		D391C10F5A5C7464076908C6A1E63B35 /* NSDate+TTInternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TTInternetDateTime.m"; path = "TTCategories/Classes/Foundation/NSDate+TTInternetDateTime.m"; sourceTree = "<group>"; };
 		D3D7D843B0CF1F78BA5B562802FE8791 /* NSFileManager+TTFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+TTFile.m"; path = "TTCategories/Classes/Foundation/NSFileManager+TTFile.m"; sourceTree = "<group>"; };
+		D627ECFCF0CA20338438545341D0E2F3 /* TTKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTKeychain.m; path = TTToolKit/Classes/Keychain/TTKeychain.m; sourceTree = "<group>"; };
 		D663531D17F8E51981A8E053500C1BE6 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
 		D666D508F2E99A0D4AE2E7E1693D6E50 /* UIViewController+TTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TTView.h"; path = "TTCategories/Classes/UIKit/UIViewController+TTView.h"; sourceTree = "<group>"; };
 		D66B5E5E39DC9BF99A5EE9EB3CACC451 /* NSArray+TTPlist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TTPlist.m"; path = "TTCategories/Classes/Foundation/NSArray+TTPlist.m"; sourceTree = "<group>"; };
 		D6A6580C0DB0AFB751F3ADD32F60FF47 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		D6F8556CC021DAF1CBA45A90DF19634E /* TTBaseTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TTBaseTableViewController.m; sourceTree = "<group>"; };
 		D7128DC01EA78B9A093B57F6F5E41CC7 /* UIImage+TTCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TTCode.m"; path = "TTCategories/Classes/UIKit/UIImage+TTCode.m"; sourceTree = "<group>"; };
 		D72F9331BA0D9AC8F6BB4E06C1ACF481 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
 		D820D58FA5905F2D047EB5723297510F /* NSString+TTRegularExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TTRegularExpression.m"; path = "TTCategories/Classes/Foundation/NSString+TTRegularExpression.m"; sourceTree = "<group>"; };
@@ -638,32 +637,33 @@
 		DCC34EC66942E666E3A768DDB4832C24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE2C7A6D628BDF34C7D66D3B22277176 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DE4773815CD9137325E41EC2BCA045FC /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
-		DEA2172AAA1E707F81F04A4203D6BE25 /* TTAES128Encrypter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTAES128Encrypter.h; sourceTree = "<group>"; };
 		DEA929869C83B38148F2268CA12281C2 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		DEE172047555A65E699C71976D1E8E3C /* NSData+AES128TL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128TL.h"; sourceTree = "<group>"; };
 		E48593AD11A4B0BF2B961C2008013BF2 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		E4D7A9D78D1FAACD80B56BC662A5BA8F /* TTBaseTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseTableViewController.h; path = TTToolKit/Classes/UX/TTBaseTableViewController.h; sourceTree = "<group>"; };
 		E50901AA425DCBBAA012E17C88650F06 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
 		E68A210934B3522DA97061FE04FC378C /* Pods-TTToolKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TTToolKit_Tests.modulemap"; sourceTree = "<group>"; };
-		E7332E1A027F73B9919C61978CC1CA25 /* TTBaseTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTBaseTabBarController.h; sourceTree = "<group>"; };
 		E73E90D33F6394EE872E2BFBCCC3E701 /* UIViewController+TTView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TTView.m"; path = "TTCategories/Classes/UIKit/UIViewController+TTView.m"; sourceTree = "<group>"; };
 		EA70ACEE660E25E90B89B63E1394B766 /* Specta-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Specta-Info.plist"; sourceTree = "<group>"; };
 		EBE17405630A75498AAC941F64FDF8CE /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		EC959D15D1F0FD763CCC3F89B3849941 /* NSDictionary+String.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+String.m"; path = "TTCategories/Classes/Foundation/NSDictionary+String.m"; sourceTree = "<group>"; };
+		ED0583D8A9FADEDE84D1C04CF683658D /* TTBaseNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseNavigationController.m; path = TTToolKit/Classes/UX/TTBaseNavigationController.m; sourceTree = "<group>"; };
+		EF04F27728188AD7582347633FEAB697 /* TTBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseViewController.m; path = TTToolKit/Classes/UX/TTBaseViewController.m; sourceTree = "<group>"; };
 		F00292146BA5C693940DDF8E796CDF90 /* Pods-TTToolKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTToolKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F26163A7150332F4A560B92E242D8216 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
 		F2AF475463BF95F51A9CD97A02BDC0A8 /* UIImage+TTCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TTCode.h"; path = "TTCategories/Classes/UIKit/UIImage+TTCode.h"; sourceTree = "<group>"; };
 		F2CE7A12B449A9E981771C6E4524E06F /* Pods-TTToolKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTToolKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CC3877CF81F31A435F266E6BEFD8F9 /* Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Expecta.modulemap; sourceTree = "<group>"; };
 		F4E5709CD6F307CE51130129879696FB /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		F546792049F2EBDC4A9D805E41A327F6 /* TTBaseTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseTabBarController.h; path = TTToolKit/Classes/UX/TTBaseTabBarController.h; sourceTree = "<group>"; };
+		F5C347454432D561C8CA37CBD9028BBD /* TTAES128Tool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTAES128Tool.h; path = TTToolKit/Classes/Encryption/TTAES128Tool.h; sourceTree = "<group>"; };
 		F681C48FE0ABDC3678F0FDA08DC81922 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
 		F6D911EE9A62500907C0C910EFD2A368 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		F76285BB52B3993BC1B8F84CB7038ADB /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
-		F794E92E77814CCEFC5446207A188C21 /* TTBaseWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTBaseWebViewController.h; sourceTree = "<group>"; };
 		F84A346F47F4F731243C1AD7A80A0682 /* Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta-dummy.m"; sourceTree = "<group>"; };
 		FA6B69F53608207BEBC5AE448D064D2A /* Specta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.debug.xcconfig; sourceTree = "<group>"; };
 		FABC90DA5301AD67A7579DA8D1B22A69 /* ExpectaObject+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpectaObject+FBSnapshotTest.h"; sourceTree = "<group>"; };
-		FAF5EF229429A60F7E7EE6E0D2D7D31E /* NSData+AES128TL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES128TL.m"; sourceTree = "<group>"; };
 		FB1E433D0063D6FD94CFDEE3C0651430 /* UIView+TTGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TTGesture.h"; path = "TTCategories/Classes/UIKit/UIView+TTGesture.h"; sourceTree = "<group>"; };
+		FBC32DCCFAB7B401F13B90ECAF413ABD /* TTBaseTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseTableViewController.m; path = TTToolKit/Classes/UX/TTBaseTableViewController.m; sourceTree = "<group>"; };
 		FC158EFD2FCE539799D019B5B4C3FE42 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
 		FC18E11A5746F379D034B9FA635DCA72 /* Pods_TTToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TTToolKit_Tests.framework; path = "Pods-TTToolKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC61922B7E00DDAB5B4D8BF49596B60E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -795,30 +795,36 @@
 			path = TTCategories;
 			sourceTree = "<group>";
 		};
-		20DD5DEA82250831095A3852B1490711 /* Encryption */ = {
+		27A45CBF2D9E3EF3ADB5A05BCA09AA6C /* TTToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				DEE172047555A65E699C71976D1E8E3C /* NSData+AES128TL.h */,
-				FAF5EF229429A60F7E7EE6E0D2D7D31E /* NSData+AES128TL.m */,
-				DEA2172AAA1E707F81F04A4203D6BE25 /* TTAES128Encrypter.h */,
-				B8901E0C2693F4E13E58E41FBBED422E /* TTAES128Encrypter.m */,
-				B233687B47AE31C2F7C82C3E3C3E6D66 /* TTAES128Tool.h */,
-				61AC376423306C3BDAA223F9947B3AFC /* TTAES128Tool.m */,
+				404F337598BD36ECC52882163D715628 /* MacroHeader.h */,
+				33C4377195A101D3925413399C337798 /* TTToolKit.bundle */,
+				58C9A1AF40C2C3197D4E5894F3E9FBFA /* Encryption */,
+				6D713B8DA13017E10EC26BCCFA73A803 /* Helper */,
+				566E97FFBF643A895AFEC8F75AEC05FE /* Keychain */,
+				BE2CE64EA599988368AF228F1DA52E13 /* Log */,
+				A4E4F241845A9992BB557987EE42676B /* Pod */,
+				2CE6B064BE1470B1A83816A6B09B1418 /* Support Files */,
+				DAB32E6F1E6D87AC4E862597E9636B37 /* UX */,
 			);
-			name = Encryption;
-			path = TTToolKit/Classes/Encryption;
+			name = TTToolKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		397D85C2212E37B32F5E0364D5C01A6F /* Keychain */ = {
+		2CE6B064BE1470B1A83816A6B09B1418 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				95F7BAD43752748613E730DAD24B8586 /* TTKeychain.h */,
-				C8F098D6A8B5A6B7A841E7CD1CA52E2A /* TTKeychain.m */,
-				1FF2626C87C6DB1D255FA2EA4253E83D /* TTKeychainManager.h */,
-				071F1EEBEC186B55B7099AD94F8E3D0F /* TTKeychainManager.m */,
+				4CF82726E8ED619F5F9A8FA77D731556 /* TTToolKit.modulemap */,
+				A31C5A9FF73251AD58224B0BDCBA840D /* TTToolKit-dummy.m */,
+				7A26282A792E6441A502478D6AFAEB5C /* TTToolKit-Info.plist */,
+				B7E181710B5B159E5E57115397609195 /* TTToolKit-prefix.pch */,
+				435122C098BF1B2ACBF5707F43BAAC10 /* TTToolKit-umbrella.h */,
+				0A01066150AC9DFFF1FDDEFA552BCB6F /* TTToolKit.debug.xcconfig */,
+				308986ADF6EE3C7567D2799B6A52D05A /* TTToolKit.release.xcconfig */,
 			);
-			name = Keychain;
-			path = TTToolKit/Classes/Keychain;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TTToolKit";
 			sourceTree = "<group>";
 		};
 		3DD83972260E4283DD234E33A8B0EC9D /* Masonry */ = {
@@ -855,6 +861,30 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		566E97FFBF643A895AFEC8F75AEC05FE /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				45944318DDAE1BF75F714E2DA602D7F5 /* TTKeychain.h */,
+				D627ECFCF0CA20338438545341D0E2F3 /* TTKeychain.m */,
+				785FDA3C7E76B5B4812D415B931BC26C /* TTKeychainManager.h */,
+				CDE173E06AFDE0C5A99655194E1C918E /* TTKeychainManager.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+		58C9A1AF40C2C3197D4E5894F3E9FBFA /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				47557F1A989F56182D45316386948252 /* NSData+AES128TL.h */,
+				63449215FBBDB42DE4641E0D75E160BE /* NSData+AES128TL.m */,
+				5372DCA1FC07AC1912718249240005DB /* TTAES128Encrypter.h */,
+				BE24EA99C2227CF1DDA32CB149E92C81 /* TTAES128Encrypter.m */,
+				F5C347454432D561C8CA37CBD9028BBD /* TTAES128Tool.h */,
+				572DE535939D5F3B4732CDFECEE138BE /* TTAES128Tool.m */,
+			);
+			name = Encryption;
+			sourceTree = "<group>";
+		};
 		5B9BE167EA3718029757BAA3C674B450 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -868,21 +898,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Specta";
-			sourceTree = "<group>";
-		};
-		5F7B55F07474C9B260411B2A51D072B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6DF5A715A9F70E21C1CEB6CBC182C246 /* TTToolKit.modulemap */,
-				BF0641C20DF54FE2468021F290AE6A26 /* TTToolKit-dummy.m */,
-				31646EEBC94ACFE7E321D093B1A27AA7 /* TTToolKit-Info.plist */,
-				1317BD43827F4089E9734C1FFFC9E022 /* TTToolKit-prefix.pch */,
-				4FBD3AC20FB0CF41D0465D410DE79CBD /* TTToolKit-umbrella.h */,
-				4BE93FF461FC8325E234239CBDD99254 /* TTToolKit.debug.xcconfig */,
-				5D66AEDB0CB0BC56045E03D16C301A5A /* TTToolKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TTToolKit";
 			sourceTree = "<group>";
 		};
 		5F91D1054E8D4DFC7C8FCC611F056FA7 /* Core */ = {
@@ -904,6 +919,15 @@
 				C0F2256E13DC84F17709642E42E3F6A6 /* UIImage+Snapshot.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		6D713B8DA13017E10EC26BCCFA73A803 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				02F0C0580E99F0C2ED89D2E5D13D0599 /* TTApp.h */,
+				7D25C0B924F7AF624645C7E264474B5A /* TTApp.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		6D81DCA8F8D3319C81F6857960D1E7C9 /* Pods */ = {
@@ -977,16 +1001,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7ED050A9BDBB02F0D2E4366A995E63FF /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				5CE1F912E44B5610B33FAEDBD34F66CB /* TTApp.h */,
-				4645A7F15FDD71DBF639C3CA3E524AD8 /* TTApp.m */,
-			);
-			name = Helper;
-			path = TTToolKit/Classes/Helper;
-			sourceTree = "<group>";
-		};
 		84B3A722D6FFEFB99C8A437EA54879A4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1032,10 +1046,20 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
+		A4E4F241845A9992BB557987EE42676B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5CB6DC07E1156F0530FE0990C7F7858F /* LICENSE */,
+				BA0647F6BDF1C04E8F61201FE953A0E3 /* README.md */,
+				65E135C43C35CDBBC87C23DAD5920CC9 /* TTToolKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		A9D736CB57A173442F043EBFC9F7EBEB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C2E3D0C786203F33F746FE6BBFB97AE1 /* TTToolKit */,
+				27A45CBF2D9E3EF3ADB5A05BCA09AA6C /* TTToolKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -1111,26 +1135,13 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
-		BC2A85F2F69C16576FAA208809F84EA6 /* UX */ = {
+		BE2CE64EA599988368AF228F1DA52E13 /* Log */ = {
 			isa = PBXGroup;
 			children = (
-				95243DD34307AD9473D09811FB1AC9E0 /* NSBundle+TTToolKit.h */,
-				59738FE3C3C658B11D031B5C629422D0 /* NSBundle+TTToolKit.m */,
-				33B49DD515682BBC666EC251460CF475 /* TTBaseNavigationController.h */,
-				53C54B50038CC841BF6D0CC623648C8C /* TTBaseNavigationController.m */,
-				E7332E1A027F73B9919C61978CC1CA25 /* TTBaseTabBarController.h */,
-				4745099AC044AB2EEE4A1F68523CC9AF /* TTBaseTabBarController.m */,
-				24E7A093D16824D003E16C1A22A51E58 /* TTBaseTableViewController.h */,
-				D6F8556CC021DAF1CBA45A90DF19634E /* TTBaseTableViewController.m */,
-				3F9552B180A09954B845032C0570A965 /* TTBaseViewController.h */,
-				238A25D8966C07F544BD7A16FD05C5BC /* TTBaseViewController.m */,
-				F794E92E77814CCEFC5446207A188C21 /* TTBaseWebViewController.h */,
-				8B2EBC5A985381A3FCEB7058F8E16A51 /* TTBaseWebViewController.m */,
-				4A13F64653742DA358F0E8E34B4768D6 /* TTSizeAdapter.h */,
-				82DD7F7AABA45FBBC39E36F628ED2FD8 /* TTSizeAdapter.m */,
+				590D2D46823D7D43232972CA681308D1 /* TTLog.h */,
+				B986FE16078D4918E06139594CC638F3 /* TTLog.m */,
 			);
-			name = UX;
-			path = TTToolKit/Classes/UX;
+			name = Log;
 			sourceTree = "<group>";
 		};
 		BF7D07FA39A20047E21E82A8E50D217F /* Targets Support Files */ = {
@@ -1224,23 +1235,6 @@
 			path = Expecta;
 			sourceTree = "<group>";
 		};
-		C2E3D0C786203F33F746FE6BBFB97AE1 /* TTToolKit */ = {
-			isa = PBXGroup;
-			children = (
-				4EF81755D3EFFF2E2AE4A133A19C224B /* MacroHeader.h */,
-				76E2FAAA121F3CC22D18E67EBECBB65C /* TTToolKit.bundle */,
-				20DD5DEA82250831095A3852B1490711 /* Encryption */,
-				7ED050A9BDBB02F0D2E4366A995E63FF /* Helper */,
-				397D85C2212E37B32F5E0364D5C01A6F /* Keychain */,
-				DE18462AAFB1CBA9262087D6FEB68A32 /* Log */,
-				E5455B04AB2BCA7FA98B64E2BE351D6C /* Pod */,
-				5F7B55F07474C9B260411B2A51D072B4 /* Support Files */,
-				BC2A85F2F69C16576FAA208809F84EA6 /* UX */,
-			);
-			name = TTToolKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		C35AB42A0A5564CE9EA9742C240327D6 /* Expecta+Snapshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -1274,24 +1268,25 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		DE18462AAFB1CBA9262087D6FEB68A32 /* Log */ = {
+		DAB32E6F1E6D87AC4E862597E9636B37 /* UX */ = {
 			isa = PBXGroup;
 			children = (
-				55EFA77B8B3CA3AD0DD7BFE24926E228 /* TTLog.h */,
-				9DAE7451AE3FE17B607193675A0BB421 /* TTLog.m */,
+				2E9E791766F979CD3ADF3F15A258C120 /* NSBundle+TTToolKit.h */,
+				5D07B706C0015A38EDB0FE156D579948 /* NSBundle+TTToolKit.m */,
+				7E4B8392A2E1E96CE08171B0C3667519 /* TTBaseNavigationController.h */,
+				ED0583D8A9FADEDE84D1C04CF683658D /* TTBaseNavigationController.m */,
+				F546792049F2EBDC4A9D805E41A327F6 /* TTBaseTabBarController.h */,
+				8B20F5B4995F91FA5395E44E87D522C0 /* TTBaseTabBarController.m */,
+				E4D7A9D78D1FAACD80B56BC662A5BA8F /* TTBaseTableViewController.h */,
+				FBC32DCCFAB7B401F13B90ECAF413ABD /* TTBaseTableViewController.m */,
+				4A2A6ECD50D526A4C27950E9A0278888 /* TTBaseViewController.h */,
+				EF04F27728188AD7582347633FEAB697 /* TTBaseViewController.m */,
+				A1B30B208F558E8FB0EAFD32A651C7AF /* TTBaseWebViewController.h */,
+				752998491D8048D1E665AE44EDFCDA82 /* TTBaseWebViewController.m */,
+				5A9ED406A45CCB74135D51D025F554DC /* TTSizeAdapter.h */,
+				838EA531B99D068D932E314DF3741F56 /* TTSizeAdapter.m */,
 			);
-			name = Log;
-			path = TTToolKit/Classes/Log;
-			sourceTree = "<group>";
-		};
-		E5455B04AB2BCA7FA98B64E2BE351D6C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				255BE47A6C036257B74BDC12C12DE5C8 /* LICENSE */,
-				7C4592F758CBC1651522B633461A6374 /* README.md */,
-				1044FFA8ED59B237489A4C99FB6B42FB /* TTToolKit.podspec */,
-			);
-			name = Pod;
+			name = UX;
 			sourceTree = "<group>";
 		};
 		E54B15CC4D287B616D82993290FDAE63 /* Pods-TTToolKit_Tests */ = {
@@ -1480,29 +1475,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7406077BF47C28044351EA0A130C101C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6915E8D8D559DF9C4210AE1219878D5B /* MacroHeader.h in Headers */,
-				73AE947EC256D29CA168521AA6F2C4BF /* NSBundle+TTToolKit.h in Headers */,
-				871FD72BD33ABC771238AF03BFC27FE9 /* NSData+AES128TL.h in Headers */,
-				B28C2CF2D922225CE444CE043176EE9F /* TTAES128Encrypter.h in Headers */,
-				8EFFC960DDA49B8D581BFCE13FC01EE1 /* TTAES128Tool.h in Headers */,
-				D1833E96BCF70BD22FC6DB6AAE08FE62 /* TTApp.h in Headers */,
-				EECA9C50220D08D35A0877B4F35E6F61 /* TTBaseNavigationController.h in Headers */,
-				F1DC99261F328AF1FDB7B9327C0CFCCD /* TTBaseTabBarController.h in Headers */,
-				95779446940C2BFF44F34B23D428E2FA /* TTBaseTableViewController.h in Headers */,
-				1506B5959AB93D5BCCBB0224A590D803 /* TTBaseViewController.h in Headers */,
-				E01861D46C170FD0FEE9C23564B11DBB /* TTBaseWebViewController.h in Headers */,
-				673CCCFB2AFC09C9CE6DED34109C0A94 /* TTKeychain.h in Headers */,
-				5A93DFDB59FFDB62732FDAA5E5C59C9F /* TTKeychainManager.h in Headers */,
-				39D6CB849D9AC5280E64DEF0C6406383 /* TTLog.h in Headers */,
-				3B158B532ADAE5D35F5802A2E83616E6 /* TTSizeAdapter.h in Headers */,
-				57C8B7E2E7673C88EC1BE1831E6D8699 /* TTToolKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1531,6 +1503,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D92738A43A51B9CD54FE283AA51398A /* Pods-TTToolKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE8EBBA5DCB38765A5574F0A7874977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF470C7BC127EEEBD001B15F60C59668 /* MacroHeader.h in Headers */,
+				E39599AFDDA94B5D464E88142E4C3D08 /* NSBundle+TTToolKit.h in Headers */,
+				24E49D25B28DABB194DE7DD0AAFBE415 /* NSData+AES128TL.h in Headers */,
+				E88E96AAAEC6DED03F5D8962CBC3502D /* TTAES128Encrypter.h in Headers */,
+				7DB760ACEF34BE979E392BCF6D428166 /* TTAES128Tool.h in Headers */,
+				6839F6343D3EF705716E4102FED0E2EE /* TTApp.h in Headers */,
+				3A6C8302AD2149996701013EC9AD9DAA /* TTBaseNavigationController.h in Headers */,
+				BBE143B7E0A5BEB3FAB7C9CCA2B923C4 /* TTBaseTabBarController.h in Headers */,
+				B0984109632AB990165139C403BE8C50 /* TTBaseTableViewController.h in Headers */,
+				65B5B9816FB6DB3A0DAF2EE1FCFCEEA1 /* TTBaseViewController.h in Headers */,
+				2226AA529FB19C6BE10AD65740469216 /* TTBaseWebViewController.h in Headers */,
+				EBC99DCB637CF8E765FC053150D6141B /* TTKeychain.h in Headers */,
+				8831939FCD9F95129E8AAFDB7616A4F3 /* TTKeychainManager.h in Headers */,
+				9D2A9462A762068C78D6192AB7015EEA /* TTLog.h in Headers */,
+				0C3E0443547B651410F29E48F23C0812 /* TTSizeAdapter.h in Headers */,
+				E10BE6046D70BCFEECD16C28EDDE3BCE /* TTToolKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1686,8 +1681,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D265DAAA265A3A0787146AE50EFFFB /* Build configuration list for PBXNativeTarget "TTToolKit" */;
 			buildPhases = (
-				7406077BF47C28044351EA0A130C101C /* Headers */,
-				613576821A6863539B4AAE8F1C1E0EAC /* Sources */,
+				8EE8EBBA5DCB38765A5574F0A7874977 /* Headers */,
+				02D59CD3416103BFFF4DEC6635833EC6 /* Sources */,
 				60496DECEF3A676F02EAEE9227A2A503 /* Frameworks */,
 				34DF78E8559F7F158F52D4DD17321BDF /* Resources */,
 			);
@@ -1822,6 +1817,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02D59CD3416103BFFF4DEC6635833EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790160AB3D8797C20C07F4E7C46E49A9 /* NSBundle+TTToolKit.m in Sources */,
+				4823D12227D4C922B4A8EAB95897403A /* NSData+AES128TL.m in Sources */,
+				846B4AE7B4D4AEDF102DF6E7CE96D666 /* TTAES128Encrypter.m in Sources */,
+				1985388171D194A2191372D980512DBE /* TTAES128Tool.m in Sources */,
+				82D21FB562FB8556526CAAA90C052EDE /* TTApp.m in Sources */,
+				BF5825B89BE2F33A5D7767D78274853A /* TTBaseNavigationController.m in Sources */,
+				B93B1AAD5C32E31DEFB9366E8C1D4F74 /* TTBaseTabBarController.m in Sources */,
+				33F207372E03EFDB0E0EF6DC63BF2CCF /* TTBaseTableViewController.m in Sources */,
+				304132FB2C792C253AACCA12B616E233 /* TTBaseViewController.m in Sources */,
+				774AF943E08FAD97BCD1395D41D8C399 /* TTBaseWebViewController.m in Sources */,
+				F4CB662B5B7250647F91AAFCFBB4E526 /* TTKeychain.m in Sources */,
+				10A7E5568F0EB78B136D5B9EAE451C25 /* TTKeychainManager.m in Sources */,
+				78D80213605F158BABFA08E1169224F4 /* TTLog.m in Sources */,
+				C442441B72483723E9E89A6DD3BF05E1 /* TTSizeAdapter.m in Sources */,
+				91A1478829EA5A996545BC98B041B2B7 /* TTToolKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1881,28 +1898,6 @@
 				DE4A7D097F1B08B33C4A50C1B6D5F287 /* SPTSpec.m in Sources */,
 				B8087558C5C3B44D4F83F8F623AE421F /* SPTTestSuite.m in Sources */,
 				E0C2DE82451B50B366B162F225492314 /* XCTestCase+Specta.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		613576821A6863539B4AAE8F1C1E0EAC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5926C6A7470C3611F0EE6E5A63F6F818 /* NSBundle+TTToolKit.m in Sources */,
-				71A0A170C03DF2F1275ED0DD456B8637 /* NSData+AES128TL.m in Sources */,
-				7857683E0556BE36B7EEC15891FB536A /* TTAES128Encrypter.m in Sources */,
-				D4AD39152DD42421AA0187829316D9B8 /* TTAES128Tool.m in Sources */,
-				E9879587C5095E79C33F62270F95CFC9 /* TTApp.m in Sources */,
-				FE2E72275C098604D3C3478797C4F846 /* TTBaseNavigationController.m in Sources */,
-				85E7876E4A97E78986F4967743CEF983 /* TTBaseTabBarController.m in Sources */,
-				1490AA2AED50F9EDBA72B8637BB0563B /* TTBaseTableViewController.m in Sources */,
-				4245BB5D523DA09014A6FACDCBC30AB9 /* TTBaseViewController.m in Sources */,
-				EED3802CD4C4CE04027F09A9B722D853 /* TTBaseWebViewController.m in Sources */,
-				D639F329D7A4CDA46E2D506C177A25AC /* TTKeychain.m in Sources */,
-				007BAEFAECE401C49EF96B4EBA54E5C8 /* TTKeychainManager.m in Sources */,
-				D3B67B217BBE1DB36DCD6C84BDBAFB15 /* TTLog.m in Sources */,
-				A86C3A3E16BE35810FB81D1BCE11D061 /* TTSizeAdapter.m in Sources */,
-				CA8900CF13EB03D4265EADA28272BD8F /* TTToolKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2077,7 +2072,7 @@
 /* Begin XCBuildConfiguration section */
 		053EF3B1FEA826F5D6B9E0E651BA5193 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D66AEDB0CB0BC56045E03D16C301A5A /* TTToolKit.release.xcconfig */;
+			baseConfigurationReference = 308986ADF6EE3C7567D2799B6A52D05A /* TTToolKit.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2484,7 +2479,7 @@
 		};
 		B9790ED3F004E38C652336217E5D80BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BE93FF461FC8325E234239CBDD99254 /* TTToolKit.debug.xcconfig */;
+			baseConfigurationReference = 0A01066150AC9DFFF1FDDEFA552BCB6F /* TTToolKit.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'TTToolKit_Example' do
   pod 'TTToolKit', :path => '../'
+  
 
   target 'TTToolKit_Tests' do
     inherit! :search_paths
@@ -14,5 +15,5 @@ target 'TTToolKit_Example' do
     pod 'Expecta+Snapshots'
   end
   pod 'Masonry', '~> 1.1.0'
-  
+#  pod 'TTToolKit', '~> 0.2.0'
 end

@@ -126,13 +126,5 @@
 #endif
 
 
-#ifndef TT_LOCK
-#define TT_LOCK(lock) dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
-#endif
-
-#ifndef TT_UNLOCK
-#define TT_UNLOCK(lock) dispatch_semaphore_signal(lock);
-#endif
-
 
 #endif /* MacroHeader_h */
