@@ -1,76 +1,68 @@
 #
-#  Be sure to run `pod spec lint TTToolKit.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
+# Be sure to run `pod lib lint TTToolKit.podspec' to ensure this is a
+# valid spec before submitting.
 #
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-# 验证语法
-# pod lib lint --allow-warnings
+Pod::Spec.new do |s|
+  s.name             = 'TTToolKit'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of TTToolKit.'
 
-# 将当前本地的podspec文件传到CocoaPods官方的索引库中
-# pod trunk register 573682532@qq.com 'tong' --description='mac mini' --verbose
-# pod trunk push TTToolKit.podspec --allow-warnings
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-# 🔥🔥🔥 在此处编辑版本号
-version = "0.1.29";
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
 
-Pod::Spec.new do |spec|
+  s.homepage         = 'https://github.com/TongFangyuan/TTTool'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'TongFangyuan' => '9019860+TongFangyuan@users.noreply.github.com' }
+  s.source           = { :git => 'https://github.com/TongFangyuan/TTTool.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
+  s.ios.deployment_target = '9.0'
 
-  spec.name         = "TTToolKit"
-  spec.version      = version
-  spec.summary      = "TTToolKit工具类"
-  spec.description  = <<-DESC
-                    An integrated, simple, independent, efficient, lightweight, and continuously updated image selects a third-party framework.
-                   DESC
-  spec.homepage     = "https://github.com/TongFangyuan/TTTool"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author             = { "tongfy" => "573682532@qq.com" }
-  spec.platform     = :ios, "9.0"
-  spec.ios.deployment_target = "9.0"
-  spec.source       = { :git => "https://github.com/TongFangyuan/TTTool.git", :tag => "#{version}" }
-  spec.requires_arc = true
-  spec.frameworks = 'UIKit'
-  spec.resource     = 'TTToolKit/TTToolKit.bundle'
-
-  # 代码源文件地址，**/*表示Classes目录及其子目录下所有文件，如果有多个目录下则用逗号分开，
-  # 如果需要在项目中分组显示，这里也要做相应的设置
-  spec.source_files  = 'TTToolKit/TTToolKit.h'
-  spec.public_header_files = 'TTToolKit/TTToolKit.h'
-  # 资源文件地址
-  # spec.exclude_files = "Classes/Exclude"
-
-  spec.subspec 'UIKit' do |uikit|
-    uikit.source_files = 'TTToolKit/UIKit/*.{h,m}'
-    uikit.public_header_files = 'TTToolKit/UIKit/*.h'
+  s.source_files = 'TTToolKit/Classes/**/*'
+  s.resource     = 'TTToolKit/Assets/TTToolKit.bundle'
+  
+  s.subspec 'Encryption' do |ency|
+      ency.source_files = 'TTToolKit/Classes/Encryption/*.{h,m}'
+      ency.public_header_files = 'TTToolKit/Classes/Encryption/*.h'
   end
-
-  spec.subspec 'Foundation' do |foundation|
-    foundation.source_files = 'TTToolKit/Foundation/*.{h,m}'
-    foundation.public_header_files = 'TTToolKit/Foundation/*.h'
+  
+  s.subspec 'Helper' do |helper|
+      helper.source_files = 'TTToolKit/Classes/Helper/*.{h,m}'
+      helper.public_header_files = 'TTToolKit/Classes/Helper/*.h'
   end
-
-  spec.subspec 'Helper' do |helper|
-    helper.source_files = 'TTToolKit/Helper/*.{h,m}'
-    helper.public_header_files = 'TTToolKit/Helper/*.h'
+  
+  s.subspec 'Keychain' do |keychain|
+      keychain.source_files = 'TTToolKit/Classes/Keychain/*.{h,m}'
+      keychain.public_header_files = 'TTToolKit/Classes/Keychain/*.h'
   end
-
-  spec.subspec 'MediaPlayer' do |mediaPlayer|
-    mediaPlayer.source_files = 'TTToolKit/MediaPlayer/*.{h,m}'
-    mediaPlayer.public_header_files = 'TTToolKit/MediaPlayer/*.h'
+  
+  s.subspec 'Log' do |log|
+      log.source_files = 'TTToolKit/Classes/Log/*.{h,m}'
+      log.public_header_files = 'TTToolKit/Classes/Log/*.h'
   end
-
-  spec.subspec 'Base' do |base|
-    base.source_files = 'TTToolKit/Base/*.{h,m}'
-    base.public_header_files = 'TTToolKit/Base/*.h'
+  
+  s.subspec 'UX' do |ux|
+      ux.source_files = 'TTToolKit/Classes/UX/*.{h,m}'
+      ux.public_header_files = 'TTToolKit/Classes/UX/*.h'
   end
+  
+  # s.resource_bundles = {
+  #   'TTToolKit' => ['TTToolKit/Assets/*.png']
+  # }
 
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'TTCategories', '~> 0.0.1'
 end

@@ -1,0 +1,69 @@
+PODS:
+  - Expecta (1.0.6)
+  - "Expecta+Snapshots (3.1.1)":
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Masonry (1.1.0)
+  - Specta (1.0.7)
+  - TTCategories (0.0.1):
+    - TTCategories/Foundation (= 0.0.1)
+    - TTCategories/UIKit (= 0.0.1)
+  - TTCategories/Foundation (0.0.1)
+  - TTCategories/UIKit (0.0.1)
+  - TTToolKit (0.1.0):
+    - TTCategories (~> 0.0.1)
+    - TTToolKit/Encryption (= 0.1.0)
+    - TTToolKit/Helper (= 0.1.0)
+    - TTToolKit/Keychain (= 0.1.0)
+    - TTToolKit/Log (= 0.1.0)
+    - TTToolKit/UX (= 0.1.0)
+  - TTToolKit/Encryption (0.1.0):
+    - TTCategories (~> 0.0.1)
+  - TTToolKit/Helper (0.1.0):
+    - TTCategories (~> 0.0.1)
+  - TTToolKit/Keychain (0.1.0):
+    - TTCategories (~> 0.0.1)
+  - TTToolKit/Log (0.1.0):
+    - TTCategories (~> 0.0.1)
+  - TTToolKit/UX (0.1.0):
+    - TTCategories (~> 0.0.1)
+
+DEPENDENCIES:
+  - Expecta
+  - "Expecta+Snapshots"
+  - FBSnapshotTestCase
+  - Masonry (~> 1.1.0)
+  - Specta
+  - TTToolKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Expecta
+    - "Expecta+Snapshots"
+    - FBSnapshotTestCase
+    - Masonry
+    - Specta
+    - TTCategories
+
+EXTERNAL SOURCES:
+  TTToolKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  TTCategories: 3d9055d186ab5cdb1eb2f8d4acc9a731971a2cdb
+  TTToolKit: 15d824d7ff5138a94f4951512179ec9ba4b4b5f9
+
+PODFILE CHECKSUM: 4f5677058c055d5d5a12398c42cb4f7b857010b0
+
+COCOAPODS: 1.10.0

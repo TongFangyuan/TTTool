@@ -1,0 +1,18 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TTToolKit_Example' do
+  pod 'TTToolKit', :path => '../'
+
+  target 'TTToolKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+  pod 'Masonry', '~> 1.1.0'
+  
+end

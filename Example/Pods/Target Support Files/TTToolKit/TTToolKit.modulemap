@@ -1,0 +1,6 @@
+framework module TTToolKit {
+  umbrella header "TTToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
