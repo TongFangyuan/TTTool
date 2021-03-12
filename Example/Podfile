@@ -15,5 +15,7 @@ target 'TTToolKit_Example' do
     pod 'Expecta+Snapshots'
   end
   pod 'Masonry', '~> 1.1.0'
+  pod 'LKDBHelper'
+  pod 'MBProgressHUD'
 #  pod 'TTToolKit', '~> 0.2.1'
 end

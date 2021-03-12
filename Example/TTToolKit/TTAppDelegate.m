@@ -7,13 +7,17 @@
 //
 
 #import "TTAppDelegate.h"
-#import <Masonry/Masonry.h>
+#import "TTViewController.h"
 
 @implementation TTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    TTViewController *vc = [[TTViewController alloc] init];
+    TTBaseNavigationController *nav = [[TTBaseNavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
     return YES;
 }
 

@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		99610B78E0CF4F751B8457FD /* Pods_TTToolKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31116A03FE10F35BF4E8402D /* Pods_TTToolKit_Tests.framework */; };
 		D380F2C01BDCF79A3A9E9B8E /* Pods_TTToolKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE69DB195174BB8096D846A /* Pods_TTToolKit_Example.framework */; };
+		DAA3DC3E25F74D6B000F45EA /* TTSizeAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA3DC3D25F74D6B000F45EA /* TTSizeAdapterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9216007E8310027E0A8708D9 /* Pods-TTToolKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-TTToolKit_Tests/Pods-TTToolKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B7F74E4A93EC67DF82D6BD26 /* TTToolKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TTToolKit.podspec; path = ../TTToolKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DAA3DC3C25F74D6B000F45EA /* TTSizeAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSizeAdapterViewController.h; sourceTree = "<group>"; };
+		DAA3DC3D25F74D6B000F45EA /* TTSizeAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSizeAdapterViewController.m; sourceTree = "<group>"; };
 		DF9432B3871BAB2E46B44935 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EA97B917F3212501814FCE49 /* Pods-TTToolKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTToolKit_Example.release.xcconfig"; path = "Target Support Files/Pods-TTToolKit_Example/Pods-TTToolKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +146,7 @@
 		6003F593195388D20070C39A /* Example for TTToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				DAA3DC3B25F74D6B000F45EA /* SizeAdapter */,
 				6003F59C195388D20070C39A /* TTAppDelegate.h */,
 				6003F59D195388D20070C39A /* TTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +198,15 @@
 				43D32119F75BBE5F4964B97C /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		DAA3DC3B25F74D6B000F45EA /* SizeAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				DAA3DC3C25F74D6B000F45EA /* TTSizeAdapterViewController.h */,
+				DAA3DC3D25F74D6B000F45EA /* TTSizeAdapterViewController.m */,
+			);
+			path = SizeAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,12 +316,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TTToolKit_Example/Pods-TTToolKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/TTCategories/TTCategories.framework",
 				"${BUILT_PRODUCTS_DIR}/TTToolKit/TTToolKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTCategories.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTToolKit.framework",
@@ -396,6 +415,7 @@
 				6003F59E195388D20070C39A /* TTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DAA3DC3E25F74D6B000F45EA /* TTSizeAdapterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
