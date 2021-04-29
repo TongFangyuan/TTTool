@@ -57,8 +57,7 @@
     CGFloat leftItemWidth = self.navigationItem.leftBarButtonItem.customView.frame.size.width;
     CGFloat titleW = (UIScreen.mainScreen.bounds.size.width*0.5f-space-itemSpace-leftItemWidth) * 2.f;
     titleLabel.frame = CGRectMake(0, 0, titleW, 44.f);
-    titleLabel.text = self.navBarTitle ?: self.title;
-    titleLabel.textColor = [UIColor blackColor];
+    titleLabel.text = self.title;
     m_titleLabel = titleLabel;
     self.navigationItem.titleView = m_titleLabel;
     
@@ -72,6 +71,14 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.97 green:0.96 blue:0.97 alpha:1.00];
     self.hiddenNavBar = NO;
     self.statusBarTheme = TTUIThemeDark;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -129,7 +136,7 @@
 
 - (void)setHiddenStatusBar:(BOOL)hiddenStatusBar
 {
-    _hiddenNavBar = hiddenStatusBar;
+    _hiddenStatusBar = hiddenStatusBar;
     [self setNeedsStatusBarAppearanceUpdate];
 }
 

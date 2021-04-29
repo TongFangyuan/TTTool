@@ -20,19 +20,30 @@ typedef enum : NSUInteger {
 @interface TTBaseViewController : UIViewController<TTNavbarAppearance>
 
 #pragma mark - < StatusBar Config >
-@property (nonatomic,assign) TTUITheme statusBarTheme;
-@property (nonatomic,assign) BOOL      hiddenStatusBar;
+@property (nonatomic,assign) TTUITheme statusBarTheme DEPRECATED_MSG_ATTRIBUTE("废弃");
+@property (nonatomic,assign) BOOL      hiddenStatusBar DEPRECATED_MSG_ATTRIBUTE("废弃");
 
 #pragma mark - < Mask Config>
 @property (nonatomic,assign) BOOL showMask;
 @property (nonatomic,assign) BOOL enableGestureUnderMask;
 
 #pragma mark - < NavigationBar Config >
+
+/// 标题字体
 @property (nonatomic,strong) UIFont   *navBarTitleFont;
+
+/// 标题颜色
 @property (nonatomic,copy)   NSString *navBarTitle;
+
+/// 返回按钮图标
 @property (nonatomic,strong) UIImage  *navBarBackImage;
+
+/// navBar 背景色
 @property (nonatomic,strong) UIColor  *navBarTintColor;
+
+/// 标题颜色
 @property (nonatomic,strong) UIColor *navTitleColor;
+
 /// ⚠️⚠️ 控制导航栏的隐藏请直接设置属性值就好，不然会有bug：滑动返回顶部出现黑块
 /// 设置是否隐藏导航栏
 @property (nonatomic,assign) BOOL      hiddenNavBar;
