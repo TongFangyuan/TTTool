@@ -1,6 +1,0 @@
-framework module TTCategories {
-  umbrella header "TTCategories-umbrella.h"
-
-  export *
-  module * { export * }
-}
