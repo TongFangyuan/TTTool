@@ -14,6 +14,8 @@
 #import "NSData+AES128TL.h"
 #import "TTAES128Encrypter.h"
 #import "TTAES128Tool.h"
+#import "TTProxy.h"
+#import "TTTimer.h"
 #import "TTApp.h"
 #import "TTKeychain.h"
 #import "TTKeychainManager.h"

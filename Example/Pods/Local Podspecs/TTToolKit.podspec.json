@@ -1,6 +1,6 @@
 {
   "name": "TTToolKit",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "summary": "A short description of TTToolKit.",
   "description": "常用工具类整理",
   "homepage": "https://github.com/TongFangyuan/TTTool",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/TongFangyuan/TTTool.git",
-    "tag": "0.2.1"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -50,6 +50,11 @@
       "name": "UX",
       "source_files": "TTToolKit/Classes/UX/*.{h,m}",
       "public_header_files": "TTToolKit/Classes/UX/*.h"
+    },
+    {
+      "name": "Foundation",
+      "source_files": "TTToolKit/Classes/Foundation/*.{h,m}",
+      "public_header_files": "TTToolKit/Classes/Foundation/*.h"
     }
   ]
 }

@@ -8,26 +8,30 @@
 
 #import "LKDBUtils.h"
 
-@implementation LKDateFormatter
+@implementation LKDateFormatter {
+    dispatch_semaphore_t _lock;
+}
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.lock = dispatch_semaphore_create(1);
-        self.generatesCalendarDates = YES;
+        _lock = dispatch_semaphore_create(1);
+        self.generatesCalendarDates = NO;
         self.dateStyle = NSDateFormatterNoStyle;
         self.timeStyle = NSDateFormatterNoStyle;
         self.AMSymbol = nil;
         self.PMSymbol = nil;
-        NSLocale *locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
-        if (locale) {
-            [self setLocale:locale];
-        }
+        self.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+        self.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
         if ([LKDBUtils respondsToSelector:@selector(onCreateWithDateFormatter:)]) {
             [LKDBUtils onCreateWithDateFormatter:self];
         }
     }
     return self;
+}
+
+- (dispatch_semaphore_t)lock {
+    return _lock;
 }
 
 //防止 iOS5 多线程 格式化时间时 崩溃

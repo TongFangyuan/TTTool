@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTToolKit'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'A short description of TTToolKit.'
 
 # This description is used to generate tags and improve search results.
@@ -56,6 +56,11 @@ Pod::Spec.new do |s|
   s.subspec 'UX' do |ux|
       ux.source_files = 'TTToolKit/Classes/UX/*.{h,m}'
       ux.public_header_files = 'TTToolKit/Classes/UX/*.h'
+  end
+    
+  s.subspec 'Foundation' do |f|
+    f.source_files = 'TTToolKit/Classes/Foundation/*.{h,m}'
+    f.public_header_files = 'TTToolKit/Classes/Foundation/*.h'
   end
   
   # s.resource_bundles = {
