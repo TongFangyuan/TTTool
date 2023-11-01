@@ -69,3 +69,7 @@ iOSInjectionProject/
 TTToolSample/Pods/
 Podtest/TTToolSample/Pods/
 Example/.DS_Store
+Example/.DS_Store
+Example/.DS_Store
+Example/.DS_Store
+*.lock
